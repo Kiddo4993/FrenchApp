@@ -15,6 +15,43 @@ Prompt table specifies 10/10/10/8/6 units for A1/A2/B1/B2/C1 (44 total). Used th
 concrete titles/grammar focus per unit in PLAN.md §2 since the prompt only gave level-level focus, not
 per-unit breakdown.
 
+### 2026-07-28 — eslint-config-next@15.5.22 ships legacy-shape config; bridged with FlatCompat
+`create-next-app`'s generated `eslint.config.mjs` assumes `eslint-config-next` exports flat-config
+arrays (`import nextVitals from "eslint-config-next/core-web-vitals"`), but the version resolved by
+`^15.4.0` (15.5.22, matching the installed `next` release) still ships the legacy `.eslintrc`
+`{ extends: [...] }` shape with no `exports` map, no `.mjs`/flat variant. Rewrote `eslint.config.mjs`
+to bridge it via `@eslint/eslintrc`'s `FlatCompat` (transitively available through `eslint@9`), which
+is the documented pattern for consuming legacy shareable configs under ESLint 9 flat config. Lint now
+passes cleanly.
+
+### 2026-07-27 — Lesson titles templated, not hand-authored per node
+44 units × 8 skill-tree nodes (6 lessons + review + boss) = 352 lesson nodes. Hand-authoring a unique
+creative title for all 352 would burn enormous effort for no functional gain over a template driven
+by each unit's own title/focus/topics (`buildLessonsForUnit` in `src/content/curriculum.ts`). Titles
+still differ per unit and the pattern (vocab×2, grammar×2, mixed, production, review, boss) matches
+PLAN.md §5's exercise-type progression (crown 5 = free translation + speaking only maps to the
+"Production" node). Revisit only if the learner wants bespoke lesson framing later.
+
+### 2026-07-27 — Topic count corrected 39 → 40
+PLAN.md initially said "39 topics" in the §3 heading; recounting the prompt's topic bullet list gives
+40 (Salutations ... Formal writing & correspondence). Fixed the heading; `src/content/topics.ts` has
+the authoritative 40-entry `TOPICS` array. At 80 min/topic that's a 3,200 floor, comfortably under the
+4,000+ total target since most topics will carry 100+.
+
+### 2026-07-26 — shadcn/ui now defaults to Base UI, not Radix
+`shadcn init` (latest CLI, style `base-nova`) generates components on top of `@base-ui/react`, not
+`@radix-ui/*`, and ships its own `shadcn/tailwind.css` base layer. I had pre-installed
+`@radix-ui/react-*` packages anticipating the older Radix-based shadcn convention; removed them once
+confirmed unused (`grep` found zero imports) rather than fighting the CLI's current default. Matching
+what the tool actually generates beats forcing an older convention it no longer uses.
+
+### 2026-07-26 — npm audit: postcss/sharp high-severity, left unresolved
+`npm audit --omit=dev` flags transitive `postcss`/`sharp` vulnerabilities inside `next`'s optional
+image-optimization dependency chain. The only automated fix (`npm audit fix --force`) downgrades
+`next` to `9.3.3`, which is not viable. This is a local-only, single-user app with no untrusted image
+uploads, so the risk surface is minimal; left as a known gap rather than downgrading Next.js. Revisit
+when Next.js ships an updated `sharp`.
+
 ### 2026-07-26 — Postgres-compatible SQLite schema
 Drizzle's SQLite dialect used for actual storage (file-based, zero-config per spec), but schema avoids
 SQLite-only patterns (e.g. no `WITHOUT ROWID`, timestamps as integer-ms not SQLite `julianday`, enums

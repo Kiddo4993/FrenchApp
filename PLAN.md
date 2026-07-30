@@ -121,7 +121,7 @@ Each unit = 5–8 lessons + 1 review lesson + 1 boss test (≥85% to unlock next
 
 ---
 
-## 3. Topic List (39 topics, each ≥80 vocab entries across CEFR levels)
+## 3. Topic List (40 topics, each ≥80 vocab entries across CEFR levels)
 
 Salutations & introductions · Family & relationships · Numbers, dates & time · Colours & shapes ·
 Food & drink · Restaurants & ordering · The house & furniture · Clothing & fashion · Body & health ·
@@ -238,7 +238,7 @@ celebration. Full keyboard support (Enter to check/continue, 1–4 to pick optio
 ## 9. Build Order
 
 - [x] Phase 0 — PLAN.md, DECISIONS.md
-- [ ] Phase 1 — Scaffold Next.js 15 + TS strict, Tailwind, shadcn/ui, Drizzle schema + migrations,
+- [x] Phase 1 — Scaffold Next.js 15 + TS strict, Tailwind, shadcn/ui, Drizzle schema + migrations,
       `scripts/validate-content.ts`
 - [ ] Phase 2 — Content: vocab bank (≥80/topic, 4,000+ total), sentences, grammar notes, verb tables
       + conjugation engine

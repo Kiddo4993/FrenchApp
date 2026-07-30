@@ -1,0 +1,160 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-serif);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/*
+ * Palette: ink navy + warm cream, a single vivid accent (bleu de France),
+ * gold reserved exclusively for mastery states. See PLAN.md §8.
+ */
+:root {
+  --background: #faf6ee;
+  --foreground: #0b1f3a;
+  --card: #ffffff;
+  --card-foreground: #0b1f3a;
+  --popover: #ffffff;
+  --popover-foreground: #0b1f3a;
+  --primary: #0055a4;
+  --primary-foreground: #faf6ee;
+  --secondary: #ede6d6;
+  --secondary-foreground: #0b1f3a;
+  --muted: #f0ead9;
+  --muted-foreground: #5c6b7a;
+  --accent: #e8f0f9;
+  --accent-foreground: #0055a4;
+  --destructive: #c0392b;
+  --border: #e3dac5;
+  --input: #e3dac5;
+  --ring: #0055a4;
+  --gold: #d4af37;
+  --gold-foreground: #3a2e00;
+  --chart-1: #0055a4;
+  --chart-2: #d4af37;
+  --chart-3: #5c8a72;
+  --chart-4: #c0392b;
+  --chart-5: #8a5c9e;
+  --radius: 0.75rem;
+  --sidebar: #f0ead9;
+  --sidebar-foreground: #0b1f3a;
+  --sidebar-primary: #0055a4;
+  --sidebar-primary-foreground: #faf6ee;
+  --sidebar-accent: #e8f0f9;
+  --sidebar-accent-foreground: #0055a4;
+  --sidebar-border: #e3dac5;
+  --sidebar-ring: #0055a4;
+}
+
+.dark {
+  --background: #0b1f3a;
+  --foreground: #f5efe0;
+  --card: #102a4f;
+  --card-foreground: #f5efe0;
+  --popover: #102a4f;
+  --popover-foreground: #f5efe0;
+  --primary: #5b9bd8;
+  --primary-foreground: #0b1f3a;
+  --secondary: #16305a;
+  --secondary-foreground: #f5efe0;
+  --muted: #16305a;
+  --muted-foreground: #9fb3c8;
+  --accent: #16305a;
+  --accent-foreground: #7eb8f5;
+  --destructive: #e5776a;
+  --border: color-mix(in oklch, #f5efe0 12%, transparent);
+  --input: color-mix(in oklch, #f5efe0 15%, transparent);
+  --ring: #5b9bd8;
+  --gold: #e4c158;
+  --gold-foreground: #2a2000;
+  --chart-1: #5b9bd8;
+  --chart-2: #e4c158;
+  --chart-3: #7cb69a;
+  --chart-4: #e5776a;
+  --chart-5: #b287c9;
+  --sidebar: #102a4f;
+  --sidebar-foreground: #f5efe0;
+  --sidebar-primary: #5b9bd8;
+  --sidebar-primary-foreground: #0b1f3a;
+  --sidebar-accent: #16305a;
+  --sidebar-accent-foreground: #7eb8f5;
+  --sidebar-border: color-mix(in oklch, #f5efe0 12%, transparent);
+  --sidebar-ring: #5b9bd8;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+@layer utilities {
+  /* French-language text is always visually distinct: display serif, not the UI sans. */
+  .fr-text {
+    font-family: var(--font-serif);
+    font-feature-settings: "liga" 1, "kern" 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
