@@ -1,0 +1,35 @@
+{
+  "unitSlug": "lavenir",
+  "points": [
+    {
+      "slug": "futur-simple",
+      "title": "Le futur simple",
+      "explanationEn": "The futur simple is the standard French way to talk about what will happen, roughly equivalent to English \"will + verb.\" Unlike English, which uses a separate helper word (\"will\"), French builds the future directly into the verb ending — there is no separate word for \"will.\" You form it by taking a future stem and adding one set of endings that is the same for every verb in the language: -ai, -as, -a, -ons, -ez, -ont. Notice that these endings look almost exactly like the present tense of avoir (ai, as, a, ons, ez, ont) — that is not a coincidence; historically the futur simple developed from the infinitive plus avoir, and that fusion is still visible today.\n\nFor regular -er and -ir verbs, the future stem is simply the infinitive itself: parler → je parlerai, finir → tu finiras. For regular -re verbs, drop the final -e from the infinitive before adding the endings: vendre → il vendra (not vendre + a). This is why you will sometimes see the stem described as \"the infinitive, minus any final -e.\"\n\nA important and unavoidable group of very common verbs have irregular future stems that must simply be memorized, even though the endings themselves stay perfectly regular. The most important ones are: être → ser- (je serai), avoir → aur- (j'aurai), aller → ir- (j'irai), faire → fer- (je ferai), pouvoir → pourr- (je pourrai), vouloir → voudr- (je voudrai), devoir → devr- (je devrai), savoir → saur- (je saurai), voir → verr- (je verrai), venir → viendr- (je viendrai), and falloir → il faudra. Once you know the stem, the endings never change, so \"il faudra\" and \"nous ferons\" follow exactly the same pattern as \"je parlerai.\"\n\nFrench also has a second way to talk about the future: the futur proche (aller + infinitive, like \"je vais partir\"), which functions much like English \"going to.\" The futur proche is used for things that feel near, planned, or already in motion — decisions already made, or events clearly on the horizon (\"Je vais appeler ma mère ce soir\"). The futur simple, by contrast, is used for more distant, less certain, or more formal predictions, promises, and statements about the general future (\"Un jour, les voitures voleront\"). In casual spoken French, the futur proche is extremely common for everyday plans; the futur simple is preferred in writing, in predictions, in conditional-style promises (\"Si tu m'aides, je te paierai\"), and after certain conjunctions like quand and dès que when referring to future time — a construction that has no direct match in English (see below).",
+      "examples": [
+        { "fr": "Demain, je finirai ce projet.", "en": "Tomorrow, I will finish this project." },
+        { "fr": "Elle sera médecin dans cinq ans.", "en": "She will be a doctor in five years.", "note": "Irregular stem: être → ser-" },
+        { "fr": "Nous aurons plus de temps l'année prochaine.", "en": "We will have more time next year.", "note": "Irregular stem: avoir → aur-" },
+        { "fr": "Ils iront en France cet été.", "en": "They will go to France this summer.", "note": "Irregular stem: aller → ir-" },
+        { "fr": "Tu feras attention la prochaine fois, j'espère.", "en": "You will be careful next time, I hope.", "note": "Irregular stem: faire → fer-" },
+        { "fr": "Quand tu arriveras, appelle-moi.", "en": "When you arrive, call me.", "note": "French uses futur simple after 'quand' referring to future time; English uses present tense here." },
+        { "fr": "Il pleuvra probablement ce week-end.", "en": "It will probably rain this weekend." },
+        { "fr": "Je vais partir dans dix minutes.", "en": "I'm going to leave in ten minutes.", "note": "Futur proche — a near, already-decided plan, contrasted with futur simple." },
+        { "fr": "Un jour, on vivra peut-être sur Mars.", "en": "One day, we might live on Mars.", "note": "Distant, uncertain future favors futur simple over futur proche." },
+        { "fr": "Vous devrez remplir ce formulaire avant vendredi.", "en": "You will have to fill out this form before Friday.", "note": "Irregular stem: devoir → devr-" }
+      ],
+      "commonMistakes": [
+        "Trying to translate 'will' as a separate word instead of changing the verb ending (e.g. writing 'je will parler' or inventing a word for 'will').",
+        "Using the infinitive form as the future stem for irregular verbs (e.g. 'je aller-ai' instead of 'j'irai', or 'je faire-ai' instead of 'je ferai').",
+        "Forgetting to drop the final -e on -re verbs before adding endings (writing 'vendre-a' instead of 'vendra').",
+        "Using the present tense after 'quand' when referring to a future event, by analogy with English ('Quand tu arrives, appelle-moi' instead of 'Quand tu arriveras...').",
+        "Confusing futur simple with the conditionnel, since both are built on the same irregular stems (e.g. mixing up 'je ferai' with 'je ferais')."
+      ],
+      "whyItTrips": [
+        "English marks the future with a separate word ('will'), so learners instinctively look for an equivalent word instead of accepting that French folds the future into the verb ending itself.",
+        "The irregular stems (ser-, aur-, ir-, fer-, etc.) don't resemble their infinitives closely enough to guess, so they feel like a second vocabulary list to memorize on top of the verb itself.",
+        "English never changes tense after 'when' for future events ('When you arrive...' stays present), so the French rule of using futur simple after quand/dès que/aussitôt que feels backwards and is easy to forget under pressure."
+      ],
+      "searchTags": ["futur simple", "future tense", "irregular stems", "futur proche", "quand futur"]
+    }
+  ]
+}

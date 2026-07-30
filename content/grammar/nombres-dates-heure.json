@@ -1,0 +1,35 @@
+{
+  "unitSlug": "nombres-dates-heure",
+  "points": [
+    {
+      "slug": "numbers-0-100-and-telling-time",
+      "title": "Les nombres de 0 à 100 et l'heure",
+      "explanationEn": "French numbers from 0 to 100 mostly follow predictable patterns once you learn the base words: zéro, un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix, then onze through seize (11-16) as their own words, then dix-sept, dix-huit, dix-neuf (17-19, literally 'ten-seven', 'ten-eight', 'ten-nine'). From 20 onward the tens are their own words — vingt (20), trente (30), quarante (40), cinquante (50), soixante (60) — and you combine them with a hyphen: vingt-deux (22), trente-cinq (35). Two quirks to notice early: 21, 31, 41, 51, 61, and 71 use 'et un' instead of a hyphen (vingt et un, trente et un) — no hyphen, and 'un' does not need a hyphen the way other units do. Also, numbers are read literally: quarante-quatre is 'forty-four', following the same additive logic as English, just written with a hyphen instead of a space.\n\nTelling time in French uses the impersonal construction 'il est' (literally 'it is') followed by the hour, always with heure(s): il est trois heures ('it is three o'clock'). Minutes past the hour are simply added after: il est trois heures dix (3:10). For the half hour, French says 'et demie' (trois heures et demie = 3:30); for the quarter hours, 'et quart' (trois heures et quart = 3:15) and 'moins le quart' (trois heures moins le quart = 2:45, literally 'three hours minus the quarter'). For minutes after the half hour, French often counts backward from the next hour using 'moins': quatre heures moins dix means '10 minutes to four' (3:50). Noon and midnight have their own special words, midi and minuit, which don't take 'heures' or a plural article the normal way.\n\nDays of the week (lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche) and months (janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre) are not capitalized in French, unlike English — this is a small but very frequent spelling mistake for English speakers. Dates are also structured differently: French puts the day before the month (le 3 mars, not 'March 3rd'), and unlike English, French uses cardinal numbers for every date except the first of the month, which uses the ordinal: le premier mai (May 1st) but le deux mai, le trois mai, etc.",
+      "examples": [
+        { "fr": "J'ai vingt et un ans.", "en": "I am twenty-one years old.", "note": "'Et un' (no hyphen) is used for 21, 31, 41, 51, 61, 71." },
+        { "fr": "Il y a soixante-quatre pages dans ce livre.", "en": "There are sixty-four pages in this book.", "note": "Hyphens connect compound numbers other than 'et un' forms." },
+        { "fr": "Il est trois heures.", "en": "It is three o'clock.", "note": "'Il est' + number + 'heures' is the standard way to tell time." },
+        { "fr": "Il est midi et demi.", "en": "It is 12:30 p.m.", "note": "'Midi' takes 'demi' (no e) instead of 'demie'." },
+        { "fr": "Il est neuf heures et quart.", "en": "It is 9:15.", "note": "'Et quart' = 'a quarter past'." },
+        { "fr": "Il est huit heures moins le quart.", "en": "It is 7:45.", "note": "Literally 'eight hours minus the quarter'." },
+        { "fr": "Il est dix heures moins dix.", "en": "It is 9:50.", "note": "Counting backward from the next hour using 'moins'." },
+        { "fr": "Nous sommes lundi.", "en": "It's Monday.", "note": "Days of the week are lowercase in French." },
+        { "fr": "Mon anniversaire est le premier mai.", "en": "My birthday is May 1st.", "note": "'Premier' (ordinal) is used only for the first of the month; other dates use cardinal numbers." },
+        { "fr": "Nous sommes le douze octobre.", "en": "It is October 12th.", "note": "Day comes before month, and 'octobre' is lowercase." }
+      ],
+      "commonMistakes": [
+        "Capitalizing days and months (writing 'Lundi' or 'Mars') out of habit from English.",
+        "Using a hyphen for 21/31/41/etc. (writing 'vingt-un' instead of the correct 'vingt et un').",
+        "Saying dates in month-day order like English ('mars le trois') instead of French day-month order ('le trois mars').",
+        "Forgetting 'il est' and just stating the number when telling time, or omitting 'heures' entirely.",
+        "Using an ordinal number for every date (le deuxième, le troisième) instead of cardinal numbers, when only 'le premier' is ordinal."
+      ],
+      "whyItTrips": [
+        "English tells time and dates with a much looser structure ('it's 3', 'March 3rd'), so French's rigid 'il est ___ heures' and day-before-month order require overriding an ingrained pattern.",
+        "English capitalizes days and months as proper nouns, but French treats them as ordinary common nouns, which feels like a spelling error to an English speaker's eye.",
+        "The 'moins le quart' / 'moins dix' backward-counting system for the second half of the hour has no equivalent in standard English time-telling, where we always count forward from the current hour."
+      ],
+      "searchTags": ["numbers", "nombres", "telling time", "heure", "days of the week", "months", "dates"]
+    }
+  ]
+}

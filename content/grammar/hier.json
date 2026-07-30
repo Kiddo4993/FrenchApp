@@ -1,0 +1,35 @@
+{
+  "unitSlug": "hier",
+  "points": [
+    {
+      "slug": "passe-compose-avoir",
+      "title": "Le passé composé avec avoir",
+      "explanationEn": "The passé composé is the tense French speakers use most often to talk about completed actions in the past — 'I ate,' 'she called,' 'we watched a movie.' It is called a 'compound' tense because it is built from two pieces: a helping verb (auxiliary) conjugated in the present tense, plus a past participle. Most French verbs — all -ER verbs, most -IR verbs, and most -RE verbs — take the auxiliary avoir (to have). The pattern is: subject + avoir (present tense) + past participle. For example, j'ai mangé literally breaks down as 'I have eaten,' but it simply translates to 'I ate' or 'I have eaten' depending on context — French does not distinguish these the way English sometimes does.\n\nForming the past participle depends on the verb group. For -ER verbs (the largest group by far), drop the -er and add -é: parler → parlé, manger → mangé, regarder → regardé. For regular -IR verbs, drop the -ir and add -i: finir → fini, choisir → choisi, réussir → réussi. For regular -RE verbs, drop the -re and add -u: vendre → vendu, attendre → attendu, perdre → perdu. Once you have the past participle, you simply place the correctly conjugated form of avoir (ai, as, a, avons, avez, ont) directly in front of it.\n\nMany very common verbs have irregular past participles that must simply be memorized, because they don't follow the -é/-i/-u pattern predictably. Some of the most frequent: avoir → eu, être → été, faire → fait, prendre → pris, mettre → mis, dire → dit, écrire → écrit, voir → vu, boire → bu, lire → lu, pouvoir → pu, vouloir → voulu, savoir → su, devoir → dû, and venir → venu (though venir actually takes être, not avoir — more on être-verbs in a later unit). Because these irregular forms show up constantly in everyday speech, it's worth drilling them separately from the regular pattern.\n\nIn the negative, ne...pas wraps around the auxiliary verb only, not the whole expression: je n'ai pas mangé (I didn't eat), not je n'ai mangé pas. In questions with inversion, the subject pronoun attaches to the auxiliary: as-tu mangé? (did you eat?). Also note that when avoir-verbs have a preceding direct object (something that comes before the verb, like in a question with a direct object pronoun or after certain relative pronouns), the past participle must agree in gender and number with that preceding object — but this refinement is worth setting aside for now and revisiting once the basic pattern with avoir is solid.",
+      "examples": [
+        { "fr": "J'ai mangé une pomme ce matin.", "en": "I ate an apple this morning." },
+        { "fr": "Tu as regardé le film hier soir ?", "en": "Did you watch the movie last night?" },
+        { "fr": "Il a fini ses devoirs avant le dîner.", "en": "He finished his homework before dinner." },
+        { "fr": "Nous avons vendu notre vieille voiture.", "en": "We sold our old car." },
+        { "fr": "Elles ont choisi un restaurant italien.", "en": "They chose an Italian restaurant.", "note": "-ir verb: choisi, not choisu" },
+        { "fr": "J'ai fait mes courses samedi matin.", "en": "I did my shopping Saturday morning.", "note": "irregular participle: fait" },
+        { "fr": "Vous avez pris le train de huit heures ?", "en": "Did you take the eight o'clock train?", "note": "irregular participle: pris" },
+        { "fr": "Je n'ai pas fini mon livre.", "en": "I haven't finished my book.", "note": "ne...pas surrounds the auxiliary, not the participle" },
+        { "fr": "Ils ont attendu le bus pendant vingt minutes.", "en": "They waited for the bus for twenty minutes." },
+        { "fr": "Qu'est-ce que tu as dit ?", "en": "What did you say?", "note": "irregular participle: dit" }
+      ],
+      "commonMistakes": [
+        "Putting ne...pas around the whole verb phrase instead of just the auxiliary: writing 'je ai mangé pas' instead of 'je n'ai pas mangé'.",
+        "Trying to guess irregular participles by analogy with the infinitive (e.g. saying 'faisé' for faire instead of the irregular 'fait').",
+        "Forgetting to conjugate avoir and leaving it in the infinitive or using the wrong person (e.g. 'je a mangé' instead of 'j'ai mangé').",
+        "Using -RE verb endings on -IR verbs or vice versa, e.g. writing 'fini' as 'finu', or 'vendu' as 'vendi'.",
+        "Translating too literally from English 'I have eaten' and adding an unnecessary extra word, or conversely trying to use a simple past form that doesn't exist in spoken French."
+      ],
+      "whyItTrips": [
+        "English has a similar-looking structure ('have' + past participle), which tempts learners to map French one-to-one onto English tense distinctions (simple past vs. present perfect) that French doesn't make in the same way.",
+        "English speakers aren't used to a two-word verb form carrying the weight of a single past-tense idea, so they often forget to conjugate the auxiliary correctly or drop it entirely.",
+        "The irregular past participles (fait, pris, mis, dit, vu, eu, été) don't have an obvious pattern, so they feel like arbitrary vocabulary to memorize rather than grammar to apply."
+      ],
+      "searchTags": ["passe-compose", "avoir", "past-participle", "past-tense", "conjugation"]
+    }
+  ]
+}

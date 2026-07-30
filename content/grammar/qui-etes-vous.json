@@ -1,0 +1,35 @@
+{
+  "unitSlug": "qui-etes-vous",
+  "points": [
+    {
+      "slug": "subject-pronouns-avoir-present",
+      "title": "Les pronoms sujets et le verbe avoir au présent",
+      "explanationEn": "French has eight subject pronouns where English has seven, and mapping them correctly is the first real hurdle: je (I), tu (you, informal singular), il (he/it, masculine), elle (she/it, feminine), on (one/we/people, informal), nous (we), vous (you, formal or plural), ils (they, masculine or mixed group), elles (they, all-feminine group). Two things trip up English speakers immediately. First, il and elle are used not just for people but for objects and ideas too, because every French noun has a grammatical gender — 'le livre' (the book) is 'il', 'la table' (the table) is 'elle'. Second, for a group made of any mix of masculine and feminine (even 99 women and 1 man), French defaults to the masculine plural 'ils'. This is a grammatical convention, not a statement about the group.\n\nAvoir ('to have') is, like être, a highly irregular verb that must be memorized as a full set: j'ai, tu as, il/elle/on a, nous avons, vous avez, ils/elles ont. Note the elision: je becomes j' before a vowel sound (j'ai, not 'je ai'). This elision rule is not optional stylistic choice — it is required whenever je (and several other short words like le, la, ce, ne) precedes a word starting with a vowel or a mute h.\n\nAvoir is used far more broadly in French than 'to have' is in English. Many expressions that use 'to be' in English use avoir in French — famously, age ('J'ai vingt ans' = literally 'I have twenty years' = 'I am twenty years old'), and also sensations like hunger, thirst, fear, and being hot or cold (avoir faim, avoir soif, avoir peur, avoir chaud, avoir froid). English speakers who translate word-for-word will say 'Je suis vingt ans' or 'Je suis faim', which are both wrong — you must reach for avoir instead of être in these fixed expressions.",
+      "examples": [
+        { "fr": "J'ai un frère et une sœur.", "en": "I have a brother and a sister.", "note": "'Je' elides to \"j'\" before the vowel sound of 'ai'." },
+        { "fr": "Tu as quel âge ?", "en": "How old are you?", "note": "Literally 'you have what age' — avoir, not être, expresses age." },
+        { "fr": "Il a les yeux bleus.", "en": "He has blue eyes." },
+        { "fr": "Elle a une grande famille.", "en": "She has a big family." },
+        { "fr": "Nous avons trois enfants.", "en": "We have three children." },
+        { "fr": "Vous avez des animaux ?", "en": "Do you have any pets?" },
+        { "fr": "Ils ont un chien et un chat.", "en": "They have a dog and a cat.", "note": "Mixed or all-masculine group of nouns → 'ils'." },
+        { "fr": "Elles ont rendez-vous à midi.", "en": "They (all female) have an appointment at noon." },
+        { "fr": "J'ai faim et j'ai soif.", "en": "I'm hungry and I'm thirsty.", "note": "Literally 'I have hunger and I have thirst' — avoir expresses physical states, not être." },
+        { "fr": "On a de la chance !", "en": "We're lucky! / One is lucky!", "note": "'On' takes the same verb form as il/elle: 'a', not 'ai' or 'avons'." }
+      ],
+      "commonMistakes": [
+        "Saying 'Je suis vingt ans' or 'Je suis faim' by translating English 'to be' word-for-word instead of using avoir for age and physical sensations.",
+        "Forgetting the elision and writing/saying 'je ai' instead of \"j'ai\".",
+        "Using 'ils' vs 'elles' based on which gender feels more numerous or important in a group, rather than the rule that any mixed-gender group defaults to 'ils'.",
+        "Conjugating 'on' with the wrong ending (e.g. 'on avons') instead of treating it as a third-person-singular pronoun that always takes the il/elle verb form ('on a').",
+        "Applying 'il/elle' only to people and using 'it' as a mental placeholder for objects, then getting stuck because French has no separate word for 'it'."
+      ],
+      "whyItTrips": [
+        "English has no grammatical gender for objects, so the idea that 'the table' is inherently 'elle' feels arbitrary and has no equivalent instinct to draw on.",
+        "English uses 'to be' for age and physical sensations ('I am hungry', 'I am 20'), so reaching for 'to have' in French requires overriding a deeply automatic English pattern.",
+        "English 'they' is gender-neutral for groups, so French forcing a masculine default ('ils') for mixed groups feels unfamiliar and easy to get backwards."
+      ],
+      "searchTags": ["avoir", "present tense", "subject pronouns", "il vs elle", "ils vs elles", "irregular verb"]
+    }
+  ]
+}

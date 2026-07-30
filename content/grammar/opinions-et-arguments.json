@@ -1,0 +1,65 @@
+{
+  "unitSlug": "opinions-et-arguments",
+  "points": [
+    {
+      "slug": "subjonctif-opinion-volonte-doute",
+      "title": "Le subjonctif après les verbes d'opinion, de volonté et de doute",
+      "explanationEn": "Beyond necessity (il faut que), the subjunctive shows up after a whole family of expressions that involve wanting, doubting, or judging something — rather than simply stating it as fact. The underlying logic is that the indicative (present, passé composé, etc.) is used for things presented as certain or real, while the subjunctive is used for things that exist only in someone's mind: a wish, a demand, a doubt, a value judgment. This is a genuinely different way of organizing reality than English grammar uses, which is why it takes real practice to feel natural.\n\nThe clearest category is volonté (will/desire): vouloir que, souhaiter que, aimer que, préférer que. Je veux que tu viennes (I want you to come) uses the subjunctive because tu viennes is not a fact — it's something je veux hopes will happen. Compare this to English, which uses an infinitive here (\"I want you to come\"), not a full clause with a different subject — French cannot do this. Whenever the subject of the wanting-verb is different from the subject of the wanted action, French requires que + subjonctif; only when the subject stays the same can French use an infinitive directly (je veux venir — I want to come, no que, no subjunctive).\n\nThe second category is doute (doubt) and negated certainty: douter que, ne pas penser que, ne pas croire que, il n'est pas sûr que. Je doute qu'il vienne (I doubt he's coming) takes the subjunctive because doubt frames the outcome as uncertain. Crucially, the positive counterparts — penser que, croire que, être sûr que when NOT negated — take the indicative, because they present the idea as a genuine belief, not a doubt: Je pense qu'il vient (I think he's coming, indicative) versus Je ne pense pas qu'il vienne (I don't think he's coming, subjunctive, because negating belief reopens the possibility of doubt).\n\nThe third category is jugement (value judgment/opinion expressed impersonally): il est important que, il est possible que, il est dommage que, c'est bizarre que. These impersonal opinion expressions almost always trigger the subjunctive because they frame the following clause as a subjective reaction rather than a neutral fact: Il est dommage que tu ne puisses pas venir (It's a shame you can't come). The one major exception across all these categories is il est probable que, which — despite sounding like an opinion — is conventionally followed by the indicative, because it frames the event as likely/expected rather than doubtful.",
+      "examples": [
+        { "fr": "Je veux que tu viennes à la fête.", "en": "I want you to come to the party.", "note": "Different subjects (je / tu) force que + subjonctif." },
+        { "fr": "Je veux venir à la fête.", "en": "I want to come to the party.", "note": "Same subject throughout — infinitive, no subjunctive." },
+        { "fr": "Elle préfère que nous partions tôt.", "en": "She prefers that we leave early." },
+        { "fr": "Je doute qu'il ait raison.", "en": "I doubt he's right." },
+        { "fr": "Je pense qu'il a raison.", "en": "I think he's right.", "note": "Positive 'penser que' takes the indicative — presented as a real belief." },
+        { "fr": "Je ne pense pas qu'il ait raison.", "en": "I don't think he's right.", "note": "Negated belief reopens doubt, so the subjunctive returns." },
+        { "fr": "Il est important que vous soyez à l'heure.", "en": "It's important that you be on time." },
+        { "fr": "Il est dommage que tu ne puisses pas venir.", "en": "It's a shame you can't come." },
+        { "fr": "Il est possible qu'elle change d'avis.", "en": "It's possible she'll change her mind." },
+        { "fr": "Il est probable qu'il viendra ce soir.", "en": "It's likely he'll come tonight.", "note": "Exception: 'il est probable que' takes the indicative, not the subjunctive." }
+      ],
+      "commonMistakes": [
+        "Using 'que + infinitive' after vouloir when the subject changes, copying the English 'I want you to come' pattern (writing 'je veux que tu viens' with the indicative, or worse 'je veux toi venir').",
+        "Keeping the infinitive after vouloir/souhaiter even when the subject of the second verb is different (saying 'je veux tu venir' instead of 'je veux que tu viennes').",
+        "Using the subjunctive after non-negated 'penser que' or 'croire que', by assuming all opinion verbs always trigger it.",
+        "Forgetting that negating an opinion verb (ne pas penser que, ne pas croire que) switches it into the subjunctive category.",
+        "Applying the subjunctive to 'il est probable que', which is a well-known exception that stays indicative."
+      ],
+      "whyItTrips": [
+        "English collapses 'I want you to come' into an infinitive construction with no separate clause, so learners don't intuitively feel that a full que-clause with subjunctive is required whenever the subject changes.",
+        "English doesn't grammatically distinguish 'certain belief' from 'doubted belief' the way French does — 'I think' and 'I don't think' use the same verb form in English, so the indicative/subjunctive switch between penser que and ne pas penser que has no English cue to hang onto.",
+        "The subjunctive is a mood, not a tense, and English speakers are used to verb forms tracking time (past/present/future), not the speaker's certainty — so reorganizing grammar around certainty rather than time takes deliberate relearning."
+      ],
+      "searchTags": ["subjonctif", "subjunctive", "opinion verbs", "vouloir que", "douter que", "il est important que"]
+    },
+    {
+      "slug": "relatifs-qui-que",
+      "title": "Les pronoms relatifs qui et que",
+      "explanationEn": "Relative pronouns let you combine two sentences by turning one of them into a descriptive clause attached to a noun, avoiding repetition — much like English \"who,\" \"which,\" and \"that.\" French has two basic relative pronouns to master first: qui and que. The choice between them depends entirely on the grammatical role the pronoun plays inside the clause it introduces — not on whether the noun is a person or a thing, which is the trap English speakers fall into (since English \"who\" vs. \"that/which\" splits along person/thing lines instead).\n\nQui is used when the relative pronoun is the subject of the verb that follows it — that is, when it's the one doing the action in the relative clause. La femme qui parle est ma tante (The woman who is speaking is my aunt): qui is the subject of parle. Because qui is a subject, it is immediately followed by a conjugated verb, with nothing in between, and it is never elided (never qu' before a vowel) — you always write qui even before a word starting with a vowel: la personne qui arrive.\n\nQue (which becomes qu' before a vowel sound) is used when the relative pronoun is the direct object of the verb that follows it — that is, when the noun being described is having the action done to it, not doing it. Le livre que je lis est passionnant (The book that I'm reading is fascinating): que is the object of lis (I am reading it — the book). Because que is an object, it's always followed by a subject + verb (a noun or pronoun doing the action), never directly by a conjugated verb on its own. A fast diagnostic: if you can immediately insert a new subject after the relative pronoun and before the verb, you need que; if the verb comes right after the relative pronoun with nothing in between, you need qui.\n\nCritically, in the passé composé, when que refers to a preceding direct object, the past participle must agree in gender and number with that object — this is one of the more advanced agreement rules in French. La pomme que j'ai mangée (the apple that I ate) adds an -e to mangé because pomme is feminine and que stands in for it, appearing before the verb. This agreement never happens with qui, because qui is a subject, not a preceding direct object, so the participle stays in its default form: L'homme qui a mangé la pomme (no agreement, since qui is the subject, not a preceding object).",
+      "examples": [
+        { "fr": "La femme qui parle est ma tante.", "en": "The woman who is speaking is my aunt.", "note": "qui = subject of 'parle'" },
+        { "fr": "Le livre que je lis est passionnant.", "en": "The book that I'm reading is fascinating.", "note": "que = object of 'lis'" },
+        { "fr": "J'ai un ami qui habite à Lyon.", "en": "I have a friend who lives in Lyon.", "note": "qui refers to a person, but that's not why qui is chosen — it's because it's the subject." },
+        { "fr": "Le film que nous avons vu était excellent.", "en": "The movie that we saw was excellent.", "note": "que = object of 'avons vu'" },
+        { "fr": "C'est le stylo qui ne fonctionne plus.", "en": "That's the pen that doesn't work anymore.", "note": "qui refers to a thing — proof that qui isn't only for people." },
+        { "fr": "Voici la maison que mes parents ont achetée.", "en": "Here's the house that my parents bought.", "note": "Past participle agrees with 'maison' (feminine) because que stands in for it as a preceding direct object." },
+        { "fr": "Les élèves qui étudient réussissent souvent.", "en": "Students who study often succeed.", "note": "qui = subject of 'étudient'" },
+        { "fr": "C'est un problème que je ne comprends pas.", "en": "It's a problem that I don't understand.", "note": "que = object of 'comprends'" },
+        { "fr": "Le chat qui dort sur le canapé s'appelle Milo.", "en": "The cat that is sleeping on the couch is named Milo.", "note": "qui = subject of 'dort'" },
+        { "fr": "Les amis que j'ai invités arrivent bientôt.", "en": "The friends that I invited are arriving soon.", "note": "Past participle agrees with 'amis' (masc. plural) → invités" }
+      ],
+      "commonMistakes": [
+        "Choosing qui or que based on whether the noun is a person or a thing, mirroring the English who/which split, instead of checking whether the pronoun is the subject or object of its clause.",
+        "Eliding qui before a vowel (writing 'qu'arrive' instead of 'qui arrive') by wrongly assuming both relative pronouns elide the same way.",
+        "Forgetting past participle agreement when que refers to a preceding feminine or plural direct object (writing 'la maison que mes parents ont acheté' instead of 'achetée').",
+        "Inserting an extra subject pronoun after qui (writing 'la femme qui elle parle' instead of 'la femme qui parle'), treating qui as if it still needed its own subject.",
+        "Using que where qui is required because the clause 'sounds like' it needs an object pronoun, without actually checking whether a verb or a new subject follows."
+      ],
+      "whyItTrips": [
+        "English splits relative pronouns by animacy (who = person, which/that = thing), so English speakers default to that logic instead of the French rule, which splits by grammatical function (subject vs. object) regardless of whether the antecedent is a person or thing.",
+        "The past-participle agreement triggered by a preceding 'que' has no equivalent whatsoever in English, where past participles never change form to match anything, making it a rule that has to be consciously layered on top of already-learned passé composé patterns.",
+        "Both qui and que translate to overlapping English words ('who', 'that', 'which'), so learners can't rely on translation to pick the right one and must instead analyze French sentence structure directly."
+      ],
+      "searchTags": ["relative pronouns", "qui que", "pronoms relatifs", "past participle agreement", "subject object clause"]
+    }
+  ]
+}

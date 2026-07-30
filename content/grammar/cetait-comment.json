@@ -1,0 +1,35 @@
+{
+  "unitSlug": "cetait-comment",
+  "points": [
+    {
+      "slug": "passe-compose-etre",
+      "title": "Le passé composé avec être et les verbes pronominaux",
+      "explanationEn": "In the previous unit you learned that most French verbs form the passé composé with avoir. But a small, specific group of about seventeen verbs — plus all pronominal (reflexive) verbs — use être instead. These are mostly verbs of motion or change of state: aller (to go), venir (to come), arriver (to arrive), partir (to leave), entrer (to enter), sortir (to go out), monter (to go up), descendre (to go down), naître (to be born), mourir (to die), retourner (to return), rester (to stay), tomber (to fall), and passer (to pass by), along with their compounds like revenir, rentrer, devenir. English speakers often memorize them with the acronym DR MRS VANDERTRAMP or DR & MRS P VANDERTRAMP, where each letter stands for one verb. The pattern is otherwise the same as with avoir: subject + être (present tense) + past participle. So elle est arrivée means 'she arrived.'\n\nThe crucial difference with être-verbs is that the past participle must agree in gender and number with the subject, just like an adjective. Add -e for a feminine subject, -s for plural, -es for feminine plural. So: il est allé (he went), elle est allée (she went), ils sont allés (they went, masculine or mixed group), elles sont allées (they went, all-feminine). This agreement is not optional — it's a core rule of être-verb conjugation, and it's often audible in speech (allé vs. allée sound the same, but arrivé vs. arrivée, mort vs. morte, and né vs. née are pronounced differently).\n\nPronominal (reflexive) verbs — verbs used with a reflexive pronoun like me, te, se, nous, vous, se, such as se lever (to get up), se laver (to wash oneself), se coucher (to go to bed), s'habiller (to get dressed), se réveiller (to wake up) — also take être in the passé composé, regardless of whether the verb would normally take avoir or être on its own. The reflexive pronoun goes right before the auxiliary: je me suis levé(e), tu t'es habillé(e), elle s'est réveillée. The past participle of a pronominal verb generally agrees with the subject too, following the same logic as other être-verbs, as long as the reflexive pronoun functions as a direct object — which is the default case for most everyday reflexive verbs like the ones above.\n\nIn the negative, ne...pas wraps around the whole reflexive pronoun + auxiliary unit: elle ne s'est pas levée (she didn't get up) — note that ne comes before the reflexive pronoun se, and pas comes right after the auxiliary. It's worth building a mental habit of checking any new verb against the DR MRS VANDERTRAMP list and asking 'is this reflexive?' before defaulting to avoir, since avoir is the statistically more common auxiliary and it's easy to overapply it out of habit.",
+      "examples": [
+        { "fr": "Elle est arrivée à huit heures.", "en": "She arrived at eight o'clock.", "note": "feminine agreement: arrivée" },
+        { "fr": "Ils sont allés au cinéma hier soir.", "en": "They went to the movies last night.", "note": "masculine plural agreement: allés" },
+        { "fr": "Nous sommes rentrées très tard.", "en": "We came home very late.", "note": "all-female 'nous': rentrées" },
+        { "fr": "Je me suis levé à sept heures.", "en": "I got up at seven o'clock.", "note": "pronominal verb, speaker is male: levé" },
+        { "fr": "Elle s'est habillée avant le petit-déjeuner.", "en": "She got dressed before breakfast.", "note": "pronominal verb, feminine agreement: habillée" },
+        { "fr": "Mon grand-père est né en 1945.", "en": "My grandfather was born in 1945.", "note": "naître → né" },
+        { "fr": "Ils ne se sont pas couchés avant minuit.", "en": "They didn't go to bed before midnight.", "note": "ne...pas surrounds se + auxiliary" },
+        { "fr": "Vous êtes tombée dans l'escalier ?", "en": "Did you fall on the stairs?", "note": "addressing a woman formally: tombée" },
+        { "fr": "Nous sommes restés à la maison tout le week-end.", "en": "We stayed home all weekend." },
+        { "fr": "À quelle heure est-ce que tu t'es réveillé ce matin ?", "en": "What time did you wake up this morning?" }
+      ],
+      "commonMistakes": [
+        "Using avoir instead of être with motion verbs, e.g. saying 'j'ai allé' instead of 'je suis allé'.",
+        "Forgetting past participle agreement entirely, e.g. writing 'elle est allé' instead of 'elle est allée'.",
+        "Placing ne...pas incorrectly around a reflexive verb, e.g. 'je ne suis pas me levé' instead of 'je ne me suis pas levé'.",
+        "Confusing verbs that look similar but take different auxiliaries, like sortir (être, to go out) versus sortir quelque chose (avoir, to take something out) — the auxiliary can change with meaning.",
+        "Applying avoir-style non-agreement habits to pronominal verbs, forgetting that most reflexive verbs also require subject agreement on the participle."
+      ],
+      "whyItTrips": [
+        "English marks neither auxiliary choice (there's only 'have') nor participle agreement, so both features feel like arbitrary extra rules bolted onto a tense English speakers already think they understand from unit one.",
+        "The DR MRS VANDERTRAMP list must simply be memorized — there's no way to derive from meaning alone which verbs belong to this small exception group, which frustrates learners looking for a logical rule.",
+        "Reflexive verbs in English ('I got up', 'she got dressed') don't use a reflexive pronoun at all, so English speakers often forget the pronoun is even part of the French verb, let alone that it triggers être and agreement."
+      ],
+      "searchTags": ["passe-compose", "etre", "vandertramp", "pronominal", "reflexive-verbs", "agreement"]
+    }
+  ]
+}

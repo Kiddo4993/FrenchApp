@@ -1,0 +1,35 @@
+{
+  "unitSlug": "vetements-et-mode",
+  "points": [
+    {
+      "slug": "pronoms-coi",
+      "title": "Les pronoms compléments d'objet indirect (COI)",
+      "explanationEn": "An indirect object is the person (almost always a person, in practice) that a verb's action is directed toward, marked in French by the preposition à — 'to give to someone,' 'to speak to someone,' 'to write to someone.' When that indirect object is a person already known from context, French replaces à + person with an indirect object pronoun (COI, complément d'objet indirect) rather than repeating the full phrase. The indirect object pronouns are: me (to me), te (to you, informal), lui (to him or to her — lui does not distinguish gender), nous (to us), vous (to you, formal/plural), and leur (to them, both genders). Notice that me, te, nous, and vous are identical in form to the direct object pronouns you learned in the previous unit — only the third-person forms differ: lui/leur (indirect) versus le/la/les (direct).\n\nJust like direct object pronouns, indirect object pronouns are placed before the conjugated verb, not after it as in English: je lui parle (I speak to him/her — literally 'I to-him/her speak'), not je parle lui. In two-verb constructions, the pronoun attaches to the infinitive: je vais lui téléphoner (I'm going to call him/her). In the negative, ne comes before the pronoun and pas comes after the conjugated verb: je ne leur écris pas (I don't write to them). In the passé composé, the pronoun goes before the auxiliary: je lui ai parlé (I spoke to him/her) — and importantly, past participles never agree with a preceding indirect object, unlike with direct objects, so ai parlé stays unchanged regardless of gender or number.\n\nThe hardest part of this unit is usually not the pronouns themselves but figuring out which verbs take à + person (and therefore lui/leur) versus which take a direct object (and therefore le/la/les), because English often doesn't preserve the same distinction. Common French verbs that take an indirect object (à quelqu'un) include: parler à (to speak to), téléphoner à (to phone), écrire à (to write to), donner à (to give to), demander à (to ask), répondre à (to answer/respond to), and, importantly for this clothing/shopping unit, plaire à (to please/be pleasing to — used for 'to like' in a flipped construction: ce pull te plaît, literally 'this sweater is pleasing to you,' meaning 'you like this sweater'), and aller à (to suit, as in 'to look good on' someone: cette robe lui va bien — that dress suits her). Compare these with verbs like regarder (to watch), écouter (to listen to), attendre (to wait for), and chercher (to look for), which take a direct object in French even though their English translations include a preposition — these take le/la/les, not lui/leur.\n\nA reliable test: try rephrasing the English sentence using 'to' explicitly before the person — 'I speak to him' works, confirming an indirect object; but 'I watch to him' sounds wrong, because 'watch' takes a direct object even though French learners sometimes assume otherwise. When in doubt, look up the verb's preposition pattern (verbe + à quelqu'un vs. verbe + quelqu'un) rather than translating instinctively from English.",
+      "examples": [
+        { "fr": "Je lui parle tous les jours.", "en": "I talk to him/her every day.", "note": "lui = to him or to her, gender-neutral" },
+        { "fr": "Tu leur as téléphoné ce matin ?", "en": "Did you call them this morning?", "note": "no participle agreement with COI: téléphoné stays unchanged" },
+        { "fr": "Ce manteau te plaît ?", "en": "Do you like this coat?", "note": "literally 'does this coat please you' — plaire à takes COI" },
+        { "fr": "Cette robe lui va très bien.", "en": "That dress suits her/him very well.", "note": "aller à quelqu'un = to suit someone" },
+        { "fr": "Je ne leur écris plus depuis longtemps.", "en": "I haven't written to them in a long time." },
+        { "fr": "Il va nous montrer les nouvelles chaussures.", "en": "He's going to show us the new shoes." },
+        { "fr": "Réponds-moi vite, s'il te plaît !", "en": "Answer me quickly, please!", "note": "imperative: pronoun after the verb, attached with a hyphen" },
+        { "fr": "Elle m'a donné son avis sur ce chapeau.", "en": "She gave me her opinion on this hat." },
+        { "fr": "Je lui ai demandé le prix de la veste.", "en": "I asked him/her the price of the jacket." },
+        { "fr": "Vous leur avez expliqué le problème ?", "en": "Did you explain the problem to them?" }
+      ],
+      "commonMistakes": [
+        "Using le/la/les instead of lui/leur for verbs that actually take à + person in French, e.g. saying 'je le téléphone' instead of 'je lui téléphone'.",
+        "Placing the pronoun after the verb as in English, e.g. 'je parle lui' instead of 'je lui parle'.",
+        "Wrongly applying past participle agreement to a preceding indirect object, e.g. writing 'je lui ai parlée' — agreement never happens with lui/leur.",
+        "Confusing lui (indirect, 'to him/her') with lui as a stressed pronoun (used after prepositions like avec lui, pour lui) — same spelling, different grammatical role.",
+        "Translating 'plaire à' backwards, treating the person as the subject instead of the thing being liked, e.g. trying to say 'j'aime lui' instead of the correct COI construction 'il me plaît'."
+      ],
+      "whyItTrips": [
+        "English doesn't preserve a clean to-preposition distinction in daily usage — 'call him', 'ask him', 'answer him' all look like direct objects in English even though their French equivalents (téléphoner à, demander à, répondre à) require indirect object pronouns.",
+        "Because me/te/nous/vous are identical between COD and COI, English speakers can get through much of a conversation without noticing the distinction even exists — until the third person (lui/leur vs. le/la/les) forces the issue.",
+        "The plaire-à construction for 'to like' reverses the subject and object compared to English ('I like the coat' vs. 'the coat pleases me'), which requires actively unlearning an English sentence structure rather than just adding new vocabulary."
+      ],
+      "searchTags": ["pronoms-coi", "indirect-object-pronoun", "lui-leur", "plaire", "cod-vs-coi", "verb-prepositions"]
+    }
+  ]
+}

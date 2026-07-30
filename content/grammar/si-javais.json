@@ -1,0 +1,35 @@
+{
+  "unitSlug": "si-javais",
+  "points": [
+    {
+      "slug": "conditionnel-present",
+      "title": "Le conditionnel présent",
+      "explanationEn": "The conditionnel présent is the French tense used for polite requests, hypothetical situations, advice, and things that would happen under certain conditions — it corresponds closely to English \"would + verb\" (I would like, she would go, we would need). The good news is that once you know the futur simple, you already know almost everything you need: the conditionnel présent uses the exact same stem as the futur simple, but adds the endings of the imparfait instead (-ais, -ais, -ait, -ions, -iez, -aient). So the formula is: future stem + imparfait endings.\n\nBecause the stem is identical to the future, every irregular future stem you learned carries over directly: être → ser- gives je serais, avoir → aur- gives j'aurais, aller → ir- gives j'irais, faire → fer- gives je ferais, pouvoir → pourr- gives je pourrais, vouloir → voudr- gives je voudrais, and so on. The only thing that changes between futur simple and conditionnel présent is the ending — compare je parlerai (I will speak) with je parlerais (I would speak). This near-identical spelling (-ai vs -ais, both often pronounced similarly) is exactly why English speakers frequently mix the two tenses up in writing, even though the underlying logic is simple once you see the pattern.\n\nThe conditionnel présent has three main jobs. First, it softens requests and makes speech more polite — je voudrais (I would like) instead of the blunter je veux (I want), or pourriez-vous...? (could you...?) instead of the more direct pouvez-vous...?. This is the single most common use in everyday conversation. Second, it expresses hypothetical outcomes, almost always paired with a si-clause in the imparfait: si + imparfait, ... conditionnel présent. For example, Si j'avais plus d'argent, je voyagerais davantage (If I had more money, I would travel more). Notice that the si-clause itself is never in the conditionnel — only the result clause is. Third, it's used to give advice, often with the verb devoir: tu devrais dormir plus (you should sleep more) — devoir in the conditionnel softens a command into a suggestion, much like English \"should\" softens \"must.\"\n\nA key structural rule: in a si + imparfait / conditionnel sentence, the two halves can appear in either order (Je voyagerais si j'avais plus d'argent works just as well), but the imparfait always stays in the si-clause and the conditionnel always stays in the result clause — French never puts the conditionnel inside the si-clause itself, even though English sometimes tempts learners to do so (\"if I would have money\" is nonstandard in English too, but the instinct to write \"si je voudrais\" is a very common learner error).",
+      "examples": [
+        { "fr": "Je voudrais un café, s'il vous plaît.", "en": "I would like a coffee, please.", "note": "Politeness use — softer than 'je veux'." },
+        { "fr": "Pourriez-vous m'aider ?", "en": "Could you help me?", "note": "Polite request, softer than 'pouvez-vous'." },
+        { "fr": "Si j'avais plus de temps, je lirais davantage.", "en": "If I had more time, I would read more.", "note": "si + imparfait, ... + conditionnel" },
+        { "fr": "Tu devrais te reposer un peu.", "en": "You should rest a little.", "note": "Advice with devoir in the conditionnel." },
+        { "fr": "Nous serions ravis de vous accueillir.", "en": "We would be delighted to welcome you.", "note": "Irregular stem: être → ser-" },
+        { "fr": "Si elle savait la vérité, elle serait furieuse.", "en": "If she knew the truth, she would be furious." },
+        { "fr": "J'aimerais visiter le Japon un jour.", "en": "I would like to visit Japan someday." },
+        { "fr": "Que ferais-tu à ma place ?", "en": "What would you do in my place?", "note": "Irregular stem: faire → fer-" },
+        { "fr": "Il pourrait pleuvoir demain.", "en": "It might rain tomorrow.", "note": "Conditionnel expressing possibility/uncertainty." },
+        { "fr": "Vous devriez consulter un médecin.", "en": "You should see a doctor.", "note": "Advice, formal 'vous'." }
+      ],
+      "commonMistakes": [
+        "Using the conditionnel inside the si-clause instead of the imparfait (writing 'si je voudrais' instead of 'si je voulais').",
+        "Confusing the futur simple and conditionnel présent endings because they look and sound similar (writing 'je parlerai' when 'je parlerais' — would speak — was meant).",
+        "Applying regular endings to irregular stems (writing 'je allerais' instead of 'j'irais', or 'je voulerais' instead of 'je voudrais').",
+        "Using 'je veux' where politeness calls for 'je voudrais', which can sound abrupt or rude in French service contexts.",
+        "Forgetting that the conditionnel can express uncertainty/rumor (il serait malade = he is reportedly sick), a use with no direct English equivalent."
+      ],
+      "whyItTrips": [
+        "The written difference between futur simple and conditionnel présent is a single letter (-ai vs -ais), and in fast speech the two can sound nearly identical, so writing errors are extremely common even among otherwise strong learners.",
+        "English speakers instinctively want to put 'would' in both halves of a hypothetical sentence ('if I would have time, I would read more'), which directly produces the classic error of putting the conditionnel in the si-clause.",
+        "Because the conditionnel reuses the irregular future stems, any gaps in memorizing those stems (ser-, aur-, ir-, fer-, voudr-...) show up twice — once in the future, once in the conditional."
+      ],
+      "searchTags": ["conditionnel present", "conditional tense", "si clauses", "polite requests", "devrais", "hypotheticals"]
+    }
+  ]
+}

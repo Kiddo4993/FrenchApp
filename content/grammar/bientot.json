@@ -1,0 +1,35 @@
+{
+  "unitSlug": "bientot",
+  "points": [
+    {
+      "slug": "futur-proche",
+      "title": "Le futur proche",
+      "explanationEn": "The futur proche (near future) is the way French most commonly talks about plans and things that are going to happen — it's used far more often in everyday speech than the futur simple (the 'proper' future tense with endings like -ai, -as, -a). The structure is simple and mirrors an English pattern you already know: subject + aller (conjugated in the present) + infinitive. It works exactly like the English 'going to' future: je vais manger literally means 'I am going to eat.' Because the pattern is so close to English, this is one of the more approachable grammar points in French — but the details still need care.\n\nTo build it, first conjugate aller in the present tense: je vais, tu vas, il/elle/on va, nous allons, vous allez, ils/elles vont. Then simply add the infinitive (unconjugated) form of whatever verb describes the action: je vais partir (I'm going to leave), tu vas voir (you're going to see), nous allons manger (we're going to eat), ils vont arriver bientôt (they're going to arrive soon). The second verb never changes form — it stays in the infinitive no matter who the subject is, which is different from English where 'going to' can precede different verb forms depending on structure.\n\nIn the negative, ne...pas wraps around the conjugated form of aller only, not the infinitive: je ne vais pas partir (I'm not going to leave), elle ne va pas venir (she's not going to come). This is the same pattern as negating any conjugated verb with a following infinitive — ne comes before aller, pas comes right after it, and the infinitive stays untouched at the end.\n\nThe futur proche is used for plans, intentions, and events felt to be imminent or certain — anything from 'I'm going to call you tomorrow' to 'it's going to rain' (il va pleuvoir). It contrasts with the futur simple, which tends to sound a bit more formal, distant, or used for predictions and promises further in the future (though in casual spoken French, futur proche has largely taken over for most everyday future statements, even ones that aren't especially 'near'). When combined with time expressions like bientôt (soon), demain (tomorrow), la semaine prochaine (next week), or ce soir (tonight), the futur proche clearly signals that something is planned or expected. Note also that with pronominal verbs, the reflexive pronoun moves to agree with the subject and sits right before the infinitive: je vais me lever tôt (I'm going to get up early), not je vais se lever.",
+      "examples": [
+        { "fr": "Je vais manger avec des amis ce soir.", "en": "I'm going to eat with friends tonight." },
+        { "fr": "Tu vas voir ce nouveau film ?", "en": "Are you going to see that new movie?" },
+        { "fr": "Nous allons visiter Paris l'année prochaine.", "en": "We're going to visit Paris next year." },
+        { "fr": "Il va pleuvoir demain, je pense.", "en": "It's going to rain tomorrow, I think.", "note": "impersonal 'il' with weather" },
+        { "fr": "Elles vont arriver bientôt.", "en": "They're going to arrive soon." },
+        { "fr": "Je ne vais pas sortir ce week-end.", "en": "I'm not going to go out this weekend.", "note": "ne...pas surrounds aller, not the infinitive" },
+        { "fr": "Vous allez commencer un nouveau travail lundi ?", "en": "Are you going to start a new job on Monday?" },
+        { "fr": "Je vais me coucher tôt ce soir.", "en": "I'm going to go to bed early tonight.", "note": "reflexive pronoun agrees with subject: me" },
+        { "fr": "Qu'est-ce que tu vas faire pendant les vacances ?", "en": "What are you going to do during the vacation?" },
+        { "fr": "Ils vont déménager le mois prochain.", "en": "They're going to move next month." }
+      ],
+      "commonMistakes": [
+        "Conjugating the second verb instead of leaving it in the infinitive, e.g. writing 'je vais mange' instead of 'je vais manger'.",
+        "Placing ne...pas around the whole expression instead of just around aller, e.g. 'je ne vais manger pas' instead of 'je ne vais pas manger'.",
+        "Forgetting to shift the reflexive pronoun to match the subject with pronominal verbs, e.g. saying 'je vais se lever' instead of 'je vais me lever'.",
+        "Confusing aller (to go, used as the auxiliary here) with the main verb meaning 'to go somewhere' in the same sentence, leading to redundant or confusing constructions.",
+        "Overusing futur simple out of a belief it's more 'correct', when futur proche is actually the standard choice in spoken French for plans and near-certain future events."
+      ],
+      "whyItTrips": [
+        "Although the structure closely mirrors English 'going to', English speakers still sometimes conjugate the second verb out of habit from other French tenses where the second element does change form.",
+        "The reflexive pronoun agreement rule with pronominal verbs (je vais me lever, not je vais se lever) is easy to forget because in English there's no pronoun sitting between 'going to' and the verb at all.",
+        "Because French also has a distinct futur simple taught around the same level, learners sometimes feel unsure which one is 'the real future' and second-guess a construction that is actually the more natural, more frequent choice in conversation."
+      ],
+      "searchTags": ["futur-proche", "near-future", "aller-infinitif", "plans", "future-tense"]
+    }
+  ]
+}

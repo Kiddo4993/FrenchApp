@@ -1,0 +1,34 @@
+{
+  "unitSlug": "premiers-pas",
+  "points": [
+    {
+      "slug": "present-etre",
+      "title": "Le verbe être au présent",
+      "explanationEn": "Être ('to be') is the single most important verb in French, and unfortunately it is also completely irregular — you cannot predict its forms from the infinitive the way you can with regular verbs. You simply have to memorize all six forms: je suis, tu es, il/elle/on est, nous sommes, vous êtes, ils/elles sont. Say them out loud until they feel automatic, because you will use être constantly: to say who you are, what you're like, your profession, your nationality, and (unlike English) sometimes where you are located in casual speech.\n\nOne key structural difference from English: French verbs change their spelling and pronunciation for almost every person (je suis vs. tu es vs. nous sommes), whereas English 'to be' only really changes for third person singular in most tenses ('I am, you are, he is, we are' — only 'is' looks different, and even that pattern breaks down elsewhere). This means you cannot lean on a single memorized form and just swap the pronoun; each pronoun genuinely demands its own verb form.\n\nFrench also has two ways to say 'you': tu (informal, singular, used with friends, family, children, peers) and vous (formal, or plural — used with strangers, elders, authority figures, or any group of two or more people regardless of formality). Choosing correctly matters socially in a way that has no real equivalent in modern English, where 'you' covers everybody. When introducing yourself for the first time to an adult you don't know, default to vous.\n\nFinally, notice that on is grammatically a third-person singular pronoun (it takes the same verb form as il/elle: on est) but it is used constantly in spoken French to mean 'we' (replacing nous) or generically 'one/people'. Learning early that on always pairs with the il/elle form of a verb will save you from a very common beginner error.",
+      "examples": [
+        { "fr": "Je suis étudiant.", "en": "I am a student.", "note": "No article before the profession, unlike English 'a student'." },
+        { "fr": "Tu es français ?", "en": "Are you French?", "note": "Informal 'you'; rising intonation turns a statement into a question." },
+        { "fr": "Il est fatigué aujourd'hui.", "en": "He is tired today." },
+        { "fr": "Elle est professeure de musique.", "en": "She is a music teacher." },
+        { "fr": "Nous sommes à Paris.", "en": "We are in Paris." },
+        { "fr": "Vous êtes très gentil.", "en": "You are very kind.", "note": "Formal 'you', singular." },
+        { "fr": "Ils sont canadiens.", "en": "They are Canadian.", "note": "Masculine plural adjective form." },
+        { "fr": "On est prêts ?", "en": "Are we ready?", "note": "'On' = 'we' in casual speech, but still takes the il/elle verb form 'est'." },
+        { "fr": "Je suis désolé, je suis en retard.", "en": "I'm sorry, I'm late." }
+      ],
+      "commonMistakes": [
+        "Using 'il/elle' verb forms after 'nous' or 'vous' (writing 'nous est' instead of 'nous sommes') because English doesn't require this kind of agreement.",
+        "Forgetting that 'on' takes the same verb form as il/elle ('on sommes' instead of the correct 'on est').",
+        "Adding an article before a profession or nationality after être, e.g. saying 'Je suis un étudiant' when unmodified nouns of profession/nationality drop the article: 'Je suis étudiant.'",
+        "Mixing up tu and vous, especially defaulting to tu with adults you've just met.",
+        "Mispronouncing 'sommes' and 'êtes' by trying to read them the way they're spelled in English phonics rather than following French vowel sounds."
+      ],
+      "whyItTrips": [
+        "English 'to be' barely changes shape across persons (am/are/are/is/are/are), so English speakers aren't used to verbs having six genuinely different forms to memorize.",
+        "English has only one word for 'you', so the tu/vous social distinction doesn't map onto any instinct English speakers already have.",
+        "English always requires an article before a profession ('I am a teacher'), so dropping it after être feels wrong even though it's correct in French."
+      ],
+      "searchTags": ["etre", "present tense", "irregular verb", "tu vs vous", "subject pronouns", "on"]
+    }
+  ]
+}

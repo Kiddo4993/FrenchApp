@@ -1,0 +1,35 @@
+{
+  "unitSlug": "il-faut-que",
+  "points": [
+    {
+      "slug": "subjonctif-present-introduction",
+      "title": "Le subjonctif présent (introduction)",
+      "explanationEn": "The subjonctif présent is a verb mood — not a tense — that French uses after certain triggering expressions to show that what follows is not a plain fact but something wished for, required, doubted, or emotionally colored. This unit introduces it through its single most common trigger: il faut que (it is necessary that / one must), which is how French expresses obligation when a specific subject is doing the action, as opposed to the impersonal il faut + infinitive.\n\nTo form the subjonctif présent for most verbs, start from the ils/elles form of the present indicative, drop the -ent ending, and you get the subjunctive stem. Then add the endings -e, -es, -e, -ions, -iez, -ent. For example, parler → ils parlent → parl- → que je parle, que tu parles, que nous parlions. Note that for je, tu, il/elle, and ils/elles, the singular/plural-3rd-person subjunctive endings (-e, -es, -e, -ent) often sound identical to the present indicative, so the spelling and the que in front are usually your main clues that you're in the subjunctive.\n\nThe nous and vous forms are the one place regular verbs behave differently: instead of using the ils-stem, they borrow the stem from the imparfait (which is the same as the nous form of the present indicative). For example, boire → ils boivent gives que je boive, but nous/vous use the imparfait-style stem buv-: que nous buvions, que vous buviez. This split-stem pattern (one stem for je/tu/il/ils, a different one for nous/vous) appears in many verbs with stem changes: prendre (je prenne / nous prenions), venir (je vienne / nous venions), devoir (je doive / nous devions). A handful of very frequent verbs are fully irregular and must be memorized outright: être (que je sois, que nous soyons), avoir (que j'aie, que nous ayons), aller (que j'aille, que nous allions), faire (que je fasse, que nous fassions), pouvoir (que je puisse — no stem change at all), savoir (que je sache), and vouloir (que je veuille, que nous voulions).\n\nIl faut que is always followed by que + a new subject + the verb in the subjunctive: Il faut que tu finisses tes devoirs (You have to finish your homework). This contrasts with il faut + infinitive, which is used when there is no specific subject, i.e. a general obligation: Il faut finir ce travail (One must finish this work / This work needs to be finished). Other necessity expressions work the same way: il est nécessaire que, il est important que, il vaut mieux que (it's better that) — anytime a clause expresses that something must or should happen for a particular person, que + subjonctif follows.",
+      "examples": [
+        { "fr": "Il faut que tu finisses tes devoirs avant le dîner.", "en": "You have to finish your homework before dinner." },
+        { "fr": "Il faut que je parte maintenant.", "en": "I have to leave now." },
+        { "fr": "Il faut que nous soyons à l'heure.", "en": "We have to be on time.", "note": "Irregular: être → que nous soyons" },
+        { "fr": "Il faut qu'elle prenne une décision.", "en": "She has to make a decision.", "note": "Stem change: je/elle use prenn-, nous/vous use pren-" },
+        { "fr": "Il faut que vous ayez votre passeport.", "en": "You need to have your passport.", "note": "Irregular: avoir → que vous ayez" },
+        { "fr": "Il faut que nous fassions attention.", "en": "We need to be careful.", "note": "Irregular: faire → que nous fassions" },
+        { "fr": "Il faut finir ce travail avant vendredi.", "en": "This work needs to be finished before Friday.", "note": "Impersonal il faut + infinitive — no specific subject, no subjunctive." },
+        { "fr": "Il faut qu'ils aillent chez le médecin.", "en": "They need to go to the doctor.", "note": "Irregular: aller → que ils aillent" },
+        { "fr": "Il est important que tu comprennes cette règle.", "en": "It's important that you understand this rule.", "note": "Another necessity trigger, same pattern as il faut que." },
+        { "fr": "Il faut que je sache la vérité.", "en": "I need to know the truth.", "note": "Irregular: savoir → que je sache" }
+      ],
+      "commonMistakes": [
+        "Using the infinitive after 'il faut que' instead of conjugating the verb in the subjunctive (writing 'il faut que je partir' instead of 'il faut que je parte').",
+        "Forgetting 'que' after il faut when a specific subject follows (writing 'il faut je parte' instead of 'il faut que je parte').",
+        "Using the ils-stem for nous/vous forms of stem-changing verbs (writing 'que nous prenions' correctly by luck, but writing 'que nous buvent' or similar by wrongly copying the je-form stem).",
+        "Confusing 'il faut que + subjunctive' (specific person) with 'il faut + infinitive' (general obligation), and using one where the other belongs.",
+        "Treating subjunctive endings as optional or interchangeable with the present indicative since they often sound the same when spoken."
+      ],
+      "whyItTrips": [
+        "English has no everyday equivalent mood — English speakers express obligation with modal verbs ('must', 'have to') rather than by changing the form of the following verb, so the whole idea of a 'mood trigger' requiring a different verb form feels foreign.",
+        "The two-stem system (one stem for je/tu/il/ils, another for nous/vous) has no parallel in English conjugation and must be learned as a distinct pattern rather than deduced from logic.",
+        "Many subjunctive forms are pronounced identically to the present indicative, so learners can't rely on their ear the way they can for more audibly distinct tenses like the passé composé or futur simple."
+      ],
+      "searchTags": ["subjonctif present", "subjunctive", "il faut que", "obligation", "necessity", "mood"]
+    }
+  ]
+}

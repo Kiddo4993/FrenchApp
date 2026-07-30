@@ -1,0 +1,34 @@
+{
+  "unitSlug": "le-plus-que-parfait",
+  "points": [
+    {
+      "slug": "plus-que-parfait",
+      "title": "Le plus-que-parfait",
+      "explanationEn": "The plus-que-parfait ('pluperfect' or 'past perfect') is the tense you reach for when you need to talk about a past event that happened before another past event — the 'past of the past'. In English this is the job of 'had + past participle': 'I had already eaten when she arrived.' French builds it the same way structurally: you take the imparfait of the auxiliary verb (avoir or être — whichever the verb normally takes in the passé composé) and add the past participle. So manger gives j'avais mangé, and aller (an être verb) gives j'étais allé(e). All the usual passé composé rules about which auxiliary to use, and about past-participle agreement with être verbs and with preceding direct objects, carry over unchanged — the only thing that's different is that the auxiliary itself is now in the imparfait instead of the présent.\n\nThe core use is sequencing two past events. Whenever you have a French sentence with two clauses both referring to the past, and one action clearly finished before the other started, the earlier action normally goes in the plus-que-parfait and the later one in the passé composé or imparfait: 'Quand je suis arrivé, elle était déjà partie' (When I arrived, she had already left). English speakers often get lazy here and put both verbs in the simple past ('when I arrived, she left'), which technically implies she left right at the moment of your arrival rather than before it. French is much stricter about marking this distinction explicitly, so leaning on the passé composé for both clauses is a real error, not just a stylistic weakness.\n\nA second major use is reported speech (discours indirect) that looks back at a completed action. If someone said 'J'ai fini' (I finished) and you report this later, the reporting verb pulls the tense back one step: 'Il a dit qu'il avait fini' (He said that he had finished). This is the same 'backshift' that happens in English reported speech, so the logic will feel familiar even though you have to actively conjugate a new tense to execute it.\n\nFinally, the plus-que-parfait is essential in the 'unreal past' conditional structure: si + plus-que-parfait in the if-clause, paired with the conditionnel passé in the result clause, expresses a hypothetical that did NOT happen: 'Si j'avais su, je serais venu' (If I had known, I would have come — but I didn't know, so I didn't come). Do not confuse this with 'si + imparfait' (which expresses a present/future hypothetical, 'si j'avais de l'argent, j'achèterais...') — the tense in the si-clause is what signals which kind of hypothetical you mean, and swapping imparfait for plus-que-parfait (or vice versa) changes the meaning of the whole sentence.",
+      "examples": [
+        { "fr": "Quand je suis arrivé, le film avait déjà commencé.", "en": "When I arrived, the film had already started.", "note": "The film starting happened before the arrival, hence plus-que-parfait." },
+        { "fr": "Elle m'a dit qu'elle avait déjà mangé.", "en": "She told me she had already eaten.", "note": "Reported speech: the original 'j'ai mangé' shifts back to 'avait mangé'." },
+        { "fr": "Si j'avais su que tu venais, j'aurais préparé le dîner.", "en": "If I had known you were coming, I would have made dinner.", "note": "Unreal past conditional: si + plus-que-parfait, result in conditionnel passé." },
+        { "fr": "Nous avions déjà réservé les billets quand le prix a augmenté.", "en": "We had already booked the tickets when the price went up." },
+        { "fr": "Il n'était jamais allé en France avant ce voyage.", "en": "He had never been to France before this trip.", "note": "Être verb: past participle agrees with the subject (il → allé)." },
+        { "fr": "Une fois qu'elle avait fini ses devoirs, elle regardait la télé.", "en": "Once she had finished her homework, she would watch TV.", "note": "Habitual past sequence: plus-que-parfait for the completed step, imparfait for the habitual result." },
+        { "fr": "Les enfants s'étaient déjà couchés quand nous sommes rentrés.", "en": "The children had already gone to bed when we got home.", "note": "Pronominal verb: être + agreement with the reflexive subject." },
+        { "fr": "Si vous m'aviez appelé plus tôt, j'aurais pu vous aider.", "en": "If you had called me earlier, I could have helped you." },
+        { "fr": "Je ne savais pas qu'il avait perdu son travail.", "en": "I didn't know that he had lost his job." }
+      ],
+      "commonMistakes": [
+        "Using passé composé for both events in a two-past-event sentence instead of pushing the earlier one back to plus-que-parfait ('Quand je suis arrivé, elle est partie' instead of 'elle était partie').",
+        "Pairing si + plus-que-parfait with a conditionnel présent instead of a conditionnel passé in the result clause ('si j'avais su, je viendrais' instead of 'je serais venu').",
+        "Forgetting to shift the auxiliary itself into the imparfait, and instead just adding 'déjà' to a passé composé to try to signal 'earlier-ness'.",
+        "Choosing the wrong auxiliary (avoir vs être) exactly as in the passé composé, since the plus-que-parfait inherits the same auxiliary-choice rules.",
+        "Confusing si + imparfait (hypothetical about now/future) with si + plus-que-parfait (hypothetical about a past that didn't happen), producing a sentence with the wrong time reference."
+      ],
+      "whyItTrips": [
+        "English speakers routinely collapse 'had done' into a simple past in casual speech ('when I arrived, she left'), so the instinct to mark the earlier event distinctly doesn't transfer automatically to French, where the distinction is grammatically required.",
+        "The auxiliary-choice and agreement rules from the passé composé (avoir vs être, agreement with être and with preceding direct objects) all still apply here, so any shakiness with passé composé mechanics compounds into the plus-que-parfait.",
+        "The three-tense conditional system (si + imparfait / si + plus-que-parfait, each with its own matching result tense) has no direct one-to-one mapping in English, where 'had' and 'would have' don't always line up as cleanly with a single 'if'-tense rule."
+      ],
+      "searchTags": ["plus-que-parfait", "past perfect", "pluperfect", "si clauses", "reported speech", "sequence of tenses"]
+    }
+  ]
+}

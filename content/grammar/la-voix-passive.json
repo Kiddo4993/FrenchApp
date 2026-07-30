@@ -1,0 +1,35 @@
+{
+  "unitSlug": "la-voix-passive",
+  "points": [
+    {
+      "slug": "voix-passive",
+      "title": "La voix passive",
+      "explanationEn": "The passive voice (la voix passive) flips the usual subject-does-the-action pattern so that the subject instead receives the action: 'Le chat mange la souris' (active: the cat eats the mouse) becomes 'La souris est mangée par le chat' (passive: the mouse is eaten by the cat). French forms the passive exactly the way English does structurally — a form of être ('to be') plus the past participle of the main verb — but French is far stricter about one thing English speakers routinely ignore: the past participle must agree in gender and number with the subject, because grammatically it is functioning like an adjective attached to être. 'Les lettres ont été envoyées' (the letters were sent) needs the feminine plural -es on envoyées because lettres is feminine plural; get the agreement wrong and a fluent reader notices immediately.\n\nTense in the passive is carried entirely by être, not by the participle: 'la souris est mangée' (present passive), 'la souris a été mangée' (passé composé passive), 'la souris sera mangée' (future passive), 'la souris était mangée' (imparfait passive). This means a French passive sentence often needs two conjugated pieces where English needs three ('the letters had been sent' → 'les lettres avaient été envoyées' — été itself never changes, only the auxiliary avoir/être in front of it moves through tenses). When you do want to name who performed the action, French introduces the agent with par ('by'): 'La ville a été fondée par les Romains' (The city was founded by the Romans). With verbs describing a more permanent or gradual state rather than a single discrete action — verbs like aimer, respecter, connaître, couvrir — French sometimes prefers de instead of par for the agent: 'Il est respecté de tous' (He is respected by everyone).\n\nHere is the point that most trips up English speakers: French uses the passive far less often than English does. Spoken and even a good deal of written French strongly prefers on + active verb, or occasionally a pronominal (reflexive) verb, to express the same idea that English would put in the passive. 'On m'a volé mon vélo' is vastly more natural and more common than the grammatically correct but stiffer 'Mon vélo a été volé' — both are acceptable, but a native speaker reaches for on first, especially in conversation. Similarly, 'Ça se dit comment en français ?' (How is that said in French?) uses a pronominal verb (se dire) rather than a passive construction, because pronominal verbs are the idiomatic French way to express a generic, agentless passive meaning, particularly for habitual or general truths ('Le vin blanc se boit frais' — white wine is drunk chilled).\n\nAs a rule of thumb for B2 writing: reserve the true passive (être + past participle) for formal registers — news reporting, official documents, academic writing — especially when the agent is important, unknown, or deliberately left out ('Le suspect a été arrêté hier soir'). In everyday narration and conversation, actively look for a way to rephrase with on or a pronominal verb instead of translating an English passive word-for-word; doing so is one of the clearest markers of natural, idiomatic French versus a sentence that has clearly been translated from English.",
+      "examples": [
+        { "fr": "La lettre a été envoyée hier.", "en": "The letter was sent yesterday.", "note": "Feminine agreement: envoyée, not envoyé." },
+        { "fr": "Ce roman a été traduit en douze langues.", "en": "This novel has been translated into twelve languages." },
+        { "fr": "Les décisions seront annoncées la semaine prochaine.", "en": "The decisions will be announced next week.", "note": "Future passive: sera/seront + past participle." },
+        { "fr": "Le pont a été construit par des ingénieurs romains.", "en": "The bridge was built by Roman engineers.", "note": "Agent introduced with 'par'." },
+        { "fr": "Il est très admiré de ses collègues.", "en": "He is very much admired by his colleagues.", "note": "'De' rather than 'par' for a state-like verb (admirer)." },
+        { "fr": "On m'a volé mon portefeuille dans le métro.", "en": "My wallet was stolen from me in the metro.", "note": "On + active is far more natural here than a passive construction." },
+        { "fr": "Ce plat se prépare en vingt minutes.", "en": "This dish is prepared in twenty minutes.", "note": "Pronominal verb used for a general/habitual passive meaning." },
+        { "fr": "Le nouveau musée sera inauguré par le maire en juin.", "en": "The new museum will be inaugurated by the mayor in June." },
+        { "fr": "Les résultats n'ont pas encore été publiés.", "en": "The results have not been published yet.", "note": "Passé composé passive: n'ont pas été + past participle." },
+        { "fr": "Comment ce mot se prononce-t-il ?", "en": "How is this word pronounced?", "note": "Pronominal used instead of a passive for a general rule." }
+      ],
+      "commonMistakes": [
+        "Forgetting past-participle agreement with the subject in a passive sentence, e.g. writing 'la maison a été vendu' instead of 'vendue'.",
+        "Translating every English passive sentence word-for-word with être + past participle instead of recognizing when on + active or a pronominal verb sounds more natural in French.",
+        "Using 'par' as the all-purpose word for 'by' with the agent even when a state verb (aimé, connu, respecté, entouré) would more naturally take 'de'.",
+        "Conjugating only the past participle for tense instead of moving the auxiliary être through the tenses (trying 'la lettre est envoyé hier' instead of 'a été envoyée').",
+        "Overusing the passive in spoken French, which sounds noticeably formal and stilted compared to how a native speaker would phrase the same idea conversationally."
+      ],
+      "whyItTrips": [
+        "English uses the passive voice constantly and neutrally in both speech and writing, so English speakers don't have an instinct that French treats it as a comparatively formal, written-register choice.",
+        "English past participles never change form for gender or number, so remembering to agree the participle with the subject in a passive sentence requires a habit English grammar never builds.",
+        "The idiomatic French alternatives to the passive — on + active verb, and pronominal verbs used with a generic/passive sense — don't correspond to any single English structure, so learners tend not to reach for them even after learning the true passive."
+      ],
+      "searchTags": ["voix passive", "passive voice", "etre plus participle", "par vs de", "on construction", "pronominal passive"]
+    }
+  ]
+}

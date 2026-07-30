@@ -1,0 +1,34 @@
+{
+  "unitSlug": "subjonctif-passe",
+  "points": [
+    {
+      "slug": "subjonctif-passe",
+      "title": "Le subjonctif passé",
+      "explanationEn": "The subjonctif passé ('past subjunctive') exists for one specific job: expressing that an action governed by a subjunctive trigger is already completed, rather than ongoing or future. If you already know the subjonctif présent, the leap here is small in form but important in meaning. You form it by conjugating the auxiliary (avoir or être, chosen exactly as for the passé composé) in the subjonctif présent, then adding the past participle: que j'aie mangé, que je sois parti(e), qu'il ait fini, qu'elle soit venue. Past-participle agreement with être verbs and with preceding direct objects works exactly as it does everywhere else.\n\nThe key conceptual point is that French subjunctive tenses do not encode absolute time (past/present/future) the way indicative tenses do — they encode relative time with respect to the main clause. The subjonctif présent is used whenever the subordinate action is simultaneous with or later than the moment of the main verb, regardless of whether the main verb itself is in the present, past, or future. The subjonctif passé is used whenever the subordinate action happened before the moment of the main verb. Compare: 'Je suis content qu'elle vienne' (I'm glad she's coming — happening now/later) versus 'Je suis content qu'elle soit venue' (I'm glad she came — already happened). Both sentences have a main verb in the present, but the subordinate tense flips depending on whether the event is complete.\n\nThis matters constantly with expressions of doubt, emotion, necessity, and opinion that trigger the subjunctive: douter que, être content/désolé/surpris que, il est possible que, bien que, quoique, and so on. Whenever the content of the que-clause describes something that has already happened relative to when you're speaking or relative to the main verb, you must reach for the subjonctif passé — using the subjonctif présent there is a genuine tense error, not just a stylistic slip, because it misrepresents the completion status of the action.\n\nA useful mental shortcut: ask whether you could rephrase the subordinate idea in English with 'have done' / 'has done' / 'had done' rather than a simple present or future form. 'I doubt that he has finished' → 'Je doute qu'il ait fini.' 'I'm surprised you came' → 'Je suis surpris que tu sois venu.' If the English naturally uses a perfect construction, French almost always wants the subjonctif passé.",
+      "examples": [
+        { "fr": "Je suis content que tu sois venu à la fête.", "en": "I'm glad you came to the party.", "note": "The coming already happened, so subjonctif passé, not présent." },
+        { "fr": "Il est possible qu'elle ait oublié notre rendez-vous.", "en": "It's possible that she forgot our appointment." },
+        { "fr": "Je doute qu'ils aient fini le rapport avant la réunion.", "en": "I doubt they finished the report before the meeting." },
+        { "fr": "Bien qu'il ait beaucoup travaillé, il n'a pas réussi l'examen.", "en": "Although he worked a lot, he didn't pass the exam.", "note": "Bien que + subjonctif passé for a completed prior action." },
+        { "fr": "Je suis surprise que vous ayez déjà terminé.", "en": "I'm surprised you've already finished." },
+        { "fr": "C'est dommage qu'elle ne soit pas restée plus longtemps.", "en": "It's a shame she didn't stay longer." },
+        { "fr": "Nous sommes ravis que vous ayez apprécié le spectacle.", "en": "We're delighted that you enjoyed the show." },
+        { "fr": "Je ne pense pas qu'il se soit trompé.", "en": "I don't think he made a mistake.", "note": "Pronominal verb: être auxiliary with reflexive agreement." },
+        { "fr": "Quoique nous ayons averti les voisins, ils se sont plaints du bruit.", "en": "Although we had warned the neighbors, they complained about the noise." }
+      ],
+      "commonMistakes": [
+        "Defaulting to the subjonctif présent for a completed action ('je suis content qu'elle vienne' when the visit already happened) instead of switching to subjonctif passé.",
+        "Getting the auxiliary or agreement wrong inside the subjunctive form, e.g. writing 'qu'elle ait venue' instead of 'qu'elle soit venue'.",
+        "Assuming the subjunctive only exists in one 'past' form and trying to force the indicative passé composé after triggers like 'bien que' or 'il est possible que' instead of switching the mood entirely.",
+        "Treating subjonctif tense choice as if it mapped to absolute calendar time rather than relative completion with respect to the main clause.",
+        "Avoiding the subjonctif passé altogether by rewording into a simpler indicative sentence, which sounds evasive and under-expresses nuance at this level."
+      ],
+      "whyItTrips": [
+        "English subjunctive is nearly invisible ('I doubt he finished' uses an ordinary past tense), so English speakers have no instinct that mood and completion status need to be marked separately from each other in the verb form.",
+        "French subjunctive tenses track relative time (before/simultaneous-or-after the main verb) rather than absolute time, which is a genuinely different organizing principle than the tense system English speakers are used to.",
+        "Because the subjonctif passé requires correctly combining three skills at once — recognizing the trigger, conjugating the auxiliary in the subjunctive, and getting past-participle agreement right — errors tend to stack rather than occurring in isolation."
+      ],
+      "searchTags": ["subjonctif passe", "past subjunctive", "subjunctive mood", "bien que", "relative tense", "completed action"]
+    }
+  ]
+}

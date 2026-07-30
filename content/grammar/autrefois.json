@@ -1,0 +1,35 @@
+{
+  "unitSlug": "autrefois",
+  "points": [
+    {
+      "slug": "imparfait",
+      "title": "L'imparfait",
+      "explanationEn": "The imparfait (imperfect) is French's other main past tense, and it exists alongside the passé composé to express a different kind of past: not a completed, one-time event, but an ongoing situation, a habit, a description, or a background state. Where the passé composé answers 'what happened?', the imparfait answers 'what was going on?' or 'what used to happen?' English often translates the imparfait with 'was/were -ing' (j'étais fatigué — I was tired) or 'used to' (je jouais au foot le samedi — I used to play soccer on Saturdays), but neither of those English forms is a perfect one-to-one match, so it's better to learn the imparfait by its function rather than by a fixed translation formula.\n\nForming the imparfait is refreshingly regular — even irregular verbs follow the same pattern, with exactly one exception (être). Take the nous-form of the present tense, drop the -ons ending, and you get the imparfait stem. Then add the endings -ais, -ais, -ait, -ions, -iez, -aient. For example: nous parlons → parl- → je parlais, tu parlais, il parlait, nous parlions, vous parliez, ils parlaient. Nous finissons → finiss- → je finissais. Nous prenons → pren- → je prenais. Nous faisons → fais- → je faisais. This works for essentially every verb in French because the nous-stem already absorbs all the present-tense irregularities. The lone exception is être, whose imparfait stem is ét- (not the nous-form 'somm-'): j'étais, tu étais, il était, nous étions, vous étiez, ils étaient. Note also that -ger verbs like manger keep an e before endings that start with a or o to preserve the soft 'g' sound (nous mangions written mangions, but je mangeais with the e), and -cer verbs like commencer take a cedilla (je commençais) for the same reason — pronunciation, not meaning.\n\nThe imparfait has four main uses, all describing a non-completed or background past: (1) habitual or repeated actions — quand j'étais petit, je jouais dans le jardin tous les jours ('when I was little, I used to play in the garden every day'); (2) descriptions of people, places, weather, or states of mind in the past — il faisait beau, elle avait les cheveux longs ('the weather was nice, she had long hair'); (3) an action in progress, often interrupted by another action in the passé composé — je regardais la télé quand le téléphone a sonné ('I was watching TV when the phone rang'); and (4) time, age, and background circumstances — il était huit heures, elle avait dix ans ('it was eight o'clock, she was ten years old').\n\nThe passé composé and imparfait are not interchangeable, and choosing correctly is really about the speaker's perspective on the action, not fixed rules about verb type. Ask: is this a specific, bounded event that happened and finished (passé composé), or is this a state, habit, or backdrop with no clear starting/ending point in the story (imparfait)? A classic pattern combines both in one sentence: the imparfait sets the scene, and the passé composé introduces the event that interrupts it — je dormais quand quelqu'un a frappé à la porte ('I was sleeping when someone knocked at the door'). Mastering this contrast is one of the most important skills in intermediate French, and it takes practice with real sentences rather than memorized rules alone.",
+      "examples": [
+        { "fr": "Quand j'étais enfant, j'habitais à la campagne.", "en": "When I was a child, I lived in the countryside.", "note": "habitual/ongoing past state" },
+        { "fr": "Il faisait beau et le soleil brillait.", "en": "The weather was nice and the sun was shining.", "note": "description" },
+        { "fr": "Nous mangions à sept heures tous les soirs.", "en": "We used to eat at seven every evening.", "note": "-ger verb keeps the e: mangions" },
+        { "fr": "Je regardais la télé quand tu as appelé.", "en": "I was watching TV when you called.", "note": "imparfait for background, passé composé for the interrupting event" },
+        { "fr": "Elle avait douze ans quand sa famille a déménagé.", "en": "She was twelve when her family moved.", "note": "age in the past = imparfait" },
+        { "fr": "Tu jouais souvent au tennis le week-end ?", "en": "Did you often play tennis on weekends?", "note": "repeated habit" },
+        { "fr": "C'était une belle journée d'été.", "en": "It was a beautiful summer day.", "note": "être → ét- stem, irregular imparfait stem" },
+        { "fr": "Ils étaient fatigués après le voyage.", "en": "They were tired after the trip." },
+        { "fr": "Autrefois, les gens n'avaient pas de téléphone portable.", "en": "In the past, people didn't have cell phones." },
+        { "fr": "Pendant que je faisais la cuisine, il mettait la table.", "en": "While I was cooking, he was setting the table.", "note": "two simultaneous ongoing actions, both imparfait" }
+      ],
+      "commonMistakes": [
+        "Building the imparfait stem from the infinitive instead of the nous-form of the present, e.g. treating 'faire' as 'fair-' instead of using the correct stem 'fais-' from nous faisons.",
+        "Using être's regular present stem instead of the special imparfait stem ét-, e.g. writing 'j'somais' or trying to derive it from 'sommes'.",
+        "Defaulting to passé composé for everything because it was learned first, even for descriptions and habits that clearly call for imparfait (e.g. saying 'il a fait beau' to describe ongoing weather in a story instead of 'il faisait beau').",
+        "Forgetting the spelling adjustments for -ger and -cer verbs (mangeais needs the e; commençais needs the cedilla) in the je/tu/il/ils forms.",
+        "Treating 'imparfait = used to' and 'passé composé = simple past' as a rigid translation rule, which breaks down for descriptions and interrupted actions that don't map neatly onto English tenses."
+      ],
+      "whyItTrips": [
+        "English doesn't have a grammatically distinct tense for 'ongoing/habitual past' the way French does — 'was doing', 'used to do', and plain 'did' all overlap in English, so the passé composé/imparfait choice has no direct English counterpart to lean on.",
+        "The choice between imparfait and passé composé often depends on the speaker's viewpoint on the same event rather than an objective fact about the action, which feels subjective and unfamiliar to learners expecting a clear-cut rule.",
+        "Because imparfait formation is regular for almost all verbs, English speakers often assume (wrongly) that fluency in passé composé irregular participles is the 'hard part' of the past tense, and underinvest in learning when to choose imparfait at all."
+      ],
+      "searchTags": ["imparfait", "past-tense", "imperfect", "passe-compose-vs-imparfait", "description", "habitual-past"]
+    }
+  ]
+}

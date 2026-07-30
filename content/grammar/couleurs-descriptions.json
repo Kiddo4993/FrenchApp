@@ -1,0 +1,35 @@
+{
+  "unitSlug": "couleurs-descriptions",
+  "points": [
+    {
+      "slug": "adjective-agreement-and-articles",
+      "title": "L'accord des adjectifs et les articles",
+      "explanationEn": "Every noun in French has a grammatical gender — masculine or feminine — and this is not optional or predictable from meaning the way it sometimes is in English (where only living things have natural gender). 'Le stylo' (the pen) is masculine; 'la table' (the table) is feminine, and there is no logical reason why — you must learn the gender along with the noun itself. This matters immediately because articles must match: the definite article 'the' is le (masculine singular), la (feminine singular), or les (plural, either gender); the indefinite article 'a/an' is un (masculine) or une (feminine), with des for plural. Before a vowel sound, le and la both contract to l' (l'ami, l'orange), regardless of gender — this is purely about pronunciation ease.\n\nAdjectives in French must agree in both gender and number with the noun they describe — a rule English simply doesn't have ('a red car' and 'red cars' use the identical word 'red'). In French, the base form of most adjectives is masculine singular, and you typically add -e for feminine (grand → grande), -s for masculine plural (grand → grands), and -es for feminine plural (grande → grandes). Many adjectives have irregular feminine forms that must be memorized: beau/belle, nouveau/nouvelle, blanc/blanche, long/longue, roux/rousse. Adjectives that already end in -e in the masculine (like rouge, jaune, jeune) don't change at all for gender, only for number: une robe rouge, des robes rouges.\n\nWord order is another major difference: most French adjectives go after the noun (un livre intéressant, une voiture rouge), the reverse of English's near-universal 'adjective before noun' pattern. A short list of very common, mostly short adjectives (often remembered with the acronym BAGS — Beauty, Age, Goodness, Size — e.g. beau, joli, nouveau, jeune, vieux, bon, mauvais, grand, petit) go before the noun instead, matching English word order and giving English speakers a partial, but only partial, foothold.",
+      "examples": [
+        { "fr": "J'ai un chat noir.", "en": "I have a black cat.", "note": "Masculine noun + masculine adjective, no change; adjective follows the noun." },
+        { "fr": "Elle porte une robe rouge.", "en": "She is wearing a red dress.", "note": "'Rouge' already ends in -e, so it doesn't change for feminine." },
+        { "fr": "Les fleurs sont belles.", "en": "The flowers are beautiful.", "note": "Irregular feminine plural of 'beau' → 'belles'." },
+        { "fr": "C'est un grand appartement.", "en": "It's a big apartment.", "note": "'Grand' (size) goes before the noun, unlike most adjectives." },
+        { "fr": "J'aime les petites voitures vertes.", "en": "I like little green cars.", "note": "'Petites' (before noun, size) and 'vertes' (after noun) both agree in feminine plural." },
+        { "fr": "Ce sont des maisons blanches.", "en": "Those are white houses.", "note": "Irregular feminine form 'blanche' (from 'blanc') plus plural -s." },
+        { "fr": "Le ciel est bleu aujourd'hui.", "en": "The sky is blue today.", "note": "Masculine singular noun and adjective; no agreement changes needed." },
+        { "fr": "J'ai une nouvelle amie.", "en": "I have a new (female) friend.", "note": "'l'amie' takes the elided article 'une' before the vowel sound; 'nouvelle' is the irregular feminine of 'nouveau'." },
+        { "fr": "Les triangles sont jaunes.", "en": "The triangles are yellow.", "note": "'Jaune' adds only -s for plural since it already ends in -e." },
+        { "fr": "C'est une bonne idée.", "en": "That's a good idea.", "note": "'Bonne' (goodness) precedes the noun; irregular feminine of 'bon'." }
+      ],
+      "commonMistakes": [
+        "Forgetting to change the adjective's ending to match a feminine noun (saying 'une chat noir' errors aside — more commonly 'une robe rouge' becomes mistakenly 'un robe rouge' by guessing the wrong gender, or the adjective is left masculine: 'une robe blanc' instead of 'blanche').",
+        "Placing all adjectives after the noun, including the small set of common ones (beau, grand, petit, bon, jeune, vieux) that must go before the noun.",
+        "Guessing a noun's gender based on its English meaning or its ending, rather than memorizing gender as part of the vocabulary word itself.",
+        "Adding -e to adjectives that already end in -e in the masculine (writing 'rougee' or 'jaunee'), producing a form that doesn't exist.",
+        "Skipping the elision (writing 'le ami' instead of \"l'ami\"), or misapplying gender to l' since the article's gender becomes invisible after contraction."
+      ],
+      "whyItTrips": [
+        "English nouns have no grammatical gender at all (except for people/animals), so treating 'table' or 'book' as inherently masculine or feminine is an entirely new mental category with no English analog.",
+        "English adjectives never change form to match the noun ('red car', 'red cars', 'red house' all use 'red'), so remembering to modify the adjective's ending is an extra step English grammar never requires.",
+        "English adjectives almost always precede the noun, so French's default post-noun placement — with a memorized exception list — inverts an automatic word-order habit."
+      ],
+      "searchTags": ["adjective agreement", "gender", "articles", "le la les", "un une des", "word order"]
+    }
+  ]
+}

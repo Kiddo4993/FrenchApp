@@ -1,0 +1,35 @@
+{
+  "unitSlug": "corps-et-sante",
+  "points": [
+    {
+      "slug": "pronoms-cod",
+      "title": "Les pronoms compléments d'objet direct (COD)",
+      "explanationEn": "A direct object is the person or thing that directly receives the action of a verb, with no preposition in between — in 'I see the doctor,' 'the doctor' is a direct object because you say 'see the doctor,' not 'see to/at the doctor.' In French, once a direct object has already been mentioned or is clear from context, it's usually replaced with a direct object pronoun (COD, complément d'objet direct) rather than repeated. The direct object pronouns are: me (me), te (you, informal singular), le (him/it, masculine), la (her/it, feminine), nous (us), vous (you, formal/plural), and les (them, plural, both genders). Before a vowel sound, me, te, le, and la shorten to m', t', l' — je l'aime (I love him/her/it), not je le aime.\n\nThe single most important rule for English speakers to absorb is word order: unlike English, where the object pronoun follows the verb ('I see him'), French direct object pronouns go before the conjugated verb: je le vois (I see him — literally 'I him see'). This holds true in statements, questions, and negatives: tu la connais ? (do you know her?), je ne le vois pas (I don't see him — ne comes before the pronoun, pas comes after the verb). With two-verb constructions like aller + infinitive or vouloir + infinitive, the pronoun attaches to whichever verb it's the object of — almost always the infinitive: je vais le voir (I'm going to see him), not je le vais voir.\n\nIn the passé composé, the direct object pronoun goes before the auxiliary verb (avoir or être), not before the past participle: je l'ai vu (I saw him/it), tu l'as pris ? (did you take it?). Critically, when a direct object pronoun precedes a passé composé verb conjugated with avoir, the past participle must agree in gender and number with that preceding direct object — this is one of the few situations where avoir-verbs show agreement. So: j'ai vu la lettre becomes je l'ai vue (feminine agreement because la lettre is feminine), and j'ai pris les clés becomes je les ai prises (feminine plural).\n\nFor the health and body context of this unit, direct object pronouns come up constantly: le médecin m'examine (the doctor examines me), tu dois la prendre deux fois par jour (you have to take it twice a day, referring to une pilule/a pill). Distinguishing COD from COI (indirect object, covered in a later unit) matters because many verbs that seem similar in English take different pronoun types in French — for instance, regarder (to watch/look at) takes a direct object in French (je le regarde), while a verb like téléphoner takes an indirect object (je lui téléphone) even though in English both 'watch him' and 'call him' look identical in structure.",
+      "examples": [
+        { "fr": "Je le vois tous les jours au travail.", "en": "I see him every day at work.", "note": "pronoun before the conjugated verb" },
+        { "fr": "Tu la connais bien, cette infirmière ?", "en": "Do you know her well, that nurse?" },
+        { "fr": "Le médecin m'examine attentivement.", "en": "The doctor examines me carefully." },
+        { "fr": "Nous les avons appelés hier soir.", "en": "We called them last night.", "note": "passe compose: pronoun before avoir; les = masc. plural, no extra agreement needed here" },
+        { "fr": "Je ne le comprends pas du tout.", "en": "I don't understand it at all.", "note": "ne before pronoun, pas after the verb" },
+        { "fr": "Tu dois la prendre deux fois par jour.", "en": "You have to take it twice a day.", "note": "la refers to une pilule; pronoun attaches to the infinitive prendre" },
+        { "fr": "J'ai vu la lettre, mais je l'ai perdue.", "en": "I saw the letter, but I lost it.", "note": "past participle agrees: perdue (feminine, agreeing with l' = la lettre)" },
+        { "fr": "Il va nous aider avec les valises.", "en": "He's going to help us with the suitcases." },
+        { "fr": "Où sont mes clés ? Je ne les trouve pas.", "en": "Where are my keys? I can't find them." },
+        { "fr": "Aime-tu ce médicament ? Non, je le déteste.", "en": "Do you like this medicine? No, I hate it." }
+      ],
+      "commonMistakes": [
+        "Placing the pronoun after the verb by analogy with English word order, e.g. saying 'je vois le' instead of 'je le vois'.",
+        "Attaching the pronoun to the conjugated verb instead of the infinitive in two-verb constructions, e.g. 'je le vais voir' instead of 'je vais le voir'.",
+        "Forgetting past participle agreement with a preceding direct object in the passé composé, e.g. leaving 'j'ai vue' as 'j'ai vu' when referring to a feminine noun already mentioned.",
+        "Confusing le/la/les (direct object) with lui/leur (indirect object) because both can translate to 'him/her/them' in English depending on the verb.",
+        "Skipping the elision and writing 'je le aime' instead of 'je l'aime' before a vowel sound."
+      ],
+      "whyItTrips": [
+        "English object pronouns always come after the verb, so the French before-the-verb placement runs directly against a deeply automatic English word-order habit.",
+        "English doesn't mark agreement between an object and a past participle at all, so the passé composé agreement rule feels like an arbitrary extra step with no equivalent to anchor it to.",
+        "English doesn't grammatically distinguish direct from indirect objects with different pronoun sets (both come out as 'him', 'her', 'them'), so English speakers have to learn to classify French verbs by preposition (regarder qqn vs. téléphoner à qqn) before they can even pick the right pronoun."
+      ],
+      "searchTags": ["pronoms-cod", "direct-object-pronoun", "le-la-les", "pronoun-placement", "participle-agreement"]
+    }
+  ]
+}
