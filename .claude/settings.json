@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/dylanduan/Desktop/frenchapp status --short content/vocab/loisirs.json)",
+      "Bash(git -C /Users/dylanduan/Desktop/frenchapp check-ignore -v content/vocab/loisirs.json)",
+      "Bash(node -e ' *)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 /private/tmp/claude-501/-Users-dylanduan-Desktop-frenchapp/f77e145c-1b63-474c-b2c4-215ef72cc3d3/scratchpad/build_routine.py)",
+      "Bash(python3 /private/tmp/claude-501/-Users-dylanduan-Desktop-frenchapp/f77e145c-1b63-474c-b2c4-215ef72cc3d3/scratchpad/gen_emotions.py)",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('/Users/dylanduan/Desktop/frenchapp/content/vocab/nature-animaux.json','utf8'\\)\\); const s=new Set\\(d.map\\(e=>e.lemma.toLowerCase\\(\\)\\)\\); console.log\\(d.length, s.size\\)\")",
+      "Bash(python3 /private/tmp/claude-501/-Users-dylanduan-Desktop-frenchapp/f77e145c-1b63-474c-b2c4-215ef72cc3d3/scratchpad/gen_argot.py)",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('/Users/dylanduan/Desktop/frenchapp/content/vocab/emotions-personnalite.json','utf8'\\)\\); const s=new Set\\(d.map\\(e=>e.lemma.toLowerCase\\(\\)\\)\\); console.log\\(d.length, s.size\\)\")",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('/Users/dylanduan/Desktop/frenchapp/content/vocab/routine-quotidienne.json','utf8'\\)\\); const s=new Set\\(d.map\\(e=>e.lemma.toLowerCase\\(\\)\\)\\); console.log\\(d.length, s.size\\)\")",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('/Users/dylanduan/Desktop/frenchapp/content/vocab/argot-verlan.json','utf8'\\)\\); const s=new Set\\(d.map\\(e=>e.lemma.toLowerCase\\(\\)\\)\\); console.log\\(d.length, s.size\\)\")",
+      "Bash(python3 /private/tmp/claude-501/-Users-dylanduan-Desktop-frenchapp/f77e145c-1b63-474c-b2c4-215ef72cc3d3/scratchpad/gen_musique.py)"
+    ]
+  }
+}

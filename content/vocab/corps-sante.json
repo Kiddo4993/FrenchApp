@@ -700,20 +700,6 @@
   },
   {
     "id": "corps-sante-046",
-    "fr": "se reposer",
-    "en": "to rest",
-    "lemma": "se reposer",
-    "pos": "verb",
-    "ipa": "/sə ʁə.po.ze/",
-    "cefr": "A2",
-    "topic": "corps-sante",
-    "register": "neutre",
-    "exampleFr": "Le médecin lui a conseillé de se reposer.",
-    "exampleEn": "The doctor advised him to rest.",
-    "audioText": "se reposer"
-  },
-  {
-    "id": "corps-sante-047",
     "fr": "souffrir",
     "en": "to suffer",
     "lemma": "souffrir",
@@ -731,7 +717,7 @@
     "audioText": "souffrir"
   },
   {
-    "id": "corps-sante-048",
+    "id": "corps-sante-047",
     "fr": "douloureux",
     "en": "painful",
     "lemma": "douloureux",
@@ -746,7 +732,7 @@
     "audioText": "douloureux"
   },
   {
-    "id": "corps-sante-049",
+    "id": "corps-sante-048",
     "fr": "le rhume",
     "en": "a cold (illness)",
     "lemma": "rhume",
@@ -761,7 +747,7 @@
     "audioText": "le rhume"
   },
   {
-    "id": "corps-sante-050",
+    "id": "corps-sante-049",
     "fr": "la grippe",
     "en": "flu",
     "lemma": "grippe",
@@ -776,7 +762,7 @@
     "audioText": "la grippe"
   },
   {
-    "id": "corps-sante-051",
+    "id": "corps-sante-050",
     "fr": "la fièvre",
     "en": "fever",
     "lemma": "fièvre",
@@ -791,7 +777,7 @@
     "audioText": "la fièvre"
   },
   {
-    "id": "corps-sante-052",
+    "id": "corps-sante-051",
     "fr": "tousser",
     "en": "to cough",
     "lemma": "tousser",
@@ -805,7 +791,7 @@
     "audioText": "tousser"
   },
   {
-    "id": "corps-sante-053",
+    "id": "corps-sante-052",
     "fr": "éternuer",
     "en": "to sneeze",
     "lemma": "éternuer",
@@ -819,7 +805,7 @@
     "audioText": "éternuer"
   },
   {
-    "id": "corps-sante-054",
+    "id": "corps-sante-053",
     "fr": "avoir mal",
     "en": "to hurt, to be in pain",
     "lemma": "avoir mal",
@@ -837,7 +823,7 @@
     "audioText": "avoir mal"
   },
   {
-    "id": "corps-sante-055",
+    "id": "corps-sante-054",
     "fr": "avoir de la fièvre",
     "en": "to have a fever",
     "lemma": "avoir de la fièvre",
@@ -851,7 +837,7 @@
     "audioText": "avoir de la fièvre"
   },
   {
-    "id": "corps-sante-056",
+    "id": "corps-sante-055",
     "fr": "le mal de tête",
     "en": "headache",
     "lemma": "mal de tête",
@@ -868,7 +854,7 @@
     "audioText": "le mal de tête"
   },
   {
-    "id": "corps-sante-057",
+    "id": "corps-sante-056",
     "fr": "je ne me sens pas bien",
     "en": "I don't feel well",
     "lemma": "je ne me sens pas bien",
@@ -882,7 +868,7 @@
     "audioText": "je ne me sens pas bien"
   },
   {
-    "id": "corps-sante-058",
+    "id": "corps-sante-057",
     "fr": "j'ai mal ici",
     "en": "it hurts here",
     "lemma": "j'ai mal ici",
@@ -896,7 +882,7 @@
     "audioText": "j'ai mal ici"
   },
   {
-    "id": "corps-sante-059",
+    "id": "corps-sante-058",
     "fr": "la toux",
     "en": "cough",
     "lemma": "toux",
@@ -911,7 +897,7 @@
     "audioText": "la toux"
   },
   {
-    "id": "corps-sante-060",
+    "id": "corps-sante-059",
     "fr": "la nausée",
     "en": "nausea",
     "lemma": "nausée",
@@ -926,7 +912,7 @@
     "audioText": "la nausée"
   },
   {
-    "id": "corps-sante-061",
+    "id": "corps-sante-060",
     "fr": "la migraine",
     "en": "migraine",
     "lemma": "migraine",
@@ -941,7 +927,7 @@
     "audioText": "la migraine"
   },
   {
-    "id": "corps-sante-062",
+    "id": "corps-sante-061",
     "fr": "l'allergie",
     "en": "allergy",
     "lemma": "allergie",
@@ -956,7 +942,7 @@
     "audioText": "l'allergie"
   },
   {
-    "id": "corps-sante-063",
+    "id": "corps-sante-062",
     "fr": "l'infection",
     "en": "infection",
     "lemma": "infection",
@@ -971,7 +957,7 @@
     "audioText": "l'infection"
   },
   {
-    "id": "corps-sante-064",
+    "id": "corps-sante-063",
     "fr": "la coupure",
     "en": "cut",
     "lemma": "coupure",
@@ -986,7 +972,7 @@
     "audioText": "la coupure"
   },
   {
-    "id": "corps-sante-065",
+    "id": "corps-sante-064",
     "fr": "vomir",
     "en": "to vomit",
     "lemma": "vomir",
@@ -1000,7 +986,7 @@
     "audioText": "vomir"
   },
   {
-    "id": "corps-sante-066",
+    "id": "corps-sante-065",
     "fr": "saigner",
     "en": "to bleed",
     "lemma": "saigner",
@@ -1014,7 +1000,7 @@
     "audioText": "saigner"
   },
   {
-    "id": "corps-sante-067",
+    "id": "corps-sante-066",
     "fr": "se casser",
     "en": "to break (a bone)",
     "lemma": "se casser",
@@ -1032,7 +1018,7 @@
     "audioText": "se casser"
   },
   {
-    "id": "corps-sante-068",
+    "id": "corps-sante-067",
     "fr": "transpirer",
     "en": "to sweat",
     "lemma": "transpirer",
@@ -1046,7 +1032,7 @@
     "audioText": "transpirer"
   },
   {
-    "id": "corps-sante-069",
+    "id": "corps-sante-068",
     "fr": "l'entorse",
     "en": "sprain",
     "lemma": "entorse",
@@ -1061,7 +1047,7 @@
     "audioText": "l'entorse"
   },
   {
-    "id": "corps-sante-070",
+    "id": "corps-sante-069",
     "fr": "la fracture",
     "en": "fracture",
     "lemma": "fracture",
@@ -1076,7 +1062,7 @@
     "audioText": "la fracture"
   },
   {
-    "id": "corps-sante-071",
+    "id": "corps-sante-070",
     "fr": "se brûler",
     "en": "to burn oneself",
     "lemma": "se brûler",
@@ -1090,7 +1076,7 @@
     "audioText": "se brûler"
   },
   {
-    "id": "corps-sante-072",
+    "id": "corps-sante-071",
     "fr": "la brûlure",
     "en": "burn",
     "lemma": "brûlure",
@@ -1105,7 +1091,7 @@
     "audioText": "la brûlure"
   },
   {
-    "id": "corps-sante-073",
+    "id": "corps-sante-072",
     "fr": "la piqûre",
     "en": "sting, bite, injection",
     "lemma": "piqûre",
@@ -1121,7 +1107,7 @@
     "audioText": "la piqûre"
   },
   {
-    "id": "corps-sante-074",
+    "id": "corps-sante-073",
     "fr": "l'ampoule",
     "en": "blister",
     "lemma": "ampoule",
@@ -1137,7 +1123,7 @@
     "audioText": "l'ampoule"
   },
   {
-    "id": "corps-sante-075",
+    "id": "corps-sante-074",
     "fr": "la crampe",
     "en": "cramp",
     "lemma": "crampe",
@@ -1152,7 +1138,7 @@
     "audioText": "la crampe"
   },
   {
-    "id": "corps-sante-076",
+    "id": "corps-sante-075",
     "fr": "le frisson",
     "en": "shiver, chill",
     "lemma": "frisson",
@@ -1167,7 +1153,7 @@
     "audioText": "le frisson"
   },
   {
-    "id": "corps-sante-077",
+    "id": "corps-sante-076",
     "fr": "avoir mal au cœur",
     "en": "to feel nauseous",
     "lemma": "avoir mal au cœur",
@@ -1182,7 +1168,7 @@
     "audioText": "avoir mal au cœur"
   },
   {
-    "id": "corps-sante-078",
+    "id": "corps-sante-077",
     "fr": "allergique",
     "en": "allergic",
     "lemma": "allergique",
@@ -1197,7 +1183,7 @@
     "audioText": "allergique"
   },
   {
-    "id": "corps-sante-079",
+    "id": "corps-sante-078",
     "fr": "le symptôme",
     "en": "symptom",
     "lemma": "symptôme",
@@ -1212,7 +1198,7 @@
     "audioText": "le symptôme"
   },
   {
-    "id": "corps-sante-080",
+    "id": "corps-sante-079",
     "fr": "le vertige",
     "en": "dizziness",
     "lemma": "vertige",
@@ -1227,22 +1213,7 @@
     "audioText": "le vertige"
   },
   {
-    "id": "corps-sante-081",
-    "fr": "gonflé",
-    "en": "swollen",
-    "lemma": "gonflé",
-    "pos": "adj",
-    "gender": "both",
-    "ipa": "/gɔ̃.fle/",
-    "cefr": "B1",
-    "topic": "corps-sante",
-    "register": "neutre",
-    "exampleFr": "Sa cheville est très gonflée après la chute.",
-    "exampleEn": "Her ankle is very swollen after the fall.",
-    "audioText": "gonflé"
-  },
-  {
-    "id": "corps-sante-082",
+    "id": "corps-sante-080",
     "fr": "l'ecchymose",
     "en": "bruise (medical term)",
     "lemma": "ecchymose",
@@ -1258,7 +1229,7 @@
     "audioText": "l'ecchymose"
   },
   {
-    "id": "corps-sante-083",
+    "id": "corps-sante-081",
     "fr": "l'éruption cutanée",
     "en": "skin rash",
     "lemma": "éruption cutanée",
@@ -1273,7 +1244,7 @@
     "audioText": "l'éruption cutanée"
   },
   {
-    "id": "corps-sante-084",
+    "id": "corps-sante-082",
     "fr": "chronique",
     "en": "chronic",
     "lemma": "chronique",
@@ -1288,7 +1259,7 @@
     "audioText": "chronique"
   },
   {
-    "id": "corps-sante-085",
+    "id": "corps-sante-083",
     "fr": "le médecin",
     "en": "doctor",
     "lemma": "médecin",
@@ -1304,7 +1275,7 @@
     "audioText": "le médecin"
   },
   {
-    "id": "corps-sante-086",
+    "id": "corps-sante-084",
     "fr": "le docteur",
     "en": "doctor (title)",
     "lemma": "docteur",
@@ -1319,7 +1290,7 @@
     "audioText": "le docteur"
   },
   {
-    "id": "corps-sante-087",
+    "id": "corps-sante-085",
     "fr": "l'infirmier",
     "en": "nurse",
     "lemma": "infirmier",
@@ -1336,7 +1307,7 @@
     "audioText": "l'infirmier"
   },
   {
-    "id": "corps-sante-088",
+    "id": "corps-sante-086",
     "fr": "un/une dentiste",
     "en": "dentist",
     "lemma": "dentiste",
@@ -1351,7 +1322,7 @@
     "audioText": "un dentiste"
   },
   {
-    "id": "corps-sante-089",
+    "id": "corps-sante-087",
     "fr": "le rendez-vous",
     "en": "appointment",
     "lemma": "rendez-vous",
@@ -1371,7 +1342,7 @@
     "audioText": "le rendez-vous"
   },
   {
-    "id": "corps-sante-090",
+    "id": "corps-sante-088",
     "fr": "le médicament",
     "en": "medicine",
     "lemma": "médicament",
@@ -1386,7 +1357,7 @@
     "audioText": "le médicament"
   },
   {
-    "id": "corps-sante-091",
+    "id": "corps-sante-089",
     "fr": "la pharmacie",
     "en": "pharmacy",
     "lemma": "pharmacie",
@@ -1401,7 +1372,7 @@
     "audioText": "la pharmacie"
   },
   {
-    "id": "corps-sante-092",
+    "id": "corps-sante-090",
     "fr": "l'hôpital",
     "en": "hospital",
     "lemma": "hôpital",
@@ -1417,7 +1388,7 @@
     "audioText": "l'hôpital"
   },
   {
-    "id": "corps-sante-093",
+    "id": "corps-sante-091",
     "fr": "l'ambulance",
     "en": "ambulance",
     "lemma": "ambulance",
@@ -1432,7 +1403,7 @@
     "audioText": "l'ambulance"
   },
   {
-    "id": "corps-sante-094",
+    "id": "corps-sante-092",
     "fr": "l'ordonnance",
     "en": "prescription",
     "lemma": "ordonnance",
@@ -1447,7 +1418,7 @@
     "audioText": "l'ordonnance"
   },
   {
-    "id": "corps-sante-095",
+    "id": "corps-sante-093",
     "fr": "un/une spécialiste",
     "en": "specialist",
     "lemma": "spécialiste",
@@ -1462,7 +1433,7 @@
     "audioText": "un spécialiste"
   },
   {
-    "id": "corps-sante-096",
+    "id": "corps-sante-094",
     "fr": "le pharmacien",
     "en": "pharmacist",
     "lemma": "pharmacien",
@@ -1478,7 +1449,7 @@
     "audioText": "le pharmacien"
   },
   {
-    "id": "corps-sante-097",
+    "id": "corps-sante-095",
     "fr": "la salle d'attente",
     "en": "waiting room",
     "lemma": "salle d'attente",
@@ -1493,7 +1464,7 @@
     "audioText": "la salle d'attente"
   },
   {
-    "id": "corps-sante-098",
+    "id": "corps-sante-096",
     "fr": "le comprimé",
     "en": "tablet, pill",
     "lemma": "comprimé",
@@ -1508,7 +1479,7 @@
     "audioText": "le comprimé"
   },
   {
-    "id": "corps-sante-099",
+    "id": "corps-sante-097",
     "fr": "le sirop",
     "en": "syrup (medicine)",
     "lemma": "sirop",
@@ -1523,7 +1494,7 @@
     "audioText": "le sirop"
   },
   {
-    "id": "corps-sante-100",
+    "id": "corps-sante-098",
     "fr": "le pansement",
     "en": "bandage",
     "lemma": "pansement",
@@ -1538,7 +1509,7 @@
     "audioText": "le pansement"
   },
   {
-    "id": "corps-sante-101",
+    "id": "corps-sante-099",
     "fr": "le vaccin",
     "en": "vaccine",
     "lemma": "vaccin",
@@ -1553,7 +1524,7 @@
     "audioText": "le vaccin"
   },
   {
-    "id": "corps-sante-102",
+    "id": "corps-sante-100",
     "fr": "les urgences",
     "en": "emergency room",
     "lemma": "urgences",
@@ -1570,7 +1541,7 @@
     "audioText": "les urgences"
   },
   {
-    "id": "corps-sante-103",
+    "id": "corps-sante-101",
     "fr": "ausculter",
     "en": "to listen to (with a stethoscope), to examine",
     "lemma": "ausculter",
@@ -1584,7 +1555,7 @@
     "audioText": "ausculter"
   },
   {
-    "id": "corps-sante-104",
+    "id": "corps-sante-102",
     "fr": "prescrire",
     "en": "to prescribe",
     "lemma": "prescrire",
@@ -1598,7 +1569,7 @@
     "audioText": "prescrire"
   },
   {
-    "id": "corps-sante-105",
+    "id": "corps-sante-103",
     "fr": "le diagnostic",
     "en": "diagnosis",
     "lemma": "diagnostic",
@@ -1613,7 +1584,7 @@
     "audioText": "le diagnostic"
   },
   {
-    "id": "corps-sante-106",
+    "id": "corps-sante-104",
     "fr": "le traitement",
     "en": "treatment",
     "lemma": "traitement",
@@ -1628,7 +1599,7 @@
     "audioText": "le traitement"
   },
   {
-    "id": "corps-sante-107",
+    "id": "corps-sante-105",
     "fr": "la tension artérielle",
     "en": "blood pressure",
     "lemma": "tension artérielle",
@@ -1647,7 +1618,7 @@
     "audioText": "la tension artérielle"
   },
   {
-    "id": "corps-sante-108",
+    "id": "corps-sante-106",
     "fr": "la sécurité sociale",
     "en": "social security (French healthcare system)",
     "lemma": "sécurité sociale",
@@ -1662,7 +1633,7 @@
     "audioText": "la sécurité sociale"
   },
   {
-    "id": "corps-sante-109",
+    "id": "corps-sante-107",
     "fr": "la consultation",
     "en": "consultation",
     "lemma": "consultation",
@@ -1677,7 +1648,7 @@
     "audioText": "la consultation"
   },
   {
-    "id": "corps-sante-110",
+    "id": "corps-sante-108",
     "fr": "le stéthoscope",
     "en": "stethoscope",
     "lemma": "stéthoscope",
@@ -1692,7 +1663,7 @@
     "audioText": "le stéthoscope"
   },
   {
-    "id": "corps-sante-111",
+    "id": "corps-sante-109",
     "fr": "l'anesthésie",
     "en": "anesthesia",
     "lemma": "anesthésie",
@@ -1707,7 +1678,7 @@
     "audioText": "l'anesthésie"
   },
   {
-    "id": "corps-sante-112",
+    "id": "corps-sante-110",
     "fr": "l'arrêt de travail",
     "en": "sick leave note, medical certificate",
     "lemma": "arrêt de travail",
@@ -1723,7 +1694,7 @@
     "audioText": "l'arrêt de travail"
   },
   {
-    "id": "corps-sante-113",
+    "id": "corps-sante-111",
     "fr": "un/une kinésithérapeute",
     "en": "physiotherapist",
     "lemma": "kinésithérapeute",
@@ -1739,7 +1710,7 @@
     "audioText": "un kinésithérapeute"
   },
   {
-    "id": "corps-sante-114",
+    "id": "corps-sante-112",
     "fr": "la mutuelle",
     "en": "supplementary health insurance",
     "lemma": "mutuelle",
@@ -1754,7 +1725,7 @@
     "audioText": "la mutuelle"
   },
   {
-    "id": "corps-sante-115",
+    "id": "corps-sante-113",
     "fr": "l'intervention chirurgicale",
     "en": "surgical procedure",
     "lemma": "intervention chirurgicale",
@@ -1769,7 +1740,7 @@
     "audioText": "l'intervention chirurgicale"
   },
   {
-    "id": "corps-sante-116",
+    "id": "corps-sante-114",
     "fr": "le pronostic",
     "en": "prognosis",
     "lemma": "pronostic",
@@ -1784,7 +1755,7 @@
     "audioText": "le pronostic"
   },
   {
-    "id": "corps-sante-117",
+    "id": "corps-sante-115",
     "fr": "la convalescence",
     "en": "convalescence, recovery period",
     "lemma": "convalescence",

@@ -1,0 +1,2122 @@
+[
+  {
+    "id": "musique-art-cinema-001",
+    "fr": "la musique",
+    "en": "music",
+    "lemma": "musique",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/my.zik/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "J'écoute de la musique tous les matins.",
+    "exampleEn": "I listen to music every morning.",
+    "collocations": [
+      "écouter de la musique",
+      "la musique classique",
+      "un genre de musique"
+    ],
+    "audioText": "la musique"
+  },
+  {
+    "id": "musique-art-cinema-002",
+    "fr": "la chanson",
+    "en": "song",
+    "lemma": "chanson",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʃɑ̃.sɔ̃/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Cette chanson passe tout le temps à la radio.",
+    "exampleEn": "This song plays all the time on the radio.",
+    "collocations": [
+      "une chanson préférée",
+      "chanter une chanson"
+    ],
+    "audioText": "la chanson"
+  },
+  {
+    "id": "musique-art-cinema-003",
+    "fr": "chanter",
+    "en": "to sing",
+    "lemma": "chanter",
+    "pos": "verb",
+    "ipa": "/ʃɑ̃.te/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Elle chante très bien sous la douche.",
+    "exampleEn": "She sings very well in the shower.",
+    "collocations": [
+      "chanter juste",
+      "chanter faux",
+      "chanter une chanson"
+    ],
+    "audioText": "chanter"
+  },
+  {
+    "id": "musique-art-cinema-004",
+    "fr": "écouter",
+    "en": "to listen (to)",
+    "lemma": "écouter",
+    "pos": "verb",
+    "ipa": "/e.ku.te/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Tu écoutes souvent de la musique en travaillant ?",
+    "exampleEn": "Do you often listen to music while working?",
+    "collocations": [
+      "écouter un disque",
+      "écouter attentivement"
+    ],
+    "audioText": "écouter"
+  },
+  {
+    "id": "musique-art-cinema-005",
+    "fr": "le film",
+    "en": "movie / film",
+    "lemma": "film",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/film/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "On regarde un film ce soir ?",
+    "exampleEn": "Shall we watch a movie tonight?",
+    "collocations": [
+      "un film d'horreur",
+      "un film en version originale",
+      "tourner un film"
+    ],
+    "audioText": "le film"
+  },
+  {
+    "id": "musique-art-cinema-006",
+    "fr": "le cinéma",
+    "en": "cinema / the movies",
+    "lemma": "cinéma",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/si.ne.ma/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Nous allons souvent au cinéma le week-end.",
+    "exampleEn": "We often go to the cinema on weekends.",
+    "collocations": [
+      "aller au cinéma",
+      "une salle de cinéma"
+    ],
+    "audioText": "le cinéma"
+  },
+  {
+    "id": "musique-art-cinema-007",
+    "fr": "le piano",
+    "en": "piano",
+    "lemma": "piano",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pja.no/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Elle joue du piano depuis dix ans.",
+    "exampleEn": "She has been playing the piano for ten years.",
+    "collocations": [
+      "jouer du piano",
+      "un cours de piano"
+    ],
+    "audioText": "le piano"
+  },
+  {
+    "id": "musique-art-cinema-008",
+    "fr": "la guitare",
+    "en": "guitar",
+    "lemma": "guitare",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/gi.taʁ/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Il apprend à jouer de la guitare.",
+    "exampleEn": "He is learning to play the guitar.",
+    "collocations": [
+      "jouer de la guitare",
+      "une guitare électrique"
+    ],
+    "audioText": "la guitare"
+  },
+  {
+    "id": "musique-art-cinema-009",
+    "fr": "le dessin",
+    "en": "drawing",
+    "lemma": "dessin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/de.sɛ̃/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Mon fils fait un dessin pour sa grand-mère.",
+    "exampleEn": "My son is making a drawing for his grandmother.",
+    "collocations": [
+      "faire un dessin",
+      "un dessin au crayon"
+    ],
+    "audioText": "le dessin"
+  },
+  {
+    "id": "musique-art-cinema-010",
+    "fr": "dessiner",
+    "en": "to draw",
+    "lemma": "dessiner",
+    "pos": "verb",
+    "ipa": "/de.si.ne/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "J'aime dessiner des animaux.",
+    "exampleEn": "I like to draw animals.",
+    "collocations": [
+      "dessiner un portrait",
+      "savoir dessiner"
+    ],
+    "audioText": "dessiner"
+  },
+  {
+    "id": "musique-art-cinema-011",
+    "fr": "le tableau",
+    "en": "painting / picture",
+    "lemma": "tableau",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "tableaux",
+    "ipa": "/ta.blo/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Ce tableau représente un coucher de soleil.",
+    "exampleEn": "This painting shows a sunset.",
+    "collocations": [
+      "un tableau célèbre",
+      "accrocher un tableau"
+    ],
+    "audioText": "le tableau"
+  },
+  {
+    "id": "musique-art-cinema-012",
+    "fr": "l'instrument",
+    "en": "instrument",
+    "lemma": "instrument",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛ̃s.tʁy.mɑ̃/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Quel instrument de musique préfères-tu ?",
+    "exampleEn": "Which musical instrument do you prefer?",
+    "collocations": [
+      "un instrument de musique",
+      "jouer d'un instrument"
+    ],
+    "audioText": "l'instrument"
+  },
+  {
+    "id": "musique-art-cinema-013",
+    "fr": "l'acteur",
+    "en": "actor",
+    "lemma": "acteur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ak.tœʁ/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Cet acteur joue dans beaucoup de films français.",
+    "exampleEn": "This actor appears in a lot of French films.",
+    "collocations": [
+      "un acteur célèbre",
+      "un acteur principal"
+    ],
+    "audioText": "l'acteur"
+  },
+  {
+    "id": "musique-art-cinema-014",
+    "fr": "l'actrice",
+    "en": "actress",
+    "lemma": "actrice",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ak.tʁis/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "L'actrice a reçu un prix pour son rôle.",
+    "exampleEn": "The actress received an award for her role.",
+    "collocations": [
+      "une actrice talentueuse"
+    ],
+    "audioText": "l'actrice"
+  },
+  {
+    "id": "musique-art-cinema-015",
+    "fr": "un/une artiste",
+    "en": "artist",
+    "lemma": "artiste",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/aʁ.tist/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "C'est un artiste très connu en France.",
+    "exampleEn": "He is a very well-known artist in France.",
+    "collocations": [
+      "un artiste peintre",
+      "devenir artiste"
+    ],
+    "audioText": "un artiste"
+  },
+  {
+    "id": "musique-art-cinema-016",
+    "fr": "jouer",
+    "en": "to play (an instrument / a role)",
+    "lemma": "jouer",
+    "pos": "verb",
+    "ipa": "/ʒwe/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Il joue le rôle principal dans ce film.",
+    "exampleEn": "He plays the main role in this film.",
+    "collocations": [
+      "jouer un rôle",
+      "jouer d'un instrument"
+    ],
+    "audioText": "jouer"
+  },
+  {
+    "id": "musique-art-cinema-017",
+    "fr": "regarder",
+    "en": "to watch",
+    "lemma": "regarder",
+    "pos": "verb",
+    "ipa": "/ʁə.gaʁ.de/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "On regarde un documentaire sur les baleines.",
+    "exampleEn": "We're watching a documentary about whales.",
+    "collocations": [
+      "regarder un film",
+      "regarder la télévision"
+    ],
+    "audioText": "regarder"
+  },
+  {
+    "id": "musique-art-cinema-018",
+    "fr": "le musée",
+    "en": "museum",
+    "lemma": "musée",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/my.ze/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le musée du Louvre est à Paris.",
+    "exampleEn": "The Louvre museum is in Paris.",
+    "collocations": [
+      "visiter un musée",
+      "un musée d'art"
+    ],
+    "audioText": "le musée"
+  },
+  {
+    "id": "musique-art-cinema-019",
+    "fr": "la photo",
+    "en": "photo",
+    "lemma": "photo",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fɔ.to/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Il prend une photo du coucher de soleil.",
+    "exampleEn": "He is taking a photo of the sunset.",
+    "collocations": [
+      "prendre une photo",
+      "une photo de famille"
+    ],
+    "audioText": "la photo"
+  },
+  {
+    "id": "musique-art-cinema-020",
+    "fr": "le concert",
+    "en": "concert",
+    "lemma": "concert",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ̃.sɛʁ/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Nous avons des billets pour le concert de samedi.",
+    "exampleEn": "We have tickets for Saturday's concert.",
+    "collocations": [
+      "aller à un concert",
+      "un concert de rock"
+    ],
+    "audioText": "le concert"
+  },
+  {
+    "id": "musique-art-cinema-021",
+    "fr": "la peinture",
+    "en": "painting (the art form / paint)",
+    "lemma": "peinture",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɛ̃.tyʁ/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Elle prend des cours de peinture le mercredi.",
+    "exampleEn": "She takes painting classes on Wednesdays.",
+    "collocations": [
+      "faire de la peinture",
+      "la peinture à l'huile"
+    ],
+    "audioText": "la peinture"
+  },
+  {
+    "id": "musique-art-cinema-022",
+    "fr": "le chanteur",
+    "en": "singer",
+    "lemma": "chanteur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃɑ̃.tœʁ/",
+    "cefr": "A1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Ce chanteur a une voix incroyable.",
+    "exampleEn": "This singer has an incredible voice.",
+    "collocations": [
+      "un chanteur célèbre",
+      "un chanteur de rock"
+    ],
+    "audioText": "le chanteur"
+  },
+  {
+    "id": "musique-art-cinema-023",
+    "fr": "le musicien",
+    "en": "musician",
+    "lemma": "musicien",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/my.zi.sjɛ̃/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Mon oncle est musicien professionnel.",
+    "exampleEn": "My uncle is a professional musician.",
+    "collocations": [
+      "un musicien de jazz",
+      "devenir musicien"
+    ],
+    "audioText": "le musicien"
+  },
+  {
+    "id": "musique-art-cinema-024",
+    "fr": "l'orchestre",
+    "en": "orchestra",
+    "lemma": "orchestre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɔʁ.kɛstʁ/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "L'orchestre joue une symphonie de Beethoven.",
+    "exampleEn": "The orchestra is playing a symphony by Beethoven.",
+    "collocations": [
+      "un orchestre symphonique",
+      "diriger un orchestre"
+    ],
+    "audioText": "l'orchestre"
+  },
+  {
+    "id": "musique-art-cinema-025",
+    "fr": "le violon",
+    "en": "violin",
+    "lemma": "violon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vjɔ.lɔ̃/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Elle apprend le violon depuis l'âge de six ans.",
+    "exampleEn": "She has been learning the violin since she was six.",
+    "collocations": [
+      "jouer du violon",
+      "un archet de violon"
+    ],
+    "audioText": "le violon"
+  },
+  {
+    "id": "musique-art-cinema-026",
+    "fr": "la batterie",
+    "en": "drums / drum kit",
+    "lemma": "batterie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ba.tʁi/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Mon frère joue de la batterie dans un groupe.",
+    "exampleEn": "My brother plays drums in a band.",
+    "collocations": [
+      "jouer de la batterie",
+      "un batteur"
+    ],
+    "audioText": "la batterie"
+  },
+  {
+    "id": "musique-art-cinema-027",
+    "fr": "la flûte",
+    "en": "flute",
+    "lemma": "flûte",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/flyt/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Elle joue de la flûte traversière à l'école.",
+    "exampleEn": "She plays the flute at school.",
+    "collocations": [
+      "jouer de la flûte",
+      "une flûte traversière"
+    ],
+    "audioText": "la flûte"
+  },
+  {
+    "id": "musique-art-cinema-028",
+    "fr": "le rock",
+    "en": "rock (music)",
+    "lemma": "rock",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁɔk/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Il écoute surtout du rock des années 80.",
+    "exampleEn": "He mostly listens to 80s rock.",
+    "collocations": [
+      "un concert de rock",
+      "un groupe de rock"
+    ],
+    "audioText": "le rock"
+  },
+  {
+    "id": "musique-art-cinema-029",
+    "fr": "le jazz",
+    "en": "jazz",
+    "lemma": "jazz",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/dʒaz/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Ce club propose des concerts de jazz tous les jeudis.",
+    "exampleEn": "This club hosts jazz concerts every Thursday.",
+    "collocations": [
+      "un club de jazz",
+      "un festival de jazz"
+    ],
+    "audioText": "le jazz"
+  },
+  {
+    "id": "musique-art-cinema-030",
+    "fr": "la pop",
+    "en": "pop (music)",
+    "lemma": "pop",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɔp/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Cette chanteuse fait de la pop très entraînante.",
+    "exampleEn": "This singer makes very catchy pop music.",
+    "collocations": [
+      "la musique pop",
+      "une star de la pop"
+    ],
+    "audioText": "la pop"
+  },
+  {
+    "id": "musique-art-cinema-031",
+    "fr": "le réalisateur",
+    "en": "director (film)",
+    "lemma": "réalisateur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁe.a.li.za.tœʁ/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le réalisateur a passé deux ans sur ce film.",
+    "exampleEn": "The director spent two years on this film.",
+    "collocations": [
+      "un réalisateur talentueux",
+      "le réalisateur du film"
+    ],
+    "audioText": "le réalisateur"
+  },
+  {
+    "id": "musique-art-cinema-032",
+    "fr": "le scénario",
+    "en": "screenplay / plot",
+    "lemma": "scénario",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/se.na.ʁjo/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le scénario de ce film est vraiment original.",
+    "exampleEn": "The plot of this film is really original.",
+    "collocations": [
+      "écrire un scénario",
+      "un bon scénario"
+    ],
+    "audioText": "le scénario"
+  },
+  {
+    "id": "musique-art-cinema-033",
+    "fr": "le rôle",
+    "en": "role / part",
+    "lemma": "rôle",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁol/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Elle a obtenu le rôle principal du film.",
+    "exampleEn": "She got the lead role in the film.",
+    "collocations": [
+      "le rôle principal",
+      "jouer un rôle"
+    ],
+    "audioText": "le rôle"
+  },
+  {
+    "id": "musique-art-cinema-034",
+    "fr": "la scène",
+    "en": "stage / scene",
+    "lemma": "scène",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sɛn/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le chanteur est monté sur scène sous les applaudissements.",
+    "exampleEn": "The singer walked onto the stage to applause.",
+    "collocations": [
+      "monter sur scène",
+      "une scène du film"
+    ],
+    "audioText": "la scène"
+  },
+  {
+    "id": "musique-art-cinema-035",
+    "fr": "la sculpture",
+    "en": "sculpture",
+    "lemma": "sculpture",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/skylp.tyʁ/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Cette sculpture en bronze pèse plus de deux tonnes.",
+    "exampleEn": "This bronze sculpture weighs more than two tonnes.",
+    "collocations": [
+      "une sculpture en marbre",
+      "faire de la sculpture"
+    ],
+    "audioText": "la sculpture"
+  },
+  {
+    "id": "musique-art-cinema-036",
+    "fr": "le sculpteur",
+    "en": "sculptor",
+    "lemma": "sculpteur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/skylp.tœʁ/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le sculpteur travaille le marbre depuis vingt ans.",
+    "exampleEn": "The sculptor has been working with marble for twenty years.",
+    "collocations": [
+      "un sculpteur célèbre"
+    ],
+    "audioText": "le sculpteur"
+  },
+  {
+    "id": "musique-art-cinema-037",
+    "fr": "un/une photographe",
+    "en": "photographer",
+    "lemma": "photographe",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/fɔ.tɔ.gʁaf/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le photographe prend des photos pour un magazine.",
+    "exampleEn": "The photographer takes pictures for a magazine.",
+    "collocations": [
+      "un photographe professionnel"
+    ],
+    "audioText": "un photographe"
+  },
+  {
+    "id": "musique-art-cinema-038",
+    "fr": "l'appareil photo",
+    "en": "camera",
+    "lemma": "appareil photo",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "appareils photo",
+    "ipa": "/a.pa.ʁɛj fɔ.to/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "J'ai oublié mon appareil photo à la maison.",
+    "exampleEn": "I forgot my camera at home.",
+    "collocations": [
+      "un appareil photo numérique"
+    ],
+    "audioText": "l'appareil photo"
+  },
+  {
+    "id": "musique-art-cinema-039",
+    "fr": "le festival",
+    "en": "festival",
+    "lemma": "festival",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "festivals",
+    "ipa": "/fɛs.ti.val/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "On va au festival de musique cet été.",
+    "exampleEn": "We're going to the music festival this summer.",
+    "collocations": [
+      "un festival de musique",
+      "le festival de Cannes"
+    ],
+    "audioText": "le festival"
+  },
+  {
+    "id": "musique-art-cinema-040",
+    "fr": "le groupe",
+    "en": "band / group",
+    "lemma": "groupe",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/gʁup/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Ce groupe de rock donne un concert samedi.",
+    "exampleEn": "This rock band is playing a concert on Saturday.",
+    "collocations": [
+      "un groupe de musique",
+      "former un groupe"
+    ],
+    "audioText": "le groupe"
+  },
+  {
+    "id": "musique-art-cinema-041",
+    "fr": "le microphone",
+    "en": "microphone",
+    "lemma": "microphone",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mi.kʁɔ.fɔn/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le micro ne marche plus, on ne t'entend pas.",
+    "exampleEn": "The microphone isn't working anymore, we can't hear you.",
+    "collocations": [
+      "parler dans le micro",
+      "un micro sans fil"
+    ],
+    "audioText": "le microphone"
+  },
+  {
+    "id": "musique-art-cinema-042",
+    "fr": "enregistrer",
+    "en": "to record",
+    "lemma": "enregistrer",
+    "pos": "verb",
+    "ipa": "/ɑ̃.ʁə.ʒis.tʁe/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le groupe enregistre son nouvel album en studio.",
+    "exampleEn": "The band is recording its new album in the studio.",
+    "collocations": [
+      "enregistrer une chanson",
+      "un studio d'enregistrement"
+    ],
+    "audioText": "enregistrer"
+  },
+  {
+    "id": "musique-art-cinema-043",
+    "fr": "la galerie",
+    "en": "gallery",
+    "lemma": "galerie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ga.lə.ʁi/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Cette galerie expose des artistes contemporains.",
+    "exampleEn": "This gallery exhibits contemporary artists.",
+    "collocations": [
+      "une galerie d'art",
+      "visiter une galerie"
+    ],
+    "audioText": "la galerie"
+  },
+  {
+    "id": "musique-art-cinema-044",
+    "fr": "l'exposition",
+    "en": "exhibition",
+    "lemma": "exposition",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɛk.spo.zi.sjɔ̃/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "L'exposition sur Van Gogh attire beaucoup de visiteurs.",
+    "exampleEn": "The exhibition on Van Gogh is attracting a lot of visitors.",
+    "collocations": [
+      "une exposition d'art",
+      "visiter une exposition"
+    ],
+    "audioText": "l'exposition"
+  },
+  {
+    "id": "musique-art-cinema-045",
+    "fr": "l'écran",
+    "en": "screen",
+    "lemma": "écran",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.kʁɑ̃/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le film est projeté sur un très grand écran.",
+    "exampleEn": "The film is shown on a very large screen.",
+    "collocations": [
+      "un grand écran",
+      "le petit écran"
+    ],
+    "audioText": "l'écran"
+  },
+  {
+    "id": "musique-art-cinema-046",
+    "fr": "sortir",
+    "en": "to come out / to be released",
+    "lemma": "sortir",
+    "pos": "verb",
+    "ipa": "/sɔʁ.tiʁ/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le nouveau film sort au cinéma vendredi prochain.",
+    "exampleEn": "The new film comes out in cinemas next Friday.",
+    "collocations": [
+      "sortir un album",
+      "sortir au cinéma"
+    ],
+    "audioText": "sortir"
+  },
+  {
+    "id": "musique-art-cinema-047",
+    "fr": "danser",
+    "en": "to dance",
+    "lemma": "danser",
+    "pos": "verb",
+    "ipa": "/dɑ̃.se/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Les danseurs répètent sur la musique du spectacle.",
+    "exampleEn": "The dancers rehearse to the show's music.",
+    "collocations": [
+      "danser sur scène",
+      "apprendre à danser"
+    ],
+    "audioText": "danser"
+  },
+  {
+    "id": "musique-art-cinema-048",
+    "fr": "peindre",
+    "en": "to paint",
+    "lemma": "peindre",
+    "pos": "verb",
+    "ipa": "/pɛ̃dʁ/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Elle peint des paysages depuis qu'elle est petite.",
+    "exampleEn": "She has painted landscapes since she was little.",
+    "collocations": [
+      "peindre un tableau",
+      "peindre à l'huile"
+    ],
+    "audioText": "peindre"
+  },
+  {
+    "id": "musique-art-cinema-049",
+    "fr": "un/une peintre",
+    "en": "painter",
+    "lemma": "peintre",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/pɛ̃tʁ/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Ce peintre est connu pour ses portraits.",
+    "exampleEn": "This painter is known for his portraits.",
+    "collocations": [
+      "un peintre célèbre"
+    ],
+    "audioText": "un peintre"
+  },
+  {
+    "id": "musique-art-cinema-050",
+    "fr": "le dessin animé",
+    "en": "cartoon",
+    "lemma": "dessin animé",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "dessins animés",
+    "ipa": "/de.sɛ̃ a.ni.me/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Les enfants regardent un dessin animé le samedi matin.",
+    "exampleEn": "The children watch a cartoon on Saturday morning.",
+    "collocations": [
+      "un dessin animé japonais"
+    ],
+    "audioText": "le dessin animé"
+  },
+  {
+    "id": "musique-art-cinema-051",
+    "fr": "la trompette",
+    "en": "trumpet",
+    "lemma": "trompette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tʁɔ̃.pɛt/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Il joue de la trompette dans l'orchestre du lycée.",
+    "exampleEn": "He plays trumpet in the school orchestra.",
+    "collocations": [
+      "jouer de la trompette"
+    ],
+    "audioText": "la trompette"
+  },
+  {
+    "id": "musique-art-cinema-052",
+    "fr": "le saxophone",
+    "en": "saxophone",
+    "lemma": "saxophone",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sak.sɔ.fɔn/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le saxophone donne un son typique au jazz.",
+    "exampleEn": "The saxophone gives jazz its typical sound.",
+    "collocations": [
+      "jouer du saxophone"
+    ],
+    "audioText": "le saxophone"
+  },
+  {
+    "id": "musique-art-cinema-053",
+    "fr": "le costume",
+    "en": "costume",
+    "lemma": "costume",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔs.tym/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Les costumes du film sont magnifiques.",
+    "exampleEn": "The film's costumes are magnificent.",
+    "collocations": [
+      "un costume d'époque"
+    ],
+    "audioText": "le costume"
+  },
+  {
+    "id": "musique-art-cinema-054",
+    "fr": "le billet",
+    "en": "ticket",
+    "lemma": "billet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bi.jɛ/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "J'ai acheté deux billets pour le concert de ce soir.",
+    "exampleEn": "I bought two tickets for tonight's concert.",
+    "collocations": [
+      "un billet de cinéma",
+      "réserver un billet"
+    ],
+    "audioText": "le billet"
+  },
+  {
+    "id": "musique-art-cinema-055",
+    "fr": "le rap",
+    "en": "rap (music)",
+    "lemma": "rap",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁap/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Beaucoup de jeunes écoutent du rap français.",
+    "exampleEn": "Many young people listen to French rap.",
+    "collocations": [
+      "un morceau de rap",
+      "un rappeur"
+    ],
+    "audioText": "le rap"
+  },
+  {
+    "id": "musique-art-cinema-056",
+    "fr": "le tube",
+    "en": "hit song",
+    "lemma": "tube",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tyb/",
+    "cefr": "A2",
+    "topic": "musique-art-cinema",
+    "register": "familier",
+    "exampleFr": "Cette chanson est le tube de l'été.",
+    "exampleEn": "This song is the summer's hit.",
+    "collocations": [
+      "le tube de l'été",
+      "un tube planétaire"
+    ],
+    "mnemonic": "Literally 'tube' or 'pipe' — but as slang it means a song everyone has on repeat.",
+    "audioText": "le tube"
+  },
+  {
+    "id": "musique-art-cinema-057",
+    "fr": "la mélodie",
+    "en": "melody / tune",
+    "lemma": "mélodie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/me.lɔ.di/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Cette mélodie me trotte dans la tête depuis ce matin.",
+    "exampleEn": "This melody has been stuck in my head since this morning.",
+    "collocations": [
+      "une mélodie entraînante",
+      "fredonner une mélodie"
+    ],
+    "audioText": "la mélodie"
+  },
+  {
+    "id": "musique-art-cinema-058",
+    "fr": "le rythme",
+    "en": "rhythm / beat",
+    "lemma": "rythme",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁitm/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le public tapait des mains en rythme.",
+    "exampleEn": "The audience was clapping in rhythm.",
+    "collocations": [
+      "en rythme",
+      "un rythme rapide"
+    ],
+    "audioText": "le rythme"
+  },
+  {
+    "id": "musique-art-cinema-059",
+    "fr": "le refrain",
+    "en": "chorus (of a song)",
+    "lemma": "refrain",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁə.fʁɛ̃/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Tout le monde chantait le refrain à tue-tête.",
+    "exampleEn": "Everyone was singing the chorus at the top of their lungs.",
+    "collocations": [
+      "reprendre le refrain"
+    ],
+    "audioText": "le refrain"
+  },
+  {
+    "id": "musique-art-cinema-060",
+    "fr": "les paroles",
+    "en": "lyrics",
+    "lemma": "parole",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pa.ʁɔl/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Je ne connais pas les paroles de cette chanson par cœur.",
+    "exampleEn": "I don't know the lyrics of this song by heart.",
+    "collocations": [
+      "les paroles d'une chanson",
+      "apprendre les paroles"
+    ],
+    "audioText": "les paroles"
+  },
+  {
+    "id": "musique-art-cinema-061",
+    "fr": "le compositeur",
+    "en": "composer",
+    "lemma": "compositeur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ̃.po.zi.tœʁ/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Ce compositeur a écrit la musique du film.",
+    "exampleEn": "This composer wrote the film's music.",
+    "collocations": [
+      "un compositeur célèbre"
+    ],
+    "audioText": "le compositeur"
+  },
+  {
+    "id": "musique-art-cinema-062",
+    "fr": "composer",
+    "en": "to compose",
+    "lemma": "composer",
+    "pos": "verb",
+    "ipa": "/kɔ̃.po.ze/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Elle compose ses propres chansons depuis l'adolescence.",
+    "exampleEn": "She has composed her own songs since her teenage years.",
+    "collocations": [
+      "composer une musique",
+      "composer un morceau"
+    ],
+    "audioText": "composer"
+  },
+  {
+    "id": "musique-art-cinema-063",
+    "fr": "l'accord",
+    "en": "chord",
+    "lemma": "accord",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.kɔʁ/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le guitariste enchaîne les accords sans regarder ses doigts.",
+    "exampleEn": "The guitarist plays the chords without looking at his fingers.",
+    "collocations": [
+      "jouer un accord",
+      "un accord de guitare"
+    ],
+    "audioText": "l'accord"
+  },
+  {
+    "id": "musique-art-cinema-064",
+    "fr": "la tournée",
+    "en": "tour",
+    "lemma": "tournée",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tuʁ.ne/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le groupe part en tournée dans toute l'Europe.",
+    "exampleEn": "The band is going on tour across Europe.",
+    "collocations": [
+      "partir en tournée",
+      "une tournée mondiale"
+    ],
+    "audioText": "la tournée"
+  },
+  {
+    "id": "musique-art-cinema-065",
+    "fr": "applaudir",
+    "en": "to applaud",
+    "lemma": "applaudir",
+    "pos": "verb",
+    "ipa": "/a.plo.diʁ/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le public a applaudi pendant plusieurs minutes.",
+    "exampleEn": "The audience applauded for several minutes.",
+    "collocations": [
+      "applaudir chaleureusement"
+    ],
+    "audioText": "applaudir"
+  },
+  {
+    "id": "musique-art-cinema-066",
+    "fr": "l'opéra",
+    "en": "opera",
+    "lemma": "opéra",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɔ.pe.ʁa/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Nous avons vu un opéra magnifique à Paris.",
+    "exampleEn": "We saw a magnificent opera in Paris.",
+    "collocations": [
+      "aller à l'opéra",
+      "chanter à l'opéra"
+    ],
+    "audioText": "l'opéra"
+  },
+  {
+    "id": "musique-art-cinema-067",
+    "fr": "fredonner",
+    "en": "to hum",
+    "lemma": "fredonner",
+    "pos": "verb",
+    "ipa": "/fʁə.dɔ.ne/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Elle fredonnait un air en faisant la vaisselle.",
+    "exampleEn": "She was humming a tune while doing the dishes.",
+    "collocations": [
+      "fredonner un air"
+    ],
+    "audioText": "fredonner"
+  },
+  {
+    "id": "musique-art-cinema-068",
+    "fr": "le chef-d'œuvre",
+    "en": "masterpiece",
+    "lemma": "chef-d'œuvre",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "chefs-d'œuvre",
+    "ipa": "/ʃɛ.dœvʁ/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Ce roman est considéré comme un chef-d'œuvre de la littérature.",
+    "exampleEn": "This novel is considered a masterpiece of literature.",
+    "collocations": [
+      "un véritable chef-d'œuvre"
+    ],
+    "audioText": "le chef-d'œuvre"
+  },
+  {
+    "id": "musique-art-cinema-069",
+    "fr": "le croquis",
+    "en": "sketch",
+    "lemma": "croquis",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kʁɔ.ki/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "L'artiste fait un croquis avant de peindre.",
+    "exampleEn": "The artist makes a sketch before painting.",
+    "collocations": [
+      "faire un croquis",
+      "un carnet de croquis"
+    ],
+    "audioText": "le croquis"
+  },
+  {
+    "id": "musique-art-cinema-070",
+    "fr": "l'aquarelle",
+    "en": "watercolour",
+    "lemma": "aquarelle",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/a.ka.ʁɛl/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Elle préfère peindre à l'aquarelle plutôt qu'à l'huile.",
+    "exampleEn": "She prefers painting with watercolours rather than oils.",
+    "collocations": [
+      "peindre à l'aquarelle"
+    ],
+    "audioText": "l'aquarelle"
+  },
+  {
+    "id": "musique-art-cinema-071",
+    "fr": "la toile",
+    "en": "canvas",
+    "lemma": "toile",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/twal/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le peintre a acheté une nouvelle toile pour son prochain tableau.",
+    "exampleEn": "The painter bought a new canvas for his next painting.",
+    "collocations": [
+      "peindre sur une toile"
+    ],
+    "audioText": "la toile"
+  },
+  {
+    "id": "musique-art-cinema-072",
+    "fr": "la statue",
+    "en": "statue",
+    "lemma": "statue",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sta.ty/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "La statue se trouve au centre de la place.",
+    "exampleEn": "The statue stands in the middle of the square.",
+    "collocations": [
+      "une statue de bronze"
+    ],
+    "audioText": "la statue"
+  },
+  {
+    "id": "musique-art-cinema-073",
+    "fr": "le portrait",
+    "en": "portrait",
+    "lemma": "portrait",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɔʁ.tʁɛ/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le peintre a réalisé son portrait en une seule séance.",
+    "exampleEn": "The painter completed his portrait in a single sitting.",
+    "collocations": [
+      "faire le portrait de quelqu'un"
+    ],
+    "audioText": "le portrait"
+  },
+  {
+    "id": "musique-art-cinema-074",
+    "fr": "le paysage",
+    "en": "landscape",
+    "lemma": "paysage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pe.i.zaʒ/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Ce peintre est spécialisé dans les paysages de montagne.",
+    "exampleEn": "This painter specializes in mountain landscapes.",
+    "collocations": [
+      "peindre un paysage"
+    ],
+    "audioText": "le paysage"
+  },
+  {
+    "id": "musique-art-cinema-075",
+    "fr": "le pinceau",
+    "en": "paintbrush",
+    "lemma": "pinceau",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "pinceaux",
+    "ipa": "/pɛ̃.so/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "N'oublie pas de nettoyer tes pinceaux après avoir peint.",
+    "exampleEn": "Don't forget to clean your brushes after painting.",
+    "collocations": [
+      "un coup de pinceau"
+    ],
+    "audioText": "le pinceau"
+  },
+  {
+    "id": "musique-art-cinema-076",
+    "fr": "la palette",
+    "en": "palette",
+    "lemma": "palette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pa.lɛt/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "L'artiste mélange les couleurs sur sa palette.",
+    "exampleEn": "The artist mixes the colours on his palette.",
+    "collocations": [
+      "une palette de couleurs"
+    ],
+    "audioText": "la palette"
+  },
+  {
+    "id": "musique-art-cinema-077",
+    "fr": "l'inspiration",
+    "en": "inspiration",
+    "lemma": "inspiration",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɛ̃s.pi.ʁa.sjɔ̃/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "L'artiste trouve son inspiration dans la nature.",
+    "exampleEn": "The artist finds his inspiration in nature.",
+    "collocations": [
+      "trouver l'inspiration",
+      "manquer d'inspiration"
+    ],
+    "audioText": "l'inspiration"
+  },
+  {
+    "id": "musique-art-cinema-078",
+    "fr": "créer",
+    "en": "to create",
+    "lemma": "créer",
+    "pos": "verb",
+    "ipa": "/kʁe.e/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Elle crée des sculptures étonnantes à partir de matériaux recyclés.",
+    "exampleEn": "She creates amazing sculptures from recycled materials.",
+    "collocations": [
+      "créer une œuvre"
+    ],
+    "audioText": "créer"
+  },
+  {
+    "id": "musique-art-cinema-079",
+    "fr": "le documentaire",
+    "en": "documentary",
+    "lemma": "documentaire",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/dɔ.ky.mɑ̃.tɛʁ/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Ce documentaire raconte l'histoire du cinéma français.",
+    "exampleEn": "This documentary tells the story of French cinema.",
+    "collocations": [
+      "réaliser un documentaire"
+    ],
+    "audioText": "le documentaire"
+  },
+  {
+    "id": "musique-art-cinema-080",
+    "fr": "le drame",
+    "en": "drama (film genre)",
+    "lemma": "drame",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/dʁam/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "C'est un drame poignant sur la perte d'un enfant.",
+    "exampleEn": "It's a poignant drama about the loss of a child.",
+    "collocations": [
+      "un drame psychologique"
+    ],
+    "audioText": "le drame"
+  },
+  {
+    "id": "musique-art-cinema-081",
+    "fr": "l'effet spécial",
+    "en": "special effect",
+    "lemma": "effet spécial",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "effets spéciaux",
+    "ipa": "/e.fɛ spe.sjal/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Les effets spéciaux de ce film sont impressionnants.",
+    "exampleEn": "This film's special effects are impressive.",
+    "collocations": [
+      "des effets spéciaux réussis"
+    ],
+    "audioText": "l'effet spécial"
+  },
+  {
+    "id": "musique-art-cinema-082",
+    "fr": "la bande-annonce",
+    "en": "trailer",
+    "lemma": "bande-annonce",
+    "pos": "noun",
+    "gender": "f",
+    "plural": "bandes-annonces",
+    "ipa": "/bɑ̃.da.nɔ̃s/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "La bande-annonce donne vraiment envie de voir le film.",
+    "exampleEn": "The trailer really makes you want to see the film.",
+    "collocations": [
+      "regarder la bande-annonce"
+    ],
+    "audioText": "la bande-annonce"
+  },
+  {
+    "id": "musique-art-cinema-083",
+    "fr": "le tournage",
+    "en": "filming / shoot",
+    "lemma": "tournage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tuʁ.naʒ/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le tournage du film a duré six mois.",
+    "exampleEn": "The filming of the movie lasted six months.",
+    "collocations": [
+      "pendant le tournage"
+    ],
+    "audioText": "le tournage"
+  },
+  {
+    "id": "musique-art-cinema-084",
+    "fr": "tourner",
+    "en": "to shoot (a film)",
+    "lemma": "tourner",
+    "pos": "verb",
+    "ipa": "/tuʁ.ne/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Ils ont tourné ce film dans le sud de la France.",
+    "exampleEn": "They shot this film in the south of France.",
+    "collocations": [
+      "tourner une scène",
+      "tourner un film"
+    ],
+    "audioText": "tourner"
+  },
+  {
+    "id": "musique-art-cinema-085",
+    "fr": "le sous-titre",
+    "en": "subtitle",
+    "lemma": "sous-titre",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "sous-titres",
+    "ipa": "/su.titʁ/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Je regarde souvent des films en anglais avec des sous-titres.",
+    "exampleEn": "I often watch films in English with subtitles.",
+    "collocations": [
+      "des sous-titres français"
+    ],
+    "audioText": "le sous-titre"
+  },
+  {
+    "id": "musique-art-cinema-086",
+    "fr": "doublé",
+    "en": "dubbed",
+    "lemma": "doublé",
+    "pos": "adj",
+    "ipa": "/du.ble/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Ce film japonais est doublé en français.",
+    "exampleEn": "This Japanese film is dubbed into French.",
+    "collocations": [
+      "un film doublé"
+    ],
+    "audioText": "doublé"
+  },
+  {
+    "id": "musique-art-cinema-087",
+    "fr": "la séance",
+    "en": "screening / showing",
+    "lemma": "séance",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/se.ɑ̃s/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "La prochaine séance commence à vingt heures.",
+    "exampleEn": "The next screening starts at eight o'clock.",
+    "collocations": [
+      "une séance de cinéma"
+    ],
+    "audioText": "la séance"
+  },
+  {
+    "id": "musique-art-cinema-088",
+    "fr": "le suspense",
+    "en": "suspense",
+    "lemma": "suspense",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sys.pɛns/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Ce thriller tient le spectateur en haleine grâce à son suspense.",
+    "exampleEn": "This thriller keeps the viewer on the edge of their seat thanks to its suspense.",
+    "collocations": [
+      "tenir en suspense"
+    ],
+    "audioText": "le suspense"
+  },
+  {
+    "id": "musique-art-cinema-089",
+    "fr": "le personnage",
+    "en": "character",
+    "lemma": "personnage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɛʁ.sɔ.naʒ/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le personnage principal découvre un secret de famille.",
+    "exampleEn": "The main character discovers a family secret.",
+    "collocations": [
+      "le personnage principal"
+    ],
+    "audioText": "le personnage"
+  },
+  {
+    "id": "musique-art-cinema-090",
+    "fr": "assister à",
+    "en": "to attend",
+    "lemma": "assister à",
+    "pos": "verb",
+    "ipa": "/a.sis.te a/",
+    "cefr": "B1",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Nous avons assisté à un concert extraordinaire hier soir.",
+    "exampleEn": "We attended an extraordinary concert last night.",
+    "collocations": [
+      "assister à un spectacle",
+      "assister à une exposition"
+    ],
+    "fauxAmi": "'Assister' does NOT mean 'to assist/help' (that's 'aider'); 'assister à' means 'to attend' an event.",
+    "audioText": "assister à"
+  },
+  {
+    "id": "musique-art-cinema-091",
+    "fr": "harmonieux",
+    "en": "harmonious",
+    "lemma": "harmonieux",
+    "pos": "adj",
+    "ipa": "/aʁ.mɔ.njø/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Les couleurs du tableau créent un ensemble harmonieux.",
+    "exampleEn": "The colours of the painting create a harmonious whole.",
+    "collocations": [
+      "un ensemble harmonieux"
+    ],
+    "audioText": "harmonieux"
+  },
+  {
+    "id": "musique-art-cinema-092",
+    "fr": "mélodieux",
+    "en": "melodious",
+    "lemma": "mélodieux",
+    "pos": "adj",
+    "ipa": "/me.lɔ.djø/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Sa voix mélodieuse a charmé tout le public.",
+    "exampleEn": "Her melodious voice charmed the whole audience.",
+    "collocations": [
+      "une voix mélodieuse"
+    ],
+    "audioText": "mélodieux"
+  },
+  {
+    "id": "musique-art-cinema-093",
+    "fr": "un/une virtuose",
+    "en": "virtuoso",
+    "lemma": "virtuose",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/viʁ.tɥɔz/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Ce pianiste est considéré comme un véritable virtuose.",
+    "exampleEn": "This pianist is considered a true virtuoso.",
+    "collocations": [
+      "un virtuose du piano"
+    ],
+    "audioText": "un virtuose"
+  },
+  {
+    "id": "musique-art-cinema-094",
+    "fr": "improviser",
+    "en": "to improvise",
+    "lemma": "improviser",
+    "pos": "verb",
+    "ipa": "/ɛ̃.pʁɔ.vi.ze/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Les musiciens de jazz aiment improviser sur scène.",
+    "exampleEn": "Jazz musicians love to improvise on stage.",
+    "collocations": [
+      "improviser un solo"
+    ],
+    "audioText": "improviser"
+  },
+  {
+    "id": "musique-art-cinema-095",
+    "fr": "un/une interprète",
+    "en": "performer",
+    "lemma": "interprète",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/ɛ̃.tɛʁ.pʁɛt/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "L'interprète a bouleversé le public avec cette chanson.",
+    "exampleEn": "The performer moved the audience deeply with this song.",
+    "collocations": [
+      "le principal interprète"
+    ],
+    "fauxAmi": "As a music/film term, 'interprète' means 'performer' (the singer or actor who performs a work) — not just 'interpreter' in the translation sense.",
+    "audioText": "un interprète"
+  },
+  {
+    "id": "musique-art-cinema-096",
+    "fr": "la partition",
+    "en": "sheet music / score",
+    "lemma": "partition",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/paʁ.ti.sjɔ̃/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le pianiste lit la partition pour la première fois.",
+    "exampleEn": "The pianist is reading the sheet music for the first time.",
+    "collocations": [
+      "lire une partition"
+    ],
+    "audioText": "la partition"
+  },
+  {
+    "id": "musique-art-cinema-097",
+    "fr": "l'esthétique",
+    "en": "aesthetics",
+    "lemma": "esthétique",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɛs.te.tik/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "soutenu",
+    "exampleFr": "Ce réalisateur a développé une esthétique très personnelle.",
+    "exampleEn": "This director has developed a very personal aesthetic.",
+    "collocations": [
+      "une esthétique particulière"
+    ],
+    "audioText": "l'esthétique"
+  },
+  {
+    "id": "musique-art-cinema-098",
+    "fr": "abstrait",
+    "en": "abstract",
+    "lemma": "abstrait",
+    "pos": "adj",
+    "ipa": "/ap.stʁɛ/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Elle préfère l'art abstrait à la peinture figurative.",
+    "exampleEn": "She prefers abstract art to figurative painting.",
+    "collocations": [
+      "l'art abstrait"
+    ],
+    "audioText": "abstrait"
+  },
+  {
+    "id": "musique-art-cinema-099",
+    "fr": "figuratif",
+    "en": "figurative (representational)",
+    "lemma": "figuratif",
+    "pos": "adj",
+    "ipa": "/fi.gy.ʁa.tif/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "soutenu",
+    "exampleFr": "Cet artiste est revenu à un art plus figuratif après une période abstraite.",
+    "exampleEn": "This artist returned to more figurative art after an abstract period.",
+    "collocations": [
+      "l'art figuratif"
+    ],
+    "audioText": "figuratif"
+  },
+  {
+    "id": "musique-art-cinema-100",
+    "fr": "le mécène",
+    "en": "patron (of the arts)",
+    "lemma": "mécène",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/me.sɛn/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "soutenu",
+    "exampleFr": "Sans le soutien d'un riche mécène, l'artiste n'aurait jamais pu exposer.",
+    "exampleEn": "Without the support of a wealthy patron, the artist could never have exhibited.",
+    "collocations": [
+      "un généreux mécène"
+    ],
+    "audioText": "le mécène"
+  },
+  {
+    "id": "musique-art-cinema-101",
+    "fr": "la fresque",
+    "en": "fresco",
+    "lemma": "fresque",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fʁɛsk/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "La fresque recouvre tout le plafond de la chapelle.",
+    "exampleEn": "The fresco covers the entire ceiling of the chapel.",
+    "collocations": [
+      "peindre une fresque"
+    ],
+    "audioText": "la fresque"
+  },
+  {
+    "id": "musique-art-cinema-102",
+    "fr": "la gravure",
+    "en": "engraving / print",
+    "lemma": "gravure",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/gʁa.vyʁ/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Le musée possède une collection de gravures du dix-huitième siècle.",
+    "exampleEn": "The museum owns a collection of eighteenth-century engravings.",
+    "collocations": [
+      "une gravure sur bois"
+    ],
+    "audioText": "la gravure"
+  },
+  {
+    "id": "musique-art-cinema-103",
+    "fr": "le vernissage",
+    "en": "opening (of an art exhibition)",
+    "lemma": "vernissage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɛʁ.ni.saʒ/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Nous sommes invités au vernissage de sa nouvelle exposition.",
+    "exampleEn": "We're invited to the opening of her new exhibition.",
+    "collocations": [
+      "le vernissage d'une exposition"
+    ],
+    "audioText": "le vernissage"
+  },
+  {
+    "id": "musique-art-cinema-104",
+    "fr": "la perspective",
+    "en": "perspective",
+    "lemma": "perspective",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɛʁs.pɛk.tiv/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Les peintres de la Renaissance ont maîtrisé la perspective.",
+    "exampleEn": "Renaissance painters mastered perspective.",
+    "collocations": [
+      "la perspective d'un tableau"
+    ],
+    "audioText": "la perspective"
+  },
+  {
+    "id": "musique-art-cinema-105",
+    "fr": "un/une scénariste",
+    "en": "screenwriter",
+    "lemma": "scénariste",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/se.na.ʁist/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "La scénariste a mis trois ans à écrire ce film.",
+    "exampleEn": "The screenwriter took three years to write this film.",
+    "collocations": [
+      "un scénariste de talent"
+    ],
+    "audioText": "un scénariste"
+  },
+  {
+    "id": "musique-art-cinema-106",
+    "fr": "la mise en scène",
+    "en": "staging / direction",
+    "lemma": "mise en scène",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mi.z‿ɑ̃ sɛn/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "La mise en scène de ce film est particulièrement soignée.",
+    "exampleEn": "The direction of this film is particularly polished.",
+    "collocations": [
+      "une mise en scène originale"
+    ],
+    "audioText": "la mise en scène"
+  },
+  {
+    "id": "musique-art-cinema-107",
+    "fr": "le générique",
+    "en": "credits (of a film)",
+    "lemma": "générique",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒe.ne.ʁik/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "Beaucoup de spectateurs partent avant la fin du générique.",
+    "exampleEn": "Many viewers leave before the credits are over.",
+    "collocations": [
+      "le générique de fin"
+    ],
+    "audioText": "le générique"
+  },
+  {
+    "id": "musique-art-cinema-108",
+    "fr": "la distribution",
+    "en": "cast",
+    "lemma": "distribution",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/dis.tʁi.by.sjɔ̃/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "neutre",
+    "exampleFr": "La distribution du film réunit plusieurs acteurs très connus.",
+    "exampleEn": "The film's cast brings together several very famous actors.",
+    "collocations": [
+      "une distribution impressionnante"
+    ],
+    "fauxAmi": "In a film or theatre context, 'distribution' means the 'cast', not the logistics of distributing something.",
+    "audioText": "la distribution"
+  },
+  {
+    "id": "musique-art-cinema-109",
+    "fr": "pathétique",
+    "en": "deeply moving / poignant",
+    "lemma": "pathétique",
+    "pos": "adj",
+    "ipa": "/pa.te.tik/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "soutenu",
+    "exampleFr": "La dernière scène du film est absolument pathétique.",
+    "exampleEn": "The film's final scene is utterly moving.",
+    "collocations": [
+      "une scène pathétique"
+    ],
+    "fauxAmi": "'Pathétique' usually means deeply moving or emotionally powerful, not 'pathetic' (contemptible) as in English — though a very informal, dismissive use closer to the English sense also exists.",
+    "audioText": "pathétique"
+  },
+  {
+    "id": "musique-art-cinema-110",
+    "fr": "le navet",
+    "en": "flop / bad film",
+    "lemma": "navet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/na.vɛ/",
+    "cefr": "B2",
+    "topic": "musique-art-cinema",
+    "register": "familier",
+    "exampleFr": "On a vu un vrai navet au cinéma hier soir.",
+    "exampleEn": "We watched a real flop of a movie at the cinema last night.",
+    "collocations": [
+      "un navet sans intérêt"
+    ],
+    "mnemonic": "Literally 'turnip' — French critics use it for a film so bad it's about as exciting as a vegetable.",
+    "audioText": "le navet"
+  },
+  {
+    "id": "musique-art-cinema-111",
+    "fr": "dithyrambique",
+    "en": "gushing / extravagantly enthusiastic",
+    "lemma": "dithyrambique",
+    "pos": "adj",
+    "ipa": "/di.ti.ʁɑ̃.bik/",
+    "cefr": "C1",
+    "topic": "musique-art-cinema",
+    "register": "soutenu",
+    "exampleFr": "Les critiques ont été dithyrambiques après la sortie du film.",
+    "exampleEn": "The reviews were gushing after the film's release.",
+    "collocations": [
+      "une critique dithyrambique"
+    ],
+    "audioText": "dithyrambique"
+  },
+  {
+    "id": "musique-art-cinema-112",
+    "fr": "onirique",
+    "en": "dreamlike",
+    "lemma": "onirique",
+    "pos": "adj",
+    "ipa": "/ɔ.ni.ʁik/",
+    "cefr": "C1",
+    "topic": "musique-art-cinema",
+    "register": "soutenu",
+    "exampleFr": "Le réalisateur crée une atmosphère onirique tout au long du film.",
+    "exampleEn": "The director creates a dreamlike atmosphere throughout the film.",
+    "collocations": [
+      "une ambiance onirique"
+    ],
+    "audioText": "onirique"
+  },
+  {
+    "id": "musique-art-cinema-113",
+    "fr": "iconoclaste",
+    "en": "iconoclastic / unconventional",
+    "lemma": "iconoclaste",
+    "pos": "adj",
+    "ipa": "/i.kɔ.nɔ.klast/",
+    "cefr": "C1",
+    "topic": "musique-art-cinema",
+    "register": "soutenu",
+    "exampleFr": "Cette artiste iconoclaste bouscule les codes de la peinture classique.",
+    "exampleEn": "This iconoclastic artist upends the conventions of classical painting.",
+    "collocations": [
+      "un artiste iconoclaste"
+    ],
+    "audioText": "iconoclaste"
+  },
+  {
+    "id": "musique-art-cinema-114",
+    "fr": "avant-gardiste",
+    "en": "avant-garde",
+    "lemma": "avant-gardiste",
+    "pos": "adj",
+    "ipa": "/a.vɑ̃.gaʁ.dist/",
+    "cefr": "C1",
+    "topic": "musique-art-cinema",
+    "register": "soutenu",
+    "exampleFr": "Sa dernière exposition est résolument avant-gardiste.",
+    "exampleEn": "His latest exhibition is resolutely avant-garde.",
+    "collocations": [
+      "un mouvement avant-gardiste"
+    ],
+    "audioText": "avant-gardiste"
+  },
+  {
+    "id": "musique-art-cinema-115",
+    "fr": "la dissonance",
+    "en": "dissonance",
+    "lemma": "dissonance",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/di.sɔ.nɑ̃s/",
+    "cefr": "C1",
+    "topic": "musique-art-cinema",
+    "register": "soutenu",
+    "exampleFr": "Le compositeur joue sur la dissonance pour créer une tension musicale.",
+    "exampleEn": "The composer uses dissonance to create musical tension.",
+    "collocations": [
+      "une dissonance harmonique"
+    ],
+    "audioText": "la dissonance"
+  }
+]
