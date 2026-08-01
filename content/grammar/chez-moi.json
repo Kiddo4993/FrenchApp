@@ -1,0 +1,35 @@
+{
+  "unitSlug": "chez-moi",
+  "points": [
+    {
+      "slug": "prepositions-of-place-and-il-y-a",
+      "title": "Les prépositions de lieu et « il y a »",
+      "explanationEn": "Describing where things are in relation to each other requires a small set of prepositions of place that you'll use constantly once you start talking about rooms, furniture, and objects: sur (on/on top of), sous (under/beneath), dans (in/inside), devant (in front of), derrière (behind), and entre (between). Most of these map fairly directly onto their English equivalents, but a few distinctions are worth being precise about. 'Sur' means resting on a surface (le livre est sur la table — the book is on the table), while 'dans' means contained within something (le livre est dans le sac — the book is in the bag). English speakers sometimes blur 'on' and 'in' more loosely than French allows — French is stricter about surface-contact (sur) versus containment (dans).\n\nMost of these prepositions can combine with 'de' when followed by a definite article, following the normal contraction rules: devant + le becomes 'devant le', but à/de contract with le and les (de + le = du, de + les = des, à + le = au, à + les = aux) — this matters especially for 'à côté de' (next to) and 'près de' (near), which are two-word compound prepositions ending in 'de': à côté de la lampe (next to the lamp) but à côté du canapé (next to the sofa, since 'de le' must contract to 'du').\n\nThe construction 'il y a' is one of the most useful and most frequent phrases in French — it means 'there is' or 'there are', and unlike English, it never changes form for singular versus plural: il y a un chat (there is a cat) and il y a trois chats (there are three cats) both use the identical 'il y a'. This is a fixed, invariable expression — literally 'it there has' — and you should not try to conjugate it differently based on number the way English distinguishes 'is' from 'are'. To make it negative, wrap 'ne...pas' around 'y a': il n'y a pas de chat (there isn't a cat / there is no cat) — and notice that after this negation, just like after other negations, the indefinite/partitive article collapses to 'de'.",
+      "examples": [
+        { "fr": "Le chat est sur le canapé.", "en": "The cat is on the sofa.", "note": "'Sur' = resting on a surface." },
+        { "fr": "Les clés sont sous le tapis.", "en": "The keys are under the rug." },
+        { "fr": "Il y a un lit dans la chambre.", "en": "There is a bed in the bedroom.", "note": "'Il y a' never changes for singular/plural." },
+        { "fr": "La table est devant la fenêtre.", "en": "The table is in front of the window." },
+        { "fr": "Le jardin est derrière la maison.", "en": "The garden is behind the house." },
+        { "fr": "La cuisine est entre le salon et la salle de bain.", "en": "The kitchen is between the living room and the bathroom." },
+        { "fr": "Il y a beaucoup de livres sur l'étagère.", "en": "There are a lot of books on the shelf.", "note": "Still 'il y a', even though 'livres' is plural." },
+        { "fr": "La lampe est à côté du lit.", "en": "The lamp is next to the bed.", "note": "'À côté de' + 'le lit' contracts to 'à côté du lit'." },
+        { "fr": "Il n'y a pas de chaise dans cette pièce.", "en": "There isn't a chair in this room.", "note": "Negation collapses the article to 'de', as with other negated nouns." },
+        { "fr": "Le miroir est près de la porte.", "en": "The mirror is near the door." }
+      ],
+      "commonMistakes": [
+        "Conjugating 'il y a' as if it changed for plural, incorrectly saying something like 'ils y ont' for 'there are' instead of keeping the fixed form 'il y a'.",
+        "Confusing 'sur' and 'dans' by treating them as interchangeable the way 'on' and 'in' can feel loosely equivalent in casual English.",
+        "Forgetting to contract 'de' with 'le' or 'les' after compound prepositions like 'à côté de' and 'près de' (saying 'à côté de le lit' instead of 'à côté du lit').",
+        "Leaving the article unchanged after negating 'il y a' (saying 'il n'y a pas un chat' instead of 'il n'y a pas de chat').",
+        "Using 'devant' and 'derrière' in the wrong order relative to the reference object, mirroring English word order instead of French's noun + preposition + reference-noun structure."
+      ],
+      "whyItTrips": [
+        "English 'there is' / 'there are' changes for number, so learners expect French 'il y a' to do the same and are surprised it's completely invariable.",
+        "English uses 'on' and 'in' somewhat flexibly in casual speech, while French sur/dans track surface-contact versus containment more strictly.",
+        "The contraction of 'de + le' → 'du' and 'de + les' → 'des' inside compound prepositions (à côté du, près des) is an extra transformation step English prepositions never require."
+      ],
+      "searchTags": ["prepositions", "il y a", "sur sous dans", "location", "there is there are", "contractions"]
+    }
+  ]
+}

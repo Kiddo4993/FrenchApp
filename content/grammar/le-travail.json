@@ -1,0 +1,35 @@
+{
+  "unitSlug": "le-travail",
+  "points": [
+    {
+      "slug": "superlatifs",
+      "title": "Les superlatifs",
+      "explanationEn": "The superlative expresses the extreme of a quality — 'the most interesting job,' 'the least stressful career,' 'the best doctor in the city.' French builds the superlative by adding a definite article (le, la, or les) in front of the comparative structures plus or moins. The core pattern for adjectives is: definite article + plus/moins + adjective, and the article and adjective both agree with the noun being described. C'est le métier le plus intéressant (it's the most interesting job — métier is masculine, so le...le). C'est la profession la plus stressante (it's the most stressful profession — feminine, so la...la). Ce sont les emplois les moins bien payés (these are the least well-paid jobs — plural, so les...les).\n\nA key structural detail: because most French adjectives come after the noun, the superlative article often appears twice — once with the noun itself, and once directly before plus/moins. C'est le travail le plus difficile literally repeats le: once for travail, once as part of the superlative phrase itself, right before plus. This double-article pattern feels unusual to English speakers, who only need one 'the' ('the most difficult job'). A smaller set of adjectives that normally precede the noun (like grand, bon, petit, joli) only need the article once, before the adjective: c'est le plus grand bureau (it's the biggest office). When you need to specify a group or category the superlative is drawn from, use de (not dans or in), matching English 'in/of': c'est le métier le plus intéressant de tous (it's the most interesting job of all), elle est la meilleure avocate de l'entreprise (she is the best lawyer in the company).\n\nFor adverbs, the article is always le (invariable, since adverbs don't have gender or number) and it goes directly before plus/moins with no repetition, since adverbs modify a verb, not a noun: c'est elle qui travaille le plus efficacement (she's the one who works the most efficiently), c'est lui qui gagne le moins (he's the one who earns the least — here plus/moins itself functions almost like a noun phrase describing amount). For nouns (quantities), use le plus de / le moins de: c'est elle qui a le plus d'expérience (she has the most experience), c'est ce poste qui offre le moins de vacances (this job offers the fewest vacation days).\n\nJust as with comparatives, a few superlatives are irregular and must be memorized: bon (good) → le meilleur / la meilleure / les meilleur(e)s (the best), not 'le plus bon.' Bien (well, adverb) → le mieux (the best, as in performance), not 'le plus bien.' Mauvais (bad) can regularly form le plus mauvais, but le pire (the worst) is a common irregular alternative, especially for abstract situations. As with the comparative, keep le meilleur (adjective, agrees with the noun) distinct from le mieux (adverb, invariable, modifies a verb): c'est le meilleur candidat (he's the best candidate) versus c'est lui qui travaille le mieux (he's the one who works best).",
+      "examples": [
+        { "fr": "C'est le métier le plus intéressant que je connaisse.", "en": "It's the most interesting job I know.", "note": "article repeated: le métier... le plus" },
+        { "fr": "Elle a la profession la plus stressante de la famille.", "en": "She has the most stressful profession in the family.", "note": "'in the family' = de la famille, not dans" },
+        { "fr": "Ce sont les emplois les moins bien payés de la région.", "en": "These are the lowest-paid jobs in the region." },
+        { "fr": "C'est le plus grand bureau de l'entreprise.", "en": "It's the biggest office in the company.", "note": "grand precedes the noun, article used only once" },
+        { "fr": "C'est elle qui travaille le plus efficacement.", "en": "She's the one who works the most efficiently.", "note": "adverb superlative: le is invariable" },
+        { "fr": "C'est lui qui a le plus d'expérience dans ce domaine.", "en": "He has the most experience in this field.", "note": "le plus de + noun" },
+        { "fr": "C'est le meilleur candidat pour ce poste.", "en": "He's the best candidate for this position.", "note": "irregular: le meilleur, not le plus bon" },
+        { "fr": "C'est elle qui travaille le mieux sous pression.", "en": "She's the one who works best under pressure.", "note": "irregular adverb: le mieux, not le plus bien" },
+        { "fr": "C'est le poste qui offre le moins de vacances.", "en": "It's the job that offers the fewest vacation days." },
+        { "fr": "De tous les collègues, c'est lui le pire en réunion.", "en": "Of all the colleagues, he's the worst in meetings.", "note": "irregular: le pire" }
+      ],
+      "commonMistakes": [
+        "Only using one article where French requires the article to repeat before plus/moins for post-nominal adjectives, e.g. saying 'le métier plus intéressant' instead of 'le métier le plus intéressant'.",
+        "Using le plus bon instead of the irregular le meilleur, e.g. 'c'est le plus bon travail' instead of 'c'est le meilleur travail'.",
+        "Confusing le meilleur (adjective, agrees) with le mieux (adverb, invariable), e.g. 'elle travaille le meilleur' instead of 'elle travaille le mieux'.",
+        "Using dans instead of de to mean 'in/of' the comparison group, e.g. 'le meilleur employé dans l'entreprise' instead of 'de l'entreprise'.",
+        "Forgetting gender/number agreement on both the article and the adjective in the superlative phrase, e.g. 'la profession le plus stressant' instead of 'la profession la plus stressante'."
+      ],
+      "whyItTrips": [
+        "English superlatives only need one 'the' ('the most difficult job'), so the French pattern of repeating the article before plus/moins (le travail le plus difficile) looks redundant and is easy to simplify incorrectly.",
+        "English 'best' and 'most' cover both adjective and adverb roles without changing form, so distinguishing le meilleur (adjective) from le mieux (adverb) requires a category of thinking English speakers don't practice.",
+        "English uses 'in' for both physical location and comparison groups ('the best doctor in the city'), which pulls learners toward the false-friend dans instead of the grammatically required de."
+      ],
+      "searchTags": ["superlatifs", "le-plus", "le-moins", "meilleur", "mieux", "superlative"]
+    }
+  ]
+}

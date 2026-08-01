@@ -1,0 +1,64 @@
+{
+  "unitSlug": "les-courses",
+  "points": [
+    {
+      "slug": "numbers-70-1000",
+      "title": "Les nombres de 70 à 1000",
+      "explanationEn": "French numbers from 70 to 99 famously abandon the clean base-ten pattern used from 20-69 and switch to a vigesimal (base-20) counting logic left over from an older number system, which makes this range the single hardest part of French numbers for English speakers. Seventy is 'soixante-dix', literally 'sixty-ten' — you keep counting up from soixante (60) as if seventy didn't have its own word: 71 is soixante et onze ('sixty and eleven'), 72 is soixante-douze ('sixty-twelve'), all the way to 79, soixante-dix-neuf ('sixty-nineteen'). Note that 71 uses 'et onze' (with 'et', no hyphen), breaking the pattern you'd expect from 72-79, which use plain hyphens.\n\nEighty is 'quatre-vingts', literally 'four twenties' (4 × 20 = 80) — a direct vigesimal calculation. Note the -s on vingts only appears for exactly 80; as soon as you add anything after it, the -s drops: quatre-vingt-un (81, and note there is no 'et' before 'un' here, unlike soixante et onze), quatre-vingt-deux (82), up to quatre-vingt-neuf (89). Ninety continues the same logic: quatre-vingt-dix, literally 'four-twenty-ten' (80 + 10 = 90), and 91-99 continue counting the same way as the 70s did: quatre-vingt-onze (91), quatre-vingt-douze (92), up to quatre-vingt-dix-neuf (99). Once you reach 100, the system becomes clean and logical again: cent (100), cent un (101, no hyphen and no 'et' after cent), deux cents (200, with an -s since it's an exact multiple with nothing following), deux cent un (201, -s drops again once something follows), and so on up to mille (1000), which never takes an -s regardless of the multiplier: deux mille (2000), trois mille (3000).\n\nBelgian and Swiss French actually use simpler, more base-ten-consistent words for 70 and 90 (septante, nonante — though huitante/octante for 80 is less universal), but standard European French as taught in most classrooms and as used in France uses the soixante-dix/quatre-vingts/quatre-vingt-dix system described above, so that's the priority to master.",
+      "examples": [
+        { "fr": "Ce sac coûte soixante-quinze euros.", "en": "This bag costs seventy-five euros.", "note": "75 = soixante ('sixty') + quinze ('fifteen')." },
+        { "fr": "Il y a quatre-vingts personnes dans le magasin.", "en": "There are eighty people in the store.", "note": "'Quatre-vingts' keeps the -s only when it's an exact multiple of 20 with nothing after it." },
+        { "fr": "J'ai quatre-vingt-un ans.", "en": "I am eighty-one years old.", "note": "The -s on 'vingt' drops once a number follows; no 'et' before 'un' here (unlike soixante et onze)." },
+        { "fr": "Le prix total est de quatre-vingt-dix-neuf euros.", "en": "The total price is ninety-nine euros.", "note": "99 = quatre-vingt ('four-twenty'=80) + dix-neuf ('nineteen')." },
+        { "fr": "Elle a soixante et onze ans.", "en": "She is seventy-one years old.", "note": "71 uses 'et onze', the one exception with 'et' in the 70s range." },
+        { "fr": "Ça fait cent euros, s'il vous plaît.", "en": "That'll be one hundred euros, please.", "note": "'Cent' alone, no article needed (not 'un cent')." },
+        { "fr": "Nous sommes deux cents personnes ici.", "en": "There are two hundred of us here.", "note": "'Cents' takes -s as an exact multiple of 100." },
+        { "fr": "Le livre coûte deux cent cinquante euros.", "en": "The book costs two hundred fifty euros.", "note": "-s drops from 'cent' once a number follows it." },
+        { "fr": "Cette voiture coûte vingt mille euros.", "en": "This car costs twenty thousand euros.", "note": "'Mille' is always invariable — never takes an -s." },
+        { "fr": "J'ai économisé mille cinq cents euros.", "en": "I've saved one thousand five hundred euros." }
+      ],
+      "commonMistakes": [
+        "Trying to say a single word for 70, 80, or 90 the way English does, instead of the compound forms soixante-dix / quatre-vingts / quatre-vingt-dix.",
+        "Keeping the -s on 'quatre-vingts' when a number follows it (writing 'quatre-vingts-un' instead of the correct 'quatre-vingt-un', with the -s dropped).",
+        "Adding 'et' before 'un' in the 80s the way it's used at 71 (soixante et onze), when in fact quatre-vingt-un has no 'et'.",
+        "Adding an -s to 'mille' when it's multiplied (writing 'deux milles' instead of the correct 'deux mille', since mille is always invariable).",
+        "Adding an article before 'cent' (saying 'un cent euros' instead of just 'cent euros')."
+      ],
+      "whyItTrips": [
+        "English numbers 70-99 follow a completely regular base-ten pattern with dedicated words (seventy, eighty, ninety), so French's vigesimal (base-20) leftover system for this exact range has no equivalent logic to transfer from English.",
+        "The -s on 'quatre-vingts' and 'cents' that appears only for exact multiples and disappears once a number follows is a spelling rule tied to a grammatical distinction (exact multiple vs. not) that English numbers don't mark at all.",
+        "Doing arithmetic in your head while forming the number (80 = 4×20, so 'four-twenty'; 90 = 4×20+10) adds real-time cognitive load that native English number words never require."
+      ],
+      "searchTags": ["numbers", "nombres", "soixante-dix", "quatre-vingts", "large numbers", "vigesimal"]
+    },
+    {
+      "slug": "demonstrative-adjectives",
+      "title": "Les adjectifs démonstratifs (ce, cet, cette, ces)",
+      "explanationEn": "Demonstrative adjectives — the French equivalent of English 'this/that/these/those' — point to a specific noun, and like all French adjectives, they must agree in gender and number with the noun they modify. There are four forms: ce (masculine singular, before a consonant sound: ce livre), cet (masculine singular, before a vowel sound or mute h, purely for smoother pronunciation: cet ordinateur, cet homme), cette (feminine singular, for both consonant and vowel starts: cette pomme, cette amie), and ces (plural, either gender: ces livres, ces pommes). Unlike English, French does not have separate words for 'this' versus 'that' in the base form — ce/cette/ces cover both meanings, and the distinction is usually left to context.\n\nWhen you do need to explicitly distinguish 'this' from 'that' (or 'these' from 'those'), French adds a suffix directly onto the noun: -ci for nearness ('this, here') and -là for distance ('that, over there'). So 'ce livre-ci' means 'this book (here, close to me)' and 'ce livre-là' means 'that book (over there, farther away)'. In everyday speech, though, French speakers very often just say 'ce livre' and let context or a pointing gesture clarify which one they mean, without bothering with -ci/-là at all — so don't over-rely on the suffixes if the meaning is already clear from context.\n\nRemember that cet (the special vowel-triggered masculine form) is chosen based purely on the sound that immediately follows, not on any underlying logic about the word itself — it exists only to avoid an awkward consonant-vowel clash in pronunciation, exactly like the reasoning behind le/la becoming l'. This means a masculine noun can take either ce or cet depending entirely on its first sound: ce garçon (boy, starts with a consonant sound) but cet enfant (child, starts with a vowel sound), even though both are grammatically masculine singular nouns.",
+      "examples": [
+        { "fr": "Ce pull est très joli.", "en": "This/that sweater is very nice.", "note": "Masculine singular 'ce' before a consonant sound." },
+        { "fr": "Cet imperméable coûte trop cher.", "en": "This/that raincoat costs too much.", "note": "'Cet', not 'ce', because 'imperméable' starts with a vowel sound." },
+        { "fr": "Cette veste te va très bien.", "en": "This/that jacket looks great on you.", "note": "Feminine singular 'cette'." },
+        { "fr": "Ces chaussures sont en solde.", "en": "These/those shoes are on sale.", "note": "'Ces' covers both masculine and feminine plural." },
+        { "fr": "Je préfère ce sac-ci à ce sac-là.", "en": "I prefer this bag (here) to that bag (there).", "note": "-ci/-là suffixes used together to explicitly contrast near vs. far." },
+        { "fr": "Cet homme cherche une nouvelle montre.", "en": "This/that man is looking for a new watch.", "note": "'Cet' before 'homme' — the mute h counts as a vowel start." },
+        { "fr": "Combien coûte cette robe ?", "en": "How much does this/that dress cost?" },
+        { "fr": "Ces gants sont trop petits pour moi.", "en": "These/those gloves are too small for me." },
+        { "fr": "Je voudrais essayer ce manteau, s'il vous plaît.", "en": "I would like to try on this coat, please." },
+        { "fr": "Cette écharpe-là est plus belle que cette écharpe-ci.", "en": "That scarf (over there) is prettier than this scarf (here).", "note": "Contrasting -là and -ci on the same noun, repeated for clarity." }
+      ],
+      "commonMistakes": [
+        "Using 'ce' before a masculine noun that starts with a vowel sound instead of switching to 'cet' (saying 'ce imperméable' instead of the correct 'cet imperméable').",
+        "Trying to force a strict this/that distinction every time by overusing -ci and -là, when plain ce/cette/ces without a suffix is the natural default in most everyday contexts.",
+        "Using 'cette' for a masculine noun or 'ce'/'cet' for a feminine noun by not tracking the noun's grammatical gender carefully.",
+        "Forgetting that 'ces' covers both masculine and feminine in the plural, and mistakenly trying to invent a separate feminine plural form."
+      ],
+      "whyItTrips": [
+        "English 'this/that/these/those' inherently encode both distance (this vs. that) and number (this vs. these) in the word itself, while French ce/cette/ces primarily encode gender and number, leaving distance to an optional suffix — a very different way of dividing up the same meaning.",
+        "The vowel-triggered swap from 'ce' to 'cet' depends on pronunciation, not grammar, which is a category of rule (sound-based spelling change) that doesn't really exist in English demonstratives.",
+        "Because French collapses 'this' and 'that' into the same base word, English speakers often instinctively hunt for two separate words the way their native language provides, and are unsure when the -ci/-là suffixes are actually necessary versus optional."
+      ],
+      "searchTags": ["demonstrative adjectives", "ce cet cette ces", "this that", "gender agreement", "ci la suffix"]
+    }
+  ]
+}

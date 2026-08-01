@@ -1,0 +1,35 @@
+{
+  "unitSlug": "voyages-et-vacances",
+  "points": [
+    {
+      "slug": "comparatifs",
+      "title": "Les comparatifs",
+      "explanationEn": "Comparatives let you say that one thing has more, less, or the same amount of a quality as another — 'this trip is more expensive,' 'she travels less often,' 'the hotel is as nice as the last one.' French builds comparatives with a small, consistent set of markers wrapped around the thing being compared: plus...que (more...than), moins...que (less...than), and aussi...que (as...as). The exact structure depends on whether you're comparing an adjective, an adverb, a noun, or a verb.\n\nFor adjectives, which agree with the noun they describe as always, the pattern is: subject + être + plus/moins/aussi + adjective + que + point of comparison. Paris est plus grande que Lyon (Paris is bigger than Lyon) — note grande agrees with the feminine Paris. Ce voyage est moins cher que l'autre (this trip is less expensive than the other one). Cet hôtel est aussi confortable que le premier (this hotel is as comfortable as the first one). For adverbs, which never change form, the structure is nearly identical but attaches to a verb instead of être: elle voyage plus souvent que moi (she travels more often than I do), il conduit moins prudemment que sa sœur (he drives less carefully than his sister).\n\nComparing nouns (amounts or quantities of something) uses a different word for 'more/less/as much/as many' because you're now quantifying a noun, not modifying an adjective: plus de, moins de, and autant de (not aussi de) — j'ai plus de valises que toi (I have more suitcases than you), elle a moins de temps libre que nous (she has less free time than us), il a autant d'argent que son frère (he has as much money as his brother). Note the de contracts to d' before a vowel. Comparing verbs (actions themselves, how much something is done) uses plus, moins, autant directly after the verb with no de: il voyage plus que moi (he travels more than I do), elle dort autant que son chat (she sleeps as much as her cat).\n\nA handful of adjectives and adverbs have irregular comparative forms that must be memorized rather than built with plus: bon (good) becomes meilleur in the comparative — not plus bon — so ce restaurant est meilleur que l'autre (this restaurant is better than the other one, not 'plus bon'). The adverb bien (well) becomes mieux — elle parle mieux français que moi (she speaks French better than I do, not 'plus bien'). Mauvais (bad) can regularly become plus mauvais, but there's also a common irregular alternative pire (worse) used especially for abstract or serious things. Keep meilleur (adjective, agrees in gender/number) and mieux (adverb, invariable) clearly distinct — they're one of the most frequent points of confusion at this level because English 'better' covers both.",
+      "examples": [
+        { "fr": "Paris est plus grande que Lyon.", "en": "Paris is bigger than Lyon.", "note": "adjective agrees: grande" },
+        { "fr": "Ce voyage est moins cher que le dernier.", "en": "This trip is less expensive than the last one." },
+        { "fr": "Cet hôtel est aussi confortable que celui de l'année dernière.", "en": "This hotel is as comfortable as last year's." },
+        { "fr": "Elle voyage plus souvent que moi.", "en": "She travels more often than I do.", "note": "adverb, invariable" },
+        { "fr": "J'ai plus de valises que toi.", "en": "I have more suitcases than you.", "note": "plus de + noun, not plus...que" },
+        { "fr": "Il a autant d'argent que son frère pour les vacances.", "en": "He has as much money as his brother for vacation.", "note": "autant de before a vowel: d'argent" },
+        { "fr": "Ce restaurant est meilleur que celui d'hier.", "en": "This restaurant is better than yesterday's.", "note": "irregular: meilleur, not plus bon" },
+        { "fr": "Elle parle mieux anglais que son collègue.", "en": "She speaks English better than her colleague.", "note": "irregular adverb: mieux, not plus bien" },
+        { "fr": "Nous avons moins de temps que prévu pour visiter la ville.", "en": "We have less time than planned to visit the city." },
+        { "fr": "Il voyage autant que sa sœur, chaque année.", "en": "He travels as much as his sister does, every year.", "note": "comparing the verb itself: autant with no de" }
+      ],
+      "commonMistakes": [
+        "Using plus bon instead of the irregular meilleur, e.g. 'ce café est plus bon' instead of 'ce café est meilleur'.",
+        "Confusing meilleur (adjective, agrees with the noun) and mieux (adverb, invariable), e.g. saying 'il travaille meilleur' instead of 'il travaille mieux'.",
+        "Using plus/moins/aussi with a noun instead of switching to plus de/moins de/autant de, e.g. 'j'ai plus argent' instead of 'j'ai plus d'argent'.",
+        "Writing aussi de for quantities instead of the correct autant de, e.g. 'aussi de temps' instead of 'autant de temps'.",
+        "Forgetting adjective agreement inside the comparative structure, e.g. 'Paris est plus grand que Lyon' when grand should agree with the feminine Paris as grande."
+      ],
+      "whyItTrips": [
+        "English uses one flexible word 'better' for both adjective and adverb comparison ('a better hotel' / 'she speaks better'), so English speakers don't naturally split meilleur (adjective) from mieux (adverb) the way French requires.",
+        "English doesn't need a different comparison word for nouns versus adjectives ('more expensive' and 'more suitcases' both use 'more'), so the plus...que / plus de split feels like an unnecessary extra rule rather than a predictable pattern.",
+        "Because French adjectives already require gender/number agreement on their own, learners juggling a new comparative structure often forget to also apply the underlying agreement rule at the same time."
+      ],
+      "searchTags": ["comparatifs", "plus-que", "moins-que", "aussi-que", "meilleur-mieux", "comparison"]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "unitSlug": "technologie",
+  "points": [
+    {
+      "slug": "relatifs-dont-ou",
+      "title": "Les pronoms relatifs dont et où",
+      "explanationEn": "You already know that qui replaces a subject and que replaces a direct object inside a relative clause. Dont and où extend that same system to two more grammatical roles: dont replaces anything introduced by the preposition de, and où replaces a place or a time. Choosing correctly among qui, que, dont, and où is really just a matter of asking: what job would the missing word have played in the sentence before it got turned into a relative clause?\n\nDont is used whenever the verb, adjective, or noun in the relative clause normally requires de before its object. This covers an enormous number of common French expressions: parler de (to talk about), avoir besoin de (to need), avoir peur de (to be afraid of), être content de (to be happy about), le livre dont la couverture est bleue (the book whose cover is blue — showing possession, from 'la couverture DE ce livre'). For example, starting from J'ai besoin de ce livre (I need this book), if you want to describe le livre with a relative clause, you get le livre dont j'ai besoin (the book that I need / the book I need), because besoin normally takes de. English handles this with a scattered set of options — \"that,\" \"whose,\" or simply dropping the word and adding \"of\" somewhere else — but French unifies all of them under one single word, dont, as long as de is the preposition involved.\n\nA particularly important sub-case of dont is possession: dont can replace de + noun to mean \"whose.\" C'est l'écrivain dont j'ai lu tous les livres (That's the writer whose books I've all read — literally \"of whom I have read all the books\"). Word order is critical here and differs sharply from English: after dont, French keeps normal subject-verb-object order (dont j'ai lu tous les livres), it does NOT reorder into \"dont tous les livres j'ai lu\" the way English inverts to \"whose books I have read.\" This word-order mismatch is one of the trickiest parts of dont for English speakers to internalize.\n\nOù is more straightforward: it replaces a place (meaning \"where\") or, less obviously to English speakers, a point in time (meaning \"when\"). La ville où j'habite (the city where I live) is the intuitive, place-based use. But où is also the standard way to say \"when\" after a noun of time: le jour où je l'ai rencontré (the day [when] I met him) — English can drop \"when\" entirely here or use \"that,\" but French virtually always uses où after words like le jour, le moment, l'année, la fois. Learners often reach for que in these time expressions by analogy with English \"the day that,\" but French requires où.",
+      "examples": [
+        { "fr": "C'est le livre dont j'ai besoin.", "en": "That's the book that I need.", "note": "avoir besoin DE → dont" },
+        { "fr": "Voici l'écrivain dont j'ai lu tous les romans.", "en": "Here's the writer whose novels I've all read.", "note": "Possession use of dont; note the normal word order after dont." },
+        { "fr": "C'est un sujet dont on parle beaucoup en ce moment.", "en": "It's a topic that people talk about a lot right now.", "note": "parler DE → dont" },
+        { "fr": "La ville où j'habite est très animée.", "en": "The city where I live is very lively.", "note": "où = place" },
+        { "fr": "Je me souviens du jour où nous nous sommes rencontrés.", "en": "I remember the day when we met.", "note": "où = time, not qui/que" },
+        { "fr": "C'est l'application dont tout le monde a peur pour ses données.", "en": "It's the app that everyone is afraid of for their data.", "note": "avoir peur DE → dont" },
+        { "fr": "Le café où on se retrouve d'habitude est fermé.", "en": "The café where we usually meet up is closed.", "note": "où = place" },
+        { "fr": "C'est exactement le résultat dont je suis fier.", "en": "That's exactly the result that I'm proud of.", "note": "être fier DE → dont" },
+        { "fr": "L'année où internet est devenu grand public a tout changé.", "en": "The year when the internet became mainstream changed everything.", "note": "où = time" },
+        { "fr": "Le mot de passe dont tu as besoin est dans le fichier.", "en": "The password that you need is in the file.", "note": "avoir besoin DE → dont" }
+      ],
+      "commonMistakes": [
+        "Using que instead of dont after de-requiring verbs and adjectives (writing 'le livre que j'ai besoin' instead of 'le livre dont j'ai besoin').",
+        "Reordering the clause after dont to match English possessive word order (writing 'dont tous les livres j'ai lus' instead of 'dont j'ai lu tous les livres').",
+        "Using que for time expressions like 'le jour', 'le moment', 'l'année' instead of où (writing 'le jour que je l'ai rencontré' instead of 'le jour où je l'ai rencontré').",
+        "Forgetting that où can mean 'when' as well as 'where', and only using it for physical locations.",
+        "Adding an extra 'de' after dont, since dont already contains the meaning of de (writing 'dont j'ai besoin de' instead of just 'dont j'ai besoin')."
+      ],
+      "whyItTrips": [
+        "English relative clauses don't organize themselves around which preposition a verb requires, so English speakers have no instinct to check 'does this verb take de?' before picking a relative pronoun — dont feels like an arbitrary extra category rather than a logical consequence of de-taking verbs.",
+        "English 'whose' inverts word order (whose books I have read), while French dont keeps normal order (dont j'ai lu les livres), so learners transplant the English word order and produce ungrammatical French.",
+        "English 'when' after time nouns is often optional or replaced by 'that' (the day [that] we met), giving no strong cue that French requires the dedicated word où in this exact spot."
+      ],
+      "searchTags": ["relative pronouns", "dont", "ou relatif", "pronoms relatifs", "de preposition", "whose"]
+    }
+  ]
+}

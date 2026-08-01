@@ -1,0 +1,2067 @@
+[
+  {
+    "id": "medias-journalisme-001",
+    "fr": "un journal",
+    "en": "a newspaper",
+    "lemma": "journal",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "journaux",
+    "ipa": "/ʒuʁ.nal/",
+    "cefr": "A1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Mon grand-père lit le journal tous les matins.",
+    "exampleEn": "My grandfather reads the newspaper every morning.",
+    "collocations": [
+      "lire le journal",
+      "un journal local"
+    ],
+    "audioText": "un journal"
+  },
+  {
+    "id": "medias-journalisme-002",
+    "fr": "la télévision",
+    "en": "television",
+    "lemma": "télévision",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/te.le.vi.zjɔ̃/",
+    "cefr": "A1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Le soir, toute la famille regarde la télévision ensemble.",
+    "exampleEn": "In the evening, the whole family watches television together.",
+    "collocations": [
+      "allumer la télévision",
+      "à la télévision"
+    ],
+    "mnemonic": "Souvent raccourci familièrement en 'la télé'.",
+    "audioText": "la télévision"
+  },
+  {
+    "id": "medias-journalisme-003",
+    "fr": "la radio",
+    "en": "the radio",
+    "lemma": "radio",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁa.djo/",
+    "cefr": "A1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "J'écoute la radio en conduisant.",
+    "exampleEn": "I listen to the radio while driving.",
+    "collocations": [
+      "écouter la radio",
+      "une station de radio"
+    ],
+    "audioText": "la radio"
+  },
+  {
+    "id": "medias-journalisme-004",
+    "fr": "les informations",
+    "en": "the news (broadcast)",
+    "lemma": "information",
+    "pos": "noun",
+    "gender": "f",
+    "plural": "informations",
+    "ipa": "/ɛ̃.fɔʁ.ma.sjɔ̃/",
+    "cefr": "A1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Nous regardons les informations à vingt heures.",
+    "exampleEn": "We watch the news at eight o'clock.",
+    "collocations": [
+      "les informations du soir",
+      "suivre les informations"
+    ],
+    "mnemonic": "Dans ce sens, presque toujours au pluriel ; raccourci familièrement en 'les infos'.",
+    "audioText": "les informations"
+  },
+  {
+    "id": "medias-journalisme-005",
+    "fr": "lire",
+    "en": "to read",
+    "lemma": "lire",
+    "pos": "verb",
+    "ipa": "/liʁ/",
+    "cefr": "A1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Elle aime lire le journal avec son café.",
+    "exampleEn": "She likes to read the newspaper with her coffee.",
+    "collocations": [
+      "lire un article",
+      "lire attentivement"
+    ],
+    "audioText": "lire"
+  },
+  {
+    "id": "medias-journalisme-006",
+    "fr": "un/une journaliste",
+    "en": "a journalist",
+    "lemma": "journaliste",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/ʒuʁ.na.list/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "La journaliste pose des questions précises à ses invités.",
+    "exampleEn": "The journalist asks her guests precise questions.",
+    "collocations": [
+      "un journaliste indépendant",
+      "devenir journaliste"
+    ],
+    "audioText": "un/une journaliste"
+  },
+  {
+    "id": "medias-journalisme-007",
+    "fr": "un article",
+    "en": "an article",
+    "lemma": "article",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/aʁ.tikl/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "J'ai lu un article intéressant sur le climat.",
+    "exampleEn": "I read an interesting article about the climate.",
+    "collocations": [
+      "rédiger un article",
+      "un article de presse"
+    ],
+    "audioText": "un article"
+  },
+  {
+    "id": "medias-journalisme-008",
+    "fr": "une chaîne",
+    "en": "a (TV) channel",
+    "lemma": "chaîne",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʃɛn/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Cette chaîne diffuse le journal télévisé à midi.",
+    "exampleEn": "This channel broadcasts the news at noon.",
+    "collocations": [
+      "une chaîne d'information",
+      "changer de chaîne"
+    ],
+    "audioText": "une chaîne"
+  },
+  {
+    "id": "medias-journalisme-009",
+    "fr": "un magazine",
+    "en": "a magazine",
+    "lemma": "magazine",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ma.ɡa.zin/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Elle feuillette un magazine dans la salle d'attente.",
+    "exampleEn": "She flips through a magazine in the waiting room.",
+    "collocations": [
+      "un magazine féminin",
+      "s'abonner à un magazine"
+    ],
+    "audioText": "un magazine"
+  },
+  {
+    "id": "medias-journalisme-010",
+    "fr": "écrire",
+    "en": "to write",
+    "lemma": "écrire",
+    "pos": "verb",
+    "ipa": "/e.kʁiʁ/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Il écrit pour un journal régional depuis cinq ans.",
+    "exampleEn": "He has been writing for a regional newspaper for five years.",
+    "collocations": [
+      "écrire un article",
+      "écrire un reportage"
+    ],
+    "audioText": "écrire"
+  },
+  {
+    "id": "medias-journalisme-011",
+    "fr": "une interview",
+    "en": "an interview",
+    "lemma": "interview",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɛ̃.tɛʁ.vju/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "L'actrice a donné une interview exclusive à ce magazine.",
+    "exampleEn": "The actress gave an exclusive interview to this magazine.",
+    "collocations": [
+      "accorder une interview",
+      "une interview exclusive"
+    ],
+    "fauxAmi": "s'écrit presque comme l'anglais 'interview' mais reste féminin en français : 'une interview'.",
+    "audioText": "une interview"
+  },
+  {
+    "id": "medias-journalisme-012",
+    "fr": "interviewer",
+    "en": "to interview",
+    "lemma": "interviewer",
+    "pos": "verb",
+    "ipa": "/ɛ̃.tɛʁ.vju.ve/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Le journaliste va interviewer le maire demain.",
+    "exampleEn": "The journalist is going to interview the mayor tomorrow.",
+    "collocations": [
+      "interviewer un témoin",
+      "se faire interviewer"
+    ],
+    "audioText": "interviewer"
+  },
+  {
+    "id": "medias-journalisme-013",
+    "fr": "une photo",
+    "en": "a photo",
+    "lemma": "photo",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fɔ.to/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Cette photo a fait la une de tous les journaux.",
+    "exampleEn": "This photo made the front page of every newspaper.",
+    "collocations": [
+      "prendre une photo",
+      "une photo choc"
+    ],
+    "audioText": "une photo"
+  },
+  {
+    "id": "medias-journalisme-014",
+    "fr": "publier",
+    "en": "to publish",
+    "lemma": "publier",
+    "pos": "verb",
+    "ipa": "/py.blje/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Le magazine va publier son enquête la semaine prochaine.",
+    "exampleEn": "The magazine is going to publish its investigation next week.",
+    "collocations": [
+      "publier un article",
+      "publier en ligne"
+    ],
+    "audioText": "publier"
+  },
+  {
+    "id": "medias-journalisme-015",
+    "fr": "les actualités",
+    "en": "current events / the news",
+    "lemma": "actualité",
+    "pos": "noun",
+    "gender": "f",
+    "plural": "actualités",
+    "ipa": "/ak.ty.a.li.te/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Il consulte les actualités sur son téléphone chaque matin.",
+    "exampleEn": "He checks the news on his phone every morning.",
+    "collocations": [
+      "suivre l'actualité",
+      "un fait d'actualité"
+    ],
+    "audioText": "les actualités"
+  },
+  {
+    "id": "medias-journalisme-016",
+    "fr": "un site web",
+    "en": "a website",
+    "lemma": "site web",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sit wɛb/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Le journal a lancé un nouveau site web plus rapide.",
+    "exampleEn": "The newspaper launched a new, faster website.",
+    "collocations": [
+      "consulter un site web",
+      "un site web d'information"
+    ],
+    "audioText": "un site web"
+  },
+  {
+    "id": "medias-journalisme-017",
+    "fr": "une nouvelle",
+    "en": "a piece of news",
+    "lemma": "nouvelle",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/nu.vɛl/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "As-tu entendu la nouvelle ? Le maire démissionne.",
+    "exampleEn": "Have you heard the news? The mayor is resigning.",
+    "collocations": [
+      "une bonne nouvelle",
+      "annoncer une nouvelle"
+    ],
+    "fauxAmi": "ne signifie pas 'novel' (un roman) ; 'nouvelle' est une information ou un court récit.",
+    "audioText": "une nouvelle"
+  },
+  {
+    "id": "medias-journalisme-018",
+    "fr": "écouter",
+    "en": "to listen to",
+    "lemma": "écouter",
+    "pos": "verb",
+    "ipa": "/e.ku.te/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "J'écoute les infos en préparant le petit-déjeuner.",
+    "exampleEn": "I listen to the news while making breakfast.",
+    "collocations": [
+      "écouter la radio",
+      "écouter attentivement"
+    ],
+    "audioText": "écouter"
+  },
+  {
+    "id": "medias-journalisme-019",
+    "fr": "regarder",
+    "en": "to watch",
+    "lemma": "regarder",
+    "pos": "verb",
+    "ipa": "/ʁə.ɡaʁ.de/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "On regarde le journal télévisé après le dîner.",
+    "exampleEn": "We watch the news broadcast after dinner.",
+    "collocations": [
+      "regarder les informations",
+      "regarder en direct"
+    ],
+    "audioText": "regarder"
+  },
+  {
+    "id": "medias-journalisme-020",
+    "fr": "la presse",
+    "en": "the press",
+    "lemma": "presse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pʁɛs/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "La presse a largement couvert cet événement.",
+    "exampleEn": "The press covered this event extensively.",
+    "collocations": [
+      "la presse locale",
+      "la liberté de la presse"
+    ],
+    "audioText": "la presse"
+  },
+  {
+    "id": "medias-journalisme-021",
+    "fr": "un titre",
+    "en": "a headline",
+    "lemma": "titre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/titʁ/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Le titre de l'article est un peu trompeur.",
+    "exampleEn": "The article's headline is a bit misleading.",
+    "collocations": [
+      "un gros titre",
+      "faire les gros titres"
+    ],
+    "audioText": "un titre"
+  },
+  {
+    "id": "medias-journalisme-022",
+    "fr": "un reportage",
+    "en": "a news report",
+    "lemma": "reportage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁə.pɔʁ.taʒ/",
+    "cefr": "A2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Elle a réalisé un reportage sur les réfugiés climatiques.",
+    "exampleEn": "She made a report on climate refugees.",
+    "collocations": [
+      "un reportage télévisé",
+      "tourner un reportage"
+    ],
+    "audioText": "un reportage"
+  },
+  {
+    "id": "medias-journalisme-023",
+    "fr": "un rédacteur / une rédactrice",
+    "en": "an editor / staff writer",
+    "lemma": "rédacteur",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/ʁe.dak.tœʁ/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Le rédacteur relit chaque article avant publication.",
+    "exampleEn": "The editor proofreads every article before publication.",
+    "collocations": [
+      "rédacteur en chef",
+      "un rédacteur web"
+    ],
+    "fauxAmi": "à ne pas confondre avec 'éditeur', qui désigne la maison d'édition (publisher).",
+    "audioText": "un rédacteur / une rédactrice"
+  },
+  {
+    "id": "medias-journalisme-024",
+    "fr": "la rédaction",
+    "en": "the newsroom / editorial staff",
+    "lemma": "rédaction",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁe.dak.sjɔ̃/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Toute la rédaction s'est réunie pour discuter de la une.",
+    "exampleEn": "The whole newsroom met to discuss the front page.",
+    "collocations": [
+      "la salle de rédaction",
+      "le chef de la rédaction"
+    ],
+    "audioText": "la rédaction"
+  },
+  {
+    "id": "medias-journalisme-025",
+    "fr": "un correspondant / une correspondante",
+    "en": "a correspondent",
+    "lemma": "correspondant",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/kɔ.ʁɛs.pɔ̃.dɑ̃/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Notre correspondant à Berlin nous livre les derniers détails.",
+    "exampleEn": "Our correspondent in Berlin gives us the latest details.",
+    "collocations": [
+      "un correspondant de guerre",
+      "un correspondant local"
+    ],
+    "audioText": "un correspondant / une correspondante"
+  },
+  {
+    "id": "medias-journalisme-026",
+    "fr": "en direct",
+    "en": "live (broadcast)",
+    "lemma": "en direct",
+    "pos": "adv",
+    "ipa": "/ɑ̃ di.ʁɛkt/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "L'émission est diffusée en direct depuis le studio.",
+    "exampleEn": "The show is broadcast live from the studio.",
+    "collocations": [
+      "en direct du studio",
+      "un débat en direct"
+    ],
+    "audioText": "en direct"
+  },
+  {
+    "id": "medias-journalisme-027",
+    "fr": "un scoop",
+    "en": "a scoop (exclusive story)",
+    "lemma": "scoop",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/skup/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Ce journal a eu le scoop de l'année.",
+    "exampleEn": "This newspaper had the scoop of the year.",
+    "collocations": [
+      "décrocher un scoop",
+      "avoir le scoop"
+    ],
+    "audioText": "un scoop"
+  },
+  {
+    "id": "medias-journalisme-028",
+    "fr": "une source",
+    "en": "a source",
+    "lemma": "source",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/suʁs/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Le journaliste refuse de révéler sa source.",
+    "exampleEn": "The journalist refuses to reveal his source.",
+    "collocations": [
+      "une source fiable",
+      "citer ses sources"
+    ],
+    "audioText": "une source"
+  },
+  {
+    "id": "medias-journalisme-029",
+    "fr": "vérifier",
+    "en": "to verify / check",
+    "lemma": "vérifier",
+    "pos": "verb",
+    "ipa": "/ve.ʁi.fje/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Il faut toujours vérifier une information avant de la partager.",
+    "exampleEn": "You should always verify a piece of information before sharing it.",
+    "collocations": [
+      "vérifier une source",
+      "vérifier les faits"
+    ],
+    "audioText": "vérifier"
+  },
+  {
+    "id": "medias-journalisme-030",
+    "fr": "une émission",
+    "en": "a (TV/radio) program",
+    "lemma": "émission",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.mi.sjɔ̃/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Cette émission traite de sujets de société chaque semaine.",
+    "exampleEn": "This program covers social issues every week.",
+    "collocations": [
+      "une émission de télévision",
+      "animer une émission"
+    ],
+    "audioText": "une émission"
+  },
+  {
+    "id": "medias-journalisme-031",
+    "fr": "un présentateur / une présentatrice",
+    "en": "a news anchor / host",
+    "lemma": "présentateur",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/pʁe.zɑ̃.ta.tœʁ/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "La présentatrice annonce les gros titres du jour.",
+    "exampleEn": "The anchor announces today's top stories.",
+    "collocations": [
+      "le présentateur du journal",
+      "un présentateur vedette"
+    ],
+    "audioText": "un présentateur / une présentatrice"
+  },
+  {
+    "id": "medias-journalisme-032",
+    "fr": "un communiqué de presse",
+    "en": "a press release",
+    "lemma": "communiqué de presse",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ.my.ni.ke də pʁɛs/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "L'entreprise a envoyé un communiqué de presse pour s'expliquer.",
+    "exampleEn": "The company sent out a press release to explain itself.",
+    "collocations": [
+      "publier un communiqué de presse",
+      "diffuser un communiqué"
+    ],
+    "audioText": "un communiqué de presse"
+  },
+  {
+    "id": "medias-journalisme-033",
+    "fr": "un quotidien",
+    "en": "a daily newspaper",
+    "lemma": "quotidien",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ.ti.djɛ̃/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Ce quotidien national tire à plusieurs centaines de milliers d'exemplaires.",
+    "exampleEn": "This national daily prints several hundred thousand copies.",
+    "collocations": [
+      "un grand quotidien",
+      "la une du quotidien"
+    ],
+    "audioText": "un quotidien"
+  },
+  {
+    "id": "medias-journalisme-034",
+    "fr": "un hebdomadaire",
+    "en": "a weekly publication",
+    "lemma": "hebdomadaire",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛb.dɔ.ma.dɛʁ/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Cet hebdomadaire propose un dossier approfondi chaque vendredi.",
+    "exampleEn": "This weekly offers an in-depth feature every Friday.",
+    "collocations": [
+      "un hebdomadaire satirique",
+      "paraître dans l'hebdomadaire"
+    ],
+    "audioText": "un hebdomadaire"
+  },
+  {
+    "id": "medias-journalisme-035",
+    "fr": "la presse écrite",
+    "en": "print media",
+    "lemma": "presse écrite",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pʁɛs e.kʁit/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "La presse écrite doit sans cesse se réinventer face à Internet.",
+    "exampleEn": "Print media constantly has to reinvent itself in the face of the internet.",
+    "collocations": [
+      "la crise de la presse écrite"
+    ],
+    "audioText": "la presse écrite"
+  },
+  {
+    "id": "medias-journalisme-036",
+    "fr": "la presse en ligne",
+    "en": "online press",
+    "lemma": "presse en ligne",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pʁɛs ɑ̃ liɲ/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "De plus en plus de lecteurs se tournent vers la presse en ligne.",
+    "exampleEn": "More and more readers are turning to the online press.",
+    "collocations": [
+      "un site de presse en ligne"
+    ],
+    "audioText": "la presse en ligne"
+  },
+  {
+    "id": "medias-journalisme-037",
+    "fr": "un blog",
+    "en": "a blog",
+    "lemma": "blog",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/blɔɡ/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Elle tient un blog sur l'actualité politique.",
+    "exampleEn": "She runs a blog about political news.",
+    "collocations": [
+      "tenir un blog",
+      "un article de blog"
+    ],
+    "audioText": "un blog"
+  },
+  {
+    "id": "medias-journalisme-038",
+    "fr": "un podcast",
+    "en": "a podcast",
+    "lemma": "podcast",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɔd.kast/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "J'écoute un podcast d'actualité pendant mon trajet.",
+    "exampleEn": "I listen to a news podcast during my commute.",
+    "collocations": [
+      "enregistrer un podcast",
+      "un podcast d'information"
+    ],
+    "audioText": "un podcast"
+  },
+  {
+    "id": "medias-journalisme-039",
+    "fr": "les réseaux sociaux",
+    "en": "social media",
+    "lemma": "réseau social",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "réseaux sociaux",
+    "ipa": "/ʁe.zo sɔ.sjal/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Beaucoup de gens s'informent désormais sur les réseaux sociaux.",
+    "exampleEn": "Many people now get their news on social media.",
+    "collocations": [
+      "partager sur les réseaux sociaux",
+      "un scandale sur les réseaux sociaux"
+    ],
+    "audioText": "les réseaux sociaux"
+  },
+  {
+    "id": "medias-journalisme-040",
+    "fr": "partager",
+    "en": "to share",
+    "lemma": "partager",
+    "pos": "verb",
+    "ipa": "/paʁ.ta.ʒe/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Elle a partagé l'article sans en vérifier la source.",
+    "exampleEn": "She shared the article without checking its source.",
+    "collocations": [
+      "partager une publication",
+      "partager massivement"
+    ],
+    "audioText": "partager"
+  },
+  {
+    "id": "medias-journalisme-041",
+    "fr": "un abonné / une abonnée",
+    "en": "a subscriber",
+    "lemma": "abonné",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/a.bɔ.ne/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Le journal compte désormais plus de cent mille abonnés numériques.",
+    "exampleEn": "The newspaper now has more than a hundred thousand digital subscribers.",
+    "collocations": [
+      "un abonné fidèle",
+      "réservé aux abonnés"
+    ],
+    "audioText": "un abonné / une abonnée"
+  },
+  {
+    "id": "medias-journalisme-042",
+    "fr": "un abonnement",
+    "en": "a subscription",
+    "lemma": "abonnement",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.bɔn.mɑ̃/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "J'ai pris un abonnement pour lire tous les articles.",
+    "exampleEn": "I got a subscription so I could read all the articles.",
+    "collocations": [
+      "souscrire un abonnement",
+      "résilier un abonnement"
+    ],
+    "audioText": "un abonnement"
+  },
+  {
+    "id": "medias-journalisme-043",
+    "fr": "s'abonner",
+    "en": "to subscribe",
+    "lemma": "s'abonner",
+    "pos": "verb",
+    "ipa": "/sa.bɔ.ne/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Je me suis abonné à ce quotidien il y a deux ans.",
+    "exampleEn": "I subscribed to this daily two years ago.",
+    "collocations": [
+      "s'abonner à un journal",
+      "s'abonner gratuitement"
+    ],
+    "audioText": "s'abonner"
+  },
+  {
+    "id": "medias-journalisme-044",
+    "fr": "un éditorial",
+    "en": "an editorial",
+    "lemma": "éditorial",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "éditoriaux",
+    "ipa": "/e.di.tɔ.ʁjal/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "L'éditorial de ce matin critique la politique du gouvernement.",
+    "exampleEn": "This morning's editorial criticizes the government's policy.",
+    "collocations": [
+      "écrire un éditorial",
+      "un éditorial engagé"
+    ],
+    "audioText": "un éditorial"
+  },
+  {
+    "id": "medias-journalisme-045",
+    "fr": "une chronique",
+    "en": "a (newspaper) column",
+    "lemma": "chronique",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kʁɔ.nik/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Sa chronique hebdomadaire est très attendue par les lecteurs.",
+    "exampleEn": "Her weekly column is eagerly awaited by readers.",
+    "collocations": [
+      "une chronique culturelle",
+      "tenir une chronique"
+    ],
+    "fauxAmi": "existe aussi comme adjectif médical ('une maladie chronique'), mais ici c'est une rubrique de journal.",
+    "audioText": "une chronique"
+  },
+  {
+    "id": "medias-journalisme-046",
+    "fr": "un chroniqueur / une chroniqueuse",
+    "en": "a columnist",
+    "lemma": "chroniqueur",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/kʁɔ.ni.kœʁ/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Le chroniqueur donne son avis tranché sur l'actualité.",
+    "exampleEn": "The columnist gives his sharp opinion on current events.",
+    "collocations": [
+      "un chroniqueur politique",
+      "un chroniqueur sportif"
+    ],
+    "audioText": "un chroniqueur / une chroniqueuse"
+  },
+  {
+    "id": "medias-journalisme-047",
+    "fr": "un sondage",
+    "en": "a poll / survey",
+    "lemma": "sondage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɔ̃.daʒ/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Selon un récent sondage, la confiance envers les médias baisse.",
+    "exampleEn": "According to a recent poll, trust in the media is declining.",
+    "collocations": [
+      "un sondage d'opinion",
+      "mener un sondage"
+    ],
+    "audioText": "un sondage"
+  },
+  {
+    "id": "medias-journalisme-048",
+    "fr": "l'opinion publique",
+    "en": "public opinion",
+    "lemma": "opinion publique",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɔ.pi.njɔ̃ py.blik/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Les médias jouent un rôle central dans la formation de l'opinion publique.",
+    "exampleEn": "The media play a central role in shaping public opinion.",
+    "collocations": [
+      "influencer l'opinion publique",
+      "l'opinion publique est divisée"
+    ],
+    "audioText": "l'opinion publique"
+  },
+  {
+    "id": "medias-journalisme-049",
+    "fr": "une enquête",
+    "en": "an investigation",
+    "lemma": "enquête",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɑ̃.kɛt/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Le magazine a publié une enquête sur les conditions de travail.",
+    "exampleEn": "The magazine published an investigation into working conditions.",
+    "collocations": [
+      "une enquête approfondie",
+      "mener une enquête"
+    ],
+    "audioText": "une enquête"
+  },
+  {
+    "id": "medias-journalisme-050",
+    "fr": "enquêter",
+    "en": "to investigate",
+    "lemma": "enquêter",
+    "pos": "verb",
+    "ipa": "/ɑ̃.kɛ.te/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Deux journalistes ont enquêté pendant six mois sur cette affaire.",
+    "exampleEn": "Two journalists investigated this case for six months.",
+    "collocations": [
+      "enquêter sur un sujet",
+      "enquêter discrètement"
+    ],
+    "audioText": "enquêter"
+  },
+  {
+    "id": "medias-journalisme-051",
+    "fr": "la censure",
+    "en": "censorship",
+    "lemma": "censure",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sɑ̃.syʁ/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Ce régime pratique une censure stricte des médias.",
+    "exampleEn": "This regime practices strict censorship of the media.",
+    "collocations": [
+      "échapper à la censure",
+      "la censure d'État"
+    ],
+    "audioText": "la censure"
+  },
+  {
+    "id": "medias-journalisme-052",
+    "fr": "la liberté de la presse",
+    "en": "freedom of the press",
+    "lemma": "liberté de la presse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/li.bɛʁ.te də la pʁɛs/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "La liberté de la presse est un pilier de la démocratie.",
+    "exampleEn": "Freedom of the press is a pillar of democracy.",
+    "collocations": [
+      "défendre la liberté de la presse",
+      "atteinte à la liberté de la presse"
+    ],
+    "audioText": "la liberté de la presse"
+  },
+  {
+    "id": "medias-journalisme-053",
+    "fr": "diffuser",
+    "en": "to broadcast",
+    "lemma": "diffuser",
+    "pos": "verb",
+    "ipa": "/di.fy.ze/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "La chaîne va diffuser le débat en prime time.",
+    "exampleEn": "The channel is going to broadcast the debate in prime time.",
+    "collocations": [
+      "diffuser un reportage",
+      "diffuser en direct"
+    ],
+    "audioText": "diffuser"
+  },
+  {
+    "id": "medias-journalisme-054",
+    "fr": "la diffusion",
+    "en": "broadcasting",
+    "lemma": "diffusion",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/di.fy.zjɔ̃/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "La diffusion de l'émission a été retardée à cause d'un incident technique.",
+    "exampleEn": "The broadcast of the show was delayed due to a technical issue.",
+    "collocations": [
+      "la diffusion en direct",
+      "un droit de diffusion"
+    ],
+    "audioText": "la diffusion"
+  },
+  {
+    "id": "medias-journalisme-055",
+    "fr": "un flash info",
+    "en": "a news flash",
+    "lemma": "flash info",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/flaʃ ɛ̃.fo/",
+    "cefr": "B1",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Un flash info a interrompu le programme pour annoncer la nouvelle.",
+    "exampleEn": "A news flash interrupted the program to announce the news.",
+    "collocations": [
+      "un flash info spécial"
+    ],
+    "audioText": "un flash info"
+  },
+  {
+    "id": "medias-journalisme-056",
+    "fr": "la désinformation",
+    "en": "disinformation",
+    "lemma": "désinformation",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/de.zɛ̃.fɔʁ.ma.sjɔ̃/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Les réseaux sociaux facilitent la propagation de la désinformation.",
+    "exampleEn": "Social media makes it easier for disinformation to spread.",
+    "collocations": [
+      "une campagne de désinformation",
+      "lutter contre la désinformation"
+    ],
+    "audioText": "la désinformation"
+  },
+  {
+    "id": "medias-journalisme-057",
+    "fr": "une infox",
+    "en": "fake news",
+    "lemma": "infox",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɛ̃.fɔks/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Cette photo truquée circulait comme une infox depuis des semaines.",
+    "exampleEn": "This doctored photo had been circulating as fake news for weeks.",
+    "collocations": [
+      "repérer une infox",
+      "propager une infox"
+    ],
+    "mnemonic": "Contraction officielle recommandée de 'information' + 'intoxication', équivalent français de 'fake news'.",
+    "audioText": "une infox"
+  },
+  {
+    "id": "medias-journalisme-058",
+    "fr": "un canular",
+    "en": "a hoax",
+    "lemma": "canular",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ka.ny.laʁ/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "L'annonce de sa mort n'était qu'un canular sur Internet.",
+    "exampleEn": "The announcement of his death was just a hoax on the internet.",
+    "collocations": [
+      "monter un canular",
+      "tomber dans le panneau d'un canular"
+    ],
+    "audioText": "un canular"
+  },
+  {
+    "id": "medias-journalisme-059",
+    "fr": "la vérification des faits",
+    "en": "fact-checking",
+    "lemma": "vérification des faits",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ve.ʁi.fi.ka.sjɔ̃ de fɛ/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Le journal a créé une rubrique dédiée à la vérification des faits.",
+    "exampleEn": "The newspaper created a section dedicated to fact-checking.",
+    "collocations": [
+      "un service de vérification des faits"
+    ],
+    "mnemonic": "Souvent appelée simplement 'le fact-checking', emprunt courant à l'anglais.",
+    "audioText": "la vérification des faits"
+  },
+  {
+    "id": "medias-journalisme-060",
+    "fr": "démentir",
+    "en": "to deny / refute",
+    "lemma": "démentir",
+    "pos": "verb",
+    "ipa": "/de.mɑ̃.tiʁ/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Le ministre a démenti les rumeurs de démission.",
+    "exampleEn": "The minister denied the resignation rumors.",
+    "collocations": [
+      "démentir formellement",
+      "démentir une information"
+    ],
+    "audioText": "démentir"
+  },
+  {
+    "id": "medias-journalisme-061",
+    "fr": "un démenti",
+    "en": "a denial / rebuttal",
+    "lemma": "démenti",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/de.mɑ̃.ti/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "La société a publié un démenti officiel dans la journée.",
+    "exampleEn": "The company issued an official denial within the day.",
+    "collocations": [
+      "publier un démenti",
+      "un démenti formel"
+    ],
+    "audioText": "un démenti"
+  },
+  {
+    "id": "medias-journalisme-062",
+    "fr": "un lanceur d'alerte / une lanceuse d'alerte",
+    "en": "a whistleblower",
+    "lemma": "lanceur d'alerte",
+    "pos": "noun",
+    "gender": "both",
+    "plural": "lanceurs d'alerte",
+    "ipa": "/lɑ̃.sœʁ da.lɛʁt/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Le lanceur d'alerte a transmis des milliers de documents confidentiels à la presse.",
+    "exampleEn": "The whistleblower handed thousands of confidential documents over to the press.",
+    "collocations": [
+      "protéger les lanceurs d'alerte",
+      "le statut de lanceur d'alerte"
+    ],
+    "audioText": "un lanceur d'alerte / une lanceuse d'alerte"
+  },
+  {
+    "id": "medias-journalisme-063",
+    "fr": "une fuite",
+    "en": "a leak",
+    "lemma": "fuite",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fɥit/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Une fuite a permis au journal de révéler l'affaire avant tout le monde.",
+    "exampleEn": "A leak allowed the paper to reveal the story before anyone else.",
+    "collocations": [
+      "une fuite d'informations",
+      "organiser une fuite"
+    ],
+    "fauxAmi": "ici 'fuite' signifie 'leak' d'informations, et pas seulement une fuite d'eau.",
+    "audioText": "une fuite"
+  },
+  {
+    "id": "medias-journalisme-064",
+    "fr": "anonyme",
+    "en": "anonymous",
+    "lemma": "anonyme",
+    "pos": "adj",
+    "ipa": "/a.nɔ.nim/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "L'informateur a préféré rester anonyme.",
+    "exampleEn": "The informant preferred to remain anonymous.",
+    "collocations": [
+      "une source anonyme",
+      "rester anonyme"
+    ],
+    "audioText": "anonyme"
+  },
+  {
+    "id": "medias-journalisme-065",
+    "fr": "objectif / objective",
+    "en": "objective",
+    "lemma": "objectif",
+    "pos": "adj",
+    "ipa": "/ɔb.ʒɛk.tif/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Un bon journaliste s'efforce de rester objectif.",
+    "exampleEn": "A good journalist strives to remain objective.",
+    "collocations": [
+      "un traitement objectif",
+      "rester objectif"
+    ],
+    "audioText": "objectif / objective"
+  },
+  {
+    "id": "medias-journalisme-066",
+    "fr": "subjectif / subjective",
+    "en": "subjective",
+    "lemma": "subjectif",
+    "pos": "adj",
+    "ipa": "/syb.ʒɛk.tif/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Cette chronique est ouvertement subjective, ce qui est assumé.",
+    "exampleEn": "This column is openly subjective, which is intentional.",
+    "collocations": [
+      "un point de vue subjectif",
+      "une analyse subjective"
+    ],
+    "audioText": "subjectif / subjective"
+  },
+  {
+    "id": "medias-journalisme-067",
+    "fr": "partial / partiale",
+    "en": "biased",
+    "lemma": "partial",
+    "pos": "adj",
+    "ipa": "/paʁ.sjal/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Les téléspectateurs ont accusé la chaîne d'être partiale envers un candidat.",
+    "exampleEn": "Viewers accused the channel of being biased toward one candidate.",
+    "collocations": [
+      "un traitement partial",
+      "une couverture partiale"
+    ],
+    "fauxAmi": "ne signifie pas 'partial' au sens de 'incomplet' (= 'partiel') mais 'biaisé'.",
+    "audioText": "partial / partiale"
+  },
+  {
+    "id": "medias-journalisme-068",
+    "fr": "impartial / impartiale",
+    "en": "impartial",
+    "lemma": "impartial",
+    "pos": "adj",
+    "ipa": "/ɛ̃.paʁ.sjal/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Le journal se veut impartial et donne la parole à tous les camps.",
+    "exampleEn": "The newspaper aims to be impartial and gives every side a voice.",
+    "collocations": [
+      "une analyse impartiale",
+      "rester impartial"
+    ],
+    "audioText": "impartial / impartiale"
+  },
+  {
+    "id": "medias-journalisme-069",
+    "fr": "crédible",
+    "en": "credible",
+    "lemma": "crédible",
+    "pos": "adj",
+    "ipa": "/kʁe.dibl/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Cette source n'est pas vraiment crédible.",
+    "exampleEn": "This source isn't really credible.",
+    "collocations": [
+      "une source crédible",
+      "peu crédible"
+    ],
+    "audioText": "crédible"
+  },
+  {
+    "id": "medias-journalisme-070",
+    "fr": "fiable",
+    "en": "reliable",
+    "lemma": "fiable",
+    "pos": "adj",
+    "ipa": "/fjabl/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Il vaut mieux s'informer auprès de médias fiables.",
+    "exampleEn": "It's better to get informed through reliable media outlets.",
+    "collocations": [
+      "une source fiable",
+      "peu fiable"
+    ],
+    "audioText": "fiable"
+  },
+  {
+    "id": "medias-journalisme-071",
+    "fr": "un tabloïd",
+    "en": "a tabloid",
+    "lemma": "tabloïd",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ta.blɔ.id/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Ce tabloïd britannique adore les histoires de célébrités.",
+    "exampleEn": "This British tabloid loves celebrity stories.",
+    "collocations": [
+      "la presse tabloïd",
+      "un titre de tabloïd"
+    ],
+    "audioText": "un tabloïd"
+  },
+  {
+    "id": "medias-journalisme-072",
+    "fr": "la presse people",
+    "en": "celebrity / gossip press",
+    "lemma": "presse people",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pʁɛs pi.pœl/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "La presse people s'est emparée de leur rupture.",
+    "exampleEn": "The gossip press seized on their breakup.",
+    "collocations": [
+      "un magazine people",
+      "les rumeurs de la presse people"
+    ],
+    "audioText": "la presse people"
+  },
+  {
+    "id": "medias-journalisme-073",
+    "fr": "un influenceur / une influenceuse",
+    "en": "an influencer",
+    "lemma": "influenceur",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/ɛ̃.flɥɑ̃.sœʁ/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Certains influenceurs relaient des informations sans les vérifier.",
+    "exampleEn": "Some influencers circulate information without checking it.",
+    "collocations": [
+      "un influenceur suivi",
+      "un partenariat avec un influenceur"
+    ],
+    "audioText": "un influenceur / une influenceuse"
+  },
+  {
+    "id": "medias-journalisme-074",
+    "fr": "viral / virale",
+    "en": "viral",
+    "lemma": "viral",
+    "pos": "adj",
+    "ipa": "/vi.ʁal/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "La vidéo est devenue virale en quelques heures.",
+    "exampleEn": "The video went viral within a few hours.",
+    "collocations": [
+      "devenir viral",
+      "un contenu viral"
+    ],
+    "audioText": "viral / virale"
+  },
+  {
+    "id": "medias-journalisme-075",
+    "fr": "faire le buzz",
+    "en": "to go viral / create a buzz",
+    "lemma": "faire le buzz",
+    "pos": "phrase",
+    "ipa": "/fɛʁ lə bœz/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "familier",
+    "exampleFr": "Sa réponse cinglante en interview a fait le buzz sur les réseaux.",
+    "exampleEn": "Her cutting reply in the interview created a huge buzz online.",
+    "collocations": [
+      "faire le buzz sur les réseaux sociaux"
+    ],
+    "audioText": "faire le buzz"
+  },
+  {
+    "id": "medias-journalisme-076",
+    "fr": "un scandale",
+    "en": "a scandal",
+    "lemma": "scandale",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/skɑ̃.dal/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Le scandale a éclaboussé plusieurs hauts responsables.",
+    "exampleEn": "The scandal splashed onto several senior officials.",
+    "collocations": [
+      "un scandale politique",
+      "éclater un scandale"
+    ],
+    "audioText": "un scandale"
+  },
+  {
+    "id": "medias-journalisme-077",
+    "fr": "la couverture médiatique",
+    "en": "media coverage",
+    "lemma": "couverture médiatique",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ku.vɛʁ.tyʁ me.dja.tik/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "L'événement a bénéficié d'une large couverture médiatique.",
+    "exampleEn": "The event received extensive media coverage.",
+    "collocations": [
+      "assurer la couverture médiatique",
+      "une couverture médiatique intense"
+    ],
+    "audioText": "la couverture médiatique"
+  },
+  {
+    "id": "medias-journalisme-078",
+    "fr": "couvrir",
+    "en": "to cover (an event)",
+    "lemma": "couvrir",
+    "pos": "verb",
+    "ipa": "/ku.vʁiʁ/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Deux équipes ont été envoyées pour couvrir le sommet.",
+    "exampleEn": "Two teams were sent to cover the summit.",
+    "collocations": [
+      "couvrir un événement",
+      "couvrir l'actualité"
+    ],
+    "audioText": "couvrir"
+  },
+  {
+    "id": "medias-journalisme-079",
+    "fr": "un porte-parole",
+    "en": "a spokesperson",
+    "lemma": "porte-parole",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/pɔʁt.pa.ʁɔl/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Le porte-parole du gouvernement a répondu aux questions des journalistes.",
+    "exampleEn": "The government spokesperson answered the journalists' questions.",
+    "collocations": [
+      "un porte-parole officiel",
+      "s'exprimer par la voix d'un porte-parole"
+    ],
+    "mnemonic": "Invariable au pluriel : 'des porte-parole'.",
+    "audioText": "un porte-parole"
+  },
+  {
+    "id": "medias-journalisme-080",
+    "fr": "une conférence de presse",
+    "en": "a press conference",
+    "lemma": "conférence de presse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɔ̃.fe.ʁɑ̃s də pʁɛs/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "Le président a convoqué une conférence de presse en urgence.",
+    "exampleEn": "The president urgently called a press conference.",
+    "collocations": [
+      "organiser une conférence de presse",
+      "tenir une conférence de presse"
+    ],
+    "audioText": "une conférence de presse"
+  },
+  {
+    "id": "medias-journalisme-081",
+    "fr": "une dépêche",
+    "en": "a news dispatch / wire report",
+    "lemma": "dépêche",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/de.pɛʃ/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Une dépêche de l'agence a annoncé la nouvelle en quelques secondes.",
+    "exampleEn": "A wire dispatch announced the news within seconds.",
+    "collocations": [
+      "une dépêche d'agence",
+      "tomber une dépêche"
+    ],
+    "audioText": "une dépêche"
+  },
+  {
+    "id": "medias-journalisme-082",
+    "fr": "une agence de presse",
+    "en": "a news / press agency",
+    "lemma": "agence de presse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/a.ʒɑ̃s də pʁɛs/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "neutre",
+    "exampleFr": "L'information provient d'une agence de presse internationale.",
+    "exampleEn": "The information comes from an international press agency.",
+    "collocations": [
+      "une grande agence de presse"
+    ],
+    "audioText": "une agence de presse"
+  },
+  {
+    "id": "medias-journalisme-083",
+    "fr": "un confrère / une consœur",
+    "en": "a fellow journalist / colleague",
+    "lemma": "confrère",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/kɔ̃.fʁɛʁ/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Elle a salué le travail de ses confrères sur ce dossier.",
+    "exampleEn": "She praised the work of her fellow journalists on this story.",
+    "collocations": [
+      "un confrère de la presse",
+      "entre confrères"
+    ],
+    "mnemonic": "Forme féminine irrégulière : 'consœur', pas 'confrère'.",
+    "audioText": "un confrère / une consœur"
+  },
+  {
+    "id": "medias-journalisme-084",
+    "fr": "la déontologie",
+    "en": "professional ethics / code of conduct",
+    "lemma": "déontologie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/de.ɔ̃.tɔ.lɔ.ʒi/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Ce journaliste a été sanctionné pour manquement à la déontologie.",
+    "exampleEn": "This journalist was sanctioned for a breach of professional ethics.",
+    "collocations": [
+      "la déontologie journalistique",
+      "un manquement à la déontologie"
+    ],
+    "audioText": "la déontologie"
+  },
+  {
+    "id": "medias-journalisme-085",
+    "fr": "l'autocensure",
+    "en": "self-censorship",
+    "lemma": "autocensure",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/o.to.sɑ̃.syʁ/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Certains journalistes pratiquent une forme d'autocensure par peur des représailles.",
+    "exampleEn": "Some journalists practice a form of self-censorship for fear of reprisals.",
+    "collocations": [
+      "pratiquer l'autocensure"
+    ],
+    "audioText": "l'autocensure"
+  },
+  {
+    "id": "medias-journalisme-086",
+    "fr": "le sensationnalisme",
+    "en": "sensationalism",
+    "lemma": "sensationnalisme",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɑ̃.sa.sjɔ.na.lism/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "On lui reproche de céder au sensationnalisme pour attirer les lecteurs.",
+    "exampleEn": "He is criticized for giving in to sensationalism to attract readers.",
+    "collocations": [
+      "céder au sensationnalisme",
+      "verser dans le sensationnalisme"
+    ],
+    "audioText": "le sensationnalisme"
+  },
+  {
+    "id": "medias-journalisme-087",
+    "fr": "sensationnaliste",
+    "en": "sensationalist",
+    "lemma": "sensationnaliste",
+    "pos": "adj",
+    "ipa": "/sɑ̃.sa.sjɔ.na.list/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Le titre sensationnaliste ne reflète pas vraiment le contenu de l'article.",
+    "exampleEn": "The sensationalist headline doesn't really reflect the article's content.",
+    "collocations": [
+      "un titre sensationnaliste",
+      "un traitement sensationnaliste"
+    ],
+    "audioText": "sensationnaliste"
+  },
+  {
+    "id": "medias-journalisme-088",
+    "fr": "la polémique",
+    "en": "controversy",
+    "lemma": "polémique",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɔ.le.mik/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Ses propos ont déclenché une vive polémique.",
+    "exampleEn": "His comments sparked a heated controversy.",
+    "collocations": [
+      "déclencher une polémique",
+      "alimenter la polémique"
+    ],
+    "audioText": "la polémique"
+  },
+  {
+    "id": "medias-journalisme-089",
+    "fr": "controversé / controversée",
+    "en": "controversial",
+    "lemma": "controversé",
+    "pos": "adj",
+    "ipa": "/kɔ̃.tʁɔ.vɛʁ.se/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "L'éditorial très controversé a suscité de nombreuses réactions.",
+    "exampleEn": "The highly controversial editorial sparked numerous reactions.",
+    "collocations": [
+      "une décision controversée",
+      "un sujet controversé"
+    ],
+    "audioText": "controversé / controversée"
+  },
+  {
+    "id": "medias-journalisme-090",
+    "fr": "décrypter",
+    "en": "to decode / critically analyze",
+    "lemma": "décrypter",
+    "pos": "verb",
+    "ipa": "/de.kʁip.te/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "L'émission tente de décrypter les stratégies de communication politique.",
+    "exampleEn": "The show attempts to decode political communication strategies.",
+    "collocations": [
+      "décrypter l'actualité",
+      "décrypter un discours"
+    ],
+    "audioText": "décrypter"
+  },
+  {
+    "id": "medias-journalisme-091",
+    "fr": "le décryptage",
+    "en": "in-depth analysis / decoding",
+    "lemma": "décryptage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/de.kʁip.taʒ/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Le site propose un décryptage détaillé des chiffres officiels.",
+    "exampleEn": "The site offers a detailed breakdown of the official figures.",
+    "collocations": [
+      "un décryptage approfondi"
+    ],
+    "audioText": "le décryptage"
+  },
+  {
+    "id": "medias-journalisme-092",
+    "fr": "une tribune",
+    "en": "an op-ed",
+    "lemma": "tribune",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tʁi.byn/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Plusieurs universitaires ont signé une tribune commune dans ce journal.",
+    "exampleEn": "Several academics co-signed an op-ed in this newspaper.",
+    "collocations": [
+      "signer une tribune",
+      "publier une tribune"
+    ],
+    "fauxAmi": "ici, ne désigne pas les gradins d'un stade mais un texte d'opinion publié dans la presse.",
+    "audioText": "une tribune"
+  },
+  {
+    "id": "medias-journalisme-093",
+    "fr": "relayer",
+    "en": "to relay / circulate (information)",
+    "lemma": "relayer",
+    "pos": "verb",
+    "ipa": "/ʁə.lɛ.je/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Plusieurs médias ont relayé l'information sans la vérifier.",
+    "exampleEn": "Several media outlets circulated the information without checking it.",
+    "collocations": [
+      "relayer une information",
+      "relayer largement"
+    ],
+    "audioText": "relayer"
+  },
+  {
+    "id": "medias-journalisme-094",
+    "fr": "minimiser",
+    "en": "to downplay",
+    "lemma": "minimiser",
+    "pos": "verb",
+    "ipa": "/mi.ni.mi.ze/",
+    "cefr": "B2",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Le porte-parole a tenté de minimiser l'ampleur du scandale.",
+    "exampleEn": "The spokesperson tried to downplay the scale of the scandal.",
+    "collocations": [
+      "minimiser les faits",
+      "minimiser un incident"
+    ],
+    "audioText": "minimiser"
+  },
+  {
+    "id": "medias-journalisme-095",
+    "fr": "le quatrième pouvoir",
+    "en": "the fourth estate (the press)",
+    "lemma": "quatrième pouvoir",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ka.tʁi.jɛm pu.vwaʁ/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "On surnomme la presse le quatrième pouvoir, aux côtés du législatif, de l'exécutif et du judiciaire.",
+    "exampleEn": "The press is nicknamed the fourth estate, alongside the legislative, executive, and judicial branches.",
+    "collocations": [
+      "exercer le rôle de quatrième pouvoir"
+    ],
+    "audioText": "le quatrième pouvoir"
+  },
+  {
+    "id": "medias-journalisme-096",
+    "fr": "le pluralisme médiatique",
+    "en": "media pluralism",
+    "lemma": "pluralisme médiatique",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ply.ʁa.lism me.dja.tik/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Les autorités s'inquiètent du recul du pluralisme médiatique dans le pays.",
+    "exampleEn": "Authorities are concerned about the decline of media pluralism in the country.",
+    "collocations": [
+      "garantir le pluralisme médiatique",
+      "menacer le pluralisme médiatique"
+    ],
+    "audioText": "le pluralisme médiatique"
+  },
+  {
+    "id": "medias-journalisme-097",
+    "fr": "la concentration des médias",
+    "en": "media consolidation",
+    "lemma": "concentration des médias",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɔ̃.sɑ̃.tʁa.sjɔ̃ de me.dja/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "La concentration des médias entre les mains de quelques milliardaires inquiète les observateurs.",
+    "exampleEn": "Media consolidation in the hands of a few billionaires worries observers.",
+    "collocations": [
+      "dénoncer la concentration des médias"
+    ],
+    "audioText": "la concentration des médias"
+  },
+  {
+    "id": "medias-journalisme-098",
+    "fr": "un conglomérat médiatique",
+    "en": "a media conglomerate",
+    "lemma": "conglomérat médiatique",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ̃.ɡlɔ.me.ʁa me.dja.tik/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Le groupe est devenu un véritable conglomérat médiatique en rachetant plusieurs chaînes.",
+    "exampleEn": "The group became a genuine media conglomerate by buying up several channels.",
+    "collocations": [
+      "un puissant conglomérat médiatique"
+    ],
+    "audioText": "un conglomérat médiatique"
+  },
+  {
+    "id": "medias-journalisme-099",
+    "fr": "la ligne éditoriale",
+    "en": "the editorial line / stance",
+    "lemma": "ligne éditoriale",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/liɲ e.di.tɔ.ʁjal/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Le nouveau rédacteur en chef a infléchi la ligne éditoriale du journal.",
+    "exampleEn": "The new editor-in-chief shifted the newspaper's editorial line.",
+    "collocations": [
+      "définir la ligne éditoriale",
+      "une ligne éditoriale marquée"
+    ],
+    "audioText": "la ligne éditoriale"
+  },
+  {
+    "id": "medias-journalisme-100",
+    "fr": "un parti pris",
+    "en": "a bias / preconceived stance",
+    "lemma": "parti pris",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/paʁ.ti pʁi/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "L'article est écrit sans parti pris, avec un vrai souci d'équilibre.",
+    "exampleEn": "The article is written without bias, with a genuine concern for balance.",
+    "collocations": [
+      "sans parti pris",
+      "un article avec parti pris"
+    ],
+    "audioText": "un parti pris"
+  },
+  {
+    "id": "medias-journalisme-101",
+    "fr": "la diffamation",
+    "en": "defamation / libel",
+    "lemma": "diffamation",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/di.fa.ma.sjɔ̃/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "L'acteur a porté plainte pour diffamation contre le magazine.",
+    "exampleEn": "The actor filed a defamation lawsuit against the magazine.",
+    "collocations": [
+      "porter plainte pour diffamation",
+      "un procès en diffamation"
+    ],
+    "audioText": "la diffamation"
+  },
+  {
+    "id": "medias-journalisme-102",
+    "fr": "diffamatoire",
+    "en": "defamatory",
+    "lemma": "diffamatoire",
+    "pos": "adj",
+    "ipa": "/di.fa.ma.twaʁ/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Le tribunal a jugé les propos diffamatoires envers la victime.",
+    "exampleEn": "The court ruled the statements defamatory toward the victim.",
+    "collocations": [
+      "des propos diffamatoires",
+      "un article diffamatoire"
+    ],
+    "audioText": "diffamatoire"
+  },
+  {
+    "id": "medias-journalisme-103",
+    "fr": "le droit de réponse",
+    "en": "the right of reply",
+    "lemma": "droit de réponse",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/dʁwa də ʁe.pɔ̃s/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "La personne mise en cause a exercé son droit de réponse dans le journal.",
+    "exampleEn": "The person implicated exercised their right of reply in the newspaper.",
+    "collocations": [
+      "exercer son droit de réponse",
+      "accorder un droit de réponse"
+    ],
+    "audioText": "le droit de réponse"
+  },
+  {
+    "id": "medias-journalisme-104",
+    "fr": "le secret des sources",
+    "en": "protection of sources",
+    "lemma": "secret des sources",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sə.kʁɛ de suʁs/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "La loi protège le secret des sources des journalistes.",
+    "exampleEn": "The law protects journalists' source confidentiality.",
+    "collocations": [
+      "protéger le secret des sources",
+      "violer le secret des sources"
+    ],
+    "audioText": "le secret des sources"
+  },
+  {
+    "id": "medias-journalisme-105",
+    "fr": "le tirage",
+    "en": "circulation (of a publication)",
+    "lemma": "tirage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ti.ʁaʒ/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Le tirage du journal a chuté de moitié en dix ans.",
+    "exampleEn": "The newspaper's circulation has dropped by half in ten years.",
+    "collocations": [
+      "le tirage quotidien",
+      "un fort tirage"
+    ],
+    "fauxAmi": "ne signifie pas 'to tire' ; désigne le nombre d'exemplaires imprimés.",
+    "audioText": "le tirage"
+  },
+  {
+    "id": "medias-journalisme-106",
+    "fr": "l'audimat",
+    "en": "TV ratings",
+    "lemma": "audimat",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/o.di.mat/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Cette émission caracole en tête de l'audimat depuis son lancement.",
+    "exampleEn": "This show has been topping the ratings since it launched.",
+    "collocations": [
+      "faire de l'audimat",
+      "grimper dans l'audimat"
+    ],
+    "mnemonic": "À l'origine un nom de marque (l'appareil de mesure d'audience), devenu synonyme courant d'audience télé.",
+    "audioText": "l'audimat"
+  },
+  {
+    "id": "medias-journalisme-107",
+    "fr": "la surmédiatisation",
+    "en": "media overexposure",
+    "lemma": "surmédiatisation",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/syʁ.me.dja.ti.za.sjɔ̃/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "La surmédiatisation de l'affaire a fini par lasser le public.",
+    "exampleEn": "The media overexposure of the case eventually wore the public out.",
+    "collocations": [
+      "dénoncer la surmédiatisation"
+    ],
+    "audioText": "la surmédiatisation"
+  },
+  {
+    "id": "medias-journalisme-108",
+    "fr": "occulter",
+    "en": "to obscure / suppress (information)",
+    "lemma": "occulter",
+    "pos": "verb",
+    "ipa": "/ɔ.kyl.te/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Le rapport a été accusé d'occulter certains faits gênants.",
+    "exampleEn": "The report was accused of glossing over some inconvenient facts.",
+    "collocations": [
+      "occulter un fait",
+      "occulter la vérité"
+    ],
+    "audioText": "occulter"
+  },
+  {
+    "id": "medias-journalisme-109",
+    "fr": "sous couvert d'anonymat",
+    "en": "on condition of anonymity",
+    "lemma": "sous couvert d'anonymat",
+    "pos": "phrase",
+    "ipa": "/su ku.vɛʁ da.nɔ.ni.ma/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Un haut fonctionnaire a accepté de témoigner sous couvert d'anonymat.",
+    "exampleEn": "A senior official agreed to testify on condition of anonymity.",
+    "collocations": [
+      "s'exprimer sous couvert d'anonymat"
+    ],
+    "audioText": "sous couvert d'anonymat"
+  },
+  {
+    "id": "medias-journalisme-110",
+    "fr": "défrayer la chronique",
+    "en": "to be the talk of the town / make headlines",
+    "lemma": "défrayer la chronique",
+    "pos": "phrase",
+    "ipa": "/de.fʁɛ.je la kʁɔ.nik/",
+    "cefr": "C1",
+    "topic": "medias-journalisme",
+    "register": "soutenu",
+    "exampleFr": "Cette rupture people défraie la chronique depuis une semaine.",
+    "exampleEn": "This celebrity breakup has been making headlines for a week.",
+    "collocations": [
+      "défrayer la chronique pendant des mois"
+    ],
+    "audioText": "défrayer la chronique"
+  }
+]

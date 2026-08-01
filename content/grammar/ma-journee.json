@@ -1,0 +1,35 @@
+{
+  "unitSlug": "ma-journee",
+  "points": [
+    {
+      "slug": "pronominal-verbs-present",
+      "title": "Les verbes pronominaux au présent",
+      "explanationEn": "Pronominal (reflexive) verbs are verbs whose action bounces back onto the subject — the person performs the action on themselves. In French, this is marked by a reflexive pronoun placed immediately before the verb, and the infinitive form of these verbs is always listed with 'se' (or 's'' before a vowel) attached: se lever (to get (oneself) up), se laver (to wash (oneself)), s'habiller (to get (oneself) dressed). French uses far more reflexive verbs than English does for everyday routine actions — where English simply says 'I wake up' or 'I get dressed' without any reflexive marker, French grammatically requires the reflexive pronoun: je me réveille, je m'habille.\n\nThe reflexive pronoun must change to match the subject, just like the verb ending does — it is not a fixed word. The pattern is: je me (m' before a vowel), tu te (t'), il/elle/on se (s'), nous nous, vous vous, ils/elles se (s'). So se lever conjugates as: je me lève, tu te lèves, il/elle/on se lève, nous nous levons, vous vous levez, ils/elles se lèvent. Notice the reflexive pronoun sits between the subject and the verb — this word order (subject + reflexive pronoun + verb) is fixed and the reflexive pronoun can never be dropped, even though it can feel redundant to an English speaker's ear ('I myself wake myself up' feels overly emphatic in English, but 'je me réveille' is just the neutral, normal way to say 'I wake up' in French).\n\nWhen negating a pronominal verb, 'ne' goes before the reflexive pronoun and 'pas' goes after the conjugated verb, wrapping around the whole pronoun-plus-verb unit: je ne me lève pas (I don't get up) — not 'je me ne lève pas'. This is a small but important word-order detail, since English negation doesn't have an equivalent extra pronoun to navigate around. Also be aware that not every pronominal verb is 'reflexive' in the literal sense of 'to oneself' — some are simply always pronominal by convention (like se souvenir, to remember) — but for this unit's everyday routine verbs (se lever, se laver, s'habiller, se coucher, se brosser les dents), the reflexive, self-directed meaning is literal and consistent.",
+      "examples": [
+        { "fr": "Je me lève à sept heures.", "en": "I get up at seven o'clock.", "note": "Reflexive pronoun 'me' sits between subject 'je' and verb 'lève'." },
+        { "fr": "Tu te laves les mains avant de manger.", "en": "You wash your hands before eating.", "note": "French uses the reflexive pronoun plus 'les mains' (not 'tes mains') — the body part takes a definite article, not a possessive." },
+        { "fr": "Il s'habille rapidement le matin.", "en": "He gets dressed quickly in the morning.", "note": "'Se' elides to \"s'\" before the vowel sound of 'habille'." },
+        { "fr": "Nous nous couchons vers minuit.", "en": "We go to bed around midnight.", "note": "'Nous' appears twice: once as subject, once as reflexive pronoun." },
+        { "fr": "Vous vous brossez les dents deux fois par jour.", "en": "You brush your teeth twice a day." },
+        { "fr": "Elles se maquillent avant de sortir.", "en": "They put on makeup before going out." },
+        { "fr": "On se repose le dimanche après-midi.", "en": "We rest on Sunday afternoons.", "note": "'On' still takes the singular reflexive pronoun 'se', matching its il/elle-style verb form." },
+        { "fr": "Je ne me réveille pas facilement.", "en": "I don't wake up easily.", "note": "Negation wraps around the pronoun: 'ne me...pas', not 'me ne...pas'." },
+        { "fr": "Tu t'endors devant la télévision.", "en": "You fall asleep in front of the TV.", "note": "'Te' elides to \"t'\" before the vowel sound of 'endors'." },
+        { "fr": "Ils se douchent le matin, pas le soir.", "en": "They shower in the morning, not the evening." }
+      ],
+      "commonMistakes": [
+        "Dropping the reflexive pronoun entirely because English doesn't require one (saying 'je lève' instead of 'je me lève'), since 'I get up' has no visible reflexive marker in English.",
+        "Using the wrong reflexive pronoun for the subject, e.g. defaulting to 'se' for every person instead of changing it to me/te/nous/vous to match je/tu/nous/vous.",
+        "Misplacing negation as 'je ne lève me pas' or 'je me ne lève pas' instead of the correct 'je ne me lève pas', which wraps ne...pas around the pronoun-verb pair.",
+        "Adding a possessive adjective with body parts after a reflexive verb (saying 'je me lave mes mains' instead of the correct 'je me lave les mains', where French uses the definite article since the reflexive pronoun already signals whose hands they are).",
+        "Forgetting elision before a vowel sound (writing 'je me habille' instead of \"je m'habille\")."
+      ],
+      "whyItTrips": [
+        "English routine verbs (wake up, get dressed, go to bed) carry no reflexive marker at all, so remembering to insert a pronoun that has no direct English equivalent is a genuinely new habit to build.",
+        "The reflexive pronoun must agree with the subject and change for every person, unlike English 'myself/yourself' which is used only for emphasis, not as an obligatory grammatical marker.",
+        "The word order for negating pronominal verbs (ne + pronoun + verb + pas) inserts an extra element between 'ne' and the verb that has no parallel in English negation patterns."
+      ],
+      "searchTags": ["pronominal verbs", "reflexive verbs", "se lever", "reflexive pronouns", "daily routine", "negation"]
+    }
+  ]
+}

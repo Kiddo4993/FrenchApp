@@ -1,0 +1,2020 @@
+[
+  {
+    "id": "sport-fitness-001",
+    "fr": "le sport",
+    "en": "sport",
+    "lemma": "sport",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/spɔʁ/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il fait du sport tous les matins.",
+    "exampleEn": "He does sports every morning.",
+    "collocations": [
+      "faire du sport",
+      "un sport collectif"
+    ],
+    "audioText": "le sport"
+  },
+  {
+    "id": "sport-fitness-002",
+    "fr": "courir",
+    "en": "to run",
+    "lemma": "courir",
+    "pos": "verb",
+    "ipa": "/ku.ʁiʁ/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Elle court dans le parc tous les jours.",
+    "exampleEn": "She runs in the park every day.",
+    "collocations": [
+      "courir vite",
+      "courir un marathon"
+    ],
+    "audioText": "courir"
+  },
+  {
+    "id": "sport-fitness-003",
+    "fr": "nager",
+    "en": "to swim",
+    "lemma": "nager",
+    "pos": "verb",
+    "ipa": "/na.ʒe/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Les enfants apprennent à nager cet été.",
+    "exampleEn": "The children are learning to swim this summer.",
+    "collocations": [
+      "nager dans la piscine"
+    ],
+    "audioText": "nager"
+  },
+  {
+    "id": "sport-fitness-004",
+    "fr": "la piscine",
+    "en": "swimming pool",
+    "lemma": "piscine",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pi.sin/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "On va à la piscine cet après-midi.",
+    "exampleEn": "We're going to the swimming pool this afternoon.",
+    "collocations": [
+      "aller à la piscine",
+      "une piscine municipale"
+    ],
+    "audioText": "la piscine"
+  },
+  {
+    "id": "sport-fitness-005",
+    "fr": "jouer au football",
+    "en": "to play soccer",
+    "lemma": "jouer au football",
+    "pos": "phrase",
+    "ipa": "/ʒwe o fut.bɔl/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Les garçons jouent au football dans la rue.",
+    "exampleEn": "The boys are playing soccer in the street.",
+    "collocations": [],
+    "audioText": "jouer au football"
+  },
+  {
+    "id": "sport-fitness-006",
+    "fr": "le football",
+    "en": "soccer, football",
+    "lemma": "football",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fut.bɔl/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le football est le sport le plus populaire en France.",
+    "exampleEn": "Soccer is the most popular sport in France.",
+    "collocations": [
+      "un match de football",
+      "une équipe de football"
+    ],
+    "audioText": "le football"
+  },
+  {
+    "id": "sport-fitness-007",
+    "fr": "le tennis",
+    "en": "tennis",
+    "lemma": "tennis",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/te.nis/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Elle joue au tennis chaque week-end.",
+    "exampleEn": "She plays tennis every weekend.",
+    "collocations": [
+      "jouer au tennis",
+      "un court de tennis"
+    ],
+    "audioText": "le tennis"
+  },
+  {
+    "id": "sport-fitness-008",
+    "fr": "le basket",
+    "en": "basketball",
+    "lemma": "basket",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bas.kɛt/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Mon frère joue au basket dans un club.",
+    "exampleEn": "My brother plays basketball in a club.",
+    "fauxAmi": "'Le basket' means basketball (the sport); 'les baskets' (plural, feminine) means sneakers/trainers.",
+    "collocations": [
+      "jouer au basket",
+      "un match de basket"
+    ],
+    "audioText": "le basket"
+  },
+  {
+    "id": "sport-fitness-009",
+    "fr": "le vélo",
+    "en": "bike, cycling",
+    "lemma": "vélo",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ve.lo/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Je fais du vélo le dimanche matin.",
+    "exampleEn": "I go cycling on Sunday mornings.",
+    "collocations": [
+      "faire du vélo",
+      "rouler à vélo"
+    ],
+    "audioText": "le vélo"
+  },
+  {
+    "id": "sport-fitness-010",
+    "fr": "marcher",
+    "en": "to walk",
+    "lemma": "marcher",
+    "pos": "verb",
+    "ipa": "/maʁ.ʃe/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Nous marchons une heure chaque soir.",
+    "exampleEn": "We walk for an hour every evening.",
+    "collocations": [
+      "marcher vite",
+      "marcher longtemps"
+    ],
+    "audioText": "marcher"
+  },
+  {
+    "id": "sport-fitness-011",
+    "fr": "le ballon",
+    "en": "ball (large, e.g. soccer)",
+    "lemma": "ballon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ba.lɔ̃/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le ballon a roulé jusque dans la rue.",
+    "exampleEn": "The ball rolled all the way into the street.",
+    "fauxAmi": "'Le ballon' is a large ball (soccer, basketball); a small ball, like a tennis ball, is 'la balle'.",
+    "collocations": [
+      "taper dans le ballon",
+      "un ballon de football"
+    ],
+    "audioText": "le ballon"
+  },
+  {
+    "id": "sport-fitness-012",
+    "fr": "la balle",
+    "en": "ball (small)",
+    "lemma": "balle",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bal/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "La balle de tennis a rebondi sur le filet.",
+    "exampleEn": "The tennis ball bounced off the net.",
+    "collocations": [
+      "une balle de tennis",
+      "lancer la balle"
+    ],
+    "audioText": "la balle"
+  },
+  {
+    "id": "sport-fitness-013",
+    "fr": "l'équipe",
+    "en": "team",
+    "lemma": "équipe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.kip/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Notre équipe a gagné le match hier soir.",
+    "exampleEn": "Our team won the match last night.",
+    "collocations": [
+      "une équipe nationale",
+      "faire partie d'une équipe"
+    ],
+    "audioText": "l'équipe"
+  },
+  {
+    "id": "sport-fitness-014",
+    "fr": "le match",
+    "en": "match, game",
+    "lemma": "match",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "matchs",
+    "ipa": "/matʃ/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le match commence à vingt heures.",
+    "exampleEn": "The match starts at eight p.m.",
+    "collocations": [
+      "gagner un match",
+      "un match nul"
+    ],
+    "audioText": "le match"
+  },
+  {
+    "id": "sport-fitness-015",
+    "fr": "gagner",
+    "en": "to win",
+    "lemma": "gagner",
+    "pos": "verb",
+    "ipa": "/ɡa.ɲe/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Notre équipe a gagné trois à zéro.",
+    "exampleEn": "Our team won three to zero.",
+    "collocations": [
+      "gagner un match",
+      "gagner la médaille d'or"
+    ],
+    "audioText": "gagner"
+  },
+  {
+    "id": "sport-fitness-016",
+    "fr": "perdre",
+    "en": "to lose",
+    "lemma": "perdre",
+    "pos": "verb",
+    "ipa": "/pɛʁdʁ/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Ils ont perdu le match en finale.",
+    "exampleEn": "They lost the match in the final.",
+    "collocations": [
+      "perdre un match"
+    ],
+    "audioText": "perdre"
+  },
+  {
+    "id": "sport-fitness-017",
+    "fr": "jouer",
+    "en": "to play",
+    "lemma": "jouer",
+    "pos": "verb",
+    "ipa": "/ʒwe/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Tu joues au foot avec nous ce soir ?",
+    "exampleEn": "Are you playing soccer with us tonight?",
+    "collocations": [
+      "jouer à un sport",
+      "jouer un match"
+    ],
+    "audioText": "jouer"
+  },
+  {
+    "id": "sport-fitness-018",
+    "fr": "le stade",
+    "en": "stadium",
+    "lemma": "stade",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/stad/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le stade était plein pour la finale.",
+    "exampleEn": "The stadium was full for the final.",
+    "collocations": [
+      "un stade de football",
+      "remplir le stade"
+    ],
+    "audioText": "le stade"
+  },
+  {
+    "id": "sport-fitness-019",
+    "fr": "la salle de sport",
+    "en": "gym",
+    "lemma": "salle de sport",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sal də spɔʁ/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Je vais à la salle de sport trois fois par semaine.",
+    "exampleEn": "I go to the gym three times a week.",
+    "collocations": [
+      "s'inscrire à la salle de sport"
+    ],
+    "audioText": "la salle de sport"
+  },
+  {
+    "id": "sport-fitness-020",
+    "fr": "s'entraîner",
+    "en": "to train, to practice",
+    "lemma": "s'entraîner",
+    "pos": "verb",
+    "ipa": "/sɑ̃.tʁɛ.ne/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "L'équipe s'entraîne tous les mardis et jeudis.",
+    "exampleEn": "The team trains every Tuesday and Thursday.",
+    "collocations": [
+      "s'entraîner dur",
+      "s'entraîner pour une compétition"
+    ],
+    "audioText": "s'entraîner"
+  },
+  {
+    "id": "sport-fitness-021",
+    "fr": "l'entraînement",
+    "en": "training, practice",
+    "lemma": "entraînement",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɑ̃.tʁɛn.mɑ̃/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "L'entraînement dure une heure et demie.",
+    "exampleEn": "Practice lasts an hour and a half.",
+    "collocations": [
+      "un entraînement intensif",
+      "manquer l'entraînement"
+    ],
+    "audioText": "l'entraînement"
+  },
+  {
+    "id": "sport-fitness-022",
+    "fr": "l'entraîneur",
+    "en": "coach",
+    "lemma": "entraîneur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɑ̃.tʁɛ.nœʁ/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "L'entraîneur a changé la tactique en deuxième mi-temps.",
+    "exampleEn": "The coach changed the tactics in the second half.",
+    "collocations": [
+      "l'entraîneur de l'équipe"
+    ],
+    "audioText": "l'entraîneur"
+  },
+  {
+    "id": "sport-fitness-023",
+    "fr": "le joueur",
+    "en": "player",
+    "lemma": "joueur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒwœʁ/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Ce joueur a marqué deux buts aujourd'hui.",
+    "exampleEn": "This player scored two goals today.",
+    "collocations": [
+      "un joueur professionnel"
+    ],
+    "audioText": "le joueur"
+  },
+  {
+    "id": "sport-fitness-024",
+    "fr": "l'athlète",
+    "en": "athlete",
+    "lemma": "athlète",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/at.lɛt/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Cette athlète a battu le record du monde.",
+    "exampleEn": "This athlete broke the world record.",
+    "collocations": [
+      "un athlète de haut niveau"
+    ],
+    "audioText": "l'athlète"
+  },
+  {
+    "id": "sport-fitness-025",
+    "fr": "le but",
+    "en": "goal",
+    "lemma": "but",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/byt/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il a marqué un but magnifique.",
+    "exampleEn": "He scored a magnificent goal.",
+    "collocations": [
+      "marquer un but",
+      "un but décisif"
+    ],
+    "audioText": "le but"
+  },
+  {
+    "id": "sport-fitness-026",
+    "fr": "marquer",
+    "en": "to score",
+    "lemma": "marquer",
+    "pos": "verb",
+    "ipa": "/maʁ.ke/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Elle a marqué le point décisif.",
+    "exampleEn": "She scored the decisive point.",
+    "collocations": [
+      "marquer un but",
+      "marquer un point"
+    ],
+    "audioText": "marquer"
+  },
+  {
+    "id": "sport-fitness-027",
+    "fr": "le score",
+    "en": "score",
+    "lemma": "score",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/skɔʁ/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Quel est le score du match ?",
+    "exampleEn": "What's the score of the match?",
+    "collocations": [
+      "le score final"
+    ],
+    "audioText": "le score"
+  },
+  {
+    "id": "sport-fitness-028",
+    "fr": "la course",
+    "en": "race, running",
+    "lemma": "course",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kuʁs/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Elle participe à une course de dix kilomètres.",
+    "exampleEn": "She's taking part in a ten-kilometer race.",
+    "fauxAmi": "'La course' primarily means a race or running, not a school course — 'a course' (school subject) is 'un cours'.",
+    "collocations": [
+      "une course à pied",
+      "gagner la course"
+    ],
+    "audioText": "la course"
+  },
+  {
+    "id": "sport-fitness-029",
+    "fr": "sauter",
+    "en": "to jump",
+    "lemma": "sauter",
+    "pos": "verb",
+    "ipa": "/so.te/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "L'athlète a sauté plus de deux mètres.",
+    "exampleEn": "The athlete jumped more than two meters.",
+    "collocations": [
+      "sauter en hauteur",
+      "sauter en longueur"
+    ],
+    "audioText": "sauter"
+  },
+  {
+    "id": "sport-fitness-030",
+    "fr": "lancer",
+    "en": "to throw",
+    "lemma": "lancer",
+    "pos": "verb",
+    "ipa": "/lɑ̃.se/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il lance le ballon à son coéquipier.",
+    "exampleEn": "He throws the ball to his teammate.",
+    "collocations": [
+      "lancer le ballon",
+      "se lancer un défi"
+    ],
+    "audioText": "lancer"
+  },
+  {
+    "id": "sport-fitness-031",
+    "fr": "le vélo de course",
+    "en": "road bike",
+    "lemma": "vélo de course",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ve.lo də kuʁs/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il a acheté un vélo de course pour les longues sorties.",
+    "exampleEn": "He bought a road bike for long rides.",
+    "collocations": [],
+    "audioText": "le vélo de course"
+  },
+  {
+    "id": "sport-fitness-032",
+    "fr": "la compétition",
+    "en": "competition",
+    "lemma": "compétition",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɔ̃.pe.ti.sjɔ̃/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Elle se prépare pour une grande compétition nationale.",
+    "exampleEn": "She's preparing for a major national competition.",
+    "collocations": [
+      "participer à une compétition"
+    ],
+    "audioText": "la compétition"
+  },
+  {
+    "id": "sport-fitness-033",
+    "fr": "le championnat",
+    "en": "championship",
+    "lemma": "championnat",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃɑ̃.pjɔ.na/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "L'équipe a remporté le championnat cette année.",
+    "exampleEn": "The team won the championship this year.",
+    "collocations": [
+      "le championnat du monde"
+    ],
+    "audioText": "le championnat"
+  },
+  {
+    "id": "sport-fitness-034",
+    "fr": "la médaille",
+    "en": "medal",
+    "lemma": "médaille",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/me.daj/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Elle a remporté la médaille d'or aux Jeux olympiques.",
+    "exampleEn": "She won the gold medal at the Olympic Games.",
+    "collocations": [
+      "la médaille d'or",
+      "la médaille d'argent"
+    ],
+    "audioText": "la médaille"
+  },
+  {
+    "id": "sport-fitness-035",
+    "fr": "l'arbitre",
+    "en": "referee",
+    "lemma": "arbitre",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/aʁ.bitʁ/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "L'arbitre a donné un carton rouge au défenseur.",
+    "exampleEn": "The referee gave the defender a red card.",
+    "collocations": [
+      "siffler en tant qu'arbitre"
+    ],
+    "audioText": "l'arbitre"
+  },
+  {
+    "id": "sport-fitness-036",
+    "fr": "le carton rouge",
+    "en": "red card",
+    "lemma": "carton rouge",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kaʁ.tɔ̃ ʁuʒ/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il a reçu un carton rouge pour une faute grave.",
+    "exampleEn": "He received a red card for a serious foul.",
+    "collocations": [
+      "recevoir un carton rouge"
+    ],
+    "audioText": "le carton rouge"
+  },
+  {
+    "id": "sport-fitness-037",
+    "fr": "la faute",
+    "en": "foul, fault",
+    "lemma": "faute",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fot/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "L'arbitre a sifflé une faute contre le gardien.",
+    "exampleEn": "The referee whistled a foul against the goalkeeper.",
+    "collocations": [
+      "commettre une faute"
+    ],
+    "audioText": "la faute"
+  },
+  {
+    "id": "sport-fitness-038",
+    "fr": "le gardien de but",
+    "en": "goalkeeper",
+    "lemma": "gardien de but",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɡaʁ.djɛ̃ də by/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le gardien de but a arrêté le penalty.",
+    "exampleEn": "The goalkeeper saved the penalty.",
+    "collocations": [
+      "arrêter un tir"
+    ],
+    "audioText": "le gardien de but"
+  },
+  {
+    "id": "sport-fitness-039",
+    "fr": "le supporter",
+    "en": "supporter, fan",
+    "lemma": "supporter",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sy.pɔʁ.tɛʁ/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Les supporters chantent dans les tribunes.",
+    "exampleEn": "The fans are singing in the stands.",
+    "collocations": [
+      "les supporters de l'équipe"
+    ],
+    "audioText": "le supporter"
+  },
+  {
+    "id": "sport-fitness-040",
+    "fr": "la tribune",
+    "en": "stand, bleachers",
+    "lemma": "tribune",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tʁi.byn/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Les tribunes étaient combles pour la finale.",
+    "exampleEn": "The stands were packed for the final.",
+    "collocations": [
+      "applaudir depuis les tribunes"
+    ],
+    "audioText": "la tribune"
+  },
+  {
+    "id": "sport-fitness-041",
+    "fr": "s'échauffer",
+    "en": "to warm up",
+    "lemma": "s'échauffer",
+    "pos": "verb",
+    "ipa": "/se.ʃo.fe/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Les joueurs s'échauffent avant le début du match.",
+    "exampleEn": "The players warm up before the start of the match.",
+    "collocations": [
+      "s'échauffer avant l'effort"
+    ],
+    "audioText": "s'échauffer"
+  },
+  {
+    "id": "sport-fitness-042",
+    "fr": "l'échauffement",
+    "en": "warm-up",
+    "lemma": "échauffement",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.ʃof.mɑ̃/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "L'échauffement dure environ vingt minutes.",
+    "exampleEn": "The warm-up lasts about twenty minutes.",
+    "collocations": [
+      "faire un échauffement"
+    ],
+    "audioText": "l'échauffement"
+  },
+  {
+    "id": "sport-fitness-043",
+    "fr": "s'étirer",
+    "en": "to stretch",
+    "lemma": "s'étirer",
+    "pos": "verb",
+    "ipa": "/se.ti.ʁe/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Pense à bien t'étirer après ta course.",
+    "exampleEn": "Remember to stretch well after your run.",
+    "collocations": [
+      "s'étirer les jambes"
+    ],
+    "audioText": "s'étirer"
+  },
+  {
+    "id": "sport-fitness-044",
+    "fr": "l'étirement",
+    "en": "stretch, stretching",
+    "lemma": "étirement",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.tiʁ.mɑ̃/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Fais quelques étirements avant de commencer.",
+    "exampleEn": "Do a few stretches before starting.",
+    "collocations": [
+      "faire des étirements"
+    ],
+    "audioText": "l'étirement"
+  },
+  {
+    "id": "sport-fitness-045",
+    "fr": "la musculation",
+    "en": "weight training, bodybuilding",
+    "lemma": "musculation",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mys.ky.la.sjɔ̃/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il fait de la musculation trois fois par semaine.",
+    "exampleEn": "He does weight training three times a week.",
+    "collocations": [
+      "faire de la musculation",
+      "une salle de musculation"
+    ],
+    "audioText": "la musculation"
+  },
+  {
+    "id": "sport-fitness-046",
+    "fr": "le muscle",
+    "en": "muscle",
+    "lemma": "muscle",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mysk(l)/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il faut échauffer les muscles avant l'effort.",
+    "exampleEn": "You need to warm up your muscles before exercise.",
+    "collocations": [
+      "se muscler",
+      "un muscle contracté"
+    ],
+    "audioText": "le muscle"
+  },
+  {
+    "id": "sport-fitness-047",
+    "fr": "le poids",
+    "en": "weight",
+    "lemma": "poids",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pwa/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il soulève des poids à la salle de sport.",
+    "exampleEn": "He lifts weights at the gym.",
+    "collocations": [
+      "soulever des poids",
+      "perdre du poids"
+    ],
+    "audioText": "le poids"
+  },
+  {
+    "id": "sport-fitness-048",
+    "fr": "soulever",
+    "en": "to lift",
+    "lemma": "soulever",
+    "pos": "verb",
+    "ipa": "/sul.ve/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Elle arrive à soulever quatre-vingts kilos.",
+    "exampleEn": "She can lift eighty kilograms.",
+    "collocations": [
+      "soulever des poids",
+      "soulever une charge"
+    ],
+    "audioText": "soulever"
+  },
+  {
+    "id": "sport-fitness-049",
+    "fr": "l'haltère",
+    "en": "dumbbell",
+    "lemma": "haltère",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/al.tɛʁ/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il fait des exercices avec des haltères de dix kilos.",
+    "exampleEn": "He does exercises with ten-kilogram dumbbells.",
+    "collocations": [
+      "soulever des haltères"
+    ],
+    "audioText": "l'haltère"
+  },
+  {
+    "id": "sport-fitness-050",
+    "fr": "en forme",
+    "en": "in shape, fit",
+    "lemma": "en forme",
+    "pos": "phrase",
+    "ipa": "/ɑ̃ fɔʁm/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Je me sens vraiment en forme depuis que je cours.",
+    "exampleEn": "I've felt really fit since I started running.",
+    "collocations": [
+      "être en forme",
+      "rester en forme"
+    ],
+    "audioText": "en forme"
+  },
+  {
+    "id": "sport-fitness-051",
+    "fr": "la forme physique",
+    "en": "physical fitness",
+    "lemma": "forme physique",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fɔʁm fi.zik/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le sport améliore la forme physique et le moral.",
+    "exampleEn": "Sport improves physical fitness and mood.",
+    "collocations": [
+      "garder la forme physique"
+    ],
+    "audioText": "la forme physique"
+  },
+  {
+    "id": "sport-fitness-052",
+    "fr": "l'endurance",
+    "en": "endurance, stamina",
+    "lemma": "endurance",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɑ̃.dy.ʁɑ̃s/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "La course longue distance demande beaucoup d'endurance.",
+    "exampleEn": "Long-distance running requires a lot of endurance.",
+    "collocations": [
+      "développer son endurance"
+    ],
+    "audioText": "l'endurance"
+  },
+  {
+    "id": "sport-fitness-053",
+    "fr": "la souplesse",
+    "en": "flexibility",
+    "lemma": "souplesse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/su.plɛs/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le yoga améliore la souplesse du corps.",
+    "exampleEn": "Yoga improves the body's flexibility.",
+    "collocations": [
+      "améliorer sa souplesse"
+    ],
+    "audioText": "la souplesse"
+  },
+  {
+    "id": "sport-fitness-054",
+    "fr": "la respiration",
+    "en": "breathing",
+    "lemma": "respiration",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁɛs.pi.ʁa.sjɔ̃/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il faut contrôler sa respiration pendant l'effort.",
+    "exampleEn": "You need to control your breathing during exercise.",
+    "collocations": [
+      "reprendre sa respiration"
+    ],
+    "audioText": "la respiration"
+  },
+  {
+    "id": "sport-fitness-055",
+    "fr": "respirer",
+    "en": "to breathe",
+    "lemma": "respirer",
+    "pos": "verb",
+    "ipa": "/ʁɛs.pi.ʁe/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Respire profondément avant de commencer.",
+    "exampleEn": "Breathe deeply before you start.",
+    "collocations": [
+      "respirer profondément"
+    ],
+    "audioText": "respirer"
+  },
+  {
+    "id": "sport-fitness-056",
+    "fr": "transpirer",
+    "en": "to sweat",
+    "lemma": "transpirer",
+    "pos": "verb",
+    "ipa": "/tʁɑ̃s.pi.ʁe/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "On transpire beaucoup pendant ce cours de sport.",
+    "exampleEn": "You sweat a lot during this fitness class.",
+    "collocations": [],
+    "audioText": "transpirer"
+  },
+  {
+    "id": "sport-fitness-057",
+    "fr": "être hors d'haleine",
+    "en": "to be out of breath",
+    "lemma": "hors d'haleine",
+    "pos": "phrase",
+    "ipa": "/ɔʁ da.lɛn/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Après le sprint, il était complètement hors d'haleine.",
+    "exampleEn": "After the sprint, he was completely out of breath.",
+    "collocations": [],
+    "audioText": "être hors d'haleine"
+  },
+  {
+    "id": "sport-fitness-058",
+    "fr": "la blessure",
+    "en": "injury",
+    "lemma": "blessure",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/blɛ.syʁ/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Sa blessure au genou l'empêche de jouer.",
+    "exampleEn": "His knee injury prevents him from playing.",
+    "collocations": [
+      "une blessure grave",
+      "se remettre d'une blessure"
+    ],
+    "audioText": "la blessure"
+  },
+  {
+    "id": "sport-fitness-059",
+    "fr": "se blesser",
+    "en": "to get injured",
+    "lemma": "se blesser",
+    "pos": "verb",
+    "ipa": "/sə blɛ.se/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Elle s'est blessée à la cheville en courant.",
+    "exampleEn": "She injured her ankle while running.",
+    "collocations": [
+      "se blesser au genou"
+    ],
+    "audioText": "se blesser"
+  },
+  {
+    "id": "sport-fitness-060",
+    "fr": "la foulure",
+    "en": "sprain",
+    "lemma": "foulure",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fu.lyʁ/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le médecin a diagnostiqué une simple foulure de la cheville.",
+    "exampleEn": "The doctor diagnosed a simple ankle sprain.",
+    "collocations": [
+      "une foulure de la cheville"
+    ],
+    "audioText": "la foulure"
+  },
+  {
+    "id": "sport-fitness-061",
+    "fr": "la crampe",
+    "en": "cramp",
+    "lemma": "crampe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kʁɑ̃p/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "J'ai eu une crampe au mollet pendant la course.",
+    "exampleEn": "I got a cramp in my calf during the race.",
+    "collocations": [
+      "avoir une crampe"
+    ],
+    "audioText": "la crampe"
+  },
+  {
+    "id": "sport-fitness-062",
+    "fr": "le kinésithérapeute",
+    "en": "physiotherapist",
+    "lemma": "kinésithérapeute",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/ki.ne.zi.te.ʁa.pøt/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le kinésithérapeute l'aide à récupérer après l'opération.",
+    "exampleEn": "The physiotherapist is helping him recover after the surgery.",
+    "collocations": [
+      "consulter un kinésithérapeute"
+    ],
+    "audioText": "le kinésithérapeute"
+  },
+  {
+    "id": "sport-fitness-063",
+    "fr": "récupérer",
+    "en": "to recover",
+    "lemma": "récupérer",
+    "pos": "verb",
+    "ipa": "/ʁe.ky.pe.ʁe/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le corps a besoin de temps pour récupérer après un marathon.",
+    "exampleEn": "The body needs time to recover after a marathon.",
+    "collocations": [
+      "récupérer après l'effort"
+    ],
+    "audioText": "récupérer"
+  },
+  {
+    "id": "sport-fitness-064",
+    "fr": "la récupération",
+    "en": "recovery",
+    "lemma": "récupération",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁe.ky.pe.ʁa.sjɔ̃/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Un bon sommeil favorise la récupération musculaire.",
+    "exampleEn": "Good sleep promotes muscle recovery.",
+    "collocations": [
+      "un temps de récupération"
+    ],
+    "audioText": "la récupération"
+  },
+  {
+    "id": "sport-fitness-065",
+    "fr": "la natation",
+    "en": "swimming",
+    "lemma": "natation",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/na.ta.sjɔ̃/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Elle fait de la natation depuis son enfance.",
+    "exampleEn": "She's been swimming since childhood.",
+    "collocations": [
+      "faire de la natation"
+    ],
+    "audioText": "la natation"
+  },
+  {
+    "id": "sport-fitness-066",
+    "fr": "le maillot de bain",
+    "en": "swimsuit",
+    "lemma": "maillot de bain",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ma.jo də bɛ̃/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "N'oublie pas ton maillot de bain pour la piscine.",
+    "exampleEn": "Don't forget your swimsuit for the pool.",
+    "collocations": [],
+    "audioText": "le maillot de bain"
+  },
+  {
+    "id": "sport-fitness-067",
+    "fr": "les baskets",
+    "en": "sneakers, trainers",
+    "lemma": "baskets",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bas.kɛt/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "J'ai acheté de nouvelles baskets pour courir.",
+    "exampleEn": "I bought new sneakers for running.",
+    "collocations": [
+      "mettre ses baskets"
+    ],
+    "audioText": "les baskets"
+  },
+  {
+    "id": "sport-fitness-068",
+    "fr": "le maillot",
+    "en": "jersey",
+    "lemma": "maillot",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ma.jo/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Les joueurs portent le maillot bleu de l'équipe de France.",
+    "exampleEn": "The players wear the blue jersey of the French team.",
+    "collocations": [
+      "le maillot de l'équipe",
+      "le maillot jaune"
+    ],
+    "audioText": "le maillot"
+  },
+  {
+    "id": "sport-fitness-069",
+    "fr": "le vestiaire",
+    "en": "locker room",
+    "lemma": "vestiaire",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɛs.tjɛʁ/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Les joueurs se changent dans le vestiaire avant le match.",
+    "exampleEn": "The players change in the locker room before the match.",
+    "collocations": [
+      "dans les vestiaires"
+    ],
+    "audioText": "le vestiaire"
+  },
+  {
+    "id": "sport-fitness-070",
+    "fr": "le terrain",
+    "en": "field, pitch, court",
+    "lemma": "terrain",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tɛ.ʁɛ̃/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le terrain est encore mouillé après la pluie.",
+    "exampleEn": "The field is still wet after the rain.",
+    "collocations": [
+      "un terrain de football",
+      "entrer sur le terrain"
+    ],
+    "audioText": "le terrain"
+  },
+  {
+    "id": "sport-fitness-071",
+    "fr": "le filet",
+    "en": "net",
+    "lemma": "filet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fi.lɛ/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le ballon a fini au fond du filet.",
+    "exampleEn": "The ball ended up in the back of the net.",
+    "collocations": [
+      "envoyer le ballon dans le filet"
+    ],
+    "audioText": "le filet"
+  },
+  {
+    "id": "sport-fitness-072",
+    "fr": "le panier",
+    "en": "basket (basketball hoop/score)",
+    "lemma": "panier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pa.nje/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Elle a marqué trois paniers de suite.",
+    "exampleEn": "She scored three baskets in a row.",
+    "collocations": [
+      "marquer un panier"
+    ],
+    "audioText": "le panier"
+  },
+  {
+    "id": "sport-fitness-073",
+    "fr": "la raquette",
+    "en": "racket",
+    "lemma": "raquette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁa.kɛt/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il a cassé sa raquette après la défaite.",
+    "exampleEn": "He broke his racket after the defeat.",
+    "collocations": [
+      "une raquette de tennis"
+    ],
+    "audioText": "la raquette"
+  },
+  {
+    "id": "sport-fitness-074",
+    "fr": "le vélo tout terrain",
+    "en": "mountain bike",
+    "lemma": "vélo tout terrain",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ve.lo tu tɛ.ʁɛ̃/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le VTT est idéal pour les sentiers de montagne.",
+    "exampleEn": "The mountain bike is ideal for mountain trails.",
+    "collocations": [
+      "faire du VTT"
+    ],
+    "audioText": "le vélo tout terrain"
+  },
+  {
+    "id": "sport-fitness-075",
+    "fr": "le ski",
+    "en": "skiing",
+    "lemma": "ski",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ski/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Nous faisons du ski dans les Alpes chaque hiver.",
+    "exampleEn": "We go skiing in the Alps every winter.",
+    "collocations": [
+      "faire du ski",
+      "une station de ski"
+    ],
+    "audioText": "le ski"
+  },
+  {
+    "id": "sport-fitness-076",
+    "fr": "l'escalade",
+    "en": "climbing",
+    "lemma": "escalade",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɛs.ka.lad/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "L'escalade demande beaucoup de force dans les bras.",
+    "exampleEn": "Climbing requires a lot of arm strength.",
+    "collocations": [
+      "faire de l'escalade",
+      "une salle d'escalade"
+    ],
+    "audioText": "l'escalade"
+  },
+  {
+    "id": "sport-fitness-077",
+    "fr": "la randonnée",
+    "en": "hiking",
+    "lemma": "randonnée",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁɑ̃.dɔ.ne/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "On fait une randonnée en montagne ce week-end.",
+    "exampleEn": "We're going hiking in the mountains this weekend.",
+    "collocations": [
+      "faire de la randonnée",
+      "un sentier de randonnée"
+    ],
+    "audioText": "la randonnée"
+  },
+  {
+    "id": "sport-fitness-078",
+    "fr": "le yoga",
+    "en": "yoga",
+    "lemma": "yoga",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/jɔ.ɡa/",
+    "cefr": "A1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Elle pratique le yoga pour se détendre.",
+    "exampleEn": "She practices yoga to relax.",
+    "collocations": [
+      "faire du yoga",
+      "un cours de yoga"
+    ],
+    "audioText": "le yoga"
+  },
+  {
+    "id": "sport-fitness-079",
+    "fr": "la boxe",
+    "en": "boxing",
+    "lemma": "boxe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bɔks/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il fait de la boxe pour se défouler après le travail.",
+    "exampleEn": "He does boxing to blow off steam after work.",
+    "collocations": [
+      "faire de la boxe",
+      "un match de boxe"
+    ],
+    "audioText": "la boxe"
+  },
+  {
+    "id": "sport-fitness-080",
+    "fr": "les arts martiaux",
+    "en": "martial arts",
+    "lemma": "arts martiaux",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/aʁ maʁ.sjo/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il pratique les arts martiaux depuis son enfance.",
+    "exampleEn": "He's practiced martial arts since childhood.",
+    "collocations": [
+      "pratiquer les arts martiaux"
+    ],
+    "audioText": "les arts martiaux"
+  },
+  {
+    "id": "sport-fitness-081",
+    "fr": "l'aviron",
+    "en": "rowing",
+    "lemma": "aviron",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.vi.ʁɔ̃/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "L'équipe d'aviron s'entraîne sur le lac tous les matins.",
+    "exampleEn": "The rowing team trains on the lake every morning.",
+    "collocations": [
+      "faire de l'aviron"
+    ],
+    "audioText": "l'aviron"
+  },
+  {
+    "id": "sport-fitness-082",
+    "fr": "le patinage",
+    "en": "skating",
+    "lemma": "patinage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pa.ti.naʒ/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le patinage artistique est un sport très technique.",
+    "exampleEn": "Figure skating is a very technical sport.",
+    "collocations": [
+      "le patinage artistique"
+    ],
+    "audioText": "le patinage"
+  },
+  {
+    "id": "sport-fitness-083",
+    "fr": "en plein effort",
+    "en": "in the midst of exertion",
+    "lemma": "en plein effort",
+    "pos": "phrase",
+    "ipa": "/ɑ̃ plɛn e.fɔʁ/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "On voyait sur son visage qu'elle était en plein effort.",
+    "exampleEn": "You could see from her face that she was pushing hard.",
+    "collocations": [],
+    "audioText": "en plein effort"
+  },
+  {
+    "id": "sport-fitness-084",
+    "fr": "dépasser ses limites",
+    "en": "to push past one's limits",
+    "lemma": "dépasser ses limites",
+    "pos": "phrase",
+    "ipa": "/de.pa.se se li.mit/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le marathon lui a permis de dépasser ses limites.",
+    "exampleEn": "The marathon allowed him to push past his limits.",
+    "collocations": [],
+    "audioText": "dépasser ses limites"
+  },
+  {
+    "id": "sport-fitness-085",
+    "fr": "la performance",
+    "en": "performance",
+    "lemma": "performance",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɛʁ.fɔʁ.mɑ̃s/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Sa performance en finale a impressionné tout le stade.",
+    "exampleEn": "His performance in the final impressed the whole stadium.",
+    "collocations": [
+      "une performance exceptionnelle"
+    ],
+    "audioText": "la performance"
+  },
+  {
+    "id": "sport-fitness-086",
+    "fr": "le dopage",
+    "en": "doping",
+    "lemma": "dopage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/dɔ.paʒ/",
+    "cefr": "C1",
+    "topic": "sport-fitness",
+    "register": "soutenu",
+    "exampleFr": "Le sportif a été suspendu pour dopage.",
+    "exampleEn": "The athlete was suspended for doping.",
+    "collocations": [
+      "un contrôle antidopage",
+      "être accusé de dopage"
+    ],
+    "audioText": "le dopage"
+  },
+  {
+    "id": "sport-fitness-087",
+    "fr": "se dépasser",
+    "en": "to surpass oneself",
+    "lemma": "se dépasser",
+    "pos": "verb",
+    "ipa": "/sə de.pa.se/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "La compétition l'a poussé à se dépasser.",
+    "exampleEn": "The competition pushed him to surpass himself.",
+    "collocations": [],
+    "audioText": "se dépasser"
+  },
+  {
+    "id": "sport-fitness-088",
+    "fr": "acharné",
+    "en": "fierce, relentless",
+    "lemma": "acharné",
+    "pos": "adj",
+    "gender": "both",
+    "ipa": "/a.ʃaʁ.ne/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "soutenu",
+    "exampleFr": "Le match s'est terminé après une lutte acharnée.",
+    "exampleEn": "The match ended after a fierce struggle.",
+    "collocations": [
+      "un combat acharné",
+      "un travail acharné"
+    ],
+    "audioText": "acharné"
+  },
+  {
+    "id": "sport-fitness-089",
+    "fr": "invaincu",
+    "en": "unbeaten",
+    "lemma": "invaincu",
+    "pos": "adj",
+    "gender": "both",
+    "ipa": "/ɛ̃.vɛ̃.ky/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "soutenu",
+    "exampleFr": "L'équipe reste invaincue depuis le début de la saison.",
+    "exampleEn": "The team has remained unbeaten since the start of the season.",
+    "collocations": [
+      "rester invaincu"
+    ],
+    "audioText": "invaincu"
+  },
+  {
+    "id": "sport-fitness-090",
+    "fr": "la défaite",
+    "en": "defeat",
+    "lemma": "défaite",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/de.fɛt/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Cette défaite a beaucoup déçu les supporters.",
+    "exampleEn": "This defeat greatly disappointed the fans.",
+    "collocations": [
+      "subir une défaite"
+    ],
+    "audioText": "la défaite"
+  },
+  {
+    "id": "sport-fitness-091",
+    "fr": "la victoire",
+    "en": "victory",
+    "lemma": "victoire",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vik.twaʁ/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Ils ont célébré leur victoire jusqu'au bout de la nuit.",
+    "exampleEn": "They celebrated their victory until the end of the night.",
+    "collocations": [
+      "remporter la victoire"
+    ],
+    "audioText": "la victoire"
+  },
+  {
+    "id": "sport-fitness-092",
+    "fr": "remporter",
+    "en": "to win, to claim (a title)",
+    "lemma": "remporter",
+    "pos": "verb",
+    "ipa": "/ʁɑ̃.pɔʁ.te/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "L'équipe française a remporté la coupe du monde.",
+    "exampleEn": "The French team won the World Cup.",
+    "collocations": [
+      "remporter un titre",
+      "remporter la coupe"
+    ],
+    "audioText": "remporter"
+  },
+  {
+    "id": "sport-fitness-093",
+    "fr": "la coupe",
+    "en": "cup (trophy)",
+    "lemma": "coupe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kup/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "La coupe du monde a lieu tous les quatre ans.",
+    "exampleEn": "The World Cup takes place every four years.",
+    "collocations": [
+      "soulever la coupe"
+    ],
+    "audioText": "la coupe"
+  },
+  {
+    "id": "sport-fitness-094",
+    "fr": "s'incliner",
+    "en": "to lose, to be defeated (formal, of a team)",
+    "lemma": "s'incliner",
+    "pos": "verb",
+    "ipa": "/sɛ̃.kli.ne/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "soutenu",
+    "exampleFr": "L'équipe locale s'est inclinée deux buts à un.",
+    "exampleEn": "The home team was defeated two goals to one.",
+    "collocations": [
+      "s'incliner face à un adversaire"
+    ],
+    "audioText": "s'incliner"
+  },
+  {
+    "id": "sport-fitness-095",
+    "fr": "l'adversaire",
+    "en": "opponent",
+    "lemma": "adversaire",
+    "pos": "noun",
+    "gender": "both",
+    "ipa": "/ad.vɛʁ.sɛʁ/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Son adversaire était bien plus expérimenté qu'elle.",
+    "exampleEn": "Her opponent was much more experienced than she was.",
+    "collocations": [
+      "affronter un adversaire"
+    ],
+    "audioText": "l'adversaire"
+  },
+  {
+    "id": "sport-fitness-096",
+    "fr": "affronter",
+    "en": "to face, to take on",
+    "lemma": "affronter",
+    "pos": "verb",
+    "ipa": "/a.fʁɔ̃.te/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Le club affronte son plus grand rival ce dimanche.",
+    "exampleEn": "The club faces its biggest rival this Sunday.",
+    "collocations": [
+      "affronter un adversaire"
+    ],
+    "audioText": "affronter"
+  },
+  {
+    "id": "sport-fitness-097",
+    "fr": "le classement",
+    "en": "ranking, standings",
+    "lemma": "classement",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/klas.mɑ̃/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "L'équipe est première du classement général.",
+    "exampleEn": "The team is first in the overall standings.",
+    "collocations": [
+      "être en tête du classement"
+    ],
+    "audioText": "le classement"
+  },
+  {
+    "id": "sport-fitness-098",
+    "fr": "sportif",
+    "en": "athletic, sporty",
+    "lemma": "sportif",
+    "pos": "adj",
+    "gender": "both",
+    "plural": "sportifs",
+    "ipa": "/spɔʁ.tif/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "C'est une famille très sportive.",
+    "exampleEn": "It's a very athletic family.",
+    "collocations": [
+      "une personne sportive",
+      "un club sportif"
+    ],
+    "audioText": "sportif"
+  },
+  {
+    "id": "sport-fitness-099",
+    "fr": "épuisé",
+    "en": "exhausted",
+    "lemma": "épuisé",
+    "pos": "adj",
+    "gender": "both",
+    "ipa": "/e.pɥi.ze/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Après le marathon, il était complètement épuisé.",
+    "exampleEn": "After the marathon, he was completely exhausted.",
+    "collocations": [
+      "être épuisé"
+    ],
+    "audioText": "épuisé"
+  },
+  {
+    "id": "sport-fitness-100",
+    "fr": "musclé",
+    "en": "muscular",
+    "lemma": "musclé",
+    "pos": "adj",
+    "gender": "both",
+    "ipa": "/mys.kle/",
+    "cefr": "A2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Il a des bras très musclés.",
+    "exampleEn": "He has very muscular arms.",
+    "collocations": [
+      "des bras musclés"
+    ],
+    "audioText": "musclé"
+  },
+  {
+    "id": "sport-fitness-101",
+    "fr": "sédentaire",
+    "en": "sedentary",
+    "lemma": "sédentaire",
+    "pos": "adj",
+    "gender": "both",
+    "ipa": "/se.dɑ̃.tɛʁ/",
+    "cefr": "C1",
+    "topic": "sport-fitness",
+    "register": "soutenu",
+    "exampleFr": "Un mode de vie sédentaire augmente les risques cardiovasculaires.",
+    "exampleEn": "A sedentary lifestyle increases cardiovascular risk.",
+    "collocations": [
+      "un mode de vie sédentaire"
+    ],
+    "audioText": "sédentaire"
+  },
+  {
+    "id": "sport-fitness-102",
+    "fr": "l'échauffement musculaire",
+    "en": "muscular warm-up",
+    "lemma": "échauffement musculaire",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.ʃof.mɑ̃ mys.ky.lɛʁ/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "soutenu",
+    "exampleFr": "Un échauffement musculaire complet réduit le risque de blessure.",
+    "exampleEn": "A thorough muscular warm-up reduces the risk of injury.",
+    "collocations": [],
+    "audioText": "l'échauffement musculaire"
+  },
+  {
+    "id": "sport-fitness-103",
+    "fr": "avoir le souffle coupé",
+    "en": "to be out of breath, breathless",
+    "lemma": "avoir le souffle coupé",
+    "pos": "phrase",
+    "ipa": "/a.vwaʁ lə sufl ku.pe/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Après la montée, j'avais le souffle coupé.",
+    "exampleEn": "After the climb, I was out of breath.",
+    "collocations": [],
+    "audioText": "avoir le souffle coupé"
+  },
+  {
+    "id": "sport-fitness-104",
+    "fr": "avoir les jambes en coton",
+    "en": "to have jelly legs (colloquial, from exhaustion)",
+    "lemma": "avoir les jambes en coton",
+    "pos": "phrase",
+    "ipa": "/a.vwaʁ le ʒɑ̃b ɑ̃ kɔ.tɔ̃/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "familier",
+    "exampleFr": "Après le marathon, j'avais les jambes en coton.",
+    "exampleEn": "After the marathon, my legs felt like jelly.",
+    "mnemonic": "Picture your legs literally made of soft cotton (coton) — that's how wobbly and weak they feel after extreme exertion.",
+    "collocations": [],
+    "audioText": "avoir les jambes en coton"
+  },
+  {
+    "id": "sport-fitness-105",
+    "fr": "se défouler",
+    "en": "to let off steam, to work out one's energy",
+    "lemma": "se défouler",
+    "pos": "verb",
+    "ipa": "/sə de.fu.le/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "familier",
+    "exampleFr": "Je vais courir pour me défouler après une journée stressante.",
+    "exampleEn": "I go running to let off steam after a stressful day.",
+    "collocations": [
+      "se défouler au sport"
+    ],
+    "audioText": "se défouler"
+  },
+  {
+    "id": "sport-fitness-106",
+    "fr": "être à fond",
+    "en": "to go all out, to give it your all",
+    "lemma": "être à fond",
+    "pos": "phrase",
+    "ipa": "/ɛtʁ a fɔ̃/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "familier",
+    "exampleFr": "Sur les cent derniers mètres, il était à fond.",
+    "exampleEn": "On the last hundred meters, he was giving it his all.",
+    "collocations": [],
+    "audioText": "être à fond"
+  },
+  {
+    "id": "sport-fitness-107",
+    "fr": "prendre du muscle",
+    "en": "to bulk up, gain muscle",
+    "lemma": "prendre du muscle",
+    "pos": "phrase",
+    "ipa": "/pʁɑ̃dʁ dy mysk(l)/",
+    "cefr": "B1",
+    "topic": "sport-fitness",
+    "register": "familier",
+    "exampleFr": "Il fait de la musculation pour prendre du muscle.",
+    "exampleEn": "He does weight training to bulk up.",
+    "collocations": [],
+    "audioText": "prendre du muscle"
+  },
+  {
+    "id": "sport-fitness-108",
+    "fr": "la préparation physique",
+    "en": "physical conditioning",
+    "lemma": "préparation physique",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pʁe.pa.ʁa.sjɔ̃ fi.zik/",
+    "cefr": "C1",
+    "topic": "sport-fitness",
+    "register": "soutenu",
+    "exampleFr": "La préparation physique commence trois mois avant la saison.",
+    "exampleEn": "Physical conditioning begins three months before the season.",
+    "collocations": [
+      "un préparateur physique"
+    ],
+    "audioText": "la préparation physique"
+  },
+  {
+    "id": "sport-fitness-109",
+    "fr": "l'esprit d'équipe",
+    "en": "team spirit",
+    "lemma": "esprit d'équipe",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛs.pʁi de.kip/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Cette équipe se distingue par son bel esprit d'équipe.",
+    "exampleEn": "This team stands out for its great team spirit.",
+    "collocations": [
+      "avoir l'esprit d'équipe"
+    ],
+    "audioText": "l'esprit d'équipe"
+  },
+  {
+    "id": "sport-fitness-110",
+    "fr": "le fair-play",
+    "en": "fair play, sportsmanship",
+    "lemma": "fair-play",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fɛʁ.plɛ/",
+    "cefr": "B2",
+    "topic": "sport-fitness",
+    "register": "neutre",
+    "exampleFr": "Les deux capitaines se sont serré la main dans un esprit de fair-play.",
+    "exampleEn": "The two captains shook hands in a spirit of fair play.",
+    "collocations": [
+      "faire preuve de fair-play"
+    ],
+    "audioText": "le fair-play"
+  },
+  {
+    "id": "sport-fitness-111",
+    "fr": "la déclaration d'inaptitude",
+    "en": "medical exemption, unfit-to-play notice",
+    "lemma": "déclaration d'inaptitude",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/de.kla.ʁa.sjɔ̃ di.nap.ti.tyd/",
+    "cefr": "C1",
+    "topic": "sport-fitness",
+    "register": "soutenu",
+    "exampleFr": "Le médecin lui a délivré une déclaration d'inaptitude à la compétition.",
+    "exampleEn": "The doctor issued him a medical exemption from competing.",
+    "collocations": [],
+    "audioText": "la déclaration d'inaptitude"
+  },
+  {
+    "id": "sport-fitness-112",
+    "fr": "l'exploit sportif",
+    "en": "sporting feat",
+    "lemma": "exploit sportif",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛk.splwa spɔʁ.tif/",
+    "cefr": "C1",
+    "topic": "sport-fitness",
+    "register": "soutenu",
+    "exampleFr": "Battre ce record est un véritable exploit sportif.",
+    "exampleEn": "Breaking this record is a true sporting feat.",
+    "collocations": [
+      "réaliser un exploit sportif"
+    ],
+    "audioText": "l'exploit sportif"
+  },
+  {
+    "id": "sport-fitness-113",
+    "fr": "s'aguerrir",
+    "en": "to toughen oneself up (through training/competition)",
+    "lemma": "s'aguerrir",
+    "pos": "verb",
+    "ipa": "/sa.ɡe.ʁiʁ/",
+    "cefr": "C1",
+    "topic": "sport-fitness",
+    "register": "soutenu",
+    "exampleFr": "La jeune athlète s'est aguerrie au contact des meilleures joueuses.",
+    "exampleEn": "The young athlete toughened up by competing against the best players.",
+    "collocations": [],
+    "audioText": "s'aguerrir"
+  }
+]

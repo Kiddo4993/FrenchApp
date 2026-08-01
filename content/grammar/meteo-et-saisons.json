@@ -1,0 +1,35 @@
+{
+  "unitSlug": "meteo-et-saisons",
+  "points": [
+    {
+      "slug": "pronoms-y-en",
+      "title": "Les pronoms y et en",
+      "explanationEn": "French has two small but extremely frequent pronouns, y and en, that replace prepositional phrases so you don't have to repeat a place or a noun already mentioned. They don't map onto any single English word, which is exactly why they need dedicated attention: English usually just drops the phrase entirely or uses 'there'/'some,' while French requires you to include the pronoun.\n\nY replaces à + a place, or à + a thing (not a person) that was already mentioned — it most often means 'there,' but also stands in for 'about it,' 'to it,' or 'in it' depending on the verb. Tu vas à la montagne cet été ? Oui, j'y vais (Are you going to the mountains this summer? Yes, I'm going [there]). Elle pense à son voyage ? Oui, elle y pense (Is she thinking about her trip? Yes, she's thinking about it). Like other object pronouns, y goes before the conjugated verb: j'y vais, not je vais y. In two-verb constructions it attaches to the infinitive: je vais y aller (I'm going to go there). Note that y cannot replace à + a person — for people, you use an indirect object pronoun instead (lui/leur), which you learned in an earlier unit: je pense à Marie → je pense à elle, not je lui pense.\n\nEn replaces de + a noun, and covers a wide range of uses: quantities ('some,' 'any,' 'of it,' 'of them'), origin ('from there'), and de + thing after certain verbs. Its most common everyday use is with quantities: Tu as des frères et sœurs ? Oui, j'en ai deux (Do you have siblings? Yes, I have two [of them]) — notice that en is required here even though English simply says 'I have two' with no equivalent word; dropping en in French would be ungrammatical. Tu veux du café ? Non, je n'en veux pas (Do you want some coffee? No, I don't want any [of it]) — again, English 'I don't want any' has no separate word for 'of it,' but French en carries that meaning and cannot be omitted. En also replaces de + place (meaning 'from there'): tu reviens de la plage ? Oui, j'en reviens (Are you coming back from the beach? Yes, I'm coming back [from there]).\n\nFor this unit's weather and seasons context, y and en appear naturally: on parle souvent du temps qu'il fait — on en parle tout le temps (people often talk about the weather — we talk about it all the time), or il neige dans les Alpes en hiver, et il y neige beaucoup (it snows in the Alps in winter, and it snows there a lot). When a sentence includes a specific number or expression of quantity (deux, plusieurs, beaucoup de, un peu de) alongside en, that quantity word stays at the end of the sentence even though the noun itself has been replaced: j'ai trois sœurs → j'en ai trois (I have three [of them]) — the trois doesn't disappear, only the noun sœurs does. Getting comfortable with y and en takes real practice because there's no single English word that reliably signals 'you need one of these pronouns here' — the cue is grammatical (the preposition attached to the verb: à → y, de → en), not semantic.",
+      "examples": [
+        { "fr": "Tu vas à la montagne cet été ? Oui, j'y vais en juillet.", "en": "Are you going to the mountains this summer? Yes, I'm going there in July.", "note": "y replaces à + place" },
+        { "fr": "Elle pense souvent à son prochain voyage. Elle y pense chaque jour.", "en": "She often thinks about her next trip. She thinks about it every day.", "note": "y replaces à + thing" },
+        { "fr": "Tu as des parapluies ? Oui, j'en ai deux dans le placard.", "en": "Do you have umbrellas? Yes, I have two in the closet.", "note": "en required even though English just says 'two'" },
+        { "fr": "Tu veux du café ce matin ? Non merci, je n'en veux pas.", "en": "Do you want some coffee this morning? No thanks, I don't want any.", "note": "en carries the meaning of 'of it'" },
+        { "fr": "Il neige beaucoup dans les Alpes ; il y neige depuis hier.", "en": "It snows a lot in the Alps; it's been snowing there since yesterday." },
+        { "fr": "Tu reviens de la plage ? Oui, j'en reviens à l'instant.", "en": "Are you coming back from the beach? Yes, I'm coming back from there right now.", "note": "en replaces de + place" },
+        { "fr": "On parle souvent de la météo ici ; on en parle tout le temps.", "en": "People often talk about the weather here; we talk about it all the time." },
+        { "fr": "Combien de saisons y a-t-il en France ? Il y en a quatre.", "en": "How many seasons are there in France? There are four.", "note": "y and en can combine: il y en a" },
+        { "fr": "Je vais y réfléchir avant de répondre.", "en": "I'm going to think about it before answering.", "note": "y attaches to the infinitive after aller" },
+        { "fr": "As-tu besoin d'un manteau ? Oui, j'en ai vraiment besoin en hiver.", "en": "Do you need a coat? Yes, I really need one in winter.", "note": "avoir besoin de → en" }
+      ],
+      "commonMistakes": [
+        "Dropping en entirely because English has no equivalent word, e.g. answering 'j'ai deux' instead of the required 'j'en ai deux'.",
+        "Using y to replace à + a person instead of switching to lui/leur, e.g. saying 'j'y pense' when meaning 'I'm thinking about my sister' — should be 'je pense à elle'.",
+        "Placing y or en after the verb instead of before it, e.g. 'je vais y' as a full sentence instead of 'j'y vais'.",
+        "Forgetting to keep the quantity word (deux, beaucoup, un peu) at the end of the sentence when using en, e.g. dropping trois in 'j'en ai' when the answer requires 'j'en ai trois'.",
+        "Confusing when to use y (from à) versus en (from de) by not checking which preposition the verb actually takes, e.g. using en with penser à instead of y."
+      ],
+      "whyItTrips": [
+        "English simply omits the equivalent word in phrases like 'I have two' or 'I don't want any', so English speakers don't feel a grammatical gap that needs filling and habitually forget en and y altogether.",
+        "Because y and en are chosen based on which preposition (à or de) a specific verb takes, not based on meaning, learners have to know each verb's preposition pattern before they can even choose the right pronoun.",
+        "Y and en are short, unstressed, and easy to mishear or skip in fast spoken French, so learners get less natural listening reinforcement for them compared to more salient vocabulary words."
+      ],
+      "searchTags": ["pronom-y", "pronom-en", "y-en", "prepositional-pronouns", "quantity", "pronoun-placement"]
+    }
+  ]
+}

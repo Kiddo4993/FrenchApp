@@ -1,0 +1,35 @@
+{
+  "unitSlug": "musique-art-cinema",
+  "points": [
+    {
+      "slug": "revision-temps-du-passe",
+      "title": "Révision : passé composé, imparfait et plus-que-parfait",
+      "explanationEn": "By this point you have met all three major past tenses individually. This unit's job is to put them side by side and give you clear, practical decision rules for choosing among them, since real storytelling in French — describing a film, a concert, a piece of art you saw — constantly requires switching between all three within the same paragraph, sometimes the same sentence.\n\nThe passé composé (j'ai vu, elle est partie) reports completed actions and events — the things that happened, one after another, that move a story forward. Think of it as the tense of the story's main timeline: it answers \"what happened next?\" The imparfait (je voyais, elle partait) describes the background against which those events happened: ongoing states, habitual or repeated past actions, descriptions of people/places/weather, and emotions or opinions held at the time. It answers \"what was going on?\" rather than \"what happened?\" A classic way to feel the contrast: Quand je suis entré dans la salle, le film avait déjà commencé et tout le monde regardait l'écran en silence — the passé composé (suis entré) is the single event that punctuates the scene, while regardait (imparfait) paints the ongoing backdrop.\n\nThe plus-que-parfait (j'avais vu, elle était partie) is built from the imparfait of avoir/être plus the past participle, and it expresses an action that had already been completed before another past action — it pushes a step further back in time than the passé composé or imparfait. It answers \"what had already happened, before the main past story took place?\" In the example above, avait déjà commencé (plus-que-parfait) tells you the film's start was already finished before j'entre (passé composé) even happened — the plus-que-parfait creates a past-before-the-past, exactly like English \"had already started.\"\n\nA reliable practical rule for choosing among the three: ask whether you're narrating the sequence of events (→ passé composé), painting the scene/state/habit around those events (→ imparfait), or referring to something that was already finished before the moment you're narrating (→ plus-que-parfait). Many single sentences legitimately use two or all three together — Je n'avais jamais vu ce tableau avant, alors quand je l'ai découvert, j'étais bouleversé (I had never seen this painting before, so when I discovered it, I was stunned) uses plus-que-parfait (n'avais jamais vu, prior state), passé composé (ai découvert, the pivotal event), and imparfait (j'étais bouleversé, the resulting emotional state) all in one breath — exactly the kind of layered narration this unit is training you to produce.",
+      "examples": [
+        { "fr": "Quand je suis entré dans la salle, le film avait déjà commencé.", "en": "When I entered the room, the movie had already started.", "note": "passé composé (event) + plus-que-parfait (already completed before it)" },
+        { "fr": "Il pleuvait quand nous sommes sortis du concert.", "en": "It was raining when we left the concert.", "note": "imparfait (background weather) + passé composé (the event of leaving)" },
+        { "fr": "Elle jouait du piano tous les jours quand elle était petite.", "en": "She used to play piano every day when she was little.", "note": "imparfait for habitual past action" },
+        { "fr": "J'avais déjà lu le livre avant de voir le film.", "en": "I had already read the book before seeing the movie.", "note": "plus-que-parfait for prior completed action" },
+        { "fr": "Hier soir, nous avons vu une exposition incroyable.", "en": "Last night, we saw an incredible exhibition.", "note": "passé composé, single completed event" },
+        { "fr": "Le peintre était très célèbre à l'époque.", "en": "The painter was very famous at the time.", "note": "imparfait, describing an ongoing state" },
+        { "fr": "Dès qu'elle avait fini son solo, le public a applaudi.", "en": "As soon as she had finished her solo, the audience applauded.", "note": "plus-que-parfait then passé composé, two sequential past events" },
+        { "fr": "Nous ne savions pas que ce film avait déjà gagné un prix.", "en": "We didn't know that this movie had already won an award.", "note": "imparfait (state of not knowing) + plus-que-parfait (prior event)" },
+        { "fr": "Elle a fermé la galerie parce qu'il n'y avait plus personne.", "en": "She closed the gallery because there was no one left.", "note": "passé composé (action) + imparfait (reason/state)" },
+        { "fr": "J'ai adoré ce roman ; je ne l'avais jamais lu avant.", "en": "I loved this novel; I had never read it before.", "note": "passé composé (reaction) + plus-que-parfait (prior non-experience)" }
+      ],
+      "commonMistakes": [
+        "Using passé composé for background description instead of imparfait (writing 'il a plu quand nous sommes sortis' when the rain was ongoing background, not a punctual event: should be 'il pleuvait').",
+        "Using imparfait for a single completed, sequence-moving event instead of passé composé (writing 'hier, je voyais ce film' instead of 'hier, j'ai vu ce film').",
+        "Skipping the plus-que-parfait entirely and using passé composé for both events in a two-step past sequence, losing the 'already happened before' distinction (writing 'j'ai déjà lu le livre avant de voir le film' instead of 'j'avais déjà lu').",
+        "Treating the three past tenses as interchangeable stylistic choices rather than tenses that encode genuinely different information (sequence vs. background vs. prior completion).",
+        "Overcorrecting by using imparfait for every description, even for one-time completed emotional reactions that should be passé composé (writing 'j'étais tellement content' for a one-off reaction instead of 'j'ai été tellement content', when the moment itself is being reported as an event)."
+      ],
+      "whyItTrips": [
+        "English uses a single simple past form ('I saw', 'it rained', 'she played') for almost everything, so English speakers have no grammatical habit of distinguishing foreground events from background description — French forces a decision English never asks you to make.",
+        "The plus-que-parfait's function (a past further back than another past) does exist in English ('had done'), but English speakers often skip it in casual speech, so the instinct to actually use it consistently in French narration is weak and has to be trained deliberately.",
+        "Choosing correctly requires judging the internal shape of an event — is it a repeated/ongoing state, or a punctual occurrence — which is a semantic judgment call, not something you can look up mechanically, and that ambiguity feels unfamiliar coming from English's flatter past tense system."
+      ],
+      "searchTags": ["passe compose", "imparfait", "plus-que-parfait", "past tenses", "narration", "sequence of tenses"]
+    }
+  ]
+}

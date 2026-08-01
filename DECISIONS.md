@@ -15,6 +15,19 @@ Prompt table specifies 10/10/10/8/6 units for A1/A2/B1/B2/C1 (44 total). Used th
 concrete titles/grammar focus per unit in PLAN.md §2 since the prompt only gave level-level focus, not
 per-unit breakdown.
 
+### 2026-07-30 — Fixed a real bug: ExerciseShell's reset effect clobbered child-registered keyboard shortcuts
+`ExerciseShell`'s prompt-change effect used to unconditionally null out `checker`/`optionActivators`
+refs. Because React runs child effects before parent effects on the same commit, `McqExercise` (child)
+would register its 1-4 option activators, and then `ExerciseShell`'s own effect (parent, same commit)
+would immediately wipe them back to `null` — silently breaking the 1-4 keyboard shortcuts on every
+exercise, every time. Caught by a component test (`exercise-shell.test.tsx`) asserting the number-key
+shortcut actually selects an option. Fix: removed the clobbering lines; each exercise component's own
+effect (keyed on `prompt.id`) is solely responsible for registering/clearing its handlers, which is
+sufficient since those effects already re-run on prompt change. Also removed `AnimatePresence
+mode="wait"` between the Check-button bar and the feedback bar — it delayed the feedback bar behind a
+full exit-animation cycle, which both hurt perceived responsiveness and made the transition
+untestable under jsdom (no real animation frames).
+
 ### 2026-07-29 — Standalone sentence banks and reading passages deferred out of Phase 2
 `validate-content.ts` treats `/content/sentences/{topic}.json` as optional (warns, doesn't fail) and
 doesn't check `/content/readings/*` at all — the hard requirements are the vocab floor, the verb

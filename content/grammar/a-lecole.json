@@ -1,0 +1,64 @@
+{
+  "unitSlug": "a-lecole",
+  "points": [
+    {
+      "slug": "regular-ir-verbs-present",
+      "title": "Les verbes réguliers en -ir au présent (type finir)",
+      "explanationEn": "After the large -er verb family, the next most common regular pattern is the -ir verb group of the 'finir' type (also called second-group verbs): finir (to finish), choisir (to choose), réussir (to succeed), grandir (to grow up), remplir (to fill). To conjugate them, drop the -ir from the infinitive to get the stem, then add: -is (je), -is (tu), -it (il/elle/on), -issons (nous), -issez (vous), -issent (ils/elles). So finir becomes: je finis, tu finis, il/elle/on finit, nous finissons, vous finissez, ils/elles finissent. Notice the distinctive '-iss-' that appears in the plural forms (nous, vous, ils/elles) but not in the singular forms — this is the hallmark of this whole verb family and a useful way to recognize it in the wild.\n\nBe careful: not every verb ending in -ir follows this pattern. There is a separate, smaller and irregular group of -ir verbs (like partir, sortir, dormir) that conjugate quite differently and don't take the -iss- infix at all. For this unit, focus on mastering the reliable finir-type pattern, since it applies predictably to dozens of common verbs, especially many related to completing or achieving something academically (finir un examen, réussir un cours, choisir une matière).\n\nPronunciation is more forgiving here than with -er verbs: in finir-type verbs, the singular endings (-is, -is, -it) are pronounced, unlike the silent -er endings, though the final written 's' and 't' themselves stay silent — you hear 'fi' with a short vowel change, not a strong consonant sound. The plural forms with -iss- are clearly and audibly different from the singular forms, which actually makes this verb family easier to distinguish by ear than -er verbs, where several forms sound identical.",
+      "examples": [
+        { "fr": "Je finis mes devoirs avant le dîner.", "en": "I finish my homework before dinner.", "note": "Stem 'fin-' + '-is' for je." },
+        { "fr": "Tu choisis quel cours ?", "en": "Which course are you choosing?" },
+        { "fr": "Elle réussit toujours ses examens.", "en": "She always passes her exams." },
+        { "fr": "Nous finissons la leçon à midi.", "en": "We finish the lesson at noon.", "note": "The '-iss-' infix appears in the nous/vous/ils forms." },
+        { "fr": "Vous choisissez vos options ce semestre.", "en": "You are choosing your electives this semester." },
+        { "fr": "Ils réussissent grâce à leurs efforts.", "en": "They succeed thanks to their efforts." },
+        { "fr": "Les enfants grandissent vite.", "en": "Children grow up fast." },
+        { "fr": "Le professeur remplit le tableau de notes.", "en": "The teacher fills the board with notes." },
+        { "fr": "On finit l'année scolaire en juin.", "en": "The school year finishes in June.", "note": "'On' takes the il/elle-style ending: 'finit', not 'finissons'." },
+        { "fr": "Je choisis le français comme langue étrangère.", "en": "I'm choosing French as my foreign language." }
+      ],
+      "commonMistakes": [
+        "Adding '-iss-' to the singular forms by over-generalizing the plural pattern (saying 'je finiss' instead of the correct 'je finis').",
+        "Treating all -ir verbs as one uniform group and applying the finir pattern to irregular -ir verbs like partir or dormir, which conjugate completely differently.",
+        "Pronouncing the final -s or -t in 'finis' / 'finit' the way you might expect from English spelling instincts, when in fact both are silent.",
+        "Forgetting the '-iss-' infix in the nous/vous/ils forms and instead just adding -ons/-ez/-ent directly to the bare stem (saying 'nous finons' instead of 'nous finissons')."
+      ],
+      "whyItTrips": [
+        "English has no equivalent of an infix that appears only in some persons of a verb (-iss- shows up in plural forms but not singular), so this asymmetric pattern feels arbitrary to a learner used to uniform verb stems.",
+        "Because -ir verbs split into a regular finir-type group and a separate irregular group (partir, sortir, dormir) that look similar on the surface, English speakers often assume all -ir verbs behave the same way.",
+        "English verb endings are pronounced fairly literally, so the mix of pronounced singular endings (-is, -it) and clearly different plural endings (-issons, -issez, -issent) needs deliberate ear-training."
+      ],
+      "searchTags": ["ir verbs", "finir", "present tense", "regular verbs", "conjugation", "iss infix"]
+    },
+    {
+      "slug": "forming-questions",
+      "title": "Former des questions : intonation, est-ce que, inversion",
+      "explanationEn": "French has three distinct ways to turn a statement into a yes/no question, ranging from very casual to more formal, and it's useful to know all three because you'll hear and need all of them. The first and simplest is intonation: keep the exact word order of a normal statement, but raise your pitch at the end when speaking, or add a question mark in writing. 'Tu aimes les maths ?' (Do you like math?) uses the identical words as the statement 'Tu aimes les maths.' — only the intonation (or the punctuation) signals it's a question. This is extremely common in casual spoken French but should generally be avoided in formal writing.\n\nThe second method, est-ce que, is the most versatile and the safest default for learners: simply place the fixed phrase 'est-ce que' (literally 'is it that', but functioning as a pure question marker with no independent meaning of its own) at the front of a normal statement. 'Tu aimes les maths.' becomes 'Est-ce que tu aimes les maths ?' Before a vowel sound, 'que' elides to 'qu'': 'Est-ce qu'il aime l'histoire ?' This method works in both casual and moderately formal contexts and never requires you to change word order, which makes it the most reliable tool while you're still building fluency.\n\nThe third method, inversion, is more formal and involves swapping the subject pronoun and the verb, connected by a hyphen: 'Aimes-tu les maths ?' (Do you like math?). This is common in written French and more formal spoken registers, but rare in casual conversation. A key technical detail: when the subject is a noun rather than a pronoun (not je/tu/il, etc.), you cannot simply invert the noun and verb — instead you keep the noun in its normal position and add a matching pronoun after the verb: 'Marie aime les maths' becomes 'Marie aime-t-elle les maths ?', not 'Aime Marie les maths ?'. Also note that when the verb ends in a vowel and the pronoun (il/elle/on) begins with a vowel, French inserts a euphonic '-t-' between them purely for pronunciation: 'Parle-t-il français ?' (not 'Parle-il', which would create an awkward vowel collision).",
+      "examples": [
+        { "fr": "Tu as des devoirs ce soir ?", "en": "Do you have homework tonight?", "note": "Intonation only — identical word order to a statement, question mark/rising pitch signals the question." },
+        { "fr": "Est-ce que tu aimes la biologie ?", "en": "Do you like biology?", "note": "'Est-ce que' added to the front; no word-order change needed." },
+        { "fr": "Est-ce qu'il a un examen demain ?", "en": "Does he have an exam tomorrow?", "note": "'Que' elides to \"qu'\" before the vowel sound of 'il'." },
+        { "fr": "Aimez-vous les langues étrangères ?", "en": "Do you like foreign languages?", "note": "Inversion: verb-hyphen-pronoun, more formal register." },
+        { "fr": "Parle-t-il espagnol ?", "en": "Does he speak Spanish?", "note": "Euphonic '-t-' inserted between vowel-ending verb and vowel-starting pronoun 'il'." },
+        { "fr": "Marie étudie-t-elle le français ?", "en": "Does Marie study French?", "note": "Noun subject stays in place; matching pronoun 'elle' is added after the verb for inversion." },
+        { "fr": "Avez-vous fini vos devoirs ?", "en": "Have you finished your homework?" },
+        { "fr": "Est-ce que les cours commencent à huit heures ?", "en": "Do classes start at eight o'clock?" },
+        { "fr": "Vous êtes en quelle classe ?", "en": "What grade are you in?", "note": "Intonation-style question with a question word; word order stays like a statement with 'quelle classe' at the end." },
+        { "fr": "Comprends-tu la question ?", "en": "Do you understand the question?", "note": "Inversion with 'tu'." }
+      ],
+      "commonMistakes": [
+        "Using inversion with a noun subject by literally swapping the noun and verb (saying 'Aime Marie les maths ?' instead of the correct 'Marie aime-t-elle les maths ?').",
+        "Forgetting the euphonic '-t-' between a vowel-ending verb and il/elle/on (writing 'Aime-il' instead of 'Aime-t-il').",
+        "Treating 'est-ce que' as if it carried independent meaning and trying to translate it word-for-word ('is it that'), instead of recognizing it as a fixed, meaningless question marker.",
+        "Overusing inversion in casual spoken contexts where est-ce que or plain intonation would sound far more natural.",
+        "Forgetting the elision of 'que' to \"qu'\" before a vowel (writing 'Est-ce que il' instead of \"Est-ce qu'il\")."
+      ],
+      "whyItTrips": [
+        "English forms yes/no questions almost exclusively through auxiliary-subject inversion ('Do you like...', 'Are you...'), so French's three-way choice — and especially the option to ask a question with zero word-order change (intonation) — has no single equivalent pattern to map onto.",
+        "The euphonic '-t-' inserted purely to avoid an awkward vowel collision (parle-t-il) is a sound-based spelling rule with no parallel in English, where such insertions don't occur.",
+        "'Est-ce que' looks translatable ('is it that') but must be treated as an opaque fixed formula, which goes against the instinct to parse every word for its literal meaning."
+      ],
+      "searchTags": ["questions", "est-ce que", "inversion", "yes no questions", "interrogative", "intonation"]
+    }
+  ]
+}

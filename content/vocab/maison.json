@@ -12,7 +12,10 @@
     "register": "neutre",
     "exampleFr": "Nous habitons dans une petite maison à la campagne.",
     "exampleEn": "We live in a small house in the countryside.",
-    "collocations": ["à la maison", "rentrer à la maison"],
+    "collocations": [
+      "à la maison",
+      "rentrer à la maison"
+    ],
     "audioText": "la maison"
   },
   {
@@ -43,7 +46,9 @@
     "register": "neutre",
     "exampleFr": "Ma chambre donne sur le jardin.",
     "exampleEn": "My bedroom looks out onto the garden.",
-    "collocations": ["ranger sa chambre"],
+    "collocations": [
+      "ranger sa chambre"
+    ],
     "audioText": "la chambre"
   },
   {
@@ -99,7 +104,7 @@
     "pos": "noun",
     "gender": "f",
     "ipa": "/sal a mɑ̃.ʒe/",
-    "cefr": "A2",
+    "cefr": "B1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "La famille se réunit dans la salle à manger pour dîner.",
@@ -114,7 +119,7 @@
     "pos": "noun",
     "gender": "m",
     "ipa": "/ku.lwaʁ/",
-    "cefr": "A2",
+    "cefr": "B1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Les manteaux sont accrochés dans le couloir.",
@@ -129,7 +134,7 @@
     "pos": "noun",
     "gender": "m",
     "ipa": "/ɛs.ka.lje/",
-    "cefr": "A2",
+    "cefr": "A1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Attention, l'escalier est un peu raide.",
@@ -164,7 +169,9 @@
     "register": "neutre",
     "exampleFr": "Peux-tu fermer la porte, s'il te plaît ?",
     "exampleEn": "Can you close the door, please?",
-    "collocations": ["frapper à la porte"],
+    "collocations": [
+      "frapper à la porte"
+    ],
     "audioText": "la porte"
   },
   {
@@ -205,7 +212,7 @@
     "pos": "noun",
     "gender": "m",
     "ipa": "/twa/",
-    "cefr": "A2",
+    "cefr": "A1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Le toit de la grange a besoin d'être réparé.",
@@ -220,7 +227,7 @@
     "pos": "noun",
     "gender": "m",
     "ipa": "/sɔl/",
-    "cefr": "A2",
+    "cefr": "A1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Le chat dort sur le sol de la cuisine.",
@@ -235,7 +242,7 @@
     "pos": "noun",
     "gender": "m",
     "ipa": "/pla.fɔ̃/",
-    "cefr": "A2",
+    "cefr": "A1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Il y a une fissure au plafond du salon.",
@@ -255,7 +262,9 @@
     "register": "neutre",
     "exampleFr": "J'ai perdu la clé de la maison.",
     "exampleEn": "I lost the house key.",
-    "collocations": ["fermer à clé"],
+    "collocations": [
+      "fermer à clé"
+    ],
     "audioText": "la clé"
   },
   {
@@ -271,7 +280,10 @@
     "register": "neutre",
     "exampleFr": "Le lit est fait tous les matins.",
     "exampleEn": "The bed is made every morning.",
-    "collocations": ["faire le lit", "aller au lit"],
+    "collocations": [
+      "faire le lit",
+      "aller au lit"
+    ],
     "audioText": "le lit"
   },
   {
@@ -287,7 +299,10 @@
     "register": "neutre",
     "exampleFr": "Mets la table, s'il te plaît.",
     "exampleEn": "Set the table, please.",
-    "collocations": ["mettre la table", "à table"],
+    "collocations": [
+      "mettre la table",
+      "à table"
+    ],
     "audioText": "la table"
   },
   {
@@ -374,7 +389,7 @@
     "pos": "noun",
     "gender": "f",
     "ipa": "/bi.bli.jɔ.tɛk/",
-    "cefr": "A2",
+    "cefr": "B1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "La bibliothèque du salon déborde de romans.",
@@ -405,7 +420,7 @@
     "pos": "noun",
     "gender": "m",
     "ipa": "/mi.ʁwaʁ/",
-    "cefr": "A2",
+    "cefr": "A1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Elle se regarde dans le miroir avant de sortir.",
@@ -436,7 +451,7 @@
     "gender": "m",
     "plural": "rideaux",
     "ipa": "/ʁi.do/",
-    "cefr": "A2",
+    "cefr": "A1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Ferme les rideaux avant d'aller te coucher.",
@@ -451,7 +466,7 @@
     "pos": "noun",
     "gender": "m",
     "ipa": "/ta.pi/",
-    "cefr": "A2",
+    "cefr": "A1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Le chien aime dormir sur le tapis du salon.",
@@ -592,7 +607,9 @@
     "register": "neutre",
     "exampleFr": "Je prends une douche tous les matins.",
     "exampleEn": "I take a shower every morning.",
-    "collocations": ["prendre une douche"],
+    "collocations": [
+      "prendre une douche"
+    ],
     "audioText": "la douche"
   },
   {
@@ -633,7 +650,7 @@
     "pos": "noun",
     "gender": "m",
     "ipa": "/bal.kɔ̃/",
-    "cefr": "A2",
+    "cefr": "A1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Nous prenons le café sur le balcon.",
@@ -693,7 +710,7 @@
     "pos": "noun",
     "gender": "m",
     "ipa": "/gʁə.nje/",
-    "cefr": "A2",
+    "cefr": "B1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "On a retrouvé de vieilles photos dans le grenier.",
@@ -738,7 +755,7 @@
     "pos": "noun",
     "gender": "f",
     "ipa": "/ɑ̃.tʁe/",
-    "cefr": "A2",
+    "cefr": "B1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Enlève tes chaussures dans l'entrée.",
@@ -768,12 +785,14 @@
     "pos": "noun",
     "gender": "m",
     "ipa": "/lwa.je/",
-    "cefr": "A2",
+    "cefr": "B1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Le loyer est dû le premier de chaque mois.",
     "exampleEn": "The rent is due on the first of every month.",
-    "collocations": ["payer le loyer"],
+    "collocations": [
+      "payer le loyer"
+    ],
     "audioText": "le loyer"
   },
   {
@@ -979,7 +998,7 @@
     "lemma": "meublé",
     "pos": "adj",
     "ipa": "/mœ.ble/",
-    "cefr": "A2",
+    "cefr": "B1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Cherchez-vous un studio meublé ou non meublé ?",
@@ -1021,7 +1040,7 @@
     "lemma": "en désordre",
     "pos": "phrase",
     "ipa": "/ɑ̃ de.zɔʁdʁ/",
-    "cefr": "A2",
+    "cefr": "B1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Sa chambre est toujours en désordre.",
@@ -1087,7 +1106,10 @@
     "register": "neutre",
     "exampleFr": "Nous avons signé le bail hier après-midi.",
     "exampleEn": "We signed the lease yesterday afternoon.",
-    "collocations": ["signer un bail", "résilier un bail"],
+    "collocations": [
+      "signer un bail",
+      "résilier un bail"
+    ],
     "audioText": "le bail"
   },
   {
@@ -1098,7 +1120,7 @@
     "pos": "noun",
     "gender": "m",
     "ipa": "/i.mœbl/",
-    "cefr": "A2",
+    "cefr": "B1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Notre immeuble compte huit étages.",
@@ -1114,7 +1136,7 @@
     "pos": "noun",
     "gender": "m",
     "ipa": "/kaʁ.tje/",
-    "cefr": "A2",
+    "cefr": "A1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "J'aime bien mon quartier, il est très calme.",
@@ -1144,7 +1166,7 @@
     "pos": "noun",
     "gender": "f",
     "ipa": "/pjɛs/",
-    "cefr": "A2",
+    "cefr": "A1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "L'appartement compte quatre pièces.",
@@ -1174,7 +1196,7 @@
     "pos": "noun",
     "gender": "f",
     "ipa": "/ku.vɛʁ.tyʁ/",
-    "cefr": "A2",
+    "cefr": "A1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Je prends une couverture parce que j'ai froid.",
@@ -1269,7 +1291,10 @@
     "register": "neutre",
     "exampleFr": "Sors la poubelle avant de partir travailler.",
     "exampleEn": "Take out the trash before going to work.",
-    "collocations": ["sortir la poubelle", "jeter à la poubelle"],
+    "collocations": [
+      "sortir la poubelle",
+      "jeter à la poubelle"
+    ],
     "audioText": "la poubelle"
   },
   {
@@ -1294,7 +1319,7 @@
     "pos": "noun",
     "gender": "m",
     "ipa": "/ʃo.faʒ/",
-    "cefr": "A2",
+    "cefr": "A1",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "N'oublie pas d'éteindre le chauffage avant de sortir.",
@@ -1386,7 +1411,7 @@
     "pos": "noun",
     "gender": "f",
     "ipa": "/ve.ʁɑ̃.da/",
-    "cefr": "B1",
+    "cefr": "B2",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Nous prenons souvent l'apéritif dans la véranda.",
@@ -1401,7 +1426,7 @@
     "pos": "noun",
     "gender": "f",
     "ipa": "/ʃə.mi.ne/",
-    "cefr": "B1",
+    "cefr": "B2",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "En hiver, on allume un feu dans la cheminée.",
@@ -1415,7 +1440,7 @@
     "lemma": "aménager",
     "pos": "verb",
     "ipa": "/a.me.na.ʒe/",
-    "cefr": "B1",
+    "cefr": "B2",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Ils ont aménagé le grenier en bureau.",
@@ -1430,7 +1455,7 @@
     "lemma": "rénover",
     "pos": "verb",
     "ipa": "/ʁe.nɔ.ve/",
-    "cefr": "B1",
+    "cefr": "B2",
     "topic": "maison",
     "register": "neutre",
     "exampleFr": "Ils ont entièrement rénové la vieille ferme.",
@@ -1493,7 +1518,10 @@
     "register": "soutenu",
     "exampleFr": "Veuillez indiquer votre domicile sur le formulaire.",
     "exampleEn": "Please indicate your home address on the form.",
-    "collocations": ["à domicile", "domicile fixe"],
+    "collocations": [
+      "à domicile",
+      "domicile fixe"
+    ],
     "audioText": "le domicile"
   },
   {
@@ -1517,7 +1545,7 @@
     "lemma": "cossu",
     "pos": "adj",
     "ipa": "/kɔ.sy/",
-    "cefr": "C1",
+    "cefr": "B2",
     "topic": "maison",
     "register": "soutenu",
     "exampleFr": "Ils habitent un quartier cossu de la capitale.",

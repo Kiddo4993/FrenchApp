@@ -1,0 +1,2182 @@
+[
+  {
+    "id": "nourriture-boissons-001",
+    "fr": "le pain",
+    "en": "bread",
+    "lemma": "pain",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɛ̃/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "J'achète du pain frais tous les matins.",
+    "exampleEn": "I buy fresh bread every morning.",
+    "collocations": [
+      "acheter du pain",
+      "une tranche de pain",
+      "du pain frais"
+    ],
+    "audioText": "le pain"
+  },
+  {
+    "id": "nourriture-boissons-002",
+    "fr": "le beurre",
+    "en": "butter",
+    "lemma": "beurre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bœʁ/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Elle met du beurre sur sa tartine.",
+    "exampleEn": "She puts butter on her toast.",
+    "collocations": [
+      "une tartine de beurre",
+      "du beurre salé"
+    ],
+    "audioText": "le beurre"
+  },
+  {
+    "id": "nourriture-boissons-003",
+    "fr": "le fromage",
+    "en": "cheese",
+    "lemma": "fromage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fʁɔ.maʒ/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "La France produit des centaines de sortes de fromage.",
+    "exampleEn": "France produces hundreds of kinds of cheese.",
+    "collocations": [
+      "un plateau de fromages",
+      "du fromage râpé"
+    ],
+    "audioText": "le fromage"
+  },
+  {
+    "id": "nourriture-boissons-004",
+    "fr": "le lait",
+    "en": "milk",
+    "lemma": "lait",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/lɛ/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Je bois un verre de lait le matin.",
+    "exampleEn": "I drink a glass of milk in the morning.",
+    "collocations": [
+      "un verre de lait",
+      "du lait entier"
+    ],
+    "audioText": "le lait"
+  },
+  {
+    "id": "nourriture-boissons-005",
+    "fr": "l'œuf",
+    "en": "egg",
+    "lemma": "œuf",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "œufs",
+    "ipa": "/œf/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Elle casse un œuf dans la poêle.",
+    "exampleEn": "She cracks an egg into the pan.",
+    "collocations": [
+      "un œuf dur",
+      "un œuf au plat",
+      "des œufs brouillés"
+    ],
+    "mnemonic": "Watch the pronunciation shift: 'un œuf' is /œf/ but 'des œufs' is /ø/ — the f goes silent in the plural.",
+    "audioText": "l'œuf"
+  },
+  {
+    "id": "nourriture-boissons-006",
+    "fr": "le jambon",
+    "en": "ham",
+    "lemma": "jambon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒɑ̃.bɔ̃/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Il prend un sandwich au jambon.",
+    "exampleEn": "He's having a ham sandwich.",
+    "collocations": [
+      "un sandwich au jambon",
+      "une tranche de jambon"
+    ],
+    "audioText": "le jambon"
+  },
+  {
+    "id": "nourriture-boissons-007",
+    "fr": "la viande",
+    "en": "meat",
+    "lemma": "viande",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vjɑ̃d/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Elle ne mange pas de viande rouge.",
+    "exampleEn": "She doesn't eat red meat.",
+    "collocations": [
+      "la viande rouge",
+      "la viande blanche"
+    ],
+    "audioText": "la viande"
+  },
+  {
+    "id": "nourriture-boissons-008",
+    "fr": "le poulet",
+    "en": "chicken",
+    "lemma": "poulet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pu.lɛ/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Nous mangeons du poulet rôti ce soir.",
+    "exampleEn": "We're eating roast chicken tonight.",
+    "collocations": [
+      "du poulet rôti",
+      "une cuisse de poulet"
+    ],
+    "audioText": "le poulet"
+  },
+  {
+    "id": "nourriture-boissons-009",
+    "fr": "le poisson",
+    "en": "fish",
+    "lemma": "poisson",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pwa.sɔ̃/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le vendredi, ma grand-mère cuisine du poisson.",
+    "exampleEn": "On Fridays, my grandmother cooks fish.",
+    "collocations": [
+      "du poisson frais",
+      "un filet de poisson"
+    ],
+    "audioText": "le poisson"
+  },
+  {
+    "id": "nourriture-boissons-010",
+    "fr": "le légume",
+    "en": "vegetable",
+    "lemma": "légume",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/le.ɡym/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Mange plus de légumes, c'est bon pour la santé.",
+    "exampleEn": "Eat more vegetables, it's good for your health.",
+    "collocations": [
+      "des légumes verts",
+      "des légumes de saison"
+    ],
+    "audioText": "le légume"
+  },
+  {
+    "id": "nourriture-boissons-011",
+    "fr": "la carotte",
+    "en": "carrot",
+    "lemma": "carotte",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ka.ʁɔt/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le lapin adore manger des carottes.",
+    "exampleEn": "The rabbit loves eating carrots.",
+    "collocations": [
+      "des carottes râpées",
+      "une soupe aux carottes"
+    ],
+    "audioText": "la carotte"
+  },
+  {
+    "id": "nourriture-boissons-012",
+    "fr": "la pomme de terre",
+    "en": "potato",
+    "lemma": "pomme de terre",
+    "pos": "noun",
+    "gender": "f",
+    "plural": "pommes de terre",
+    "ipa": "/pɔm.də.tɛʁ/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "On épluche les pommes de terre pour faire de la purée.",
+    "exampleEn": "We peel the potatoes to make mashed potatoes.",
+    "collocations": [
+      "des pommes de terre sautées",
+      "une purée de pommes de terre"
+    ],
+    "audioText": "la pomme de terre"
+  },
+  {
+    "id": "nourriture-boissons-013",
+    "fr": "la salade",
+    "en": "salad / lettuce",
+    "lemma": "salade",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sa.lad/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Je mange une salade verte au déjeuner.",
+    "exampleEn": "I'm eating a green salad for lunch.",
+    "collocations": [
+      "une salade verte",
+      "une salade de fruits"
+    ],
+    "audioText": "la salade"
+  },
+  {
+    "id": "nourriture-boissons-014",
+    "fr": "le fruit",
+    "en": "fruit",
+    "lemma": "fruit",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fʁɥi/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Prends un fruit pour le dessert.",
+    "exampleEn": "Have a piece of fruit for dessert.",
+    "collocations": [
+      "un fruit mûr",
+      "un jus de fruits"
+    ],
+    "audioText": "le fruit"
+  },
+  {
+    "id": "nourriture-boissons-015",
+    "fr": "la pomme",
+    "en": "apple",
+    "lemma": "pomme",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɔm/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Elle croque dans une pomme rouge.",
+    "exampleEn": "She bites into a red apple.",
+    "collocations": [
+      "une tarte aux pommes",
+      "un jus de pomme"
+    ],
+    "audioText": "la pomme"
+  },
+  {
+    "id": "nourriture-boissons-016",
+    "fr": "la banane",
+    "en": "banana",
+    "lemma": "banane",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ba.nan/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Il mange une banane au petit-déjeuner.",
+    "exampleEn": "He eats a banana for breakfast.",
+    "collocations": [
+      "une banane mûre",
+      "un smoothie à la banane"
+    ],
+    "audioText": "la banane"
+  },
+  {
+    "id": "nourriture-boissons-017",
+    "fr": "l'orange",
+    "en": "orange (fruit)",
+    "lemma": "orange",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɔ.ʁɑ̃ʒ/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Peux-tu presser une orange pour le jus ?",
+    "exampleEn": "Can you squeeze an orange for the juice?",
+    "collocations": [
+      "un jus d'orange",
+      "une orange pressée"
+    ],
+    "audioText": "l'orange"
+  },
+  {
+    "id": "nourriture-boissons-018",
+    "fr": "la fraise",
+    "en": "strawberry",
+    "lemma": "fraise",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fʁɛz/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Nous cueillons des fraises dans le jardin.",
+    "exampleEn": "We're picking strawberries in the garden.",
+    "collocations": [
+      "une tarte aux fraises",
+      "de la confiture de fraises"
+    ],
+    "audioText": "la fraise"
+  },
+  {
+    "id": "nourriture-boissons-019",
+    "fr": "le citron",
+    "en": "lemon",
+    "lemma": "citron",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/si.tʁɔ̃/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Ajoute un peu de citron dans ton thé.",
+    "exampleEn": "Add a bit of lemon to your tea.",
+    "collocations": [
+      "un jus de citron",
+      "une tarte au citron"
+    ],
+    "audioText": "le citron"
+  },
+  {
+    "id": "nourriture-boissons-020",
+    "fr": "le riz",
+    "en": "rice",
+    "lemma": "riz",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁi/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "En Asie, le riz accompagne presque tous les plats.",
+    "exampleEn": "In Asia, rice accompanies almost every dish.",
+    "collocations": [
+      "du riz blanc",
+      "un bol de riz"
+    ],
+    "audioText": "le riz"
+  },
+  {
+    "id": "nourriture-boissons-021",
+    "fr": "les pâtes",
+    "en": "pasta",
+    "lemma": "pâtes",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pat/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Ce soir, on mange des pâtes à la tomate.",
+    "exampleEn": "Tonight, we're eating pasta with tomato sauce.",
+    "collocations": [
+      "des pâtes al dente",
+      "une sauce pour les pâtes"
+    ],
+    "mnemonic": "'les pâtes' (pasta) is always plural; the singular 'une pâte' means 'dough' or 'batter'.",
+    "audioText": "les pâtes"
+  },
+  {
+    "id": "nourriture-boissons-022",
+    "fr": "le sucre",
+    "en": "sugar",
+    "lemma": "sucre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sykʁ/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Tu prends du sucre dans ton café ?",
+    "exampleEn": "Do you take sugar in your coffee?",
+    "collocations": [
+      "un morceau de sucre",
+      "du sucre en poudre"
+    ],
+    "audioText": "le sucre"
+  },
+  {
+    "id": "nourriture-boissons-023",
+    "fr": "le sel",
+    "en": "salt",
+    "lemma": "sel",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɛl/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Passe-moi le sel, s'il te plaît.",
+    "exampleEn": "Pass me the salt, please.",
+    "collocations": [
+      "une pincée de sel",
+      "du sel fin"
+    ],
+    "audioText": "le sel"
+  },
+  {
+    "id": "nourriture-boissons-024",
+    "fr": "la soupe",
+    "en": "soup",
+    "lemma": "soupe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sup/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "En hiver, ma mère prépare toujours une soupe chaude.",
+    "exampleEn": "In winter, my mother always makes a hot soup.",
+    "collocations": [
+      "une soupe de légumes",
+      "un bol de soupe"
+    ],
+    "audioText": "la soupe"
+  },
+  {
+    "id": "nourriture-boissons-025",
+    "fr": "le gâteau",
+    "en": "cake",
+    "lemma": "gâteau",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "gâteaux",
+    "ipa": "/ɡa.to/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "C'est son anniversaire, alors j'ai fait un gâteau au chocolat.",
+    "exampleEn": "It's her birthday, so I made a chocolate cake.",
+    "collocations": [
+      "un gâteau d'anniversaire",
+      "une part de gâteau"
+    ],
+    "mnemonic": "Nouns ending in -eau take -x in the plural: un gâteau → des gâteaux.",
+    "audioText": "le gâteau"
+  },
+  {
+    "id": "nourriture-boissons-026",
+    "fr": "le chocolat",
+    "en": "chocolate",
+    "lemma": "chocolat",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃɔ.kɔ.la/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Les enfants adorent le chocolat au lait.",
+    "exampleEn": "Children love milk chocolate.",
+    "collocations": [
+      "une tablette de chocolat",
+      "un chocolat chaud"
+    ],
+    "audioText": "le chocolat"
+  },
+  {
+    "id": "nourriture-boissons-027",
+    "fr": "la glace",
+    "en": "ice cream",
+    "lemma": "glace",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɡlas/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "En été, on mange une glace à la vanille.",
+    "exampleEn": "In summer, we eat vanilla ice cream.",
+    "collocations": [
+      "une boule de glace",
+      "une glace à la fraise"
+    ],
+    "audioText": "la glace"
+  },
+  {
+    "id": "nourriture-boissons-028",
+    "fr": "le croissant",
+    "en": "croissant",
+    "lemma": "croissant",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kʁwa.sɑ̃/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le boulanger sort les croissants du four à sept heures.",
+    "exampleEn": "The baker takes the croissants out of the oven at seven.",
+    "collocations": [
+      "un croissant au beurre",
+      "manger un croissant"
+    ],
+    "audioText": "le croissant"
+  },
+  {
+    "id": "nourriture-boissons-029",
+    "fr": "la baguette",
+    "en": "baguette",
+    "lemma": "baguette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ba.ɡɛt/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Va acheter une baguette à la boulangerie.",
+    "exampleEn": "Go buy a baguette at the bakery.",
+    "collocations": [
+      "une baguette bien cuite",
+      "couper la baguette"
+    ],
+    "audioText": "la baguette"
+  },
+  {
+    "id": "nourriture-boissons-030",
+    "fr": "le sandwich",
+    "en": "sandwich",
+    "lemma": "sandwich",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "sandwichs",
+    "ipa": "/sɑ̃d.witʃ/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Je mange un sandwich au fromage à midi.",
+    "exampleEn": "I'm eating a cheese sandwich at noon.",
+    "collocations": [
+      "un sandwich au jambon",
+      "préparer un sandwich"
+    ],
+    "audioText": "le sandwich"
+  },
+  {
+    "id": "nourriture-boissons-031",
+    "fr": "la pizza",
+    "en": "pizza",
+    "lemma": "pizza",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pid.za/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "On commande une pizza pour ce soir ?",
+    "exampleEn": "Shall we order a pizza for tonight?",
+    "collocations": [
+      "une part de pizza",
+      "une pizza aux champignons"
+    ],
+    "audioText": "la pizza"
+  },
+  {
+    "id": "nourriture-boissons-032",
+    "fr": "le repas",
+    "en": "meal",
+    "lemma": "repas",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "repas",
+    "ipa": "/ʁə.pa/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le dimanche, le repas dure souvent deux heures.",
+    "exampleEn": "On Sundays, the meal often lasts two hours.",
+    "collocations": [
+      "prendre un repas",
+      "un repas équilibré"
+    ],
+    "mnemonic": "'repas' is invariable: the singular and plural forms are identical.",
+    "audioText": "le repas"
+  },
+  {
+    "id": "nourriture-boissons-033",
+    "fr": "le petit-déjeuner",
+    "en": "breakfast",
+    "lemma": "petit-déjeuner",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "petits-déjeuners",
+    "ipa": "/pə.ti.de.ʒœ.ne/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Je prends toujours un café au petit-déjeuner.",
+    "exampleEn": "I always have coffee for breakfast.",
+    "collocations": [
+      "prendre le petit-déjeuner",
+      "un petit-déjeuner copieux"
+    ],
+    "audioText": "le petit-déjeuner"
+  },
+  {
+    "id": "nourriture-boissons-034",
+    "fr": "le déjeuner",
+    "en": "lunch",
+    "lemma": "déjeuner",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/de.ʒœ.ne/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le déjeuner est servi à midi et demi.",
+    "exampleEn": "Lunch is served at half past noon.",
+    "collocations": [
+      "l'heure du déjeuner",
+      "un déjeuner d'affaires"
+    ],
+    "audioText": "le déjeuner"
+  },
+  {
+    "id": "nourriture-boissons-035",
+    "fr": "le dîner",
+    "en": "dinner",
+    "lemma": "dîner",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/di.ne/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le dîner est prêt, à table !",
+    "exampleEn": "Dinner is ready, come to the table!",
+    "collocations": [
+      "préparer le dîner",
+      "un dîner en famille"
+    ],
+    "audioText": "le dîner"
+  },
+  {
+    "id": "nourriture-boissons-036",
+    "fr": "l'eau",
+    "en": "water",
+    "lemma": "eau",
+    "pos": "noun",
+    "gender": "f",
+    "plural": "eaux",
+    "ipa": "/o/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Peux-tu me donner un verre d'eau ?",
+    "exampleEn": "Can you give me a glass of water?",
+    "collocations": [
+      "un verre d'eau",
+      "de l'eau minérale"
+    ],
+    "audioText": "l'eau"
+  },
+  {
+    "id": "nourriture-boissons-037",
+    "fr": "le café",
+    "en": "coffee",
+    "lemma": "café",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ka.fe/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Je bois toujours un café le matin.",
+    "exampleEn": "I always drink a coffee in the morning.",
+    "collocations": [
+      "un café noir",
+      "une tasse de café"
+    ],
+    "audioText": "le café"
+  },
+  {
+    "id": "nourriture-boissons-038",
+    "fr": "le thé",
+    "en": "tea",
+    "lemma": "thé",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/te/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Elle préfère le thé vert au café.",
+    "exampleEn": "She prefers green tea to coffee.",
+    "collocations": [
+      "une tasse de thé",
+      "du thé à la menthe"
+    ],
+    "audioText": "le thé"
+  },
+  {
+    "id": "nourriture-boissons-039",
+    "fr": "le vin",
+    "en": "wine",
+    "lemma": "vin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɛ̃/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Ils commandent une bouteille de vin rouge.",
+    "exampleEn": "They order a bottle of red wine.",
+    "collocations": [
+      "une bouteille de vin",
+      "du vin blanc"
+    ],
+    "audioText": "le vin"
+  },
+  {
+    "id": "nourriture-boissons-040",
+    "fr": "la bière",
+    "en": "beer",
+    "lemma": "bière",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bjɛʁ/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "On va boire une bière en terrasse ?",
+    "exampleEn": "Shall we go have a beer on the terrace?",
+    "collocations": [
+      "une bière pression",
+      "une bière fraîche"
+    ],
+    "audioText": "la bière"
+  },
+  {
+    "id": "nourriture-boissons-041",
+    "fr": "le jus",
+    "en": "juice",
+    "lemma": "jus",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "jus",
+    "ipa": "/ʒy/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le matin, je bois un grand verre de jus d'orange.",
+    "exampleEn": "In the morning, I drink a big glass of orange juice.",
+    "collocations": [
+      "un jus d'orange",
+      "un jus de fruits"
+    ],
+    "audioText": "le jus"
+  },
+  {
+    "id": "nourriture-boissons-042",
+    "fr": "le verre",
+    "en": "glass",
+    "lemma": "verre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɛʁ/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Remplis mon verre d'eau, s'il te plaît.",
+    "exampleEn": "Fill my glass with water, please.",
+    "collocations": [
+      "un verre de vin",
+      "lever son verre"
+    ],
+    "audioText": "le verre"
+  },
+  {
+    "id": "nourriture-boissons-043",
+    "fr": "manger",
+    "en": "to eat",
+    "lemma": "manger",
+    "pos": "verb",
+    "ipa": "/mɑ̃.ʒe/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Les enfants mangent des légumes tous les jours.",
+    "exampleEn": "The children eat vegetables every day.",
+    "collocations": [
+      "manger sainement",
+      "manger à la maison"
+    ],
+    "audioText": "manger"
+  },
+  {
+    "id": "nourriture-boissons-044",
+    "fr": "boire",
+    "en": "to drink",
+    "lemma": "boire",
+    "pos": "verb",
+    "ipa": "/bwaʁ/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Il faut boire beaucoup d'eau quand il fait chaud.",
+    "exampleEn": "You need to drink a lot of water when it's hot.",
+    "collocations": [
+      "boire un verre",
+      "boire à petites gorgées"
+    ],
+    "audioText": "boire"
+  },
+  {
+    "id": "nourriture-boissons-045",
+    "fr": "avoir faim",
+    "en": "to be hungry",
+    "lemma": "avoir faim",
+    "pos": "phrase",
+    "ipa": "/a.vwaʁ fɛ̃/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "J'ai faim, on peut manger maintenant ?",
+    "exampleEn": "I'm hungry, can we eat now?",
+    "collocations": [
+      "avoir très faim",
+      "mourir de faim"
+    ],
+    "mnemonic": "In French, hunger is something you 'have' (avoir faim), not something you 'are' — unlike English 'to be hungry'.",
+    "audioText": "avoir faim"
+  },
+  {
+    "id": "nourriture-boissons-046",
+    "fr": "avoir soif",
+    "en": "to be thirsty",
+    "lemma": "avoir soif",
+    "pos": "phrase",
+    "ipa": "/a.vwaʁ swaf/",
+    "cefr": "A1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Après le sport, j'ai vraiment soif.",
+    "exampleEn": "After sports, I'm really thirsty.",
+    "collocations": [
+      "avoir très soif",
+      "mourir de soif"
+    ],
+    "audioText": "avoir soif"
+  },
+  {
+    "id": "nourriture-boissons-047",
+    "fr": "la confiture",
+    "en": "jam",
+    "lemma": "confiture",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɔ̃.fi.tyʁ/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Elle tartine du pain avec de la confiture de fraises.",
+    "exampleEn": "She spreads bread with strawberry jam.",
+    "collocations": [
+      "de la confiture maison",
+      "un pot de confiture"
+    ],
+    "audioText": "la confiture"
+  },
+  {
+    "id": "nourriture-boissons-048",
+    "fr": "le miel",
+    "en": "honey",
+    "lemma": "miel",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mjɛl/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Il met du miel dans son thé au lieu de sucre.",
+    "exampleEn": "He puts honey in his tea instead of sugar.",
+    "collocations": [
+      "du miel d'acacia",
+      "une cuillère de miel"
+    ],
+    "audioText": "le miel"
+  },
+  {
+    "id": "nourriture-boissons-049",
+    "fr": "le bœuf",
+    "en": "beef",
+    "lemma": "bœuf",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "bœufs",
+    "ipa": "/bœf/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le bœuf bourguignon est un plat traditionnel français.",
+    "exampleEn": "Beef bourguignon is a traditional French dish.",
+    "collocations": [
+      "du bœuf haché",
+      "un rôti de bœuf"
+    ],
+    "mnemonic": "In the plural, 'bœufs' is pronounced /bø/ — the f falls silent, unlike the singular /bœf/.",
+    "audioText": "le bœuf"
+  },
+  {
+    "id": "nourriture-boissons-050",
+    "fr": "le porc",
+    "en": "pork",
+    "lemma": "porc",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɔʁ/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Certaines religions interdisent de manger du porc.",
+    "exampleEn": "Some religions forbid eating pork.",
+    "collocations": [
+      "une côte de porc",
+      "du porc grillé"
+    ],
+    "audioText": "le porc"
+  },
+  {
+    "id": "nourriture-boissons-051",
+    "fr": "le saumon",
+    "en": "salmon",
+    "lemma": "saumon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/so.mɔ̃/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Elle prépare du saumon fumé pour l'apéritif.",
+    "exampleEn": "She's preparing smoked salmon for the aperitif.",
+    "collocations": [
+      "du saumon fumé",
+      "un pavé de saumon"
+    ],
+    "audioText": "le saumon"
+  },
+  {
+    "id": "nourriture-boissons-052",
+    "fr": "le thon",
+    "en": "tuna",
+    "lemma": "thon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tɔ̃/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "J'aime bien la salade au thon.",
+    "exampleEn": "I really like tuna salad.",
+    "collocations": [
+      "une salade au thon",
+      "une boîte de thon"
+    ],
+    "audioText": "le thon"
+  },
+  {
+    "id": "nourriture-boissons-053",
+    "fr": "l'oignon",
+    "en": "onion",
+    "lemma": "oignon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɔ.ɲɔ̃/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Faites revenir l'oignon dans l'huile chaude.",
+    "exampleEn": "Sauté the onion in hot oil.",
+    "collocations": [
+      "un oignon émincé",
+      "une soupe à l'oignon"
+    ],
+    "audioText": "l'oignon"
+  },
+  {
+    "id": "nourriture-boissons-054",
+    "fr": "l'ail",
+    "en": "garlic",
+    "lemma": "ail",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "ails",
+    "ipa": "/aj/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Cette recette demande deux gousses d'ail.",
+    "exampleEn": "This recipe calls for two cloves of garlic.",
+    "collocations": [
+      "une gousse d'ail",
+      "de l'ail haché"
+    ],
+    "mnemonic": "The old plural 'aulx' still exists, but 'ails' is the common modern plural.",
+    "audioText": "l'ail"
+  },
+  {
+    "id": "nourriture-boissons-055",
+    "fr": "le champignon",
+    "en": "mushroom",
+    "lemma": "champignon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃɑ̃.pi.ɲɔ̃/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "On a ramassé des champignons dans la forêt.",
+    "exampleEn": "We picked mushrooms in the forest.",
+    "collocations": [
+      "une omelette aux champignons",
+      "des champignons de Paris"
+    ],
+    "audioText": "le champignon"
+  },
+  {
+    "id": "nourriture-boissons-056",
+    "fr": "le brocoli",
+    "en": "broccoli",
+    "lemma": "brocoli",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bʁɔ.kɔ.li/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Les enfants n'aiment pas toujours le brocoli.",
+    "exampleEn": "Children don't always like broccoli.",
+    "collocations": [
+      "du brocoli vapeur"
+    ],
+    "audioText": "le brocoli"
+  },
+  {
+    "id": "nourriture-boissons-057",
+    "fr": "le raisin",
+    "en": "grape",
+    "lemma": "raisin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁɛ.zɛ̃/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Nous avons mangé une grappe de raisin après le repas.",
+    "exampleEn": "We ate a bunch of grapes after the meal.",
+    "collocations": [
+      "une grappe de raisin",
+      "du jus de raisin"
+    ],
+    "fauxAmi": "'raisin' means 'grape' in French, not the dried fruit — a dried grape (raisin in English) is 'un raisin sec'.",
+    "audioText": "le raisin"
+  },
+  {
+    "id": "nourriture-boissons-058",
+    "fr": "la pêche",
+    "en": "peach",
+    "lemma": "pêche",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɛʃ/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Cette pêche est bien mûre et sucrée.",
+    "exampleEn": "This peach is nice and ripe and sweet.",
+    "collocations": [
+      "une pêche mûre",
+      "une tarte à la pêche"
+    ],
+    "mnemonic": "'la pêche' is a homonym: it also means 'fishing' — context tells you which meaning is intended.",
+    "audioText": "la pêche"
+  },
+  {
+    "id": "nourriture-boissons-059",
+    "fr": "la poire",
+    "en": "pear",
+    "lemma": "poire",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pwaʁ/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Il coupe une poire en deux pour le dessert.",
+    "exampleEn": "He cuts a pear in half for dessert.",
+    "collocations": [
+      "une poire williams",
+      "une tarte aux poires"
+    ],
+    "audioText": "la poire"
+  },
+  {
+    "id": "nourriture-boissons-060",
+    "fr": "l'ananas",
+    "en": "pineapple",
+    "lemma": "ananas",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.na.nas/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "On a rapporté un ananas frais du marché.",
+    "exampleEn": "We brought back a fresh pineapple from the market.",
+    "collocations": [
+      "un jus d'ananas",
+      "une rondelle d'ananas"
+    ],
+    "audioText": "l'ananas"
+  },
+  {
+    "id": "nourriture-boissons-061",
+    "fr": "la cerise",
+    "en": "cherry",
+    "lemma": "cerise",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sə.ʁiz/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Au printemps, on cueille des cerises dans le verger.",
+    "exampleEn": "In spring, we pick cherries in the orchard.",
+    "collocations": [
+      "une confiture de cerises",
+      "un clafoutis aux cerises"
+    ],
+    "audioText": "la cerise"
+  },
+  {
+    "id": "nourriture-boissons-062",
+    "fr": "la farine",
+    "en": "flour",
+    "lemma": "farine",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fa.ʁin/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Il faut tamiser la farine avant de faire la pâte.",
+    "exampleEn": "You need to sift the flour before making the dough.",
+    "collocations": [
+      "de la farine de blé",
+      "un sac de farine"
+    ],
+    "audioText": "la farine"
+  },
+  {
+    "id": "nourriture-boissons-063",
+    "fr": "le poivre",
+    "en": "pepper (spice)",
+    "lemma": "poivre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pwavʁ/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Ajoutez du sel et du poivre selon votre goût.",
+    "exampleEn": "Add salt and pepper to taste.",
+    "collocations": [
+      "du poivre noir",
+      "moudre du poivre"
+    ],
+    "audioText": "le poivre"
+  },
+  {
+    "id": "nourriture-boissons-064",
+    "fr": "l'huile",
+    "en": "oil",
+    "lemma": "huile",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɥil/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Verse un peu d'huile d'olive sur la salade.",
+    "exampleEn": "Pour a little olive oil on the salad.",
+    "collocations": [
+      "de l'huile d'olive",
+      "une huile végétale"
+    ],
+    "audioText": "l'huile"
+  },
+  {
+    "id": "nourriture-boissons-065",
+    "fr": "la sauce",
+    "en": "sauce",
+    "lemma": "sauce",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sos/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Cette sauce tomate accompagne bien les pâtes.",
+    "exampleEn": "This tomato sauce goes well with pasta.",
+    "collocations": [
+      "une sauce tomate",
+      "préparer une sauce"
+    ],
+    "audioText": "la sauce"
+  },
+  {
+    "id": "nourriture-boissons-066",
+    "fr": "la tarte",
+    "en": "tart / pie",
+    "lemma": "tarte",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/taʁt/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Ma grand-mère fait une excellente tarte aux pommes.",
+    "exampleEn": "My grandmother makes an excellent apple pie.",
+    "collocations": [
+      "une tarte aux pommes",
+      "une part de tarte"
+    ],
+    "audioText": "la tarte"
+  },
+  {
+    "id": "nourriture-boissons-067",
+    "fr": "le biscuit",
+    "en": "biscuit / cookie",
+    "lemma": "biscuit",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bis.kɥi/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Les enfants trempent leurs biscuits dans le lait.",
+    "exampleEn": "The children dip their cookies in milk.",
+    "collocations": [
+      "un biscuit au chocolat",
+      "une boîte de biscuits"
+    ],
+    "audioText": "le biscuit"
+  },
+  {
+    "id": "nourriture-boissons-068",
+    "fr": "l'omelette",
+    "en": "omelette",
+    "lemma": "omelette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɔm.lɛt/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Il se prépare une omelette au fromage pour le dîner.",
+    "exampleEn": "He's making himself a cheese omelette for dinner.",
+    "collocations": [
+      "une omelette nature",
+      "une omelette aux herbes"
+    ],
+    "audioText": "l'omelette"
+  },
+  {
+    "id": "nourriture-boissons-069",
+    "fr": "le yaourt",
+    "en": "yogurt",
+    "lemma": "yaourt",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ja.uʁt/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Elle mange un yaourt nature au petit-déjeuner.",
+    "exampleEn": "She eats a plain yogurt for breakfast.",
+    "collocations": [
+      "un yaourt nature",
+      "un yaourt aux fruits"
+    ],
+    "audioText": "le yaourt"
+  },
+  {
+    "id": "nourriture-boissons-070",
+    "fr": "la crème",
+    "en": "cream",
+    "lemma": "crème",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kʁɛm/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Ajoutez de la crème fraîche à la sauce.",
+    "exampleEn": "Add some sour cream to the sauce.",
+    "collocations": [
+      "de la crème fraîche",
+      "de la crème chantilly"
+    ],
+    "audioText": "la crème"
+  },
+  {
+    "id": "nourriture-boissons-071",
+    "fr": "l'entrée",
+    "en": "starter",
+    "lemma": "entrée",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɑ̃.tʁe/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Comme entrée, je prendrai une soupe.",
+    "exampleEn": "As a starter, I'll have soup.",
+    "collocations": [
+      "prendre une entrée",
+      "une entrée froide"
+    ],
+    "fauxAmi": "In French, 'l'entrée' is the starter/appetizer course, not the main dish — the main course is 'le plat principal'.",
+    "audioText": "l'entrée"
+  },
+  {
+    "id": "nourriture-boissons-072",
+    "fr": "le plat",
+    "en": "dish",
+    "lemma": "plat",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pla/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Quel est le plat du jour aujourd'hui ?",
+    "exampleEn": "What's today's special dish?",
+    "collocations": [
+      "le plat du jour",
+      "le plat principal"
+    ],
+    "audioText": "le plat"
+  },
+  {
+    "id": "nourriture-boissons-073",
+    "fr": "l'ingrédient",
+    "en": "ingredient",
+    "lemma": "ingrédient",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛ̃.ɡʁe.djɑ̃/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Cette recette ne demande que cinq ingrédients.",
+    "exampleEn": "This recipe only requires five ingredients.",
+    "collocations": [
+      "les ingrédients frais",
+      "la liste des ingrédients"
+    ],
+    "audioText": "l'ingrédient"
+  },
+  {
+    "id": "nourriture-boissons-074",
+    "fr": "la recette",
+    "en": "recipe",
+    "lemma": "recette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁə.sɛt/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Ma mère m'a donné sa recette de tarte au citron.",
+    "exampleEn": "My mother gave me her lemon tart recipe.",
+    "collocations": [
+      "suivre une recette",
+      "une recette de famille"
+    ],
+    "audioText": "la recette"
+  },
+  {
+    "id": "nourriture-boissons-075",
+    "fr": "la tranche",
+    "en": "slice",
+    "lemma": "tranche",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tʁɑ̃ʃ/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Il coupe une tranche de pain pour le petit-déjeuner.",
+    "exampleEn": "He cuts a slice of bread for breakfast.",
+    "collocations": [
+      "une tranche de pain",
+      "une tranche de jambon"
+    ],
+    "audioText": "la tranche"
+  },
+  {
+    "id": "nourriture-boissons-076",
+    "fr": "la bouteille",
+    "en": "bottle",
+    "lemma": "bouteille",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bu.tɛj/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Peux-tu ouvrir la bouteille de vin ?",
+    "exampleEn": "Can you open the bottle of wine?",
+    "collocations": [
+      "une bouteille d'eau",
+      "déboucher une bouteille"
+    ],
+    "audioText": "la bouteille"
+  },
+  {
+    "id": "nourriture-boissons-077",
+    "fr": "la tasse",
+    "en": "cup",
+    "lemma": "tasse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tas/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Elle boit une tasse de thé chaque après-midi.",
+    "exampleEn": "She drinks a cup of tea every afternoon.",
+    "collocations": [
+      "une tasse de café",
+      "une tasse à thé"
+    ],
+    "audioText": "la tasse"
+  },
+  {
+    "id": "nourriture-boissons-078",
+    "fr": "préparer",
+    "en": "to prepare",
+    "lemma": "préparer",
+    "pos": "verb",
+    "ipa": "/pʁe.pa.ʁe/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Je prépare le dîner pendant que tu mets la table.",
+    "exampleEn": "I'm preparing dinner while you set the table.",
+    "collocations": [
+      "préparer un repas",
+      "préparer une recette"
+    ],
+    "audioText": "préparer"
+  },
+  {
+    "id": "nourriture-boissons-079",
+    "fr": "servir",
+    "en": "to serve",
+    "lemma": "servir",
+    "pos": "verb",
+    "ipa": "/sɛʁ.viʁ/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le serveur nous sert l'entrée en premier.",
+    "exampleEn": "The waiter serves us the starter first.",
+    "collocations": [
+      "servir un plat",
+      "se servir à boire"
+    ],
+    "audioText": "servir"
+  },
+  {
+    "id": "nourriture-boissons-080",
+    "fr": "salé",
+    "en": "salty",
+    "lemma": "salé",
+    "pos": "adj",
+    "ipa": "/sa.le/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Cette soupe est un peu trop salée pour moi.",
+    "exampleEn": "This soup is a bit too salty for me.",
+    "collocations": [
+      "un plat salé",
+      "de l'eau salée"
+    ],
+    "audioText": "salé"
+  },
+  {
+    "id": "nourriture-boissons-081",
+    "fr": "sucré",
+    "en": "sweet",
+    "lemma": "sucré",
+    "pos": "adj",
+    "ipa": "/sy.kʁe/",
+    "cefr": "A2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le gâteau est très sucré, j'adore.",
+    "exampleEn": "The cake is very sweet, I love it.",
+    "collocations": [
+      "un dessert sucré",
+      "un goût sucré"
+    ],
+    "audioText": "sucré"
+  },
+  {
+    "id": "nourriture-boissons-082",
+    "fr": "l'agneau",
+    "en": "lamb",
+    "lemma": "agneau",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "agneaux",
+    "ipa": "/a.ɲo/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "À Pâques, on mange souvent de l'agneau.",
+    "exampleEn": "At Easter, people often eat lamb.",
+    "collocations": [
+      "un gigot d'agneau",
+      "une côte d'agneau"
+    ],
+    "audioText": "l'agneau"
+  },
+  {
+    "id": "nourriture-boissons-083",
+    "fr": "la dinde",
+    "en": "turkey",
+    "lemma": "dinde",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/dɛ̃d/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "La dinde est le plat traditionnel de Noël aux États-Unis.",
+    "exampleEn": "Turkey is the traditional Christmas dish in the United States.",
+    "collocations": [
+      "une dinde farcie",
+      "une escalope de dinde"
+    ],
+    "audioText": "la dinde"
+  },
+  {
+    "id": "nourriture-boissons-084",
+    "fr": "la crevette",
+    "en": "shrimp",
+    "lemma": "crevette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kʁə.vɛt/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le cocktail de crevettes est servi en entrée.",
+    "exampleEn": "The shrimp cocktail is served as a starter.",
+    "collocations": [
+      "des crevettes grillées",
+      "une salade de crevettes"
+    ],
+    "audioText": "la crevette"
+  },
+  {
+    "id": "nourriture-boissons-085",
+    "fr": "l'épinard",
+    "en": "spinach",
+    "lemma": "épinard",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "épinards",
+    "ipa": "/e.pi.naʁ/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Popeye devient fort en mangeant des épinards.",
+    "exampleEn": "Popeye becomes strong by eating spinach.",
+    "collocations": [
+      "des épinards à la crème"
+    ],
+    "mnemonic": "Almost always used in the plural: 'des épinards' — the singular 'un épinard' refers to a single leaf.",
+    "audioText": "l'épinard"
+  },
+  {
+    "id": "nourriture-boissons-086",
+    "fr": "le poivron",
+    "en": "bell pepper",
+    "lemma": "poivron",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pwa.vʁɔ̃/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Coupez le poivron rouge en petits morceaux.",
+    "exampleEn": "Cut the red bell pepper into small pieces.",
+    "collocations": [
+      "un poivron rouge",
+      "des poivrons farcis"
+    ],
+    "audioText": "le poivron"
+  },
+  {
+    "id": "nourriture-boissons-087",
+    "fr": "le haricot vert",
+    "en": "green bean",
+    "lemma": "haricot vert",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "haricots verts",
+    "ipa": "/a.ʁi.ko vɛʁ/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Les haricots verts accompagnent bien le poisson.",
+    "exampleEn": "Green beans go well with fish.",
+    "collocations": [
+      "des haricots verts vapeur"
+    ],
+    "mnemonic": "'haricot' starts with an aspirate h: no elision or liaison — say 'le haricot', not 'l'haricot'.",
+    "audioText": "le haricot vert"
+  },
+  {
+    "id": "nourriture-boissons-088",
+    "fr": "le petit pois",
+    "en": "pea",
+    "lemma": "petit pois",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "petits pois",
+    "ipa": "/pə.ti pwa/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Elle ajoute des petits pois dans la salade de riz.",
+    "exampleEn": "She adds peas to the rice salad.",
+    "collocations": [
+      "une purée de petits pois"
+    ],
+    "audioText": "le petit pois"
+  },
+  {
+    "id": "nourriture-boissons-089",
+    "fr": "le pamplemousse",
+    "en": "grapefruit",
+    "lemma": "pamplemousse",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɑ̃.plə.mus/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le pamplemousse est trop acide pour lui.",
+    "exampleEn": "Grapefruit is too sour for him.",
+    "collocations": [
+      "un demi-pamplemousse",
+      "un jus de pamplemousse"
+    ],
+    "audioText": "le pamplemousse"
+  },
+  {
+    "id": "nourriture-boissons-090",
+    "fr": "la framboise",
+    "en": "raspberry",
+    "lemma": "framboise",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fʁɑ̃.bwaz/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Elle fait un coulis de framboise pour le gâteau.",
+    "exampleEn": "She makes a raspberry coulis for the cake.",
+    "collocations": [
+      "une tarte à la framboise",
+      "un coulis de framboise"
+    ],
+    "audioText": "la framboise"
+  },
+  {
+    "id": "nourriture-boissons-091",
+    "fr": "le vinaigre",
+    "en": "vinegar",
+    "lemma": "vinaigre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vi.nɛɡʁ/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Mélangez l'huile et le vinaigre pour la vinaigrette.",
+    "exampleEn": "Mix the oil and vinegar for the dressing.",
+    "collocations": [
+      "du vinaigre balsamique",
+      "de l'huile et du vinaigre"
+    ],
+    "audioText": "le vinaigre"
+  },
+  {
+    "id": "nourriture-boissons-092",
+    "fr": "la moutarde",
+    "en": "mustard",
+    "lemma": "moutarde",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mu.taʁd/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Il tartine de la moutarde sur sa saucisse.",
+    "exampleEn": "He spreads mustard on his sausage.",
+    "collocations": [
+      "de la moutarde de Dijon"
+    ],
+    "audioText": "la moutarde"
+  },
+  {
+    "id": "nourriture-boissons-093",
+    "fr": "la mayonnaise",
+    "en": "mayonnaise",
+    "lemma": "mayonnaise",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ma.jɔ.nɛz/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Elle prépare sa propre mayonnaise avec des œufs et de l'huile.",
+    "exampleEn": "She makes her own mayonnaise with eggs and oil.",
+    "collocations": [
+      "de la mayonnaise maison"
+    ],
+    "audioText": "la mayonnaise"
+  },
+  {
+    "id": "nourriture-boissons-094",
+    "fr": "la portion",
+    "en": "portion",
+    "lemma": "portion",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɔʁ.sjɔ̃/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Les portions dans ce restaurant sont assez petites.",
+    "exampleEn": "The portions at this restaurant are quite small.",
+    "collocations": [
+      "une petite portion",
+      "une grande portion"
+    ],
+    "audioText": "la portion"
+  },
+  {
+    "id": "nourriture-boissons-095",
+    "fr": "l'apéritif",
+    "en": "aperitif",
+    "lemma": "apéritif",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.pe.ʁi.tif/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "On prend l'apéritif avant de passer à table.",
+    "exampleEn": "We're having drinks and nibbles before sitting down to eat.",
+    "collocations": [
+      "prendre l'apéritif",
+      "des amuse-bouches pour l'apéritif"
+    ],
+    "audioText": "l'apéritif"
+  },
+  {
+    "id": "nourriture-boissons-096",
+    "fr": "le cidre",
+    "en": "cider",
+    "lemma": "cidre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sidʁ/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "En Normandie, on sert souvent des crêpes avec du cidre.",
+    "exampleEn": "In Normandy, crêpes are often served with cider.",
+    "collocations": [
+      "du cidre doux",
+      "une bouteille de cidre"
+    ],
+    "audioText": "le cidre"
+  },
+  {
+    "id": "nourriture-boissons-097",
+    "fr": "le champagne",
+    "en": "champagne",
+    "lemma": "champagne",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃɑ̃.paɲ/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Ils ouvrent une bouteille de champagne pour fêter l'événement.",
+    "exampleEn": "They open a bottle of champagne to celebrate the occasion.",
+    "collocations": [
+      "une coupe de champagne",
+      "déboucher le champagne"
+    ],
+    "audioText": "le champagne"
+  },
+  {
+    "id": "nourriture-boissons-098",
+    "fr": "la boîte",
+    "en": "box / can",
+    "lemma": "boîte",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bwat/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Ouvre une boîte de tomates pour la sauce.",
+    "exampleEn": "Open a can of tomatoes for the sauce.",
+    "collocations": [
+      "une boîte de conserve",
+      "une boîte de chocolats"
+    ],
+    "audioText": "la boîte"
+  },
+  {
+    "id": "nourriture-boissons-099",
+    "fr": "le potage",
+    "en": "(smooth) soup",
+    "lemma": "potage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɔ.taʒ/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le potage de légumes est mixé et bien onctueux.",
+    "exampleEn": "The vegetable potage is blended and nice and smooth.",
+    "collocations": [
+      "un potage de légumes",
+      "un potage bien chaud"
+    ],
+    "mnemonic": "A 'potage' is a smooth, often blended soup, slightly more refined in tone than the everyday 'soupe'.",
+    "audioText": "le potage"
+  },
+  {
+    "id": "nourriture-boissons-100",
+    "fr": "éplucher",
+    "en": "to peel",
+    "lemma": "éplucher",
+    "pos": "verb",
+    "ipa": "/e.ply.ʃe/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Peux-tu éplucher les pommes de terre pour moi ?",
+    "exampleEn": "Can you peel the potatoes for me?",
+    "collocations": [
+      "éplucher un fruit",
+      "éplucher un légume"
+    ],
+    "audioText": "éplucher"
+  },
+  {
+    "id": "nourriture-boissons-101",
+    "fr": "mélanger",
+    "en": "to mix",
+    "lemma": "mélanger",
+    "pos": "verb",
+    "ipa": "/me.lɑ̃.ʒe/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Mélangez la farine, les œufs et le lait.",
+    "exampleEn": "Mix the flour, eggs, and milk.",
+    "collocations": [
+      "mélanger les ingrédients",
+      "bien mélanger"
+    ],
+    "audioText": "mélanger"
+  },
+  {
+    "id": "nourriture-boissons-102",
+    "fr": "cuire",
+    "en": "to cook",
+    "lemma": "cuire",
+    "pos": "verb",
+    "ipa": "/kɥiʁ/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Laissez cuire le riz pendant dix minutes.",
+    "exampleEn": "Let the rice cook for ten minutes.",
+    "collocations": [
+      "faire cuire",
+      "cuire à feu doux"
+    ],
+    "audioText": "cuire"
+  },
+  {
+    "id": "nourriture-boissons-103",
+    "fr": "griller",
+    "en": "to grill",
+    "lemma": "griller",
+    "pos": "verb",
+    "ipa": "/ɡʁi.je/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "On va griller des saucisses ce week-end.",
+    "exampleEn": "We're going to grill some sausages this weekend.",
+    "collocations": [
+      "griller de la viande",
+      "du pain grillé"
+    ],
+    "audioText": "griller"
+  },
+  {
+    "id": "nourriture-boissons-104",
+    "fr": "déguster",
+    "en": "to savor / taste",
+    "lemma": "déguster",
+    "pos": "verb",
+    "ipa": "/de.ɡys.te/",
+    "cefr": "B1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Nous avons dégusté un excellent vin rouge hier soir.",
+    "exampleEn": "We tasted an excellent red wine last night.",
+    "collocations": [
+      "déguster un plat",
+      "déguster un vin"
+    ],
+    "audioText": "déguster"
+  },
+  {
+    "id": "nourriture-boissons-105",
+    "fr": "la pastèque",
+    "en": "watermelon",
+    "lemma": "pastèque",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pas.tɛk/",
+    "cefr": "B2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "En été, rien de tel qu'une tranche de pastèque bien fraîche.",
+    "exampleEn": "In summer, nothing beats a nice cold slice of watermelon.",
+    "collocations": [
+      "une tranche de pastèque"
+    ],
+    "audioText": "la pastèque"
+  },
+  {
+    "id": "nourriture-boissons-106",
+    "fr": "le cocktail",
+    "en": "cocktail",
+    "lemma": "cocktail",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔk.tɛl/",
+    "cefr": "B2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le barman prépare un cocktail sans alcool pour elle.",
+    "exampleEn": "The bartender makes a non-alcoholic cocktail for her.",
+    "collocations": [
+      "un cocktail de fruits",
+      "préparer un cocktail"
+    ],
+    "audioText": "le cocktail"
+  },
+  {
+    "id": "nourriture-boissons-107",
+    "fr": "mijoter",
+    "en": "to simmer",
+    "lemma": "mijoter",
+    "pos": "verb",
+    "ipa": "/mi.ʒɔ.te/",
+    "cefr": "B2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Laissez mijoter la sauce à feu doux pendant une heure.",
+    "exampleEn": "Let the sauce simmer on low heat for an hour.",
+    "collocations": [
+      "laisser mijoter",
+      "mijoter un ragoût"
+    ],
+    "audioText": "mijoter"
+  },
+  {
+    "id": "nourriture-boissons-108",
+    "fr": "assaisonner",
+    "en": "to season",
+    "lemma": "assaisonner",
+    "pos": "verb",
+    "ipa": "/a.sɛ.zɔ.ne/",
+    "cefr": "B2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "N'oubliez pas d'assaisonner la salade avant de servir.",
+    "exampleEn": "Don't forget to season the salad before serving.",
+    "collocations": [
+      "assaisonner un plat",
+      "bien assaisonner"
+    ],
+    "audioText": "assaisonner"
+  },
+  {
+    "id": "nourriture-boissons-109",
+    "fr": "grignoter",
+    "en": "to snack / nibble",
+    "lemma": "grignoter",
+    "pos": "verb",
+    "ipa": "/ɡʁi.ɲɔ.te/",
+    "cefr": "B2",
+    "topic": "nourriture-boissons",
+    "register": "familier",
+    "exampleFr": "Elle grignote des chips devant la télé.",
+    "exampleEn": "She's snacking on chips in front of the TV.",
+    "collocations": [
+      "grignoter entre les repas"
+    ],
+    "audioText": "grignoter"
+  },
+  {
+    "id": "nourriture-boissons-110",
+    "fr": "crever la dalle",
+    "en": "to be starving",
+    "lemma": "crever la dalle",
+    "pos": "phrase",
+    "ipa": "/kʁə.ve la dal/",
+    "cefr": "B2",
+    "topic": "nourriture-boissons",
+    "register": "argot",
+    "exampleFr": "Dépêche-toi, je crève la dalle !",
+    "exampleEn": "Hurry up, I'm starving!",
+    "mnemonic": "Literally 'to burst the slab' — a very informal way to say you're extremely hungry.",
+    "audioText": "crever la dalle"
+  },
+  {
+    "id": "nourriture-boissons-111",
+    "fr": "copieux",
+    "en": "copious / hearty",
+    "lemma": "copieux",
+    "pos": "adj",
+    "ipa": "/kɔ.pjø/",
+    "cefr": "B2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Le petit-déjeuner de l'hôtel était vraiment copieux.",
+    "exampleEn": "The hotel breakfast was really hearty.",
+    "collocations": [
+      "un repas copieux",
+      "une portion copieuse"
+    ],
+    "audioText": "copieux"
+  },
+  {
+    "id": "nourriture-boissons-112",
+    "fr": "fade",
+    "en": "bland",
+    "lemma": "fade",
+    "pos": "adj",
+    "ipa": "/fad/",
+    "cefr": "B2",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Sans épices, ce plat est un peu fade.",
+    "exampleEn": "Without spices, this dish is a bit bland.",
+    "collocations": [
+      "un goût fade",
+      "trouver un plat fade"
+    ],
+    "audioText": "fade"
+  },
+  {
+    "id": "nourriture-boissons-113",
+    "fr": "jeûner",
+    "en": "to fast",
+    "lemma": "jeûner",
+    "pos": "verb",
+    "ipa": "/ʒø.ne/",
+    "cefr": "C1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Certains croyants jeûnent pendant le mois du ramadan.",
+    "exampleEn": "Some believers fast during the month of Ramadan.",
+    "mnemonic": "The circumflex on 'jeûner' marks a lost 's' (compare English 'fast') — related to 'déjeuner', literally 'to break the fast'.",
+    "audioText": "jeûner"
+  },
+  {
+    "id": "nourriture-boissons-114",
+    "fr": "rassasié",
+    "en": "satiated / full",
+    "lemma": "rassasié",
+    "pos": "adj",
+    "ipa": "/ʁa.sa.zje/",
+    "cefr": "C1",
+    "topic": "nourriture-boissons",
+    "register": "neutre",
+    "exampleFr": "Après ce festin, je me sens complètement rassasié.",
+    "exampleEn": "After that feast, I feel completely satiated.",
+    "collocations": [
+      "se sentir rassasié"
+    ],
+    "audioText": "rassasié"
+  },
+  {
+    "id": "nourriture-boissons-115",
+    "fr": "le mets",
+    "en": "dish (refined term)",
+    "lemma": "mets",
+    "pos": "noun",
+    "gender": "m",
+    "plural": "mets",
+    "ipa": "/mɛ/",
+    "cefr": "C1",
+    "topic": "nourriture-boissons",
+    "register": "soutenu",
+    "exampleFr": "Le chef nous a servi des mets raffinés.",
+    "exampleEn": "The chef served us refined dishes.",
+    "collocations": [
+      "un mets raffiné",
+      "un mets délicat"
+    ],
+    "mnemonic": "'un mets' (a formal word for a dish) is invariable and unrelated to 'il met' (he puts), from the verb 'mettre'.",
+    "audioText": "le mets"
+  }
+]

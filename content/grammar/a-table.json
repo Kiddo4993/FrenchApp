@@ -1,0 +1,63 @@
+{
+  "unitSlug": "a-table",
+  "points": [
+    {
+      "slug": "partitive-articles",
+      "title": "Les articles partitifs (du, de la, des)",
+      "explanationEn": "French uses a special category of article — the partitive article — to talk about an unspecified quantity of something, roughly equivalent to English 'some' or 'any', but far more grammatically required. The forms are du (masculine singular: du pain, 'some bread'), de la (feminine singular: de la confiture, 'some jam'), de l' (before a vowel sound, either gender: de l'eau, 'some water'), and des (plural: des pommes, 'some apples'). English speakers can freely drop 'some' ('I eat bread' sounds perfectly natural), but French cannot drop the partitive article in equivalent sentences — 'Je mange pain' is simply ungrammatical. You must say 'Je mange du pain.'\n\nThe trickiest rule to internalize is what happens after a negation: in a negative sentence, du/de la/de l'/des all collapse to a single word, de (or d' before a vowel), regardless of the noun's gender or number. 'J'ai du fromage' (I have some cheese) becomes 'Je n'ai pas de fromage' (I don't have any cheese) — not 'pas du fromage'. This 'de after negation' rule also applies to indefinite articles (un/une/des) in most cases: 'J'ai un frère' → 'Je n'ai pas de frère.'\n\nIt's also important to distinguish the partitive article from the definite article, since both du/de la/des can look identical to contractions of 'de + le/la/les' used with expressions of preference. Compare 'Je mange du fromage' (I'm eating some cheese — partitive, an unspecified amount) with 'J'aime le fromage' (I like cheese — definite article, referring to cheese as a general category, not a quantity). Verbs of liking/loving/preferring (aimer, adorer, détester, préférer) normally take the definite article because you're expressing an opinion about the whole category, not consuming a portion of it.",
+      "examples": [
+        { "fr": "Je voudrais du pain, s'il vous plaît.", "en": "I would like some bread, please.", "note": "Masculine partitive 'du' — cannot be omitted the way English drops 'some'." },
+        { "fr": "Elle boit de l'eau tous les jours.", "en": "She drinks water every day.", "note": "'De l'' before the vowel sound of 'eau'." },
+        { "fr": "Nous mangeons de la soupe.", "en": "We are eating (some) soup.", "note": "Feminine singular partitive 'de la'." },
+        { "fr": "Il y a des fruits sur la table.", "en": "There is some fruit on the table.", "note": "Plural partitive 'des'." },
+        { "fr": "Je ne mange pas de viande.", "en": "I don't eat meat.", "note": "After negation, 'de la viande' becomes just 'de'." },
+        { "fr": "Tu veux du café ou du thé ?", "en": "Do you want coffee or tea?" },
+        { "fr": "Je n'ai pas d'argent.", "en": "I don't have any money.", "note": "'De' elides to \"d'\" before the vowel sound of 'argent'." },
+        { "fr": "J'aime le chocolat, mais je mange rarement du chocolat.", "en": "I like chocolate, but I rarely eat (any) chocolate.", "note": "Contrasts the definite article (general category) with the partitive (an actual portion)." },
+        { "fr": "Ils achètent des légumes au marché.", "en": "They buy vegetables at the market." },
+        { "fr": "Il ne boit jamais de vin.", "en": "He never drinks wine.", "note": "'Jamais' is another negation trigger that reduces the partitive to 'de'." }
+      ],
+      "commonMistakes": [
+        "Omitting the partitive article entirely, saying 'Je mange pain' instead of 'Je mange du pain', by analogy with English which allows dropping 'some'.",
+        "Keeping du/de la/des after a negation instead of collapsing them to 'de' (saying 'Je ne mange pas du pain' instead of the correct 'Je ne mange pas de pain').",
+        "Confusing the partitive article with the definite article after verbs of preference, e.g. saying 'J'aime du chocolat' when expressing a general like/dislike should use 'J'aime le chocolat'.",
+        "Forgetting gender agreement on the partitive itself (using 'du' with a feminine noun like 'du confiture' instead of 'de la confiture')."
+      ],
+      "whyItTrips": [
+        "English 'some' is optional and can vanish without changing grammaticality ('I eat bread' vs. 'I eat some bread' are both fine), so English speakers don't expect an article to be mandatory here.",
+        "The de-after-negation collapse rule (du/de la/des → de) is a French-specific transformation that doesn't correspond to any pattern in English negation.",
+        "English uses the same bare noun for both 'I like chocolate in general' and 'I'm eating some chocolate right now', while French forces a grammatical distinction (le vs. du) that English speakers aren't used to tracking."
+      ],
+      "searchTags": ["partitive articles", "du de la des", "negation", "de after negation", "food vocabulary", "articles"]
+    },
+    {
+      "slug": "regular-er-verbs-present",
+      "title": "Les verbes réguliers en -er au présent",
+      "explanationEn": "The largest group of French verbs — well over 90% of all French verbs — end in -er in the infinitive (manger, parler, aimer, habiter, regarder) and are conjugated in the present tense with a completely predictable pattern. Take the infinitive, remove -er to get the stem, and add these endings: -e (je), -es (tu), -e (il/elle/on), -ons (nous), -ez (vous), -ent (ils/elles). So parler becomes: je parle, tu parles, il/elle/on parle, nous parlons, vous parlez, ils/elles parlent. Once you know this one pattern, you can conjugate hundreds of verbs correctly.\n\nA critical pronunciation note: in the je, tu, il/elle/on, and ils/elles forms, the ending is silent or nearly silent (-e, -es, -e, -ent are all pronounced the same way — essentially not pronounced at all beyond the stem). This means je parle, tu parles, il parle, and ils parlent all sound identical when spoken aloud, even though they're spelled differently. Only nous parlons and vous parlez sound distinctly different, because -ons and -ez are pronounced endings. This is very different from English, where verb endings for different subjects are either identical in speech and writing ('I walk, you walk, we walk') or clearly pronounced ('he walks').\n\nA few -er verbs have small spelling adjustments to preserve pronunciation, and these are worth flagging early even though they're not full irregularities. Verbs like manger (to eat) and commencer (to begin) that end in -ger or -cer add an extra e or a cedilla in the nous form to keep the soft 'zh' or 's' sound: nous mangeons (not 'mangons'), nous commençons (with a cedilla, not 'commencons'). These are spelling conventions to protect pronunciation, not exceptions to the ending pattern itself.",
+      "examples": [
+        { "fr": "Je parle français avec mes amis.", "en": "I speak French with my friends.", "note": "Base -er conjugation: stem + -e." },
+        { "fr": "Tu manges beaucoup de légumes.", "en": "You eat a lot of vegetables.", "note": "Stem + -es; sounds identical to 'je mange' when spoken." },
+        { "fr": "Elle habite à Lyon.", "en": "She lives in Lyon." },
+        { "fr": "Nous mangeons à sept heures.", "en": "We eat at seven o'clock.", "note": "Extra 'e' before -ons keeps the soft 'g' sound of manger." },
+        { "fr": "Vous regardez la télévision le soir.", "en": "You watch television in the evening." },
+        { "fr": "Ils aiment le fromage français.", "en": "They love French cheese." },
+        { "fr": "On commence le dîner à huit heures.", "en": "We start dinner at eight o'clock.", "note": "Cedilla on 'commençons' would apply for 'nous'; 'on commence' uses the regular il/elle-style ending." },
+        { "fr": "Je commande une pizza ce soir.", "en": "I'm ordering a pizza tonight." },
+        { "fr": "Elles cuisinent ensemble le dimanche.", "en": "They cook together on Sundays." },
+        { "fr": "Nous commençons le repas avec une salade.", "en": "We start the meal with a salad.", "note": "Cedilla (ç) added before -ons to keep the soft 's' sound of commencer." }
+      ],
+      "commonMistakes": [
+        "Adding a pronounced ending to je/tu/il/ils forms as if they were as distinct in speech as they are in writing, when in fact -e, -es, -e, -ent are all silent.",
+        "Forgetting the spelling adjustment for -ger and -cer verbs in the nous form (writing 'nous mangons' or 'nous commencons' instead of 'mangeons' / 'commençons').",
+        "Using the infinitive form directly instead of conjugating (saying 'je manger' instead of 'je mange').",
+        "Applying English 3rd-person-singular logic and only changing the verb for 'il/elle', leaving other persons in the infinitive or base form."
+      ],
+      "whyItTrips": [
+        "English regular verbs barely change at all across persons (I eat, you eat, we eat — only 'he eats' looks different), so French's six distinct written endings feel like unnecessary complexity even though most of them sound the same aloud.",
+        "The silent endings mean spelling and pronunciation diverge sharply, which is disorienting for English speakers used to sounding out most letters they write.",
+        "The spelling-only adjustments in -ger/-cer verbs (mangeons, commençons) look like irregularities but are purely there to preserve pronunciation — a concept (silent letters inserted for sound, not meaning) that's unfamiliar territory."
+      ],
+      "searchTags": ["er verbs", "present tense", "regular verbs", "conjugation", "manger", "parler"]
+    }
+  ]
+}

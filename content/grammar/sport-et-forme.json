@@ -1,0 +1,35 @@
+{
+  "unitSlug": "sport-et-forme",
+  "points": [
+    {
+      "slug": "comparatifs-superlatifs-avances",
+      "title": "Comparatifs et superlatifs avancés",
+      "explanationEn": "By B1, you already know the basic comparative pattern: plus/moins/aussi + adjective + que (plus rapide que — faster than) and the basic superlative le/la/les plus/moins + adjective (le plus rapide — the fastest). This point focuses on the irregular forms that don't follow that pattern, and on the sharp distinction French makes — more strictly than English — between comparing adjectives (describing nouns) and comparing adverbs (describing verbs/actions).\n\nThe most important irregular pair is bon/bien. Bon is an adjective (good), and its comparative is meilleur(e) (better), not \"plus bon\" — French simply does not use plus bon in standard usage, exactly like English doesn't say \"more good.\" Ce gâteau est meilleur que l'autre (This cake is better than the other one). Bien, by contrast, is an adverb (well), describing how an action is performed, and its comparative is mieux (better), not \"plus bien.\" Il joue mieux que moi (He plays better than me) — here mieux modifies joue (a verb), not a noun, so meilleur would be wrong. English collapses both meanings into the single word \"better,\" which is exactly why French learners constantly confuse meilleur and mieux: you must ask yourself whether you're describing a noun (meilleur, agreeing in gender/number like any adjective: meilleure, meilleurs, meilleures) or describing how an action is done (mieux, invariable, since adverbs never agree).\n\nA parallel but rarer irregular pair is mauvais/mal. Mauvais (bad, adjective) has two acceptable comparatives: the regular plus mauvais and the more literary/emphatic pire, both meaning \"worse\" when describing a noun — Ce film est pire que l'autre or Ce film est plus mauvais que l'autre are both correct, with pire feeling slightly stronger or more abstract (used often for non-physical things: la situation est pire). Mal (badly, adverb) has the irregular comparative plus mal (there is no separate irregular adverb form the way mieux exists for bien) — Il chante plus mal que moi (He sings worse than me).\n\nFor comparing quantities of nouns rather than qualities, French uses plus de / moins de / autant de + noun + que, not plus + noun: J'ai plus de temps que toi (I have more time than you) — de is mandatory here and is easy to drop by analogy with the adjective pattern (plus rapide que, no de). Finally, superlatives of meilleur and mieux follow the same irregular base: le meilleur (the best, adjective, agrees) and le mieux (the best, adverb, invariable) — C'est elle qui joue le mieux (She's the one who plays best).",
+      "examples": [
+        { "fr": "Ce gâteau est meilleur que l'autre.", "en": "This cake is better than the other one.", "note": "meilleur = adjective comparative of bon" },
+        { "fr": "Il joue au tennis mieux que moi.", "en": "He plays tennis better than me.", "note": "mieux = adverb comparative of bien, describing 'joue'" },
+        { "fr": "Elle chante mieux depuis qu'elle prend des cours.", "en": "She sings better since she started taking lessons.", "note": "mieux, invariable adverb" },
+        { "fr": "C'est la meilleure équipe du championnat.", "en": "It's the best team in the league.", "note": "superlative, meilleure agrees with 'équipe' (feminine)" },
+        { "fr": "C'est elle qui joue le mieux de toute l'équipe.", "en": "She's the one who plays the best on the whole team.", "note": "le mieux = adverbial superlative, invariable" },
+        { "fr": "Ce film est pire que je ne le pensais.", "en": "This movie is worse than I thought.", "note": "pire = irregular comparative of mauvais, emphatic" },
+        { "fr": "Sa deuxième course était plus mauvaise que la première.", "en": "His second race was worse than the first.", "note": "plus mauvaise, regular alternative to pire, agrees with 'course'" },
+        { "fr": "J'ai couru plus mal aujourd'hui qu'hier.", "en": "I ran worse today than yesterday.", "note": "plus mal = comparative of the adverb mal" },
+        { "fr": "Elle a plus d'endurance que son frère.", "en": "She has more endurance than her brother.", "note": "plus de + noun, 'de' required before a noun" },
+        { "fr": "Nous nous entraînons autant que l'équipe adverse.", "en": "We train as much as the opposing team.", "note": "autant que for equal comparison of an action/quantity" }
+      ],
+      "commonMistakes": [
+        "Using 'plus bon' instead of the irregular 'meilleur' (a very common literal-translation error since English has no separate word to force the irregular form).",
+        "Confusing meilleur and mieux — using meilleur to modify a verb, or mieux to modify a noun (saying 'il joue meilleur' instead of 'il joue mieux', or 'c'est un mieux restaurant' instead of 'un meilleur restaurant').",
+        "Forgetting gender/number agreement on meilleur when it modifies a noun (leaving it as 'meilleur' before a feminine noun instead of 'meilleure').",
+        "Dropping 'de' when comparing quantities of nouns (saying 'j'ai plus temps que toi' instead of 'j'ai plus de temps que toi').",
+        "Adding agreement to 'mieux' or 'pire' as if they were adjectives, when mieux is always invariable as an adverb."
+      ],
+      "whyItTrips": [
+        "English uses the single word 'better' for both the adjective and adverb comparative of good/well, so English speakers have no built-in prompt to distinguish meilleur (adjective) from mieux (adverb) — the split simply doesn't exist in their native grammar.",
+        "English marks most comparatives with a suffix (-er) or 'more', which never triggers irregular forms outside of good/bad, so learners underestimate how often French comparatives break the regular plus + adjective pattern.",
+        "The requirement to insert 'de' before a noun in quantity comparisons (plus de temps) but never before an adjective (plus rapide) is a subtle structural rule that has no parallel distinction in English 'more'."
+      ],
+      "searchTags": ["comparatif", "superlatif", "meilleur mieux", "pire", "comparatives", "irregular comparative"]
+    }
+  ]
+}

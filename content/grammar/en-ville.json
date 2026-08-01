@@ -1,0 +1,64 @@
+{
+  "unitSlug": "en-ville",
+  "points": [
+    {
+      "slug": "aller-plus-destination",
+      "title": "Aller + à/au/à la/aux + destination",
+      "explanationEn": "Aller ('to go') is another essential irregular verb that must be memorized as a full set of forms, since it doesn't follow any regular pattern: je vais, tu vas, il/elle/on va, nous allons, vous allez, ils/elles vont. Notice how different the stem looks across forms (vais/va/vont/allons) — this kind of stem-shifting irregularity is common in French's most frequently used verbs, precisely because frequent verbs tend to resist the regularizing pressure that shapes less common ones.\n\nTo say where you're going, aller is followed by the preposition 'à' (to/at) plus the destination, but 'à' is required to contract with the definite articles le and les, exactly the way 'de' contracts elsewhere. The rules: à + le = au (je vais au marché — I'm going to the market), à + les = aux (je vais aux magasins — I'm going to the shops), while à + la stays as two separate words, à la (je vais à la banque — I'm going to the bank), and à + l' also stays separate, à l' (je vais à l'école — I'm going to school). So only the masculine singular (au) and the plural (aux) contract; the feminine singular (à la) and vowel-initial nouns (à l') do not.\n\nAller has a second, equally important use with no direct one-word equivalent in English: aller + infinitive expresses the near future ('going to' do something), just like English 'going to'. Je vais manger means 'I am going to eat' — this futur proche construction is extremely common in spoken French, often even more common than the true future tense, so mastering aller pays off twice: once for talking about physical destinations and once for talking about upcoming actions.",
+      "examples": [
+        { "fr": "Je vais au cinéma ce soir.", "en": "I'm going to the movies tonight.", "note": "'À + le' contracts to 'au'." },
+        { "fr": "Tu vas à la piscine avec nous ?", "en": "Are you going to the pool with us?", "note": "'À la' does not contract — feminine singular stays two words." },
+        { "fr": "Il va à l'hôpital pour rendre visite à son ami.", "en": "He is going to the hospital to visit his friend.", "note": "'À l'' before the vowel sound of 'hôpital'." },
+        { "fr": "Nous allons aux toilettes avant de partir.", "en": "We're going to the restroom before we leave.", "note": "'À + les' contracts to 'aux'." },
+        { "fr": "Vous allez au marché le samedi ?", "en": "Do you go to the market on Saturdays?" },
+        { "fr": "Elles vont à la bibliothèque après les cours.", "en": "They are going to the library after class." },
+        { "fr": "On va au parc cet après-midi.", "en": "We're going to the park this afternoon." },
+        { "fr": "Je vais manger dans ce restaurant demain.", "en": "I'm going to eat at this restaurant tomorrow.", "note": "Futur proche: aller (conjugated) + infinitive expresses near future, not a physical destination." },
+        { "fr": "Ils vont prendre le bus dans dix minutes.", "en": "They're going to take the bus in ten minutes.", "note": "Another futur proche example." },
+        { "fr": "Tu vas au bureau de poste avant midi ?", "en": "Are you going to the post office before noon?" }
+      ],
+      "commonMistakes": [
+        "Saying 'à le' instead of contracting to 'au' (writing 'je vais à le marché' instead of the correct 'je vais au marché').",
+        "Contracting 'à la' or 'à l'' the way 'à le' contracts, when in fact only masculine singular (au) and plural (aux) contract — feminine singular and vowel-initial nouns keep 'à la'/'à l'' as two words.",
+        "Conjugating aller as if it were regular, guessing forms like 'je alle' or 'nous vayons' instead of memorizing the irregular stems (vais/va/vont/allons/allez).",
+        "Confusing the futur proche (aller + infinitive, meaning 'going to do something') with the destination use of aller + à + place, and inserting an unnecessary 'à' before the infinitive verb."
+      ],
+      "whyItTrips": [
+        "English 'to' never contracts with 'the' the way French 'à' obligatorily fuses with 'le' and 'les' into single words (au, aux), so remembering this mandatory fusion is a genuinely new mechanical step.",
+        "Aller's wildly different-looking stems across persons (vais, va, vont, allons, allez) don't resemble each other the way English 'go/goes/going' visibly share a root, making the irregularity harder to intuit or guess.",
+        "English 'going to' as a near-future marker and 'going to (a place)' both use the same verb 'go' fairly transparently, but French learners still need to consciously separate the two aller constructions since one takes 'à + place' and the other takes a bare infinitive with no preposition."
+      ],
+      "searchTags": ["aller", "present tense", "au aux contractions", "destinations", "futur proche", "irregular verb"]
+    },
+    {
+      "slug": "imperative-mood",
+      "title": "L'impératif pour donner des directions",
+      "explanationEn": "The imperative mood is used to give commands, instructions, and directions — 'Turn left', 'Go straight', 'Take the second street' — and French forms it in a distinctive way: you take the present-tense tu, nous, or vous form of a verb and simply drop the subject pronoun, leaving just the conjugated verb standing alone. There is no separate imperative conjugation to memorize beyond the present tense you already know; the challenge is remembering which pronoun-form to strip and, for one specific case, an extra spelling adjustment.\n\nThe tu-form imperative of -er verbs (and the irregular verb aller, which conjugates like an -er verb in the present) drops the final -s that normally appears in the tu form: tu parles becomes Parle ! (Speak!) and tu vas becomes Va ! (Go!) — notice the -s is removed only for this specific case. This doesn't apply to -ir or -re verbs, whose tu-forms don't end in a silent -s to begin with (tu finis stays Finis !, tu attends stays Attends !). This -s-dropping rule exists purely for historical pronunciation reasons and must simply be memorized as an exception tied to -er verbs and aller.\n\nFrench has three imperative forms because it has three possible 'you/we' targets for a command: the tu-form (Tourne à gauche ! — Turn left!, informal singular), the nous-form (Tournons à gauche ! — Let's turn left!, an inclusive suggestion including the speaker), and the vous-form (Tournez à gauche !, formal or plural). This nous-form imperative — used to propose 'let's do X' — has no single-word English equivalent; English needs the extra word 'let's', while French achieves the same meaning just by using the bare nous-conjugation with no pronoun. For pronominal (reflexive) verbs in the imperative, the reflexive pronoun moves after the verb and attaches with a hyphen, and te becomes the stressed form toi: Lève-toi ! (Get up!), Asseyez-vous ! (Sit down!).",
+      "examples": [
+        { "fr": "Tourne à gauche au feu rouge.", "en": "Turn left at the traffic light.", "note": "Tu-form imperative: pronoun dropped, verb form kept." },
+        { "fr": "Continuez tout droit pendant deux cents mètres.", "en": "Continue straight for two hundred meters.", "note": "Vous-form imperative, formal/plural." },
+        { "fr": "Prenons le métro, c'est plus rapide.", "en": "Let's take the subway, it's faster.", "note": "Nous-form imperative expresses 'let's', with no separate word for 'let's' needed." },
+        { "fr": "Va tout droit, puis tourne à droite.", "en": "Go straight, then turn right.", "note": "'Va' (imperative of aller) drops the -s that 'tu vas' has in the present tense." },
+        { "fr": "Ne traversez pas maintenant !", "en": "Don't cross now!", "note": "Negative imperative: 'ne...pas' wraps around the verb exactly as in a regular negation." },
+        { "fr": "Prends la deuxième rue à droite.", "en": "Take the second street on the right.", "note": "'Prends' keeps its -s because 'prendre' is an -re verb, not -er." },
+        { "fr": "Attendez le bus ici, s'il vous plaît.", "en": "Wait for the bus here, please." },
+        { "fr": "Descends à la prochaine station.", "en": "Get off at the next station." },
+        { "fr": "Levez-vous et suivez-moi.", "en": "Stand up and follow me.", "note": "Reflexive pronoun 'vous' moves after the verb with a hyphen in the affirmative imperative." },
+        { "fr": "Ne te perds pas dans ce quartier.", "en": "Don't get lost in this neighborhood.", "note": "In the negative imperative, the reflexive pronoun moves back before the verb: 'ne te perds pas'." }
+      ],
+      "commonMistakes": [
+        "Keeping the -s on tu-form imperatives of -er verbs, saying 'Tournes à gauche' instead of the correct 'Tourne à gauche'.",
+        "Dropping the -s from -ir or -re verb imperatives by over-applying the -er rule, saying 'Attend' instead of the correct 'Attends' or 'Prend' instead of 'Prends'.",
+        "Including the subject pronoun out of habit (saying 'Tu tourne à gauche' as a command) instead of dropping it entirely, since the imperative is defined precisely by the pronoun's absence.",
+        "Placing the reflexive pronoun before the verb in an affirmative command (saying 'Te lève !' instead of the correct 'Lève-toi !'), forgetting it must move after the verb and attach with a hyphen.",
+        "Forgetting that 'te' becomes the stressed form 'toi' when it moves after the verb in an affirmative imperative."
+      ],
+      "whyItTrips": [
+        "English commands simply drop the subject with no other change to the verb ('You go' → 'Go'), so the extra step of also dropping a final -s specifically for -er verbs (parle, va) is an added layer of complexity with no English parallel.",
+        "English has no built-in grammatical form for 'let's' — it's a separate contraction of 'let us' — while French folds that exact meaning into the ordinary nous-conjugation used as a command, which requires recognizing a familiar verb form being repurposed for a new function.",
+        "The reflexive pronoun flipping position (before the verb normally, after the verb with a hyphen in affirmative commands, and te→toi) adds a movement rule that has no counterpart in English commands, which never involve a reflexive pronoun for these routine verbs to begin with."
+      ],
+      "searchTags": ["imperative", "commands", "directions", "reflexive imperative", "let's", "giving instructions"]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "unitSlug": "livres-et-litterature",
+  "points": [
+    {
+      "slug": "discours-indirect-introduction",
+      "title": "Le discours indirect (introduction)",
+      "explanationEn": "Le discours indirect (reported/indirect speech) is how you report what someone else said without quoting them word for word — the French equivalent of English \"She said that...\" This unit introduces the basic mechanics: the verb dire followed by que, and the tense-shifting rules that apply when the reporting verb (dire) is itself in a past tense, which is the single trickiest part of the whole structure for English speakers because English does something extremely similar, but not identically.\n\nWhen dire is in the present tense, nothing changes — you simply repeat the original tense of the quoted sentence after que: Il dit : « Je suis fatigué » becomes Il dit qu'il est fatigué (He says that he is tired). No tense shift occurs because the reporting verb itself is present, so the reported statement is still \"live\" relative to the speaker.\n\nThe real work begins when dire is in a past tense (typically passé composé or imparfait) — this is called concordance des temps (sequence of tenses), and it requires shifting the tense of the reported clause one step into the past, following fixed correspondences: présent → imparfait, passé composé → plus-que-parfait, futur simple → conditionnel présent, and imparfait stays imparfait (it doesn't shift further back). For example: Il a dit : « Je suis fatigué » (présent) becomes Il a dit qu'il était fatigué (imparfait). Il a dit : « J'ai fini » (passé composé) becomes Il a dit qu'il avait fini (plus-que-parfait). Il a dit : « Je viendrai » (futur simple) becomes Il a dit qu'il viendrait (conditionnel présent). This mirrors English backshifting (\"I am tired\" → \"He said he was tired\"; \"I will come\" → \"He said he would come\"), so the underlying logic is genuinely familiar — but the specific tense targets in French (plus-que-parfait for what was passé composé, conditionnel for what was futur simple) must be learned as a fixed table rather than guessed.\n\nBeyond simple statements with dire que, other verbs of reporting work the same way and take on the same tense-shifting logic: annoncer que (to announce that), expliquer que (to explain that), répondre que (to answer that), ajouter que (to add that). Pronouns and possessives also typically shift from first/second person in the original quote to third person in the reported version, exactly as in English: Marie a dit : « Mon frère m'a appelé » becomes Marie a dit que son frère l'avait appelé (Marie said that her brother had called her) — mon → son, m'a appelé → l'avait appelé, shifting both the person and, because the original was passé composé, the tense as well.",
+      "examples": [
+        { "fr": "Il dit qu'il est fatigué.", "en": "He says that he is tired.", "note": "Present-tense 'dit' → no tense shift needed." },
+        { "fr": "Il a dit qu'il était fatigué.", "en": "He said that he was tired.", "note": "présent → imparfait after a past reporting verb" },
+        { "fr": "Elle a dit qu'elle avait fini ses devoirs.", "en": "She said that she had finished her homework.", "note": "passé composé → plus-que-parfait" },
+        { "fr": "Il a dit qu'il viendrait demain.", "en": "He said that he would come tomorrow.", "note": "futur simple → conditionnel présent" },
+        { "fr": "Elle a expliqué qu'elle ne comprenait pas la question.", "en": "She explained that she didn't understand the question.", "note": "imparfait stays imparfait, no further shift" },
+        { "fr": "Marie a dit que son frère l'avait appelée.", "en": "Marie said that her brother had called her.", "note": "possessive shift (mon → son) and tense shift (passé composé → plus-que-parfait)" },
+        { "fr": "Ils ont annoncé qu'ils déménageraient l'année prochaine.", "en": "They announced that they would move next year.", "note": "futur simple → conditionnel présent" },
+        { "fr": "Le journaliste a répondu qu'il vérifierait ses sources.", "en": "The journalist replied that he would check his sources.", "note": "répondre que, same tense-shift rules as dire que" },
+        { "fr": "Elle m'a dit qu'elle m'écrirait bientôt.", "en": "She told me that she would write to me soon.", "note": "futur simple → conditionnel présent, pronoun shift" },
+        { "fr": "Il ajoute qu'il est déjà en route.", "en": "He adds that he's already on his way.", "note": "Present-tense reporting verb 'ajoute' → no tense shift." }
+      ],
+      "commonMistakes": [
+        "Keeping the original tense unchanged after a past-tense reporting verb (writing 'il a dit qu'il est fatigué' instead of 'il a dit qu'il était fatigué').",
+        "Shifting présent to passé composé instead of imparfait (writing 'il a dit qu'il a été fatigué' instead of 'il a dit qu'il était fatigué').",
+        "Shifting futur simple to imparfait instead of conditionnel présent (writing 'il a dit qu'il venait demain' instead of 'il a dit qu'il viendrait demain').",
+        "Forgetting to shift possessives and pronouns from the original speaker's perspective to the reporter's perspective (leaving 'mon frère' instead of changing it to 'son frère').",
+        "Applying the tense shift even when the reporting verb dire is itself in the present tense, where no shift is needed at all."
+      ],
+      "whyItTrips": [
+        "English also backshifts tenses in reported speech, which is reassuring, but the exact target tenses differ from a literal word-for-word translation — French shifts passé composé specifically to plus-que-parfait and futur to conditionnel, targets that don't map onto a simple 'move the English verb one step into the past' shortcut.",
+        "English speakers often skip backshifting altogether in casual speech ('she said she's coming' instead of 'was coming'), so the habit of consistently applying it is weaker than it should be even in their native language, let alone in French.",
+        "Keeping track of three moving parts at once — tense shift, pronoun shift, and possessive shift — in a single sentence requires more simultaneous grammatical bookkeeping than English reported speech typically demands."
+      ],
+      "searchTags": ["discours indirect", "reported speech", "concordance des temps", "dire que", "tense shifting", "indirect speech"]
+    }
+  ]
+}
