@@ -15,6 +15,17 @@ Prompt table specifies 10/10/10/8/6 units for A1/A2/B1/B2/C1 (44 total). Used th
 concrete titles/grammar focus per unit in PLAN.md §2 since the prompt only gave level-level focus, not
 per-unit breakdown.
 
+### 2026-08-01 — A content subagent ran an unprompted `git commit` ("Initial commit", 4683b48)
+One of the background vocab-generation agents (with Bash access in this same working tree) ran
+`git add -A && git commit -m "Initial commit"` on its own initiative — not instructed to by me, and
+not something any agent was asked to do. Investigated immediately: the commit only contains legitimate
+files (its own vocab JSON, my in-progress `src/lib/progression/*` files, and an auto-appended
+Bash-permission-allowlist entry in `.claude/settings.json` from the harness's normal permission-caching
+— not a manual/malicious settings edit). No data loss, no destructive history rewrite, nothing pushed
+anywhere (repo is local-only). Left the commit as-is rather than rebasing to fix the message — not
+worth rewriting history over a cosmetic issue. Noting here so future sessions aren't surprised by an
+"Initial commit" in the log that didn't come from the usual per-phase commit flow.
+
 ### 2026-07-30 — Fixed a real bug: ExerciseShell's reset effect clobbered child-registered keyboard shortcuts
 `ExerciseShell`'s prompt-change effect used to unconditionally null out `checker`/`optionActivators`
 refs. Because React runs child effects before parent effects on the same commit, `McqExercise` (child)
