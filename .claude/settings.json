@@ -22,7 +22,11 @@
       "Bash(rm -f data/maitrise.db* && npm run seed 2>&1 | tail -60)",
       "Bash(cat > *)",
       "Bash(grep -n \"unprompted \\\\`git commit\\\\`\" /Users/dylanduan/Desktop/frenchapp/DECISIONS.md)",
-      "Bash(rm -f data/maitrise.db* && npm run seed 2>&1 | tail -15)"
+      "Bash(rm -f data/maitrise.db* && npm run seed 2>&1 | tail -15)",
+      "Bash(rm -f data/maitrise.db* && npm run seed 2>&1 | tail -12)",
+      "Bash(git checkout *)",
+      "Bash(rm -f drizzle/meta/0001_snapshot.json drizzle/0001_*.sql)",
+      "Bash(rm -f data/maitrise.db* && npm run seed 2>&1 | tail -12 && echo \"---SMOKE TEST---\" && npx tsx scripts/_smoke-test.ts 2>&1 | tail -150)"
     ],
     "additionalDirectories": [
       "/Users/dylanduan/Desktop/frenchapp/data",

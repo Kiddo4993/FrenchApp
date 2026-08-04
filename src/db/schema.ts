@@ -219,6 +219,45 @@ export const cards = sqliteTable(
   ],
 );
 
+/**
+ * One row per completed exercise, regardless of exercise kind. `cards`/`reviewLogs` only cover
+ * the kinds that map to an SRS track (see src/lib/exercises/grading.ts); batch/curated kinds
+ * (matching_pairs, conjugation_drill, reading_comprehension, odd_one_out, register_swap) have no
+ * SRS card to attach to, but still need to be counted for achievements ("1,000 verb drills") and
+ * the dashboard's accuracy-by-exercise-type breakdown — this table is the single source for both.
+ */
+export const exerciseEvents = sqliteTable("exercise_events", {
+  id: id(),
+  ts: integer("ts", { mode: "timestamp_ms" })
+    .notNull()
+    .$defaultFn(() => new Date()),
+  kind: text("kind", {
+    enum: [
+      "mcq_recognition",
+      "mcq_production",
+      "listening",
+      "dictation",
+      "word_bank",
+      "free_translation",
+      "cloze",
+      "gender_drill",
+      "conjugation_drill",
+      "matching_pairs",
+      "speaking",
+      "sentence_ordering",
+      "reading_comprehension",
+      "odd_one_out",
+      "register_swap",
+    ],
+  }).notNull(),
+  correct: integer("correct", { mode: "boolean" }).notNull(),
+  // `ExercisePrompt.cardId` (src/types/exercise.ts) is the vocab entry's id, not a `cards` row id
+  // — the SRS card for that word/track may not exist yet at exercise-completion time. See
+  // DECISIONS.md.
+  vocabId: text("vocab_id").references(() => vocabEntries.id, { onDelete: "set null" }),
+  lessonId: text("lesson_id").references(() => lessons.id, { onDelete: "set null" }),
+});
+
 export const reviewLogs = sqliteTable("review_logs", {
   id: id(),
   cardId: text("card_id")

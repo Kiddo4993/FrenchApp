@@ -8,6 +8,13 @@
       "when": 1785208822252,
       "tag": "0000_white_veda",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1785815128678,
+      "tag": "0001_furry_nextwave",
+      "breakpoints": true
     }
   ]
 }

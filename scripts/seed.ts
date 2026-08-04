@@ -9,6 +9,7 @@ import { db } from "../src/db/client";
 import * as schema from "../src/db/schema";
 import { UNITS, LESSONS } from "../src/content/curriculum";
 import { TOPICS } from "../src/content/topics";
+import { ACHIEVEMENTS } from "../src/content/achievements";
 import {
   grammarUnitFileSchema,
   readingFileSchema,
@@ -204,6 +205,25 @@ function seedReadings(db: Tx) {
   console.log(`Seeded ${total} reading passages`);
 }
 
+function seedAchievements(db: Tx) {
+  for (const a of ACHIEVEMENTS) {
+    const row = {
+      id: a.slug,
+      slug: a.slug,
+      title: a.title,
+      description: a.description,
+      icon: a.icon,
+      criteria: a.criteria,
+      tier: a.tier,
+    };
+    db.insert(schema.achievements)
+      .values(row)
+      .onConflictDoUpdate({ target: schema.achievements.id, set: row })
+      .run();
+  }
+  console.log(`Seeded ${ACHIEVEMENTS.length} achievements`);
+}
+
 function seedProfileBootstrap(db: Tx) {
   db.insert(schema.profile)
     .values({ id: "singleton", name: "Apprenant", placementDone: false })
@@ -222,6 +242,7 @@ function main() {
     seedVerbs(tx);
     seedGrammar(tx);
     seedReadings(tx);
+    seedAchievements(tx);
     seedProfileBootstrap(tx);
   });
   console.log("Seed complete.");

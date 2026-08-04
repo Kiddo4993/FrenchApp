@@ -15,6 +15,18 @@ Prompt table specifies 10/10/10/8/6 units for A1/A2/B1/B2/C1 (44 total). Used th
 concrete titles/grammar focus per unit in PLAN.md §2 since the prompt only gave level-level focus, not
 per-unit breakdown.
 
+### 2026-08-02 — `exerciseEvents` references `vocabEntries`, not `cards` (bug caught by smoke test)
+Wrote a throwaway script (`scripts/_smoke-test.ts`, deleted after use — not committed) that actually
+calls `submitExerciseResult`/`finalizeLessonSession` against the seeded DB instead of trusting
+typecheck alone. It immediately hit `FOREIGN KEY constraint failed`: `exerciseEvents.cardId` was
+declared as a FK to `cards.id`, but `ExercisePrompt.cardId` (src/types/exercise.ts, set by
+`generate.ts` as `target.id`) is actually the **vocab entry's id** — the matching `cards` row may not
+exist yet the first time a word is drilled. Renamed the column to `vocabId` referencing
+`vocabEntries.id` instead. Left `ExercisePrompt.cardId`'s name alone (out of scope, used consistently
+across the whole exercise engine as "id of the content item this prompt targets") — fixed the
+schema to match reality rather than renaming a widely-used, already-tested field.
+**Lesson: typecheck passing is not evidence a DB-touching action works — run it.**
+
 ### 2026-08-02 — Exercise generation split: per-word cycle vs. curated/batch builders
 `assembleLesson` (src/lib/exercises/generate.ts) originally only cycled through 7 of the 14 exercise
 kinds — the other 7 (listening, speaking, sentence_ordering, matching_pairs, conjugation_drill,
