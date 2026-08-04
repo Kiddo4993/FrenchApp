@@ -3,6 +3,7 @@ import type { ReadingPassage, RegisterSwapEntry, Verb, VocabEntry } from "@/cont
 import {
   assembleLesson,
   buildClozePrompt,
+  CROWN_KIND_TIERS,
   buildConjugationDrillPrompt,
   buildDictationPrompt,
   buildFreeTranslationPrompt,
@@ -229,6 +230,22 @@ describe("assembleLesson", () => {
     expect(kinds.has("listening")).toBe(true);
     expect(kinds.has("speaking")).toBe(true);
     expect(kinds.has("sentence_ordering")).toBe(true);
+  });
+
+  it("crown level 5 produces only free_translation/speaking exercises", () => {
+    const lesson = assembleLesson(POOL, POOL, Math.random, CROWN_KIND_TIERS[5]);
+    for (const ex of lesson) {
+      expect(["free_translation", "speaking"]).toContain(ex.kind);
+    }
+  });
+
+  it("crown level 1 never produces a crown-5-only kind", () => {
+    const lesson = assembleLesson(POOL, POOL, Math.random, CROWN_KIND_TIERS[1]);
+    for (const ex of lesson) {
+      expect(["free_translation", "speaking", "dictation", "sentence_ordering"]).not.toContain(
+        ex.kind,
+      );
+    }
   });
 });
 

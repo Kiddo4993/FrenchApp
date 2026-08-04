@@ -319,13 +319,48 @@ const KIND_CYCLE: ExerciseKind[] = [
   "sentence_ordering",
 ];
 
+/**
+ * PLAN.md §3 crown levels: each lesson node has 5 crown levels, increasingly demanding, with
+ * level 5 restricted to free translation + speaking only.
+ */
+export const CROWN_KIND_TIERS: Record<1 | 2 | 3 | 4 | 5, ExerciseKind[]> = {
+  1: ["mcq_recognition", "mcq_production", "gender_drill"],
+  2: ["mcq_recognition", "mcq_production", "gender_drill", "word_bank", "cloze", "listening"],
+  3: [
+    "mcq_recognition",
+    "mcq_production",
+    "gender_drill",
+    "word_bank",
+    "cloze",
+    "listening",
+    "sentence_ordering",
+  ],
+  4: [
+    "mcq_recognition",
+    "mcq_production",
+    "gender_drill",
+    "word_bank",
+    "cloze",
+    "listening",
+    "sentence_ordering",
+    "dictation",
+  ],
+  5: ["free_translation", "speaking"],
+};
+
 export function assembleLesson(
   targets: VocabEntry[],
   distractorPool: VocabEntry[],
   rng: () => number = Math.random,
+  allowedKinds?: ExerciseKind[],
 ): ExercisePrompt[] {
+  const cycle =
+    allowedKinds && allowedKinds.length > 0
+      ? KIND_CYCLE.filter((k) => allowedKinds.includes(k))
+      : KIND_CYCLE;
+  const effectiveCycle = cycle.length > 0 ? cycle : KIND_CYCLE;
   return targets.map((target, i) => {
-    const cycled = KIND_CYCLE[i % KIND_CYCLE.length];
+    const cycled = effectiveCycle[i % effectiveCycle.length];
 
     if (cycled === "gender_drill") {
       const p = buildGenderDrillPrompt(target, rng);
