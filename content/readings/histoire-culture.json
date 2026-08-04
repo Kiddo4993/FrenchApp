@@ -1,0 +1,14 @@
+[
+  {
+    "id": "reading-histoire-culture-01",
+    "cefr": "C1",
+    "topic": "histoire-culture",
+    "title": "Mai 68, un tournant culturel",
+    "bodyFr": "Les événements de mai 1968 ne se résument pas à une simple révolte étudiante : ils constituent l'un des tournants culturels majeurs de la France contemporaine. Ce qui commence comme une contestation universitaire à Nanterre se transforme rapidement en un mouvement social d'une ampleur inédite, rejoint par des millions de travailleurs en grève à travers tout le pays. Au-delà des revendications économiques, c'est un profond bouleversement des mentalités qui s'opère : remise en cause de l'autorité, aspiration à davantage de liberté individuelle, questionnement des rapports entre les générations. Si le mouvement ne renverse pas le pouvoir en place, il laisse une empreinte durable sur la société française, notamment dans les domaines de l'éducation, des mœurs et des relations de travail. Encore aujourd'hui, mai 68 demeure une référence incontournable, régulièrement convoquée dans les débats politiques et culturels.",
+    "questions": [
+      { "q": "Où débute la contestation de mai 1968 ?", "options": ["À la Sorbonne", "À Nanterre", "À Lyon", "À Marseille"], "answer": 1 },
+      { "q": "Qui rejoint le mouvement au-delà des étudiants ?", "options": ["Les militaires", "Des millions de travailleurs en grève", "Les enseignants uniquement", "Les fonctionnaires uniquement"], "answer": 1 },
+      { "q": "Quel est l'impact durable évoqué dans le texte ?", "options": ["Aucun changement notable", "Un bouleversement des mentalités et des mœurs", "La chute immédiate du gouvernement", "La fin des grèves en France"], "answer": 1 }
+    ]
+  }
+]

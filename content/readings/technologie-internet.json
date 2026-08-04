@@ -1,0 +1,14 @@
+[
+  {
+    "id": "reading-technologie-internet-01",
+    "cefr": "B1",
+    "topic": "technologie-internet",
+    "title": "Une semaine sans smartphone",
+    "bodyFr": "La semaine dernière, j'ai décidé de vivre sans smartphone pendant sept jours. Au début, c'était très difficile : je voulais sans cesse vérifier mes messages et mes réseaux sociaux. Mais peu à peu, je me suis habitué à cette absence. J'ai lu deux livres, j'ai passé plus de temps avec mes amis, et j'ai même redécouvert le plaisir de me perdre en ville sans GPS. À la fin de la semaine, j'étais fier de moi, même si j'ai vite rechargé mon téléphone dès le premier jour terminé.",
+    "questions": [
+      { "q": "Combien de temps l'auteur a-t-il vécu sans smartphone ?", "options": ["Trois jours", "Une semaine", "Un mois", "Un week-end"], "answer": 1 },
+      { "q": "Qu'a-t-il fait pendant cette période ?", "options": ["Il a travaillé plus", "Il a lu des livres", "Il a dormi tout le temps", "Il a acheté un ordinateur"], "answer": 1 },
+      { "q": "Comment se sentait-il à la fin de la semaine ?", "options": ["Déçu", "En colère", "Fier de lui", "Indifférent"], "answer": 2 }
+    ]
+  }
+]

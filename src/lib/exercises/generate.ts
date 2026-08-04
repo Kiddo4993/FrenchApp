@@ -1,13 +1,20 @@
-import type { VocabEntry } from "@/content/schema";
+import type { ReadingPassage, RegisterSwapEntry, Verb, VocabEntry } from "@/content/schema";
 import type {
   ClozePrompt,
+  ConjugationDrillPrompt,
   DictationPrompt,
   ExerciseKind,
   ExercisePrompt,
   FreeTranslationPrompt,
   GenderDrillPrompt,
+  ListeningPrompt,
+  MatchingPairsPrompt,
   McqPrompt,
   OddOneOutPrompt,
+  ReadingComprehensionPrompt,
+  RegisterSwapPrompt,
+  SentenceOrderingPrompt,
+  SpeakingPrompt,
   WordBankPrompt,
 } from "@/types/exercise";
 
@@ -160,6 +167,137 @@ export function buildOddOneOutPrompt(
   };
 }
 
+export function buildListeningPrompt(
+  pool: VocabEntry[],
+  target: VocabEntry,
+  rng: () => number = Math.random,
+): ListeningPrompt {
+  const mode: ListeningPrompt["mode"] = rng() < 0.5 ? "choice" : "type";
+  if (mode === "choice") {
+    const distractors = pickDistractors(pool, target, 3, "fr", rng);
+    const options = shuffle([target.fr, ...distractors], rng);
+    return {
+      id: `${target.id}-listening`,
+      kind: "listening",
+      cardId: target.id,
+      audioText: target.audioText,
+      mode,
+      options,
+      correctIndex: options.indexOf(target.fr),
+      explanation: `« ${target.fr} » = « ${target.en} »`,
+    };
+  }
+  return {
+    id: `${target.id}-listening`,
+    kind: "listening",
+    cardId: target.id,
+    audioText: target.audioText,
+    mode,
+    acceptedAnswers: [target.fr, target.lemma],
+    explanation: `« ${target.fr} » = « ${target.en} »`,
+  };
+}
+
+export function buildSpeakingPrompt(target: VocabEntry): SpeakingPrompt {
+  return {
+    id: `${target.id}-speaking`,
+    kind: "speaking",
+    cardId: target.id,
+    targetText: target.exampleFr,
+    translationHint: target.exampleEn,
+  };
+}
+
+export function buildSentenceOrderingPrompt(
+  target: VocabEntry,
+  rng: () => number = Math.random,
+): SentenceOrderingPrompt {
+  const words = target.exampleFr.split(" ");
+  return {
+    id: `${target.id}-sentence-ordering`,
+    kind: "sentence_ordering",
+    cardId: target.id,
+    tiles: shuffle(words, rng),
+    correctOrder: words,
+    translation: target.exampleEn,
+    explanation: `« ${target.exampleFr} »`,
+  };
+}
+
+/** Batch exercise (not tied to a single card) — picks `count` distinct words from `pool`. */
+export function buildMatchingPairsPrompt(
+  pool: VocabEntry[],
+  count = 6,
+  rng: () => number = Math.random,
+): MatchingPairsPrompt | null {
+  if (pool.length < count) return null;
+  const chosen = shuffle(pool, rng).slice(0, count);
+  return {
+    id: `matching-${chosen.map((e) => e.id).join("-")}`,
+    kind: "matching_pairs",
+    pairs: chosen.map((e) => ({ fr: e.fr, en: e.en })),
+    timeLimitSeconds: 60,
+  };
+}
+
+const PERSON_LABELS: Record<string, string> = {
+  "1s": "je",
+  "2s": "tu",
+  "3s": "il / elle / on",
+  "1p": "nous",
+  "2p": "vous",
+  "3p": "ils / elles",
+};
+
+const TENSE_LABELS: Record<string, string> = {
+  present: "présent",
+  passe_compose: "passé composé",
+  imparfait: "imparfait",
+  futur_simple: "futur simple",
+  conditionnel_present: "conditionnel présent",
+  subjonctif_present: "subjonctif présent",
+  plus_que_parfait: "plus-que-parfait",
+  imperatif: "impératif",
+};
+
+/** Drills a random conjugated form of `verb`; not tied to a vocab card. */
+export function buildConjugationDrillPrompt(
+  verb: Verb,
+  rng: () => number = Math.random,
+): ConjugationDrillPrompt | null {
+  if (verb.conjugations.length === 0) return null;
+  const row = shuffle(verb.conjugations, rng)[0];
+  return {
+    id: `${verb.infinitive}-${row.tense}-${row.person}-conjugation`,
+    kind: "conjugation_drill",
+    infinitive: verb.infinitive,
+    subjectLabel: PERSON_LABELS[row.person] ?? row.person,
+    tenseLabel: TENSE_LABELS[row.tense] ?? row.tense,
+    acceptedAnswers: [row.form],
+    explanation: `${PERSON_LABELS[row.person] ?? row.person} ${row.form}`,
+  };
+}
+
+export function buildRegisterSwapPrompt(entry: RegisterSwapEntry): RegisterSwapPrompt {
+  return {
+    id: `${entry.id}-register-swap`,
+    kind: "register_swap",
+    familierText: entry.familierText,
+    acceptedSoutenuAnswers: entry.soutenuAnswers,
+    explanation: `Registre soutenu : « ${entry.soutenuAnswers[0]} »`,
+  };
+}
+
+export function buildReadingComprehensionPrompt(passage: ReadingPassage): ReadingComprehensionPrompt {
+  return {
+    id: `${passage.id}-reading`,
+    kind: "reading_comprehension",
+    title: passage.title,
+    passage: passage.bodyFr,
+    questions: passage.questions,
+  };
+}
+
 /**
  * One exercise per target word, cycling through exercise kinds for variety and falling back to
  * a simpler kind when a word doesn't support the one the cycle landed on (e.g. gender_drill only
@@ -174,6 +312,11 @@ const KIND_CYCLE: ExerciseKind[] = [
   "free_translation",
   "gender_drill",
   "dictation",
+  // Appended rather than interleaved above so existing KIND_CYCLE[n] assumptions
+  // (e.g. index 5 === "gender_drill") keep holding for callers and tests.
+  "listening",
+  "speaking",
+  "sentence_ordering",
 ];
 
 export function assembleLesson(
@@ -202,6 +345,12 @@ export function assembleLesson(
         return buildFreeTranslationPrompt(target);
       case "dictation":
         return buildDictationPrompt(target);
+      case "listening":
+        return buildListeningPrompt(distractorPool, target, rng);
+      case "speaking":
+        return buildSpeakingPrompt(target);
+      case "sentence_ordering":
+        return buildSentenceOrderingPrompt(target, rng);
       default:
         return buildMcqPrompt(distractorPool, target, "mcq_recognition", rng);
     }

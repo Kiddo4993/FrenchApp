@@ -1,13 +1,20 @@
 import { describe, expect, it } from "vitest";
-import type { VocabEntry } from "@/content/schema";
+import type { ReadingPassage, RegisterSwapEntry, Verb, VocabEntry } from "@/content/schema";
 import {
   assembleLesson,
   buildClozePrompt,
+  buildConjugationDrillPrompt,
   buildDictationPrompt,
   buildFreeTranslationPrompt,
   buildGenderDrillPrompt,
+  buildListeningPrompt,
+  buildMatchingPairsPrompt,
   buildMcqPrompt,
   buildOddOneOutPrompt,
+  buildReadingComprehensionPrompt,
+  buildRegisterSwapPrompt,
+  buildSentenceOrderingPrompt,
+  buildSpeakingPrompt,
   buildWordBankPrompt,
   shuffle,
 } from "./generate";
@@ -213,5 +220,115 @@ describe("assembleLesson", () => {
     const targets = [pain, eau, chat, table, chaise, verb];
     const lesson = assembleLesson(targets, POOL);
     expect(lesson[5].kind).not.toBe("gender_drill");
+  });
+
+  it("reaches the appended kinds (listening/speaking/sentence_ordering) with a long enough lesson", () => {
+    const targets = [...POOL, bibliotheque, pain, eau];
+    const lesson = assembleLesson(targets, POOL);
+    const kinds = new Set(lesson.map((e) => e.kind));
+    expect(kinds.has("listening")).toBe(true);
+    expect(kinds.has("speaking")).toBe(true);
+    expect(kinds.has("sentence_ordering")).toBe(true);
+  });
+});
+
+describe("buildListeningPrompt", () => {
+  it("choice mode includes the target's French form among options", () => {
+    const prompt = buildListeningPrompt(POOL, bibliotheque, () => 0);
+    expect(prompt.mode).toBe("choice");
+    expect(prompt.options).toContain(bibliotheque.fr);
+    expect(prompt.options?.[prompt.correctIndex!]).toBe(bibliotheque.fr);
+  });
+
+  it("type mode accepts the target's fr and lemma", () => {
+    const prompt = buildListeningPrompt(POOL, pain, () => 0.9);
+    expect(prompt.mode).toBe("type");
+    expect(prompt.acceptedAnswers).toEqual(expect.arrayContaining([pain.fr, pain.lemma]));
+  });
+});
+
+describe("buildSpeakingPrompt", () => {
+  it("targets the example sentence with an English hint", () => {
+    const prompt = buildSpeakingPrompt(eau);
+    expect(prompt.targetText).toBe(eau.exampleFr);
+    expect(prompt.translationHint).toBe(eau.exampleEn);
+  });
+});
+
+describe("buildSentenceOrderingPrompt", () => {
+  it("scrambled tiles are a permutation of the example sentence's words", () => {
+    const prompt = buildSentenceOrderingPrompt(bibliotheque);
+    expect([...prompt.tiles].sort()).toEqual([...prompt.correctOrder].sort());
+    expect(prompt.correctOrder.join(" ")).toBe(bibliotheque.exampleFr);
+    expect(prompt.translation).toBe(bibliotheque.exampleEn);
+  });
+});
+
+describe("buildMatchingPairsPrompt", () => {
+  it("picks `count` distinct fr/en pairs from the pool", () => {
+    const prompt = buildMatchingPairsPrompt(POOL, 6);
+    expect(prompt).not.toBeNull();
+    expect(prompt!.pairs.length).toBe(6);
+    const frSet = new Set(prompt!.pairs.map((p) => p.fr));
+    expect(frSet.size).toBe(6);
+  });
+
+  it("returns null when the pool is smaller than the requested count", () => {
+    expect(buildMatchingPairsPrompt([pain, eau], 6)).toBeNull();
+  });
+});
+
+describe("buildConjugationDrillPrompt", () => {
+  const parler: Verb = {
+    infinitive: "parler",
+    group: "er",
+    auxiliary: "avoir",
+    pastParticiple: "parlé",
+    frequencyRank: 10,
+    conjugations: [{ tense: "present", person: "1s", form: "parle", isIrregular: false }],
+  };
+
+  it("produces a French subject/tense label and the correct form as the accepted answer", () => {
+    const prompt = buildConjugationDrillPrompt(parler, () => 0);
+    expect(prompt).not.toBeNull();
+    expect(prompt!.infinitive).toBe("parler");
+    expect(prompt!.subjectLabel).toBe("je");
+    expect(prompt!.tenseLabel).toBe("présent");
+    expect(prompt!.acceptedAnswers).toEqual(["parle"]);
+  });
+
+  it("returns null for a verb with no conjugation rows", () => {
+    expect(buildConjugationDrillPrompt({ ...parler, conjugations: [] })).toBeNull();
+  });
+});
+
+describe("buildRegisterSwapPrompt", () => {
+  it("passes through the familier text and soutenu answers", () => {
+    const rsEntry: RegisterSwapEntry = {
+      id: "rs-test",
+      cefr: "B1",
+      familierText: "T'as pas de bol.",
+      soutenuAnswers: ["Tu n'as pas de chance."],
+    };
+    const prompt = buildRegisterSwapPrompt(rsEntry);
+    expect(prompt.familierText).toBe(rsEntry.familierText);
+    expect(prompt.acceptedSoutenuAnswers).toEqual(rsEntry.soutenuAnswers);
+  });
+});
+
+describe("buildReadingComprehensionPrompt", () => {
+  it("passes through title, passage, and questions", () => {
+    const passage: ReadingPassage = {
+      id: "reading-test",
+      cefr: "A1",
+      topic: "salutations",
+      title: "Bonjour",
+      bodyFr: "Bonjour, je m'appelle Claire.",
+      questions: [{ q: "Qui parle ?", options: ["Claire", "Marc"], answer: 0 }],
+    };
+    const prompt = buildReadingComprehensionPrompt(passage);
+    expect(prompt.title).toBe(passage.title);
+    expect(prompt.passage).toBe(passage.bodyFr);
+    expect(prompt.questions).toEqual(passage.questions);
   });
 });

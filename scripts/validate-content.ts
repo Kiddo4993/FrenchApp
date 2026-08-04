@@ -11,6 +11,8 @@ import fs from "node:fs";
 import path from "node:path";
 import {
   grammarUnitFileSchema,
+  readingFileSchema,
+  registerSwapFileSchema,
   sentenceFileSchema,
   verbFileSchema,
   vocabFileSchema,
@@ -163,6 +165,39 @@ function validateSentences(): void {
   }
 }
 
+function validateReadings(): void {
+  for (const topic of TOPICS) {
+    const file = path.join(ROOT, "readings", `${topic.slug}.json`);
+    if (!fs.existsSync(file)) continue; // optional — not every topic has a reading passage yet
+    const parsed = readingFileSchema.safeParse(readJson(file));
+    if (!parsed.success) {
+      fail(
+        `${topic.slug}.json (readings) failed schema validation:\n${parsed.error.issues
+          .slice(0, 10)
+          .map((i) => `    ${i.path.join(".")}: ${i.message}`)
+          .join("\n")}`,
+      );
+    }
+  }
+}
+
+function validateRegisterSwap(): void {
+  const file = path.join(ROOT, "register-swap.json");
+  if (!fs.existsSync(file)) {
+    warn(`No register-swap.json (${file}) — optional but recommended`);
+    return;
+  }
+  const parsed = registerSwapFileSchema.safeParse(readJson(file));
+  if (!parsed.success) {
+    fail(
+      `register-swap.json failed schema validation:\n${parsed.error.issues
+        .slice(0, 10)
+        .map((i) => `    ${i.path.join(".")}: ${i.message}`)
+        .join("\n")}`,
+    );
+  }
+}
+
 function main(): void {
   console.log("Validating content...\n");
 
@@ -170,6 +205,8 @@ function main(): void {
   validateVerbs();
   validateGrammar();
   validateSentences();
+  validateReadings();
+  validateRegisterSwap();
 
   console.log(`\nTotal vocab entries: ${total} (target >= ${MIN_TOTAL_ENTRIES})`);
   if (total < MIN_TOTAL_ENTRIES) {

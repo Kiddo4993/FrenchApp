@@ -1,0 +1,14 @@
+[
+  {
+    "id": "reading-salutations-01",
+    "cefr": "A1",
+    "topic": "salutations",
+    "title": "Une nouvelle voisine",
+    "bodyFr": "Bonjour ! Je m'appelle Claire. J'ai vingt-cinq ans et je suis française. Aujourd'hui, c'est mon premier jour dans mon nouvel appartement. Mon voisin s'appelle Marc. Il est très sympa. Nous parlons un peu et il me présente sa famille. Je suis contente d'être ici.",
+    "questions": [
+      { "q": "Comment s'appelle la nouvelle voisine ?", "options": ["Claire", "Marc", "Sophie", "Julie"], "answer": 0 },
+      { "q": "Quel âge a-t-elle ?", "options": ["Vingt ans", "Vingt-cinq ans", "Trente ans", "Quinze ans"], "answer": 1 },
+      { "q": "Comment est le voisin, Marc ?", "options": ["Impoli", "Fatigué", "Sympa", "Occupé"], "answer": 2 }
+    ]
+  }
+]

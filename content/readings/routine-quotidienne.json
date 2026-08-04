@@ -1,0 +1,14 @@
+[
+  {
+    "id": "reading-routine-quotidienne-01",
+    "cefr": "A1",
+    "topic": "routine-quotidienne",
+    "title": "La journée de Paul",
+    "bodyFr": "Paul se réveille à sept heures. Il prend une douche, puis il prend son petit-déjeuner. Il boit du café et mange du pain avec du beurre. À huit heures, il part au travail en métro. Le soir, il rentre chez lui à dix-huit heures. Il dîne avec sa famille et il se couche à vingt-trois heures.",
+    "questions": [
+      { "q": "À quelle heure Paul se réveille-t-il ?", "options": ["Six heures", "Sept heures", "Huit heures", "Neuf heures"], "answer": 1 },
+      { "q": "Comment Paul va-t-il au travail ?", "options": ["En voiture", "À pied", "En métro", "À vélo"], "answer": 2 },
+      { "q": "Avec qui dîne-t-il ?", "options": ["Ses amis", "Ses collègues", "Sa famille", "Seul"], "answer": 2 }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "reading-livres-litterature-01",
+    "cefr": "B1",
+    "topic": "livres-litterature",
+    "title": "Le club de lecture",
+    "bodyFr": "Depuis deux ans, Amélie fait partie d'un club de lecture qui se réunit une fois par mois. Chaque membre propose un livre, et le groupe le lit avant de se retrouver pour en discuter autour d'un café. Le mois dernier, ils ont lu un roman policier qui a beaucoup plu à tout le monde, sauf à Amélie, qui a trouvé la fin trop prévisible. Elle a préféré un roman qu'ils avaient lu au printemps, une histoire d'amour se déroulant dans le Paris des années 1920. Grâce à ce club, elle a découvert des auteurs qu'elle n'aurait jamais choisis toute seule.",
+    "questions": [
+      { "q": "À quelle fréquence se réunit le club ?", "options": ["Chaque semaine", "Une fois par mois", "Deux fois par an", "Tous les jours"], "answer": 1 },
+      { "q": "Qu'a pensé Amélie du roman policier ?", "options": ["Elle l'a adoré", "Elle a trouvé la fin prévisible", "Elle ne l'a pas terminé", "Elle l'a trouvé trop court"], "answer": 1 },
+      { "q": "Quel type d'histoire se déroulait dans le Paris des années 1920 ?", "options": ["Un roman policier", "Un essai historique", "Une histoire d'amour", "Une biographie"], "answer": 2 }
+    ]
+  }
+]

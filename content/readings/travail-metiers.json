@@ -1,0 +1,14 @@
+[
+  {
+    "id": "reading-travail-metiers-01",
+    "cefr": "A2",
+    "topic": "travail-metiers",
+    "title": "Le nouveau métier de Sarah",
+    "bodyFr": "Sarah a changé de métier l'année dernière. Avant, elle était vendeuse dans un magasin de vêtements, mais elle n'aimait pas vraiment ce travail. Maintenant, elle est infirmière dans un hôpital. Elle travaille souvent la nuit et le week-end, mais elle adore aider les patients. Son salaire a un peu augmenté et elle se sent enfin utile. Ses collègues sont gentils et l'équipe s'entraide beaucoup.",
+    "questions": [
+      { "q": "Quel était le métier de Sarah avant ?", "options": ["Infirmière", "Vendeuse", "Professeure", "Cuisinière"], "answer": 1 },
+      { "q": "Où travaille-t-elle maintenant ?", "options": ["Dans une école", "Dans un magasin", "Dans un hôpital", "Dans un restaurant"], "answer": 2 },
+      { "q": "Pourquoi aime-t-elle son nouveau métier ?", "options": ["Le salaire est très élevé", "Elle travaille seule", "Elle aide les patients", "Les horaires sont faciles"], "answer": 2 }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "reading-politique-societe-01",
+    "cefr": "B2",
+    "topic": "politique-societe",
+    "title": "Le débat sur le vote obligatoire",
+    "bodyFr": "En France, le débat sur l'instauration d'un vote obligatoire revient régulièrement dans l'actualité, notamment face à la hausse constante de l'abstention. Les partisans de cette mesure estiment qu'elle renforcerait la légitimité des élus et obligerait les citoyens à s'informer davantage sur les enjeux politiques. Ses opposants, en revanche, considèrent que voter doit rester un droit et non une contrainte, et redoutent que des votes forcés ne se traduisent par des bulletins blancs ou nuls plutôt que par un choix réfléchi. Plusieurs pays, comme la Belgique ou l'Australie, appliquent déjà ce système avec des résultats contrastés. La question divise autant les responsables politiques que les citoyens eux-mêmes.",
+    "questions": [
+      { "q": "Pourquoi ce débat revient-il régulièrement ?", "options": ["À cause de la hausse de l'abstention", "À cause d'un scandale électoral", "À cause d'une nouvelle loi votée", "À cause des élections européennes"], "answer": 0 },
+      { "q": "Que craignent les opposants au vote obligatoire ?", "options": ["Une baisse de la participation", "Des votes blancs ou nuls", "Une hausse des impôts", "Un manque de candidats"], "answer": 1 },
+      { "q": "Quel pays est cité comme exemple d'application du vote obligatoire ?", "options": ["L'Allemagne", "L'Espagne", "La Belgique", "Le Canada"], "answer": 2 }
+    ]
+  }
+]

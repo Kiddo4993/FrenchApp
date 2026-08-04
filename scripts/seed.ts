@@ -11,6 +11,7 @@ import { UNITS, LESSONS } from "../src/content/curriculum";
 import { TOPICS } from "../src/content/topics";
 import {
   grammarUnitFileSchema,
+  readingFileSchema,
   verbFileSchema,
   vocabFileSchema,
 } from "../src/content/schema";
@@ -178,6 +179,31 @@ function seedGrammar(db: Tx) {
   console.log(`Seeded ${total} grammar points`);
 }
 
+function seedReadings(db: Tx) {
+  let total = 0;
+  for (const topic of TOPICS) {
+    const file = path.join(CONTENT_ROOT, "readings", `${topic.slug}.json`);
+    if (!fs.existsSync(file)) continue;
+    const passages = readingFileSchema.parse(readJson(file));
+    for (const passage of passages) {
+      const row = {
+        id: passage.id,
+        cefr: passage.cefr,
+        topic: passage.topic,
+        title: passage.title,
+        bodyFr: passage.bodyFr,
+        questions: passage.questions,
+      };
+      db.insert(schema.readingPassages)
+        .values(row)
+        .onConflictDoUpdate({ target: schema.readingPassages.id, set: row })
+        .run();
+      total++;
+    }
+  }
+  console.log(`Seeded ${total} reading passages`);
+}
+
 function seedProfileBootstrap(db: Tx) {
   db.insert(schema.profile)
     .values({ id: "singleton", name: "Apprenant", placementDone: false })
@@ -195,6 +221,7 @@ function main() {
     seedVocab(tx);
     seedVerbs(tx);
     seedGrammar(tx);
+    seedReadings(tx);
     seedProfileBootstrap(tx);
   });
   console.log("Seed complete.");

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "reading-philosophie-idees-abstraites-01",
+    "cefr": "C1",
+    "topic": "philosophie-idees-abstraites",
+    "title": "La liberté a-t-elle des limites ?",
+    "bodyFr": "La liberté individuelle occupe une place centrale dans les sociétés démocratiques, mais elle soulève une question aussi ancienne que la philosophie elle-même : où s'arrête ma liberté et où commence celle d'autrui ? Certains penseurs défendent une conception quasi absolue de la liberté, estimant que toute restriction, même minime, constitue une atteinte inacceptable à l'autonomie de l'individu. D'autres, à l'inverse, soutiennent que la liberté ne peut exister que dans un cadre partagé, régulé par des lois qui garantissent justement la coexistence pacifique des libertés de chacun. Cette tension traverse de nombreux débats contemporains, qu'il s'agisse de la liberté d'expression, du droit à la vie privée ou des obligations sanitaires collectives. Loin d'être tranchée, la question invite plutôt à repenser sans cesse l'équilibre entre autonomie personnelle et responsabilité envers autrui.",
+    "questions": [
+      { "q": "Quelle est la question centrale posée dans ce texte ?", "options": ["Comment abolir toute loi ?", "Où s'arrête ma liberté face à celle d'autrui ?", "Pourquoi la liberté n'existe-t-elle pas ?", "Comment mesurer le bonheur ?"], "answer": 1 },
+      { "q": "Que pensent les défenseurs d'une liberté quasi absolue ?", "options": ["Que toute restriction est acceptable", "Que la liberté doit être limitée par l'État", "Que toute restriction, même minime, est inacceptable", "Que la liberté n'a pas d'importance"], "answer": 2 },
+      { "q": "Selon le texte, la question de la liberté est-elle définitivement tranchée ?", "options": ["Oui, complètement", "Non, elle invite à un équilibre sans cesse repensé", "Oui, grâce à la loi", "Le texte ne le précise pas"], "answer": 1 }
+    ]
+  }
+]

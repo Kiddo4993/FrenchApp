@@ -1,0 +1,14 @@
+[
+  {
+    "id": "reading-environnement-climat-01",
+    "cefr": "B2",
+    "topic": "environnement-climat",
+    "title": "Les villes face à la chaleur",
+    "bodyFr": "Avec le réchauffement climatique, de nombreuses villes européennes doivent repenser leur urbanisme pour faire face aux vagues de chaleur de plus en plus fréquentes. Le béton et l'asphalte, qui absorbent et retiennent la chaleur, transforment certains quartiers en véritables îlots de chaleur urbains, où la température peut dépasser de plusieurs degrés celle des zones rurales voisines. Pour lutter contre ce phénomène, plusieurs municipalités misent sur la végétalisation : plantation d'arbres, création de parcs, toits et façades végétalisés. D'autres solutions, comme les revêtements clairs qui réfléchissent la lumière ou la multiplication des points d'eau, commencent également à se généraliser. Ces adaptations représentent un coût important, mais elles sont désormais jugées indispensables pour garantir la qualité de vie des habitants.",
+    "questions": [
+      { "q": "Qu'est-ce qu'un îlot de chaleur urbain ?", "options": ["Une zone rurale plus fraîche", "Un quartier où la température est plus élevée", "Un parc très arboré", "Une zone inondable"], "answer": 1 },
+      { "q": "Quelle solution est mentionnée pour lutter contre la chaleur ?", "options": ["Interdire les voitures", "La végétalisation", "Construire plus de béton", "Réduire l'éclairage public"], "answer": 1 },
+      { "q": "Comment ces adaptations sont-elles jugées ?", "options": ["Inutiles", "Trop coûteuses pour être envisagées", "Indispensables malgré leur coût", "Réservées aux grandes capitales"], "answer": 2 }
+    ]
+  }
+]

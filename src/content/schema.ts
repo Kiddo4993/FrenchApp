@@ -109,3 +109,13 @@ export const readingPassageSchema = z.object({
 export type ReadingPassage = z.infer<typeof readingPassageSchema>;
 
 export const readingFileSchema = z.array(readingPassageSchema);
+
+export const registerSwapEntrySchema = z.object({
+  id: z.string().min(1),
+  cefr: cefrLevel,
+  familierText: z.string().min(1),
+  soutenuAnswers: z.array(z.string().min(1)).min(1),
+});
+export type RegisterSwapEntry = z.infer<typeof registerSwapEntrySchema>;
+
+export const registerSwapFileSchema = z.array(registerSwapEntrySchema);

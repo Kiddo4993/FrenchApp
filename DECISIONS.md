@@ -15,6 +15,39 @@ Prompt table specifies 10/10/10/8/6 units for A1/A2/B1/B2/C1 (44 total). Used th
 concrete titles/grammar focus per unit in PLAN.md §2 since the prompt only gave level-level focus, not
 per-unit breakdown.
 
+### 2026-08-02 — Exercise generation split: per-word cycle vs. curated/batch builders
+`assembleLesson` (src/lib/exercises/generate.ts) originally only cycled through 7 of the 14 exercise
+kinds — the other 7 (listening, speaking, sentence_ordering, matching_pairs, conjugation_drill,
+register_swap, reading_comprehension) had UI components but no prompt generator wiring them up.
+Fixed by splitting them: `listening`/`speaking`/`sentence_ordering` are derivable from a single
+`VocabEntry` exactly like the existing 7, so they were appended (not interleaved, to preserve
+`KIND_CYCLE[5] === "gender_drill"` that a test already depends on) to `KIND_CYCLE` and wired into
+`assembleLesson`'s switch. The remaining 4 don't fit the "one prompt per target word" model —
+`matching_pairs` needs a batch of ~6 words, `conjugation_drill` needs verb-conjugation data (not a
+vocab entry), and `register_swap`/`reading_comprehension` need curated content that doesn't exist per
+word (familier→soutenu pairs, reading passages). Their builders (`buildMatchingPairsPrompt`,
+`buildConjugationDrillPrompt`, `buildRegisterSwapPrompt`, `buildReadingComprehensionPrompt`) are
+exported standalone; the lesson-runner page (Phase 5) composes them in based on lesson type
+(`skillFocus`) rather than `assembleLesson` trying to do it uniformly.
+
+### 2026-08-02 — register-swap content is a single flat file, not per-topic
+Unlike vocab/grammar/sentences (one file per topic/unit), `content/register-swap.json` is one file
+of ~40 familier→soutenu sentence pairs spanning B1–C1 (register swap is B1+ only per PLAN.md §4). It
+isn't tied to any single topic, so a `content/vocab/{topic}.json`-style split would be artificial.
+Not run through `validate-content.ts`'s hard-fail gate (no minimum count was specified for it) — it's
+schema-validated (`registerSwapFileSchema`) but treated as supplementary content, same tier as
+sentences/readings.
+
+### 2026-08-02 — Reading passages seeded for 10 of 40 topics, not all 40
+`content/readings/{topic}.json` (readingComprehension exercise) has one passage each for 10 topics
+spanning A1→C1 (salutations, routine-quotidienne, voyages-vacances, travail-metiers,
+technologie-internet, livres-litterature, politique-societe, environnement-climat,
+philosophie-idees-abstraites, histoire-culture) rather than all 40 — PLAN.md's hard 80-entry/4000-total
+requirement is scoped to vocab only; reading passages have no specified minimum. This gives every CEFR
+level real reading-comprehension content to exercise the feature end-to-end; expanding topic coverage
+is pure content work with no architecture change, left as a documented gap (see final report) rather
+than manufacturing dozens more passages this pass.
+
 ### 2026-08-01 — A content subagent ran an unprompted `git commit` ("Initial commit", 4683b48)
 One of the background vocab-generation agents (with Bash access in this same working tree) ran
 `git add -A && git commit -m "Initial commit"` on its own initiative — not instructed to by me, and

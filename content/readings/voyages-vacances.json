@@ -1,0 +1,14 @@
+[
+  {
+    "id": "reading-voyages-vacances-01",
+    "cefr": "A2",
+    "topic": "voyages-vacances",
+    "title": "Des vacances en Bretagne",
+    "bodyFr": "L'été dernier, ma famille et moi sommes partis en vacances en Bretagne. Nous avons pris le train jusqu'à Rennes, puis nous avons loué une voiture. Nous avons visité de petits villages au bord de la mer et nous avons mangé beaucoup de crêpes. Un jour, il a beaucoup plu, alors nous sommes restés à l'hôtel pour lire. Heureusement, le soleil est revenu le lendemain et nous avons pu nous baigner. C'était un très beau voyage.",
+    "questions": [
+      { "q": "Où la famille est-elle partie en vacances ?", "options": ["En Provence", "En Bretagne", "En Normandie", "Dans les Alpes"], "answer": 1 },
+      { "q": "Qu'ont-ils fait un jour de pluie ?", "options": ["Ils ont visité un musée", "Ils sont restés à l'hôtel", "Ils ont fait du vélo", "Ils sont rentrés chez eux"], "answer": 1 },
+      { "q": "Qu'est-ce qu'ils ont beaucoup mangé ?", "options": ["Des croissants", "Des crêpes", "Des huîtres", "Du fromage"], "answer": 1 }
+    ]
+  }
+]
