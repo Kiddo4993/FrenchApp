@@ -11,7 +11,7 @@ import { useExercise } from "../ExerciseContext";
  * grading via matchAnswer, wired into the shell's Check button / Enter key.
  */
 export function useTypedAnswer(promptId: string, acceptedAnswers: string[]) {
-  const { phase, submitAnswer, setChecker } = useExercise();
+  const { phase, submitAnswer, setChecker, hintUsed } = useExercise();
   const { ref, value, setValue, insert } = useAccentInput("");
 
   useEffect(() => {
@@ -31,5 +31,5 @@ export function useTypedAnswer(promptId: string, acceptedAnswers: string[]) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase, value, acceptedAnswers]);
 
-  return { ref, value, setValue, insert, disabled: phase !== "answering" };
+  return { ref, value, setValue, insert, disabled: phase !== "answering", hintUsed };
 }

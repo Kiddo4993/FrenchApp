@@ -1,12 +1,13 @@
 "use client";
 
 import type { FreeTranslationPrompt } from "@/types/exercise";
+import { HintReveal } from "./shared/HintReveal";
 import { SpeakerButton } from "./shared/SpeakerButton";
 import { TypedAnswerField } from "./shared/TypedAnswerField";
 import { useTypedAnswer } from "./shared/useTypedAnswer";
 
 export function FreeTranslationExercise({ prompt }: { prompt: FreeTranslationPrompt }) {
-  const { ref, value, setValue, insert, disabled } = useTypedAnswer(
+  const { ref, value, setValue, insert, disabled, hintUsed } = useTypedAnswer(
     prompt.id,
     prompt.acceptedAnswers,
   );
@@ -26,6 +27,7 @@ export function FreeTranslationExercise({ prompt }: { prompt: FreeTranslationPro
         placeholder="Votre réponse en français"
         disabled={disabled}
       />
+      <HintReveal hintUsed={hintUsed} acceptedAnswers={prompt.acceptedAnswers} />
     </div>
   );
 }

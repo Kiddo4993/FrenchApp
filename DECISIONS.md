@@ -15,6 +15,23 @@ Prompt table specifies 10/10/10/8/6 units for A1/A2/B1/B2/C1 (44 total). Used th
 concrete titles/grammar focus per unit in PLAN.md §2 since the prompt only gave level-level focus, not
 per-unit breakdown.
 
+### 2026-08-06 — Normalize DB rows to `VocabEntry` at the query/composition boundary
+Drizzle's SQLite select type marks nullable columns `T | null` (e.g. `vocabEntries.gender`), while
+the Zod-derived `VocabEntry` type the exercise-generation layer (`generate.ts`) is built against uses
+`T | undefined` for optional fields (`z.optional()`). Rather than loosening `VocabEntry` (which is
+also the content-authoring/validation type — loosening it would let `null` slip into seed JSON
+unnoticed) or loosening Drizzle's inferred type, `lesson-composer.ts` normalizes `null → undefined`
+once, right after the DB fetch. Any future code pulling `vocabEntries` rows into a function typed
+against `VocabEntry` will hit the same mismatch — normalize at that boundary rather than widening
+either type.
+
+### 2026-08-04 — Base UI polymorphism is `render={<X/>}`, not `asChild`
+Since shadcn's `button.tsx` etc. are generated on `@base-ui/react` (see the earlier Radix-vs-Base-UI
+decision), the polymorphic-render pattern is Base UI's `render` prop (`<Button render={<Link .../>}>`),
+not Radix's `asChild` + child-element pattern most shadcn examples/docs assume. Using `asChild` here
+type-errors (`ButtonProps` has no such field). Worth remembering for every future page that wants a
+link styled as a button, tab, or menu item.
+
 ### 2026-08-02 — `exerciseEvents` references `vocabEntries`, not `cards` (bug caught by smoke test)
 Wrote a throwaway script (`scripts/_smoke-test.ts`, deleted after use — not committed) that actually
 calls `submitExerciseResult`/`finalizeLessonSession` against the seeded DB instead of trusting

@@ -1,11 +1,12 @@
 "use client";
 
 import type { RegisterSwapPrompt } from "@/types/exercise";
+import { HintReveal } from "./shared/HintReveal";
 import { TypedAnswerField } from "./shared/TypedAnswerField";
 import { useTypedAnswer } from "./shared/useTypedAnswer";
 
 export function RegisterSwapExercise({ prompt }: { prompt: RegisterSwapPrompt }) {
-  const { ref, value, setValue, insert, disabled } = useTypedAnswer(
+  const { ref, value, setValue, insert, disabled, hintUsed } = useTypedAnswer(
     prompt.id,
     prompt.acceptedSoutenuAnswers,
   );
@@ -24,6 +25,7 @@ export function RegisterSwapExercise({ prompt }: { prompt: RegisterSwapPrompt })
         placeholder="Version soutenue"
         disabled={disabled}
       />
+      <HintReveal hintUsed={hintUsed} acceptedAnswers={prompt.acceptedSoutenuAnswers} />
     </div>
   );
 }

@@ -3,10 +3,11 @@
 import type { ClozePrompt } from "@/types/exercise";
 import { Input } from "@/components/ui/input";
 import { AccentBar } from "./shared/AccentBar";
+import { HintReveal } from "./shared/HintReveal";
 import { useTypedAnswer } from "./shared/useTypedAnswer";
 
 export function ClozeExercise({ prompt }: { prompt: ClozePrompt }) {
-  const { ref, value, setValue, insert, disabled } = useTypedAnswer(
+  const { ref, value, setValue, insert, disabled, hintUsed } = useTypedAnswer(
     prompt.id,
     prompt.acceptedAnswers,
   );
@@ -31,6 +32,7 @@ export function ClozeExercise({ prompt }: { prompt: ClozePrompt }) {
         <span>{prompt.after}</span>
       </p>
       <AccentBar onInsert={insert} />
+      <HintReveal hintUsed={hintUsed} acceptedAnswers={prompt.acceptedAnswers} />
     </div>
   );
 }

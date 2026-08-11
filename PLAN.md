@@ -240,16 +240,19 @@ celebration. Full keyboard support (Enter to check/continue, 1–4 to pick optio
 - [x] Phase 0 — PLAN.md, DECISIONS.md
 - [x] Phase 1 — Scaffold Next.js 15 + TS strict, Tailwind, shadcn/ui, Drizzle schema + migrations,
       `scripts/validate-content.ts`
-- [ ] Phase 2 — Content: vocab bank (≥80/topic, 4,000+ total), sentences, grammar notes, verb tables
-      + conjugation engine
-- [ ] Phase 3 — FSRS engine + unit tests (no UI)
-- [ ] Phase 4 — Exercise components + `<ExerciseShell>`
-- [ ] Phase 5 — Lesson runner + session results screen
-- [ ] Phase 6 — Skill tree, XP, levels, unlocking
-- [ ] Phase 7 — Streaks, achievements, daily goals, placement test
+- [x] Phase 2 — Content: vocab bank (40/40 topics, 4,406 entries), grammar notes (44 units), verb
+      tables (120 verbs) + conjugation engine. Sentences/readings/register-swap supplementary content
+      partially seeded (10/40 reading topics) — see DECISIONS.md.
+- [x] Phase 3 — FSRS engine + unit tests (no UI)
+- [x] Phase 4 — Exercise components + `<ExerciseShell>` (all 14 types, generation wired + crown gating)
+- [x] Phase 5 — Lesson runner + session results screen (SRS grading, XP, streaks, unlocking,
+      achievements all wired end-to-end; verified live in-browser, not just typecheck)
+- [x] Phase 6 — Skill tree, XP, levels, unlocking (home page; unit mastery/crack computed live)
+- [ ] Phase 7 — Streaks, achievements, daily goals, placement test (engine + data model done;
+      dedicated UI pages pending)
 - [ ] Phase 8 — Grammar section + conjugation trainer
 - [ ] Phase 9 — Dashboard & analytics
-- [ ] Phase 10 — Audio/TTS layer + speaking exercises
+- [x] Phase 10 — Audio/TTS layer + speaking exercises
 - [ ] Phase 11 — Polish pass: animations, sounds, dark mode, keyboard shortcuts, empty states, favicon
 - [ ] Phase 12 — Seed realistic demo profile (week 1 / 12 / 52 snapshots)
 

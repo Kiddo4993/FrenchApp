@@ -3,6 +3,10 @@ import { and, asc, eq, inArray, isNotNull, lte, ne } from "drizzle-orm";
 import { db } from "@/db/client";
 import * as schema from "@/db/schema";
 import { UNITS_SORTED, unitGlobalOrder } from "@/content/curriculum";
+import { currentRetrievability } from "@/lib/srs";
+import type { CardSnapshot } from "@/lib/srs/types";
+
+const CRACK_THRESHOLD = 0.7;
 
 const PROFILE_ID = "singleton";
 
@@ -24,13 +28,27 @@ export async function getDueCardCount(now: Date = new Date()) {
   return due.length;
 }
 
+/**
+ * Mean current FSRS retrievability across a unit's recognition-track cards. Units visibly "crack"
+ * (gold → cracked gold, PLAN.md §5) once this drops below 70% — computed fresh on every read
+ * rather than persisted, so it's never stale.
+ */
+function unitMastery(vocabIds: Set<string>, cards: (typeof schema.cards.$inferSelect)[], now: Date): number | null {
+  const relevant = cards.filter((c) => c.track === "recognition" && c.vocabId && vocabIds.has(c.vocabId));
+  if (relevant.length === 0) return null;
+  const total = relevant.reduce((sum, c) => sum + currentRetrievability(c as CardSnapshot, now), 0);
+  return total / relevant.length;
+}
+
 /** Skill tree data: every unit (curriculum order) with its lessons, joined to this profile's progress. */
 export async function getSkillTree() {
-  const [units, lessons, unitProgressRows, lessonProgressRows] = await Promise.all([
+  const [units, lessons, unitProgressRows, lessonProgressRows, vocab, cards] = await Promise.all([
     db.select().from(schema.units),
     db.select().from(schema.lessons),
     db.select().from(schema.unitProgress),
     db.select().from(schema.lessonProgress),
+    db.select({ id: schema.vocabEntries.id, topic: schema.vocabEntries.topic }).from(schema.vocabEntries),
+    db.select().from(schema.cards),
   ]);
 
   const unitProgressByUnit = new Map(unitProgressRows.map((p) => [p.unitId, p]));
@@ -41,19 +59,39 @@ export async function getSkillTree() {
     arr.push(l);
     lessonsByUnit.set(l.unitId, arr);
   }
+  const vocabIdsByTopic = new Map<string, Set<string>>();
+  for (const v of vocab) {
+    const set = vocabIdsByTopic.get(v.topic) ?? new Set<string>();
+    set.add(v.id);
+    vocabIdsByTopic.set(v.topic, set);
+  }
 
   const unitsById = new Map(units.map((u) => [u.id, u]));
   const orderedUnits = UNITS_SORTED.map((def) => unitsById.get(def.slug)).filter(
     (u): u is NonNullable<typeof u> => Boolean(u),
   );
+  const now = new Date();
 
-  return orderedUnits.map((unit) => ({
-    unit,
-    progress: unitProgressByUnit.get(unit.id) ?? null,
-    lessons: (lessonsByUnit.get(unit.id) ?? [])
-      .sort((a, b) => a.order - b.order)
-      .map((lesson) => ({ lesson, progress: lessonProgressByLesson.get(lesson.id) ?? null })),
-  }));
+  return orderedUnits.map((unit) => {
+    const progress = unitProgressByUnit.get(unit.id) ?? null;
+    let isCracked = false;
+    if (progress?.status === "gold") {
+      const vocabIds = new Set<string>();
+      for (const topic of unit.topics) {
+        for (const id of vocabIdsByTopic.get(topic) ?? []) vocabIds.add(id);
+      }
+      const mastery = unitMastery(vocabIds, cards, now);
+      isCracked = mastery !== null && mastery < CRACK_THRESHOLD;
+    }
+    return {
+      unit,
+      progress,
+      isCracked,
+      lessons: (lessonsByUnit.get(unit.id) ?? [])
+        .sort((a, b) => a.order - b.order)
+        .map((lesson) => ({ lesson, progress: lessonProgressByLesson.get(lesson.id) ?? null })),
+    };
+  });
 }
 
 export async function getUnitBySlug(slug: string) {
@@ -66,6 +104,11 @@ export async function getLessonBySlug(slug: string) {
   if (!lesson) return null;
   const unit = await getUnitBySlug(lesson.unitId);
   return { lesson, unit };
+}
+
+export async function getLessonProgress(lessonId: string) {
+  const [progress] = await db.select().from(schema.lessonProgress).where(eq(schema.lessonProgress.lessonId, lessonId));
+  return progress ?? null;
 }
 
 export async function getVocabForTopics(topics: string[], maxCefr?: string) {

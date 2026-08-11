@@ -17,6 +17,8 @@ export interface ExerciseShellProps {
   children: React.ReactNode;
   /** whether a hint affordance should be offered at all for this prompt */
   hintAvailable?: boolean;
+  /** rendered before the progress bar in the same row, e.g. a "quit lesson" close button */
+  headerLeft?: React.ReactNode;
 }
 
 export function ExerciseShell({
@@ -25,6 +27,7 @@ export function ExerciseShell({
   onComplete,
   children,
   hintAvailable = false,
+  headerLeft,
 }: ExerciseShellProps) {
   const [phase, setPhase] = useState<ExercisePhase>("answering");
   const [hintUsed, setHintUsed] = useState(false);
@@ -96,6 +99,7 @@ export function ExerciseShell({
     <ExerciseContext.Provider value={contextValue}>
       <div className="flex min-h-full flex-col">
         <div className="flex items-center gap-3 px-4 py-3">
+          {headerLeft}
           <Progress value={pct} className="flex-1" aria-label="Progression de la leçon" />
           {hintAvailable && phase === "answering" && (
             <button

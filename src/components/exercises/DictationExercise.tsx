@@ -5,11 +5,12 @@ import { Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSpeak } from "@/hooks/useSpeak";
 import type { DictationPrompt } from "@/types/exercise";
+import { HintReveal } from "./shared/HintReveal";
 import { TypedAnswerField } from "./shared/TypedAnswerField";
 import { useTypedAnswer } from "./shared/useTypedAnswer";
 
 export function DictationExercise({ prompt }: { prompt: DictationPrompt }) {
-  const { ref, value, setValue, insert, disabled } = useTypedAnswer(
+  const { ref, value, setValue, insert, disabled, hintUsed } = useTypedAnswer(
     prompt.id,
     prompt.acceptedAnswers,
   );
@@ -44,6 +45,7 @@ export function DictationExercise({ prompt }: { prompt: DictationPrompt }) {
         placeholder="Ce que vous avez entendu"
         disabled={disabled}
       />
+      <HintReveal hintUsed={hintUsed} acceptedAnswers={prompt.acceptedAnswers} />
     </div>
   );
 }

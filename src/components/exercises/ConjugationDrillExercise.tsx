@@ -1,11 +1,12 @@
 "use client";
 
 import type { ConjugationDrillPrompt } from "@/types/exercise";
+import { HintReveal } from "./shared/HintReveal";
 import { TypedAnswerField } from "./shared/TypedAnswerField";
 import { useTypedAnswer } from "./shared/useTypedAnswer";
 
 export function ConjugationDrillExercise({ prompt }: { prompt: ConjugationDrillPrompt }) {
-  const { ref, value, setValue, insert, disabled } = useTypedAnswer(
+  const { ref, value, setValue, insert, disabled, hintUsed } = useTypedAnswer(
     prompt.id,
     prompt.acceptedAnswers,
   );
@@ -27,6 +28,7 @@ export function ConjugationDrillExercise({ prompt }: { prompt: ConjugationDrillP
           disabled={disabled}
         />
       </div>
+      <HintReveal hintUsed={hintUsed} acceptedAnswers={prompt.acceptedAnswers} />
     </div>
   );
 }

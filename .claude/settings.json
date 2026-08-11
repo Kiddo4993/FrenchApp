@@ -26,11 +26,19 @@
       "Bash(rm -f data/maitrise.db* && npm run seed 2>&1 | tail -12)",
       "Bash(git checkout *)",
       "Bash(rm -f drizzle/meta/0001_snapshot.json drizzle/0001_*.sql)",
-      "Bash(rm -f data/maitrise.db* && npm run seed 2>&1 | tail -12 && echo \"---SMOKE TEST---\" && npx tsx scripts/_smoke-test.ts 2>&1 | tail -150)"
+      "Bash(rm -f data/maitrise.db* && npm run seed 2>&1 | tail -12 && echo \"---SMOKE TEST---\" && npx tsx scripts/_smoke-test.ts 2>&1 | tail -150)",
+      "Bash(mkdir -p /Users/dylanduan/Desktop/frenchapp/src/app/\\\\\\(app\\\\\\) /Users/dylanduan/Desktop/frenchapp/src/app/lecon/\\\\[lessonId\\\\] /Users/dylanduan/Desktop/frenchapp/src/components/nav && echo ok)",
+      "Bash(rm -f data/maitrise.db* && npm run seed 2>&1 | tail -5)",
+      "Bash(tail -80 /tmp/maitrise-dev.log 2>&1)",
+      "Read(//tmp/**)",
+      "Bash(npx playwright *)",
+      "Bash(node \"/private/tmp/claude-501/-Users-dylanduan-Desktop-frenchapp/f77e145c-1b63-474c-b2c4-215ef72cc3d3/scratchpad/visual-check.mjs\")",
+      "Bash(node scripts/_visual-check.mjs)"
     ],
     "additionalDirectories": [
       "/Users/dylanduan/Desktop/frenchapp/data",
-      "/tmp"
+      "/tmp",
+      "/Users/dylanduan/Desktop/frenchapp/src/app/lecon"
     ]
   }
 }
