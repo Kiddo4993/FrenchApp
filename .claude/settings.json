@@ -62,7 +62,11 @@
       "Bash(/usr/bin/python3 /private/tmp/claude-501/-Users-dylanduan-Desktop-frenchapp/f77e145c-1b63-474c-b2c4-215ef72cc3d3/scratchpad/e2e_check.py)",
       "Bash(rm -f /Users/dylanduan/Desktop/frenchapp/data/maitrise.db* && npm run seed 2>&1 | tail -5)",
       "Bash(rm -f /Users/dylanduan/Desktop/frenchapp/data/maitrise.db* && npm run seed 2>&1 | tail -3 && npx tsx scripts/seed-demo.ts 2>&1 | tail -80)",
-      "Bash(/usr/bin/python3 /private/tmp/claude-501/-Users-dylanduan-Desktop-frenchapp/f77e145c-1b63-474c-b2c4-215ef72cc3d3/scratchpad/e2e_placement.py)"
+      "Bash(/usr/bin/python3 /private/tmp/claude-501/-Users-dylanduan-Desktop-frenchapp/f77e145c-1b63-474c-b2c4-215ef72cc3d3/scratchpad/e2e_placement.py)",
+      "Bash(grep -n \"Normalize DB rows to \\\\`VocabEntry\\\\`\" /Users/dylanduan/Desktop/frenchapp/DECISIONS.md)",
+      "Bash(git -C /Users/dylanduan/Desktop/frenchapp add -A)",
+      "Bash(git -C /Users/dylanduan/Desktop/frenchapp commit -q -m \"Fix production build: force-dynamic on all user-state routes \\(were being statically frozen at build time\\), clean up lint errors\")",
+      "Bash(git -C /Users/dylanduan/Desktop/frenchapp log --oneline)"
     ],
     "additionalDirectories": [
       "/Users/dylanduan/Desktop/frenchapp/data",

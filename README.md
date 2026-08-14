@@ -43,9 +43,22 @@ npm run dev     # http://localhost:3000
   `topics.ts` (the 40 canonical topics), `curriculum.ts` (the 44 CEFR units and their lesson nodes),
   `schema.ts` (Zod schemas mirroring the DB shape, used by both the validator and any authoring
   tooling).
-- **FSRS spaced-repetition engine**, **exercise engine**, **skill tree/XP/streaks**, **grammar
-  system**, **dashboard**, and **audio/TTS layer** are documented in PLAN.md §§4–7 and land in later
-  build phases — check PLAN.md's checkboxes for current status.
+- **FSRS spaced-repetition engine** (`src/lib/srs/`) — stability/difficulty/retrievability, four
+  independent tracks (recognition/production/listening/spelling), leech detection, grade inferred
+  from correctness + latency + hint usage (never self-graded). See PLAN.md §4.
+- **Exercise engine** (`src/lib/exercises/generate.ts` + `src/components/exercises/`) — all 14
+  exercise kinds, crown-level gating (`CROWN_KIND_TIERS`), shared `<ExerciseShell>` contract.
+- **Server layer** (`src/server/`) — `queries.ts`/`*-queries.ts` for reads (Server Components call
+  these directly, no API routes), `actions.ts` for mutations (`"use server"`, called from Client
+  Components). `lesson-composer.ts` and `review-composer.ts` assemble a lesson/review session's
+  exercise list from due + new cards; `achievement-stats.ts` aggregates the counters the 41
+  achievements (`src/content/achievements.ts`) check against.
+- **Routes**: `/` (skill tree home), `/lecon/[lessonId]` and `/reviser` (focused, no nav chrome —
+  the actual exercise-taking sessions), `/placement` (first-launch adaptive test), `/grammaire` +
+  `/grammaire/[slug]` (reference), `/conjugaison` (trainer), `/progres` (dashboard), `/reglages`
+  (settings), `/succes` (achievements gallery).
+- **Audio/TTS** (`src/lib/audio/`) — Web Speech API behind a small interface so a paid provider can
+  be swapped in later without touching call sites.
 
 ## Content-authoring guide
 

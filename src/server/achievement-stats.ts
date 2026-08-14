@@ -1,5 +1,5 @@
 import "server-only";
-import { and, desc, eq, ne } from "drizzle-orm";
+import { desc, eq, ne } from "drizzle-orm";
 import { db } from "@/db/client";
 import * as schema from "@/db/schema";
 import type { AchievementStats } from "@/lib/achievements/evaluate";

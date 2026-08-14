@@ -16,7 +16,6 @@ import {
   getLessonBySlug,
   getReadingPassageForTopic,
   getRecognitionCardsForVocab,
-  getUnitBySlug,
   getVerbs,
   getVocabForTopics,
 } from "./queries";

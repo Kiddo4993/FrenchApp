@@ -3,6 +3,11 @@ import { xpProgress } from "@/lib/progression/xp";
 import { ensureBootstrapProgress } from "@/server/actions";
 import { getDueCardCount, getProfileBundle } from "@/server/queries";
 
+// Every page under this layout reads live, mutable user-state (profile/cards/progress/settings).
+// Without this, `next build` prerenders them once as static HTML and `npm start` would then serve
+// that frozen snapshot forever instead of the learner's actual current data. See DECISIONS.md.
+export const dynamic = "force-dynamic";
+
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
   await ensureBootstrapProgress();
   const [{ userStats, settings }, dueCount] = await Promise.all([getProfileBundle(), getDueCardCount()]);

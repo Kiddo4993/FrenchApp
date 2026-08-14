@@ -329,7 +329,7 @@ export async function finalizeLessonSession(
   return { ...outcome, crownLevel, unitUnlocked };
 }
 
-export interface ReviewSessionSummary extends SessionOutcomeBase {}
+export type ReviewSessionSummary = SessionOutcomeBase;
 
 /** Cross-topic spaced-repetition review session (the "Réviser" tab) — same XP/streak/achievement
  * bookkeeping as a lesson, but with no single lesson/unit to attach crown or unlock progress to. */

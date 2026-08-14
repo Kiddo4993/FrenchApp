@@ -15,6 +15,48 @@ Prompt table specifies 10/10/10/8/6 units for A1/A2/B1/B2/C1 (44 total). Used th
 concrete titles/grammar focus per unit in PLAN.md §2 since the prompt only gave level-level focus, not
 per-unit breakdown.
 
+### 2026-08-14 — `npm run build` caught pages statically prerendered at build time (real bug)
+Neither `tsc --noEmit` nor `next dev` (which always renders on-demand) surfaced this — only the
+actual production build did. Next's App Router defaults a route to **static** prerendering unless it
+uses a dynamic API (cookies/headers/searchParams) or `dynamic = "force-dynamic"`. None of this app's
+Server Components use those APIs — they just call async DB query functions — so `next build` had
+silently prerendered `/`, `/progres`, `/reglages`, `/succes`, `/grammaire`, `/conjugaison`, `/reviser`
+as static HTML frozen at build time. Under `npm run build && npm start` (not `next dev`, which this
+never affects) the learner would see whatever DB state existed *at build time* forever — XP, streak,
+skill tree, everything — never their actual live progress. Fixed by adding
+`export const dynamic = "force-dynamic"` to `src/app/(app)/layout.tsx` (cascades to every page under
+the app shell) and explicitly to `/reviser`, `/placement`, `/lecon/[lessonId]` too, since every route
+here reads mutable per-user state and none of it should ever be build-time-frozen.
+**Lesson: `next build` output is worth reading, not just a pass/fail signal — the route table
+(○ Static vs ƒ Dynamic) told the real story here.**
+
+### 2026-08-13 — Demo seed script: two more FK/uniqueness bugs caught by actually running it
+`scripts/seed-demo.ts` (simulates ~1 year of usage with the real FSRS/XP/streak algorithms, backdated)
+hit two bugs only visible at runtime, both the same category as the exerciseEvents fix above:
+1. `reviewLogs.cardId` is a real FK to `cards.id` (a UUID the DB only assigns on insert) — the
+   script was passing `vocabId` there. Fixed by generating each simulated card's UUID up front
+   (`SimCard.id`) so review-log rows created throughout the year-long loop can reference it before
+   the `cards` row itself is bulk-inserted at the end.
+2. `session_logs.date` is UNIQUE, but `dateAt()`'s local `setHours()` combined with UTC-day
+   arithmetic can map two different simulated days to the same ISO date string around very
+   early/late simulated hours. Fixed by keying session-log accumulation in a `Map<date, …>` and
+   merging same-date entries instead of assuming one push per simulated day is always a distinct row.
+Also retuned daily new-word/review volume downward after the first successful run produced an
+unrealistic level ~150 (100·xp^1.5 curve) — landed on ~level 90 after a year, closer to a very
+dedicated "Intense" (200 XP/day) user than a numerically-absurd one.
+
+### 2026-08-06 — Grammar section + conjugation trainer (delegated build)
+Built by a background agent against the same conventions as the rest of the app (Server Components
+for data, Base UI's `render` prop, null→undefined normalization at DB boundaries). Notable calls:
+query helpers for both the grammar reference and the conjugation trainer live in one new
+`src/server/grammar-queries.ts` (task scope was the whole vertical slice, not two files); the
+conjugation trainer bulk-loads all ~120 verbs' conjugations (2 queries) once server-side rather than
+per-verb fetches, since the data volume is trivial for a local single-user app; verb/tense pickers use
+`<Select>` for both (not `<Tabs>`, which fought the accuracy-matrix layout at 390px); the
+accuracy-per-tense matrix persists across verb switches (keyed by tense only, matching PLAN.md's
+literal wording); "timed drilling" was interpreted as continuous rapid-fire flashcards rather than a
+countdown-timer UI, consistent with the app's "restrained celebration" design direction (PLAN.md §8).
+
 ### 2026-08-06 — Normalize DB rows to `VocabEntry` at the query/composition boundary
 Drizzle's SQLite select type marks nullable columns `T | null` (e.g. `vocabEntries.gender`), while
 the Zod-derived `VocabEntry` type the exercise-generation layer (`generate.ts`) is built against uses

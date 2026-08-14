@@ -4,6 +4,9 @@ import { LessonRunner } from "@/components/lesson/LessonRunner";
 import { composeLessonSession } from "@/server/lesson-composer";
 import { getLessonProgress } from "@/server/queries";
 
+// The dynamic [lessonId] segment already forces on-demand rendering; explicit for consistency/clarity.
+export const dynamic = "force-dynamic";
+
 export default async function LessonPage({
   params,
 }: {

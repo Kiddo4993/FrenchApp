@@ -3,6 +3,9 @@ import Link from "next/link";
 import { ReviewRunner } from "@/components/lesson/ReviewRunner";
 import { composeReviewSession } from "@/server/review-composer";
 
+// Builds the due/new-card queue fresh from the DB every visit — must never be statically cached.
+export const dynamic = "force-dynamic";
+
 export default async function ReviserPage() {
   const { prompts, wordCount } = await composeReviewSession();
 

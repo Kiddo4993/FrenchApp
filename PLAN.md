@@ -248,12 +248,19 @@ celebration. Full keyboard support (Enter to check/continue, 1–4 to pick optio
 - [x] Phase 5 — Lesson runner + session results screen (SRS grading, XP, streaks, unlocking,
       achievements all wired end-to-end; verified live in-browser, not just typecheck)
 - [x] Phase 6 — Skill tree, XP, levels, unlocking (home page; unit mastery/crack computed live)
-- [ ] Phase 7 — Streaks, achievements, daily goals, placement test (engine + data model done;
-      dedicated UI pages pending)
-- [ ] Phase 8 — Grammar section + conjugation trainer
-- [ ] Phase 9 — Dashboard & analytics
+- [x] Phase 7 — Streaks, achievements (41, `/succes`), daily goals, placement test (`/placement`,
+      adaptive 20-question), settings (`/reglages`) — streak repair, hearts toggle (default OFF),
+      target retention, new-cards/day, theme, reduced-motion override
+- [x] Phase 8 — Grammar section (`/grammaire` + search + detail pages) + conjugation trainer
+      (`/conjugaison`, accuracy-per-tense matrix + full reference table)
+- [x] Phase 9 — Dashboard & analytics (`/progres`): words known, retention curve, accuracy by
+      exercise kind, grammar-accuracy (honest empty state — grammar isn't SRS-linked yet), study
+      heatmap, weakest 20 words, 30/90/365-day vocab projection
 - [x] Phase 10 — Audio/TTS layer + speaking exercises
-- [ ] Phase 11 — Polish pass: animations, sounds, dark mode, keyboard shortcuts, empty states, favicon
-- [ ] Phase 12 — Seed realistic demo profile (week 1 / 12 / 52 snapshots)
+- [x] Phase 11 — Polish pass: favicon (custom `icon.tsx`/`apple-icon.tsx`), dark mode (next-themes,
+      persisted), keyboard shortcuts (Enter/1-4 throughout), reduced-motion (OS-level + explicit
+      settings override), empty states (skill tree, review queue, placement, dashboard panels)
+- [x] Phase 12 — Seed realistic demo profile (`npm run seed:demo`) — ~1 year backdated simulation
+      using the real FSRS/XP/streak algorithms, week 1/12/52 checkpoints logged to console
 
 Each phase ends with: typecheck → tests → git commit → PLAN.md checkbox update.
