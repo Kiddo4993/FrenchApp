@@ -33,12 +33,42 @@
       "Read(//tmp/**)",
       "Bash(npx playwright *)",
       "Bash(node \"/private/tmp/claude-501/-Users-dylanduan-Desktop-frenchapp/f77e145c-1b63-474c-b2c4-215ef72cc3d3/scratchpad/visual-check.mjs\")",
-      "Bash(node scripts/_visual-check.mjs)"
+      "Bash(node scripts/_visual-check.mjs)",
+      "Bash(curl -s http://localhost:3001/reviser)",
+      "Bash(node -e \"const {fr} = require\\('/Users/dylanduan/Desktop/frenchapp/node_modules/date-fns/locale'\\); console.log\\(typeof fr\\)\")",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(mkdir -p \"/Users/dylanduan/Desktop/frenchapp/src/app/\\(app\\)/grammaire/[slug]\" \"/Users/dylanduan/Desktop/frenchapp/src/app/\\(app\\)/conjugaison\")",
+      "Bash(git -C /Users/dylanduan/Desktop/frenchapp diff src/server/actions.ts)",
+      "Bash(cp /tmp/render-icon.mjs /Users/dylanduan/Desktop/frenchapp/scripts/_render-icon.mjs)",
+      "Bash(node scripts/_render-icon.mjs)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/grammaire)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/conjugaison)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/grammaire/present-etre)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/grammaire/does-not-exist-xyz)",
+      "Bash(/usr/local/bin/node -e \"console.log\\('hi'\\)\")",
+      "Bash(curl -s http://localhost:3000/grammaire)",
+      "Bash(curl -s http://localhost:3000/grammaire/present-etre)",
+      "Bash(/usr/local/bin/node -e ' *)",
+      "Bash(curl -s http://localhost:3000/conjugaison)",
+      "Bash(curl -s http://localhost:3000/conjugaison -o /private/tmp/claude-501/-Users-dylanduan-Desktop-frenchapp/f77e145c-1b63-474c-b2c4-215ef72cc3d3/scratchpad/conj.html)",
+      "Bash(lsof -iTCP -sTCP:LISTEN -P)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/progres --max-time 15)",
+      "Bash(/usr/local/bin/python3 -c \"import playwright; print\\('ok'\\)\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/grammaire/maitrise-du-changement-de-registre)",
+      "Bash(curl -s http://localhost:3000/grammaire/maitrise-du-changement-de-registre)",
+      "Read(//usr/bin/**)",
+      "Bash(/usr/bin/python3 -c \"import playwright; print\\('ok'\\)\")",
+      "Bash(curl -s http://localhost:3000/progres --max-time 15 -o /private/tmp/claude-501/-Users-dylanduan-Desktop-frenchapp/f77e145c-1b63-474c-b2c4-215ef72cc3d3/scratchpad/progres.html)",
+      "Bash(/usr/bin/python3 /private/tmp/claude-501/-Users-dylanduan-Desktop-frenchapp/f77e145c-1b63-474c-b2c4-215ef72cc3d3/scratchpad/e2e_check.py)",
+      "Bash(rm -f /Users/dylanduan/Desktop/frenchapp/data/maitrise.db* && npm run seed 2>&1 | tail -5)",
+      "Bash(rm -f /Users/dylanduan/Desktop/frenchapp/data/maitrise.db* && npm run seed 2>&1 | tail -3 && npx tsx scripts/seed-demo.ts 2>&1 | tail -80)",
+      "Bash(/usr/bin/python3 /private/tmp/claude-501/-Users-dylanduan-Desktop-frenchapp/f77e145c-1b63-474c-b2c4-215ef72cc3d3/scratchpad/e2e_placement.py)"
     ],
     "additionalDirectories": [
       "/Users/dylanduan/Desktop/frenchapp/data",
       "/tmp",
-      "/Users/dylanduan/Desktop/frenchapp/src/app/lecon"
+      "/Users/dylanduan/Desktop/frenchapp/src/app/lecon",
+      "/Users/dylanduan/Desktop/frenchapp/src/app/(app)/grammaire"
     ]
   }
 }

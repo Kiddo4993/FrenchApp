@@ -39,7 +39,10 @@ function rowToSnapshot(row: typeof schema.cards.$inferSelect): CardSnapshot {
  * progress are settled once at lesson end by `finalizeLessonSession`, not per exercise.
  */
 export async function submitExerciseResult(input: {
-  lessonId: string;
+  /** Omit for a cross-topic review session (`/reviser`) — there's no single lesson row to attach
+   * to and `exerciseEvents.lessonId` has a real FK to `lessons.id`, unlike `vocabId` (see
+   * DECISIONS.md) — a placeholder string here would violate the constraint. */
+  lessonId?: string;
   cardId?: string;
   kind: ExerciseKind;
   correct: boolean;
@@ -52,7 +55,7 @@ export async function submitExerciseResult(input: {
     kind: input.kind,
     correct: input.correct,
     vocabId: input.cardId ?? null,
-    lessonId: input.lessonId,
+    lessonId: input.lessonId ?? null,
   });
 
   const track = trackForKind(input.kind);
@@ -189,30 +192,39 @@ async function unlockNext(unitId: string, lessonOrder: number, lessonKind: strin
   return false;
 }
 
-export async function finalizeLessonSession(
-  lessonId: string,
-  crownLevelAttempted: number,
-  results: { kind: ExerciseKind; correct: boolean }[],
-): Promise<LessonSessionSummary> {
-  const now = new Date();
-  const [lesson] = await db.select().from(schema.lessons).where(eq(schema.lessons.id, lessonId));
-  if (!lesson) throw new Error(`Unknown lesson "${lessonId}"`);
+interface SessionOutcomeBase {
+  xpEarned: number;
+  accuracy: number;
+  correctCount: number;
+  totalCount: number;
+  leveledUp: boolean;
+  newLevel: number;
+  currentStreak: number;
+  newlyUnlockedAchievements: LessonSessionSummary["newlyUnlockedAchievements"];
+}
 
+/**
+ * Shared by `finalizeLessonSession` and `finalizeReviewSession`: awards XP, advances the streak,
+ * logs today's session, and checks achievements. Lesson/unit progress (crowns, unlocking) is
+ * lesson-specific and layered on top by the caller — a cross-topic review session has no single
+ * lesson row to attach that to.
+ */
+async function applyXpStreakAndAchievements(
+  now: Date,
+  results: { kind: ExerciseKind; correct: boolean }[],
+  xpSource: "exercise" | "perfect_lesson" | "boss",
+): Promise<SessionOutcomeBase> {
   const xpEarned = xpForLesson(results);
   const correctCount = results.filter((r) => r.correct).length;
   const totalCount = results.length;
   const accuracy = totalCount > 0 ? correctCount / totalCount : 0;
-  const isPerfect = totalCount > 0 && correctCount === totalCount;
 
   const [statsRow] = await db.select().from(schema.userStats).where(eq(schema.userStats.id, PROFILE_ID));
   const oldLevel = statsRow?.level ?? 1;
   const newTotalXp = (statsRow?.totalXp ?? 0) + xpEarned;
   const newLevel = levelForTotalXp(newTotalXp);
 
-  await db.insert(schema.xpEvents).values({
-    amount: xpEarned,
-    source: lesson.kind === "boss" ? "boss" : isPerfect ? "perfect_lesson" : "exercise",
-  });
+  await db.insert(schema.xpEvents).values({ amount: xpEarned, source: xpSource });
 
   const streakState: StreakState = {
     currentStreak: statsRow?.currentStreak ?? 0,
@@ -250,26 +262,6 @@ export async function finalizeLessonSession(
     await db.insert(schema.sessionLogs).values({ date: today, exercisesCompleted: totalCount, minutesStudied: minutesEstimate });
   }
 
-  const [existingLessonProgress] = await db
-    .select()
-    .from(schema.lessonProgress)
-    .where(eq(schema.lessonProgress.lessonId, lessonId));
-  const bestAccuracy = Math.max(existingLessonProgress?.bestAccuracy ?? 0, accuracy);
-  const crownLevel =
-    accuracy >= 0.8 ? Math.max(existingLessonProgress?.crownLevel ?? 0, crownLevelAttempted) : existingLessonProgress?.crownLevel ?? 0;
-  if (existingLessonProgress) {
-    await db
-      .update(schema.lessonProgress)
-      .set({ status: "complete", crownLevel, bestAccuracy, lastCompletedAt: now })
-      .where(eq(schema.lessonProgress.id, existingLessonProgress.id));
-  } else {
-    await db
-      .insert(schema.lessonProgress)
-      .values({ lessonId, status: "complete", crownLevel, bestAccuracy, lastCompletedAt: now });
-  }
-
-  const unitUnlocked = await unlockNext(lesson.unitId, lesson.order, lesson.kind, accuracy);
-
   const alreadyUnlocked = new Set((await db.select().from(schema.userAchievements)).map((a) => a.achievementId));
   const stats = await computeAchievementStats();
   const newSlugs = findNewlyUnlocked(ACHIEVEMENTS, stats, alreadyUnlocked);
@@ -285,9 +277,7 @@ export async function finalizeLessonSession(
     totalCount,
     leveledUp: newLevel > oldLevel,
     newLevel,
-    crownLevel,
     currentStreak: nextStreak.currentStreak,
-    unitUnlocked,
     newlyUnlockedAchievements: newlyUnlockedAchievements.map((a) => ({
       slug: a.slug,
       title: a.title,
@@ -296,6 +286,59 @@ export async function finalizeLessonSession(
       tier: a.tier,
     })),
   };
+}
+
+export async function finalizeLessonSession(
+  lessonId: string,
+  crownLevelAttempted: number,
+  results: { kind: ExerciseKind; correct: boolean }[],
+): Promise<LessonSessionSummary> {
+  const now = new Date();
+  const [lesson] = await db.select().from(schema.lessons).where(eq(schema.lessons.id, lessonId));
+  if (!lesson) throw new Error(`Unknown lesson "${lessonId}"`);
+
+  const isPerfect = results.length > 0 && results.every((r) => r.correct);
+  const outcome = await applyXpStreakAndAchievements(
+    now,
+    results,
+    lesson.kind === "boss" ? "boss" : isPerfect ? "perfect_lesson" : "exercise",
+  );
+
+  const [existingLessonProgress] = await db
+    .select()
+    .from(schema.lessonProgress)
+    .where(eq(schema.lessonProgress.lessonId, lessonId));
+  const bestAccuracy = Math.max(existingLessonProgress?.bestAccuracy ?? 0, outcome.accuracy);
+  const crownLevel =
+    outcome.accuracy >= 0.8
+      ? Math.max(existingLessonProgress?.crownLevel ?? 0, crownLevelAttempted)
+      : existingLessonProgress?.crownLevel ?? 0;
+  if (existingLessonProgress) {
+    await db
+      .update(schema.lessonProgress)
+      .set({ status: "complete", crownLevel, bestAccuracy, lastCompletedAt: now })
+      .where(eq(schema.lessonProgress.id, existingLessonProgress.id));
+  } else {
+    await db
+      .insert(schema.lessonProgress)
+      .values({ lessonId, status: "complete", crownLevel, bestAccuracy, lastCompletedAt: now });
+  }
+
+  const unitUnlocked = await unlockNext(lesson.unitId, lesson.order, lesson.kind, outcome.accuracy);
+
+  return { ...outcome, crownLevel, unitUnlocked };
+}
+
+export interface ReviewSessionSummary extends SessionOutcomeBase {}
+
+/** Cross-topic spaced-repetition review session (the "Réviser" tab) — same XP/streak/achievement
+ * bookkeeping as a lesson, but with no single lesson/unit to attach crown or unlock progress to. */
+export async function finalizeReviewSession(
+  results: { kind: ExerciseKind; correct: boolean }[],
+): Promise<ReviewSessionSummary> {
+  const now = new Date();
+  const isPerfect = results.length > 0 && results.every((r) => r.correct);
+  return applyXpStreakAndAchievements(now, results, isPerfect ? "perfect_lesson" : "exercise");
 }
 
 export async function ensureBootstrapProgress(): Promise<void> {

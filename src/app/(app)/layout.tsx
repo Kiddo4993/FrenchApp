@@ -5,7 +5,7 @@ import { getDueCardCount, getProfileBundle } from "@/server/queries";
 
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
   await ensureBootstrapProgress();
-  const [{ userStats }, dueCount] = await Promise.all([getProfileBundle(), getDueCardCount()]);
+  const [{ userStats, settings }, dueCount] = await Promise.all([getProfileBundle(), getDueCardCount()]);
 
   const progress = xpProgress(userStats?.totalXp ?? 0);
 
@@ -17,6 +17,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
         xpNeededForLevel: progress.xpNeededForLevel,
         currentStreak: userStats?.currentStreak ?? 0,
         dueCount,
+        reducedMotion: settings?.reducedMotion ?? false,
       }}
     >
       {children}

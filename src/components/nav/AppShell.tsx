@@ -3,6 +3,7 @@
 import { BarChart3, BookOpen, Flame, Home, RotateCcw, Settings, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
@@ -19,6 +20,8 @@ export interface AppShellHeaderData {
   xpNeededForLevel: number;
   currentStreak: number;
   dueCount: number;
+  /** persisted Réglages → "Réduire les animations" override; mirrors prefers-reduced-motion via a data attribute (see globals.css) */
+  reducedMotion?: boolean;
 }
 
 function isActive(pathname: string, href: string): boolean {
@@ -35,6 +38,10 @@ export function AppShell({
 }) {
   const pathname = usePathname();
   const pct = Math.round((header.xpIntoLevel / Math.max(1, header.xpNeededForLevel)) * 100);
+
+  useEffect(() => {
+    document.documentElement.dataset.reducedMotion = header.reducedMotion ? "true" : "false";
+  }, [header.reducedMotion]);
 
   return (
     <div className="flex min-h-full flex-1 flex-col md:flex-row">
