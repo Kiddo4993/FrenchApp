@@ -68,7 +68,16 @@
       "Bash(git -C /Users/dylanduan/Desktop/frenchapp commit -q -m \"Fix production build: force-dynamic on all user-state routes \\(were being statically frozen at build time\\), clean up lint errors\")",
       "Bash(git -C /Users/dylanduan/Desktop/frenchapp log --oneline)",
       "Bash(rm -f /Users/dylanduan/Desktop/frenchapp/data/maitrise.db* && npm run seed 2>&1 | tail -3 && npx tsx scripts/seed-demo.ts 2>&1 | tail -15)",
-      "Bash(rm -f /Users/dylanduan/Desktop/frenchapp/data/maitrise.db* && npm run seed 2>&1 | tail -10)"
+      "Bash(rm -f /Users/dylanduan/Desktop/frenchapp/data/maitrise.db* && npm run seed 2>&1 | tail -10)",
+      "Bash(git -C /Users/dylanduan/Desktop/frenchapp log --oneline -3 -- PLAN.md)",
+      "Bash(git -C /Users/dylanduan/Desktop/frenchapp show --stat HEAD)",
+      "Bash(git -C /Users/dylanduan/Desktop/frenchapp commit -q -m \"Fix Base UI console warning: nativeButton={false} on all Button render={<Link/>} usages \\(caught by live browser walkthrough\\)\")",
+      "Bash(git -C /Users/dylanduan/Desktop/frenchapp check-ignore -v data/maitrise.db)",
+      "Read(//Users/dylanduan/.git/info/**)",
+      "Read(//Users/dylanduan/**)",
+      "Bash(cd ~ && ls -1a | grep -E \"^\\\\.\\(ssh|aws|gnupg|npmrc|netrc|pgpass|claude\\\\.json|env|git-credentials|docker|kube|azure|gcloud\\)\" 2>&1)",
+      "Bash(cat)",
+      "Bash(git check-ignore *)"
     ],
     "additionalDirectories": [
       "/Users/dylanduan/Desktop/frenchapp/data",
