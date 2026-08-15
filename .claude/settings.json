@@ -77,7 +77,9 @@
       "Read(//Users/dylanduan/**)",
       "Bash(cd ~ && ls -1a | grep -E \"^\\\\.\\(ssh|aws|gnupg|npmrc|netrc|pgpass|claude\\\\.json|env|git-credentials|docker|kube|azure|gcloud\\)\" 2>&1)",
       "Bash(cat)",
-      "Bash(git check-ignore *)"
+      "Bash(git check-ignore *)",
+      "Bash(grep -rliE \"token|password|secret|api[_-]?key\" ~/.config/git ~/.config/kitty ~/.config/nvim 2>/dev/null | head -10 *)",
+      "Read(//Users/dylanduan/.config/git/**)"
     ],
     "additionalDirectories": [
       "/Users/dylanduan/Desktop/frenchapp/data",
