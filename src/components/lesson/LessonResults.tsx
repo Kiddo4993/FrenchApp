@@ -81,10 +81,10 @@ export function LessonResults({ summary, lessonId }: { summary: LessonSessionSum
       )}
 
       <div className="flex w-full gap-3">
-        <Button render={<Link href="/" />} className="flex-1" size="lg">
+        <Button render={<Link href="/" />} nativeButton={false} className="flex-1" size="lg">
           Continuer
         </Button>
-        <Button render={<Link href={`/lecon/${lessonId}`} />} variant="outline" size="lg">
+        <Button render={<Link href={`/lecon/${lessonId}`} />} nativeButton={false} variant="outline" size="lg">
           Refaire
         </Button>
       </div>

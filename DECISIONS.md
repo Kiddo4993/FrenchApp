@@ -15,6 +15,20 @@ Prompt table specifies 10/10/10/8/6 units for A1/A2/B1/B2/C1 (44 total). Used th
 concrete titles/grammar focus per unit in PLAN.md §2 since the prompt only gave level-level focus, not
 per-unit breakdown.
 
+### 2026-08-14 — Settings, achievements gallery, placement test (delegated build)
+Built by a background agent, verified live (not just typecheck) per the standing "run it, don't just
+typecheck it" lesson above. Notable calls: `reglages` extends `AppShell`/`(app)/layout.tsx` to apply
+the persisted `reducedMotion` setting as `html[data-reduced-motion]` with a matching CSS rule
+mirroring the existing `prefers-reduced-motion` block — this hook only applies within the `(app)`
+route group, so `/placement` doesn't respect it yet (minor, cosmetic, noted rather than fixed).
+Placement `score` is the plain fraction correct (not difficulty-weighted) and is kept orthogonal to
+the unit recommendation, which is driven entirely by the final sustained CEFR level via
+`UNITS_SORTED.find(u => u.level === finalCefr)` — verified live that a mostly-wrong run ends at A1 →
+recommends "Premiers pas", and a stronger run lands higher. Placement questions are MCQ-only (reusing
+`buildMcqPrompt` exactly, per instruction) — no listening/typed placement items. The agent also
+independently noticed this session's own concurrent commit mid-task, diffed its files against it, and
+confirmed nothing of its work was lost — flagged for transparency; no actual conflict occurred.
+
 ### 2026-08-14 — `npm run build` caught pages statically prerendered at build time (real bug)
 Neither `tsc --noEmit` nor `next dev` (which always renders on-demand) surfaced this — only the
 actual production build did. Next's App Router defaults a route to **static** prerendering unless it
@@ -72,7 +86,11 @@ Since shadcn's `button.tsx` etc. are generated on `@base-ui/react` (see the earl
 decision), the polymorphic-render pattern is Base UI's `render` prop (`<Button render={<Link .../>}>`),
 not Radix's `asChild` + child-element pattern most shadcn examples/docs assume. Using `asChild` here
 type-errors (`ButtonProps` has no such field). Worth remembering for every future page that wants a
-link styled as a button, tab, or menu item.
+link styled as a button, tab, or menu item. **Also pass `nativeButton={false}`** on every
+`<Button render={<Link .../>}>` — without it Base UI logs a console warning every render ("expected a
+native `<button>`... Rendering a non-`<button>` removes native button semantics"), caught by an actual
+browser walkthrough, not typecheck. All 8 existing occurrences (`(app)/page.tsx`, `SettingsForm`,
+`WeakestWordsPanel`, `LessonResults` ×2, `ReviewResults` ×2, `PlacementResults`) were fixed together.
 
 ### 2026-08-02 — `exerciseEvents` references `vocabEntries`, not `cards` (bug caught by smoke test)
 Wrote a throwaway script (`scripts/_smoke-test.ts`, deleted after use — not committed) that actually

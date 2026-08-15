@@ -252,7 +252,7 @@ export function SettingsForm({
       <Separator />
 
       <section>
-        <Button render={<Link href="/succes" />} variant="secondary" className="w-full">
+        <Button render={<Link href="/succes" />} nativeButton={false} variant="secondary" className="w-full">
           Voir mes succès
         </Button>
       </section>

@@ -33,7 +33,7 @@ export function WeakestWordsPanel({ rows, now = new Date() }: { rows: WeakestRow
     <div className="flex flex-col gap-4">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <p className="text-sm text-muted-foreground">Les mots les plus susceptibles d&apos;être oubliés en ce moment.</p>
-        <Button render={<Link href="/reviser" />} size="sm">
+        <Button render={<Link href="/reviser" />} nativeButton={false} size="sm">
           Réviser ces mots
         </Button>
       </div>

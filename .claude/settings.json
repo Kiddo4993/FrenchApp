@@ -66,7 +66,9 @@
       "Bash(grep -n \"Normalize DB rows to \\\\`VocabEntry\\\\`\" /Users/dylanduan/Desktop/frenchapp/DECISIONS.md)",
       "Bash(git -C /Users/dylanduan/Desktop/frenchapp add -A)",
       "Bash(git -C /Users/dylanduan/Desktop/frenchapp commit -q -m \"Fix production build: force-dynamic on all user-state routes \\(were being statically frozen at build time\\), clean up lint errors\")",
-      "Bash(git -C /Users/dylanduan/Desktop/frenchapp log --oneline)"
+      "Bash(git -C /Users/dylanduan/Desktop/frenchapp log --oneline)",
+      "Bash(rm -f /Users/dylanduan/Desktop/frenchapp/data/maitrise.db* && npm run seed 2>&1 | tail -3 && npx tsx scripts/seed-demo.ts 2>&1 | tail -15)",
+      "Bash(rm -f /Users/dylanduan/Desktop/frenchapp/data/maitrise.db* && npm run seed 2>&1 | tail -10)"
     ],
     "additionalDirectories": [
       "/Users/dylanduan/Desktop/frenchapp/data",

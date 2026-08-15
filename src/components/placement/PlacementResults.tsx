@@ -52,7 +52,7 @@ export function PlacementResults({
         </p>
       )}
 
-      <Button render={<Link href="/" />} className="w-full" size="lg">
+      <Button render={<Link href="/" />} nativeButton={false} className="w-full" size="lg">
         Continuer
       </Button>
     </div>

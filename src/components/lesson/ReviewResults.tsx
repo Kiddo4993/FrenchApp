@@ -48,10 +48,10 @@ export function ReviewResults({ summary }: { summary: ReviewSessionSummary }) {
       )}
 
       <div className="flex w-full gap-3">
-        <Button render={<Link href="/" />} className="flex-1" size="lg">
+        <Button render={<Link href="/" />} nativeButton={false} className="flex-1" size="lg">
           Continuer
         </Button>
-        <Button render={<Link href="/reviser" />} variant="outline" size="lg">
+        <Button render={<Link href="/reviser" />} nativeButton={false} variant="outline" size="lg">
           Encore
         </Button>
       </div>

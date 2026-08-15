@@ -63,7 +63,7 @@ export default async function HomePage() {
             Passe le test de positionnement pour démarrer au bon niveau, ou lance-toi directement à
             A1.
           </p>
-          <Button render={<Link href="/placement" />}>Test de positionnement</Button>
+          <Button render={<Link href="/placement" />} nativeButton={false}>Test de positionnement</Button>
         </div>
       )}
 
