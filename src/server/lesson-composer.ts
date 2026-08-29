@@ -12,6 +12,7 @@ import { currentRetrievability } from "@/lib/srs";
 import type { CardSnapshot } from "@/lib/srs/types";
 import { registerSwapFileSchema, type VocabEntry } from "@/content/schema";
 import type { ExercisePrompt } from "@/types/exercise";
+import { normalizeVocabEntry } from "./normalize-vocab";
 import {
   getLessonBySlug,
   getReadingPassageForTopic,
@@ -46,17 +47,7 @@ export async function composeLessonSession(
 
   const topics = unit.topics.length > 0 ? unit.topics : lesson.topicSlug ? [lesson.topicSlug] : [];
   const rawPool = topics.length > 0 ? await getVocabForTopics(topics, unit.levelId) : [];
-  // Drizzle's SQLite select type marks nullable columns `T | null`; the exercise-generation
-  // layer (generate.ts) is typed against the Zod-derived VocabEntry, whose optional fields are
-  // `T | undefined`. Normalize once here rather than loosening either type.
-  const pool: VocabEntry[] = rawPool.map((v) => ({
-    ...v,
-    gender: v.gender ?? undefined,
-    plural: v.plural ?? undefined,
-    collocations: v.collocations ?? undefined,
-    fauxAmi: v.fauxAmi ?? undefined,
-    mnemonic: v.mnemonic ?? undefined,
-  }));
+  const pool: VocabEntry[] = rawPool.map(normalizeVocabEntry);
 
   const bonusBudget = crownLevelAttempted === 5 ? 0 : 2;
   const targetCount = Math.min(MAX_TARGETS, Math.max(MIN_TARGETS, pool.length));

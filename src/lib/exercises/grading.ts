@@ -28,3 +28,15 @@ export const KIND_TO_TRACK: Record<ExerciseKind, Track | null> = {
 export function trackForKind(kind: ExerciseKind): Track | null {
   return KIND_TO_TRACK[kind];
 }
+
+/** Kinds where the shell's hint bulb makes sense — the typed-answer exercises (see HintReveal).
+ * Previously duplicated identically in LessonRunner and ReviewRunner; consolidated here after
+ * code review flagged the duplication as a risk (adding/removing a hint-eligible kind required
+ * remembering to edit both). */
+export const HINT_ELIGIBLE_KINDS: ReadonlySet<ExerciseKind> = new Set([
+  "free_translation",
+  "cloze",
+  "dictation",
+  "conjugation_drill",
+  "register_swap",
+]);

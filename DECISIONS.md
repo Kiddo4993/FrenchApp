@@ -4,6 +4,62 @@ Judgment calls made while building, newest first.
 
 ---
 
+### 2026-08-23 — `/code-review hard`: multi-agent orchestration stuck on a relay bug, took over manually
+The multi-agent code-review orchestrator dispatched ~9 "finder" sub-agents across several rounds. Every
+finder that finished tried to relay its findings back to the orchestrator via `SendMessage` to
+`"general-purpose"` — an agent *type* name, not a resolvable address in this environment — so every
+relay failed, and the orchestrator sat "waiting for finder agents" for 9+ hours with nothing able to
+reach it. Each finder's actual findings were still fully visible in this session's own transcript
+(agents fall back to printing results in their final response when a relay fails), so nothing was
+lost — but the orchestrator itself would never terminate on its own. Stopped the orchestrator and all
+remaining agents manually, compiled every finding directly from the transcript, verified the highest-
+severity ones against the real code before fixing anything, and fixed what was confirmed real. Real,
+verified bugs fixed this pass:
+- `getWeakestCards` (queries.ts) ordered by `cards.retrievability`, a column FSRS always writes as
+  exactly `1` at save time — the dashboard's "20 weakest words" panel was effectively random. Fixed to
+  rank by live `currentRetrievability(card, now)`, matching the pattern `getSkillTree`'s unit-mastery
+  calc already used.
+- `submitPlacementTest` only created a `lessonProgress` row for the recommended unit's first lesson —
+  every unit placement marked "complete" (skipped) had zero unlocked lessons, so the skill tree
+  rendered those units as open sections full of individually-locked, unclickable nodes. Fixed to grant
+  every lesson in a "complete" unit as complete too.
+- The home page's "Prêt à commencer ?" placement-test CTA had a guard (`sections.every(locked)`) that
+  could never be true, because `ensureBootstrapProgress()` always unlocks the first unit before the
+  page renders — the CTA was structurally dead code on every fresh install. Fixed to key off
+  `!profile.placementDone && no real progress yet` instead.
+- `src/stores/lesson-session.ts`'s anti-repeat check (`dedupeAdjacent`) passed `undefined` instead of
+  the just-answered card's id on the *correct*-answer branch, silently disabling the "never repeat a
+  word twice in a row" guarantee on that path. Not currently reachable (today's prompt generation
+  guarantees at most one prompt per card per session) but a live footgun for any future composer that
+  doesn't hold that invariant — fixed defensively.
+- Dashboard date displays (`StudyHeatmap`, `RetentionCurveChart`) used date-fns's local-timezone-aware
+  `format()`/`startOfWeek`/`addDays` against UTC calendar-day strings (`sessionLogs.date`, from
+  `actions.ts`'s `todayStr()`). For non-UTC users this could misplace a session by a day or hide it as
+  "future." Rewrote both to do grid math and labeling in UTC explicitly (native `Date.UTC` arithmetic +
+  `Intl.DateTimeFormat(..., {timeZone: "UTC"})`), matching the server's own day-bucketing convention
+  instead of fighting it.
+- `/reviser`'s new-word queue was built from the *entire* ~4,400-word vocab bank in raw DB scan order,
+  which could hand an absolute beginner review words from unlocked-yet topics up to C1. Fixed to walk
+  only unlocked units' topics, in curriculum order — mirroring how `lesson-composer.ts` already scopes
+  a single lesson's word pool.
+- Minor: a pluralization check comparing the *unrounded* value while displaying the *rounded* one
+  (`StudyHeatmap`) could render "2 minute" instead of "2 minutes".
+
+Also cleaned up what the review correctly flagged as duplication risk (not bugs, but real
+maintenance hazards): consolidated the 4x-copied `VocabEntry` null→undefined normalization into
+`src/server/normalize-vocab.ts`; the 4x-copied Fisher-Yates shuffle down to the one export in
+`generate.ts`; the 3x-copied `CEFR_LEVELS` literal into one export from `src/content/curriculum.ts`
+(the others now re-export it); the 2x-copied `HINT_ELIGIBLE_KINDS` into `grading.ts`; and the
+2x-copied `StatTile` component into `src/components/lesson/StatTile.tsx`. Removed one dead code
+branch (`UnitSection`'s unreachable `locked` styling). Fixed the dashboard's redundant full-table
+scans (vocab/cards/reviewLogs were each fetched twice per `/progres` load) and an N+1 query in
+`getLeechClearedCount` (one query per leech card instead of one batched query).
+
+Left alone (lower severity, or bigger scope than this pass): `submitPlacementTest`'s sequential
+per-unit loop and a couple of serial-instead-of-parallel query pairs (real but `better-sqlite3` is
+synchronous/in-process, so these cost microtask overhead, not network latency); `SettingsForm`'s
+optimistic-update rollback gap; `AppShell`'s duplicated desktop/mobile nav-item rendering.
+
 ### 2026-07-26 — Isolated git repo
 `frenchapp/` was created inside a git repo rooted at the user's home directory (`~`), which also had
 a real `origin` remote pointing at an unrelated GitHub repo. Flagged to the user; they chose to

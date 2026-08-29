@@ -70,12 +70,15 @@ export const useLessonSessionStore = create<LessonSessionState>((set, get) => ({
       firstAttemptResults.push({ kind: current.kind, correct: outcome.correct });
     }
 
-    let nextQueue = rest;
-    if (!outcome.correct) {
-      nextQueue = dedupeAdjacent([...rest, current], current.cardId);
-    } else {
-      nextQueue = dedupeAdjacent(rest, undefined);
-    }
+    // Pass current.cardId on both branches — the correct-answer path was passing `undefined`,
+    // which short-circuits dedupeAdjacent entirely (see its guard clause) and silently disables
+    // the "never repeat a word twice in a row" check whenever two adjacent queue entries happen
+    // to share a card. Not currently reachable (assembleLesson emits at most one prompt per
+    // cardId today), but the asymmetry is a live footgun for any future composer that doesn't
+    // hold that invariant — caught by code review, fixed defensively regardless.
+    const nextQueue = !outcome.correct
+      ? dedupeAdjacent([...rest, current], current.cardId)
+      : dedupeAdjacent(rest, current.cardId);
 
     set({
       queue: nextQueue,

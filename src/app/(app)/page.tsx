@@ -31,6 +31,14 @@ export default async function HomePage() {
   }));
 
   const inProgressUnit = sections.find((s) => s.status === "in_progress" || s.status === "available");
+  // `ensureBootstrapProgress()` (in the parent layout) always unlocks the first unit before this
+  // page renders, so "every section locked" can never be true — that's not a usable signal for
+  // "hasn't started yet." Use whether they've taken the placement test and completed real
+  // progress instead. Caught by code review: the CTA was structurally unreachable.
+  const hasAnyRealProgress = sections.some(
+    (s) => s.status === "in_progress" || s.status === "complete" || s.status === "gold",
+  );
+  const showPlacementBanner = !profile?.placementDone && !hasAnyRealProgress;
 
   return (
     <div className="flex flex-1 flex-col gap-6 px-4 py-6">
@@ -56,7 +64,7 @@ export default async function HomePage() {
         </Link>
       )}
 
-      {!inProgressUnit && dueCount === 0 && sections.every((s) => s.locked) && (
+      {showPlacementBanner && (
         <div className="mx-auto flex w-full max-w-md flex-col items-center gap-3 rounded-xl border px-6 py-8 text-center">
           <p className="fr-text text-lg">Prêt à commencer ?</p>
           <p className="text-sm text-muted-foreground">

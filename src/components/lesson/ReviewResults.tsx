@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { ReviewSessionSummary } from "@/server/actions";
+import { StatTile } from "./StatTile";
 
 export function ReviewResults({ summary }: { summary: ReviewSessionSummary }) {
   const isPerfect = summary.totalCount > 0 && summary.correctCount === summary.totalCount;
@@ -55,16 +56,6 @@ export function ReviewResults({ summary }: { summary: ReviewSessionSummary }) {
           Encore
         </Button>
       </div>
-    </div>
-  );
-}
-
-function StatTile({ icon: Icon, label, value }: { icon: typeof Sparkles; label: string; value: string }) {
-  return (
-    <div className="flex flex-col items-center gap-1 rounded-xl border bg-card px-3 py-4">
-      <Icon className="size-5 text-primary" aria-hidden />
-      <p className="text-lg font-semibold">{value}</p>
-      <p className="text-xs text-muted-foreground">{label}</p>
     </div>
   );
 }

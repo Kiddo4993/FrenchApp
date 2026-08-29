@@ -20,14 +20,12 @@ export function WeakestWordsPanel({ rows, now = new Date() }: { rows: WeakestRow
     return <EmptyState message="Termine quelques leçons pour voir tes mots les plus fragiles ici." />;
   }
 
-  // The stored `cards.retrievability` column is reset to 1 on every review (see fsrs.ts —
-  // `retrievability(0, stability)` is always 1 right after scheduling), so it isn't a useful
-  // "current" strength signal. Recompute the real, decayed retrievability at `now` for display —
-  // getWeakestCards' own ordering is left untouched per the task's instructions.
+  // getWeakestCards() already ranks by live retrievability computed server-side; recompute the
+  // same value here purely for display (the percentage badge), not to re-sort — `rows` arrives
+  // in the correct order already.
   const ranked = rows
     .filter((r): r is WeakestRow & { vocab: NonNullable<WeakestRow["vocab"]> } => r.vocab !== null)
-    .map((r) => ({ ...r, r: currentRetrievability(r.card as CardSnapshot, now) }))
-    .sort((a, b) => a.r - b.r);
+    .map((r) => ({ ...r, r: currentRetrievability(r.card as CardSnapshot, now) }));
 
   return (
     <div className="flex flex-col gap-4">

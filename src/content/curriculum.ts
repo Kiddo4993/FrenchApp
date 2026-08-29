@@ -1,6 +1,11 @@
 import type { TopicSlug } from "./topics";
 
-export type Cefr = "A1" | "A2" | "B1" | "B2" | "C1";
+/** Canonical, ordered CEFR level list — the one place this literal is defined. Previously
+ * redefined identically in src/lib/placement/adaptive.ts, src/lib/dashboard/labels.ts, and as a
+ * loose `LEVEL_SEQUENCE` in GrammarSearch.tsx; consolidated after code review flagged the
+ * duplication (a future curriculum change, e.g. adding a level, required editing all of them). */
+export const CEFR_LEVELS = ["A1", "A2", "B1", "B2", "C1"] as const;
+export type Cefr = (typeof CEFR_LEVELS)[number];
 
 export interface UnitDef {
   slug: string;

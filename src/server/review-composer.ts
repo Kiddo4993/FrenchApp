@@ -3,9 +3,11 @@ import { assembleLesson } from "@/lib/exercises/generate";
 import { buildDailyQueue, type QueueCard } from "@/lib/srs";
 import type { VocabEntry } from "@/content/schema";
 import type { ExercisePrompt } from "@/types/exercise";
-import { db } from "@/db/client";
+import { UNITS_SORTED } from "@/content/curriculum";
 import * as schema from "@/db/schema";
-import { getProfileBundle } from "./queries";
+import { normalizeVocabEntry } from "./normalize-vocab";
+import { db } from "@/db/client";
+import { getAllCards, getAllVocab, getProfileBundle } from "./queries";
 
 /**
  * Cross-topic review session (the "Réviser" tab): due cards first, then a capped number of
@@ -17,9 +19,10 @@ export async function composeReviewSession(): Promise<{ prompts: ExercisePrompt[
   const newCardsPerDay = settings?.newCardsPerDay ?? 15;
   const now = new Date();
 
-  const [allCards, allVocab] = await Promise.all([
-    db.select().from(schema.cards),
-    db.select().from(schema.vocabEntries),
+  const [allCards, allVocab, unitProgressRows] = await Promise.all([
+    getAllCards(),
+    getAllVocab(),
+    db.select().from(schema.unitProgress),
   ]);
 
   const earliestDueByVocab = new Map<string, { state: (typeof schema.cards.$inferSelect)["state"]; dueDate: Date }>();
@@ -32,14 +35,39 @@ export async function composeReviewSession(): Promise<{ prompts: ExercisePrompt[
   }
   const vocabIdsWithAnyCard = new Set(allCards.map((c) => c.vocabId).filter((v): v is string => Boolean(v)));
 
+  // New-word candidates are scoped to unlocked units' topics, walked in curriculum order — the
+  // same pacing lesson-composer.ts and the demo-seed simulation already use. Previously this
+  // pulled from the *entire* ~4,400-word bank in raw DB scan order, which could hand an absolute
+  // beginner review-queue words from topics/levels they haven't unlocked yet, up to C1. Caught by
+  // code review.
+  const unlockedUnitIds = new Set(
+    unitProgressRows.filter((u) => u.status !== "locked").map((u) => u.unitId),
+  );
+  const vocabByTopic = new Map<string, typeof allVocab>();
+  for (const v of allVocab) {
+    const arr = vocabByTopic.get(v.topic) ?? [];
+    arr.push(v);
+    vocabByTopic.set(v.topic, arr);
+  }
+  const orderedNewCandidates: (typeof allVocab)[number][] = [];
+  const seenTopics = new Set<string>();
+  for (const unit of UNITS_SORTED) {
+    if (!unlockedUnitIds.has(unit.slug)) continue;
+    for (const topic of unit.topics) {
+      if (seenTopics.has(topic)) continue;
+      seenTopics.add(topic);
+      for (const v of vocabByTopic.get(topic) ?? []) {
+        if (!vocabIdsWithAnyCard.has(v.id)) orderedNewCandidates.push(v);
+      }
+    }
+  }
+
   const queueCards: QueueCard[] = [];
   for (const [vocabId, info] of earliestDueByVocab) {
     queueCards.push({ id: vocabId, state: info.state, dueDate: info.dueDate });
   }
-  for (const v of allVocab) {
-    if (!vocabIdsWithAnyCard.has(v.id)) {
-      queueCards.push({ id: v.id, state: "new", dueDate: now });
-    }
+  for (const v of orderedNewCandidates) {
+    queueCards.push({ id: v.id, state: "new", dueDate: now });
   }
 
   const queue = buildDailyQueue(queueCards, now, newCardsPerDay);
@@ -50,25 +78,11 @@ export async function composeReviewSession(): Promise<{ prompts: ExercisePrompt[
   const targets: VocabEntry[] = selected
     .map((c) => vocabById.get(c.id))
     .filter((v): v is typeof allVocab[number] => Boolean(v))
-    .map((v) => ({
-      ...v,
-      gender: v.gender ?? undefined,
-      plural: v.plural ?? undefined,
-      collocations: v.collocations ?? undefined,
-      fauxAmi: v.fauxAmi ?? undefined,
-      mnemonic: v.mnemonic ?? undefined,
-    }));
+    .map(normalizeVocabEntry);
 
   if (targets.length === 0) return { prompts: [], wordCount: 0 };
 
-  const distractorPool: VocabEntry[] = allVocab.map((v) => ({
-    ...v,
-    gender: v.gender ?? undefined,
-    plural: v.plural ?? undefined,
-    collocations: v.collocations ?? undefined,
-    fauxAmi: v.fauxAmi ?? undefined,
-    mnemonic: v.mnemonic ?? undefined,
-  }));
+  const distractorPool: VocabEntry[] = allVocab.map(normalizeVocabEntry);
 
   return { prompts: assembleLesson(targets, distractorPool), wordCount: targets.length };
 }

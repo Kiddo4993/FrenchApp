@@ -6,22 +6,15 @@ import { VocabProjectionPanel } from "@/components/dashboard/VocabProjectionPane
 import { WeakestWordsPanel } from "@/components/dashboard/WeakestWordsPanel";
 import { WordsKnownChart } from "@/components/dashboard/WordsKnownChart";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  getAccuracyByExerciseKind,
-  getRetentionCurve,
-  getVocabProjection,
-  getWordsKnownByTopic,
-} from "@/server/dashboard-queries";
+import { getAccuracyByExerciseKind, getDashboardData } from "@/server/dashboard-queries";
 import { getProfileBundle, getSessionLogs, getWeakestCards } from "@/server/queries";
 
 export default async function ProgressPage() {
-  const [wordsKnown, retention, accuracyByKind, sessions, weakest, projection, { settings }] = await Promise.all([
-    getWordsKnownByTopic(),
-    getRetentionCurve(),
+  const [{ wordsKnown, retention, projection }, accuracyByKind, sessions, weakest, { settings }] = await Promise.all([
+    getDashboardData(),
     getAccuracyByExerciseKind(),
     getSessionLogs(),
     getWeakestCards(20),
-    getVocabProjection(),
     getProfileBundle(),
   ]);
 

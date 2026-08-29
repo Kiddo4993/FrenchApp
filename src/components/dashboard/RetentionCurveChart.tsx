@@ -1,7 +1,5 @@
 "use client";
 
-import { format } from "date-fns";
-import { fr } from "date-fns/locale";
 import {
   Area,
   AreaChart,
@@ -16,13 +14,19 @@ import type { TooltipProps } from "recharts";
 import type { RetentionPoint } from "@/server/dashboard-queries";
 import { EmptyState } from "./EmptyState";
 
+// `date` is a UTC calendar-day string (see actions.ts's todayStr()). date-fns's format() reads a
+// Date's *local* calendar fields, so `new Date("2026-08-15")` (UTC midnight) can render as "14
+// août" for negative-UTC-offset users. Format in UTC explicitly instead.
+const frUtcDateShort = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "short", timeZone: "UTC" });
+const frUtcDateLong = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+
 function ChartTooltip({ active, payload }: TooltipProps<number, string>) {
   if (!active || !payload?.length) return null;
   const point = payload[0].payload as RetentionPoint;
   if (point.meanRetrievability === null) return null;
   return (
     <div className="rounded-md border bg-popover px-3 py-2 text-xs text-popover-foreground shadow-md">
-      <p className="mb-1 font-medium">{format(new Date(point.date), "d MMM yyyy", { locale: fr })}</p>
+      <p className="mb-1 font-medium">{frUtcDateLong.format(new Date(point.date))}</p>
       <p className="flex items-center justify-between gap-4">
         <span className="flex items-center gap-1.5">
           <span className="inline-block h-0.5 w-3 rounded-full" style={{ background: "var(--chart-1)" }} />
@@ -64,7 +68,7 @@ export function RetentionCurveChart({
         <CartesianGrid vertical={false} stroke="var(--border)" />
         <XAxis
           dataKey="date"
-          tickFormatter={(v: string) => format(new Date(v), "d MMM", { locale: fr })}
+          tickFormatter={(v: string) => frUtcDateShort.format(new Date(v))}
           tick={{ fontSize: 11, fill: "var(--muted-foreground)" }}
           axisLine={{ stroke: "var(--border)" }}
           tickLine={false}

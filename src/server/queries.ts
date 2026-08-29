@@ -173,19 +173,30 @@ export async function getAchievementsWithStatus() {
   return all.map((a) => ({ achievement: a, unlockedAt: unlockedByAchievement.get(a.id)?.unlockedAt ?? null }));
 }
 
+/**
+ * `cards.retrievability` is a snapshot written at review time as `retrievability(0, stability)`,
+ * which is mathematically 1 for every card, every time — it never reflects decay since it's saved
+ * at elapsed=0 (see fsrs.ts). Ordering by that stored column is ordering by a constant. The real
+ * "how weak is this card right now" value has to be computed live via `currentRetrievability`,
+ * the same way `getSkillTree`'s unit-mastery calc already does. Caught by code review, not by
+ * typecheck or a passing test — nothing exercised this with >20 review-state cards.
+ */
 export async function getWeakestCards(limit = 20) {
+  const now = new Date();
   const rows = await db
     .select()
     .from(schema.cards)
-    .where(and(isNotNull(schema.cards.vocabId), ne(schema.cards.state, "new")))
-    .orderBy(asc(schema.cards.retrievability))
-    .limit(limit);
-  const vocabIds = rows.map((r) => r.vocabId).filter((v): v is string => Boolean(v));
+    .where(and(isNotNull(schema.cards.vocabId), ne(schema.cards.state, "new")));
+  const ranked = rows
+    .map((card) => ({ card, liveRetrievability: currentRetrievability(card as CardSnapshot, now) }))
+    .sort((a, b) => a.liveRetrievability - b.liveRetrievability)
+    .slice(0, limit);
+  const vocabIds = ranked.map((r) => r.card.vocabId).filter((v): v is string => Boolean(v));
   const vocab = vocabIds.length
     ? await db.select().from(schema.vocabEntries).where(inArray(schema.vocabEntries.id, vocabIds))
     : [];
   const vocabById = new Map(vocab.map((v) => [v.id, v]));
-  return rows.map((card) => ({ card, vocab: card.vocabId ? vocabById.get(card.vocabId) ?? null : null }));
+  return ranked.map(({ card }) => ({ card, vocab: card.vocabId ? vocabById.get(card.vocabId) ?? null : null }));
 }
 
 export async function getLeechCards() {

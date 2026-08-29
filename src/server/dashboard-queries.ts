@@ -37,10 +37,10 @@ export interface WordsKnownByTopic {
   total: number;
 }
 
-export async function getWordsKnownByTopic(): Promise<WordsKnownByTopic[]> {
-  const [vocab, cards] = await Promise.all([getAllVocab(), getAllCards()]);
-  const knownVocabIds = computeKnownVocabIds(cards);
-
+function computeWordsKnownByTopic(
+  vocab: Awaited<ReturnType<typeof getAllVocab>>,
+  knownVocabIds: Set<string>,
+): WordsKnownByTopic[] {
   const byTopic = new Map<string, WordsKnownByTopic>();
   for (const topic of TOPICS) {
     byTopic.set(topic.slug, {
@@ -89,8 +89,10 @@ const RETENTION_SAMPLE_POINTS = 10;
  * that had already been reviewed by that date gives an honest, if approximate, retrospective
  * retention curve built entirely from real review history — see DECISIONS.md.
  */
-export async function getRetentionCurve(now: Date = new Date()): Promise<RetentionPoint[]> {
-  const logs = await getAllReviewLogs();
+function computeRetentionCurve(
+  logs: Awaited<ReturnType<typeof getAllReviewLogs>>,
+  now: Date,
+): RetentionPoint[] {
   if (logs.length === 0) return [];
 
   const sorted = [...logs].sort((a, b) => a.ts.getTime() - b.ts.getTime());
@@ -188,9 +190,13 @@ const PACE_WINDOW_DAYS = 14;
  * its cards), extrapolated forward and clamped to the total curriculum size. Not a real forecast
  * model — just current pace × days, which is what the UI caption says.
  */
-export async function getVocabProjection(now: Date = new Date()): Promise<VocabProjection> {
-  const [vocab, cards, logs] = await Promise.all([getAllVocab(), getAllCards(), getAllReviewLogs()]);
-  const knownVocabIds = computeKnownVocabIds(cards);
+function computeVocabProjection(
+  vocab: Awaited<ReturnType<typeof getAllVocab>>,
+  cards: Awaited<ReturnType<typeof getAllCards>>,
+  logs: Awaited<ReturnType<typeof getAllReviewLogs>>,
+  knownVocabIds: Set<string>,
+  now: Date,
+): VocabProjection {
   const currentKnown = knownVocabIds.size;
   const totalVocab = vocab.length;
 
@@ -228,6 +234,29 @@ export async function getVocabProjection(now: Date = new Date()): Promise<VocabP
     hasHistory,
     historyDays: Math.round(historyDays),
     projections,
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Aggregator — fetches vocab/cards/reviewLogs exactly once and feeds all three pure computers
+// above. `progres/page.tsx` originally called getWordsKnownByTopic/getRetentionCurve/
+// getVocabProjection independently inside one Promise.all, which fetched each of those three
+// tables twice per dashboard load (each function pulled its own copy). Caught by code review.
+// ---------------------------------------------------------------------------
+
+export interface DashboardData {
+  wordsKnown: WordsKnownByTopic[];
+  retention: RetentionPoint[];
+  projection: VocabProjection;
+}
+
+export async function getDashboardData(now: Date = new Date()): Promise<DashboardData> {
+  const [vocab, cards, logs] = await Promise.all([getAllVocab(), getAllCards(), getAllReviewLogs()]);
+  const knownVocabIds = computeKnownVocabIds(cards);
+  return {
+    wordsKnown: computeWordsKnownByTopic(vocab, knownVocabIds),
+    retention: computeRetentionCurve(logs, now),
+    projection: computeVocabProjection(vocab, cards, logs, knownVocabIds, now),
   };
 }
 

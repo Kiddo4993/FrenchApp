@@ -18,8 +18,10 @@ export interface UnitSectionData {
 
 const OFFSETS = [0, 44, 0, -44];
 
+// `unit.status` is never "locked" here — the only caller ((app)/page.tsx) renders LockedUnitRow
+// instead of UnitSection whenever a section is locked. Removed the dead branch that used to check
+// for it. Caught by code review.
 export function UnitSection({ unit, defaultOpen }: { unit: UnitSectionData; defaultOpen: boolean }) {
-  const locked = unit.status === "locked";
   const mastered = unit.status === "gold";
 
   return (
@@ -29,7 +31,6 @@ export function UnitSection({ unit, defaultOpen }: { unit: UnitSectionData; defa
       transition={{ type: "spring", duration: 0.3, bounce: 0.1 }}
       className={cn(
         "mx-auto w-full max-w-md rounded-2xl border px-6 py-8",
-        locked && "opacity-60",
         mastered && !unit.isCracked && "border-gold/50 bg-[color-mix(in_oklch,var(--gold),transparent_95%)]",
         unit.isCracked && "border-gold/30 bg-[color-mix(in_oklch,var(--gold),transparent_97%)]",
       )}

@@ -6,18 +6,11 @@ import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { ExerciseRenderer } from "@/components/exercises/ExerciseRenderer";
 import { ExerciseShell } from "@/components/exercises/ExerciseShell";
+import { HINT_ELIGIBLE_KINDS } from "@/lib/exercises/grading";
 import { useLessonSessionStore } from "@/stores/lesson-session";
 import { finalizeLessonSession, submitExerciseResult, type LessonSessionSummary } from "@/server/actions";
-import type { ExerciseKind, ExerciseOutcome, ExercisePrompt } from "@/types/exercise";
+import type { ExerciseOutcome, ExercisePrompt } from "@/types/exercise";
 import { LessonResults } from "./LessonResults";
-
-const HINT_ELIGIBLE_KINDS: ReadonlySet<ExerciseKind> = new Set([
-  "free_translation",
-  "cloze",
-  "dictation",
-  "conjugation_drill",
-  "register_swap",
-]);
 
 export function LessonRunner({
   lessonId,

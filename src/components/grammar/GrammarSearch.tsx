@@ -5,6 +5,7 @@ import { Search } from "lucide-react";
 import { useMemo, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import { CEFR_LEVELS } from "@/content/curriculum";
 
 export interface GrammarPointListItem {
   slug: string;
@@ -21,8 +22,6 @@ const LEVEL_LABELS: Record<string, string> = {
   B2: "B2 — Avancé",
   C1: "C1 — Maîtrise",
 };
-
-const LEVEL_SEQUENCE = ["A1", "A2", "B1", "B2", "C1"];
 
 /** Client-side filter over the full grammar reference — title + searchTags, grouped by CEFR level. */
 export function GrammarSearch({ points }: { points: GrammarPointListItem[] }) {
@@ -49,7 +48,7 @@ export function GrammarSearch({ points }: { points: GrammarPointListItem[] }) {
     return map;
   }, [filtered]);
 
-  const levels = LEVEL_SEQUENCE.filter((level) => grouped.has(level));
+  const levels = CEFR_LEVELS.filter((level) => grouped.has(level));
 
   return (
     <div className="flex flex-col gap-6">

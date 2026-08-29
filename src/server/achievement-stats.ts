@@ -8,36 +8,31 @@ import { PROFILE_ID } from "./queries";
 const LATE_NIGHT_HOURS = new Set([0, 1, 2, 3]);
 const DAWN_HOURS = new Set([4, 5]);
 
-async function countExerciseEvents(kind: string, correctOnly: boolean): Promise<number> {
-  const rows = await db
-    .select({ id: schema.exerciseEvents.id, correct: schema.exerciseEvents.correct })
-    .from(schema.exerciseEvents)
-    .where(eq(schema.exerciseEvents.kind, kind as never));
-  return correctOnly ? rows.filter((r) => r.correct).length : rows.length;
-}
-
-async function getLeechClearedCount(): Promise<number> {
-  const leechCards = await db.select().from(schema.cards).where(eq(schema.cards.isLeech, true));
+/**
+ * Was one query per leech card (`WHERE cardId = ? ORDER BY ts DESC LIMIT 1`, N+1) inside a loop —
+ * this runs after every lesson/review finalize plus on every /succes load. Fetch every leech
+ * card's logs in one batched query, reduce to "latest per card" in memory instead. Caught by
+ * code review.
+ */
+async function getLeechClearedCount(leechCards: (typeof schema.cards.$inferSelect)[]): Promise<number> {
+  if (leechCards.length === 0) return 0;
+  const leechCardIds = new Set(leechCards.map((c) => c.id));
+  const allLogs = await db.select().from(schema.reviewLogs).orderBy(desc(schema.reviewLogs.ts));
+  const latestByCard = new Map<string, (typeof allLogs)[number]>();
+  for (const log of allLogs) {
+    if (!leechCardIds.has(log.cardId) || latestByCard.has(log.cardId)) continue;
+    latestByCard.set(log.cardId, log); // first hit per card = latest, since allLogs is DESC by ts
+  }
   let cleared = 0;
-  for (const card of leechCards) {
-    const [latest] = await db
-      .select()
-      .from(schema.reviewLogs)
-      .where(eq(schema.reviewLogs.cardId, card.id))
-      .orderBy(desc(schema.reviewLogs.ts))
-      .limit(1);
-    if (latest && (latest.grade === "good" || latest.grade === "easy")) cleared++;
+  for (const latest of latestByCard.values()) {
+    if (latest.grade === "good" || latest.grade === "easy") cleared++;
   }
   return cleared;
 }
 
-async function getConsecutiveWeekendSessions(): Promise<number> {
-  const logs = await db
-    .select()
-    .from(schema.sessionLogs)
-    .orderBy(desc(schema.sessionLogs.date));
+function getConsecutiveWeekendSessions(logsDesc: (typeof schema.sessionLogs.$inferSelect)[]): number {
   let count = 0;
-  for (const log of logs) {
+  for (const log of logsDesc) {
     if (log.exercisesCompleted <= 0) break;
     const day = new Date(`${log.date}T00:00:00Z`).getUTCDay();
     if (day !== 0 && day !== 6) break;
@@ -47,7 +42,7 @@ async function getConsecutiveWeekendSessions(): Promise<number> {
 }
 
 export async function computeAchievementStats(): Promise<AchievementStats> {
-  const [userStats, profile, unitProgressRows, lessonProgressRows, cardRows, exerciseEventRows, placement] =
+  const [userStats, profile, unitProgressRows, lessonProgressRows, cardRows, exerciseEventRows, placement, leechCards, sessionLogsDesc] =
     await Promise.all([
       db.select().from(schema.userStats).where(eq(schema.userStats.id, PROFILE_ID)),
       db.select().from(schema.profile).where(eq(schema.profile.id, PROFILE_ID)),
@@ -56,6 +51,8 @@ export async function computeAchievementStats(): Promise<AchievementStats> {
       db.select().from(schema.cards).where(ne(schema.cards.state, "new")),
       db.select().from(schema.exerciseEvents),
       db.select().from(schema.placementResult),
+      db.select().from(schema.cards).where(eq(schema.cards.isLeech, true)),
+      db.select().from(schema.sessionLogs).orderBy(desc(schema.sessionLogs.date)),
     ]);
 
   const stats = userStats[0];
@@ -73,19 +70,16 @@ export async function computeAchievementStats(): Promise<AchievementStats> {
     .filter((u) => u.bossScore !== null && u.bossScore !== undefined)
     .map((u) => ({ unitSlug: u.unitId, score: u.bossScore as number }));
 
-  const [verbDrillsCompleted, speakingExercises, dictationExercises, registerSwaps, leechesCleared, consecutiveWeekendSessions] =
-    await Promise.all([
-      countExerciseEvents("conjugation_drill", true),
-      countExerciseEvents("speaking", true),
-      countExerciseEvents("dictation", true),
-      countExerciseEvents("register_swap", true),
-      getLeechClearedCount(),
-      getConsecutiveWeekendSessions(),
-    ]);
+  // exerciseEventRows is already the full table — count kinds in memory instead of one more
+  // `WHERE kind = ?` query per kind (was 4 extra full-table queries on top of the one above).
+  const countCorrectByKind = (kind: string) =>
+    exerciseEventRows.filter((e) => e.kind === kind && e.correct).length;
+
+  const leechesCleared = await getLeechClearedCount(leechCards);
 
   return {
     wordsKnown,
-    verbDrillsCompleted,
+    verbDrillsCompleted: countCorrectByKind("conjugation_drill"),
     perfectLessons,
     currentStreak: stats?.currentStreak ?? 0,
     studiedAfterMidnight,
@@ -95,10 +89,10 @@ export async function computeAchievementStats(): Promise<AchievementStats> {
     reviewsCompleted: exerciseEventRows.length,
     leechesCleared,
     level: stats?.level ?? 1,
-    speakingExercises,
-    dictationExercises,
-    registerSwaps,
-    consecutiveWeekendSessions,
+    speakingExercises: countCorrectByKind("speaking"),
+    dictationExercises: countCorrectByKind("dictation"),
+    registerSwaps: countCorrectByKind("register_swap"),
+    consecutiveWeekendSessions: getConsecutiveWeekendSessions(sessionLogsDesc),
     placementTestDone: Boolean(prof?.placementDone) || placement.length > 0,
   };
 }

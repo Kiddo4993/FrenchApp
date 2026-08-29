@@ -79,7 +79,15 @@
       "Bash(cat)",
       "Bash(git check-ignore *)",
       "Bash(grep -rliE \"token|password|secret|api[_-]?key\" ~/.config/git ~/.config/kitty ~/.config/nvim 2>/dev/null | head -10 *)",
-      "Read(//Users/dylanduan/.config/git/**)"
+      "Read(//Users/dylanduan/.config/git/**)",
+      "Bash(gh auth *)",
+      "Bash(ssh -T git@github.com -o ConnectTimeout=5 -o BatchMode=yes)",
+      "Bash(git fetch *)",
+      "Bash(echo \"=== exit code: $? ===\")",
+      "Bash(git ls-remote *)",
+      "Bash(git ls-tree *)",
+      "Bash(git merge *)",
+      "Bash(git push *)"
     ],
     "additionalDirectories": [
       "/Users/dylanduan/Desktop/frenchapp/data",

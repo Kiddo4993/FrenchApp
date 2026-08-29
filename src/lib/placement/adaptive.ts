@@ -5,9 +5,10 @@
  * src/components/placement/PlacementRunner.tsx for the interactive flow and
  * src/server/placement-queries.ts for the vocab pools it draws questions from.
  */
+import { CEFR_LEVELS, type Cefr } from "@/content/curriculum";
 
-export const CEFR_LEVELS = ["A1", "A2", "B1", "B2", "C1"] as const;
-export type Cefr = (typeof CEFR_LEVELS)[number];
+export { CEFR_LEVELS };
+export type { Cefr };
 
 /** Index into CEFR_LEVELS the test starts at — A2, per PLAN.md §3. */
 export const PLACEMENT_START_LEVEL_INDEX = 1;

@@ -16,6 +16,7 @@ import { useAccentInput } from "@/hooks/useAccentInput";
 import { isPassing, matchAnswer } from "@/lib/answer-matching";
 import { PERSON_LABELS, TENSE_LABELS } from "@/lib/conjugation-labels";
 import { TENSES, type Person, type Tense } from "@/lib/conjugation";
+import { shuffle } from "@/lib/exercises/generate";
 import { cn } from "@/lib/utils";
 import type { TrainerVerb } from "./types";
 
@@ -24,15 +25,6 @@ type AccuracyMatrix = Record<Tense, { correct: number; total: number }>;
 
 function emptyAccuracy(): AccuracyMatrix {
   return Object.fromEntries(TENSES.map((t) => [t, { correct: 0, total: 0 }])) as AccuracyMatrix;
-}
-
-function shuffle<T>(items: T[]): T[] {
-  const copy = [...items];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
 }
 
 /**

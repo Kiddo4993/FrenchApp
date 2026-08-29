@@ -404,6 +404,7 @@ export async function submitPlacementTest(
   await ensureBootstrapProgress();
   const targetUnit = UNITS_SORTED.find((u) => u.slug === recommendedUnitId);
   if (!targetUnit) return;
+  const now = new Date();
   for (const unitDef of UNITS_SORTED) {
     if (unitGlobalOrder(unitDef) > unitGlobalOrder(targetUnit)) continue;
     const [existing] = await db.select().from(schema.unitProgress).where(eq(schema.unitProgress.unitId, unitDef.slug));
@@ -413,12 +414,34 @@ export async function submitPlacementTest(
     } else if (existing.status === "locked") {
       await db.update(schema.unitProgress).set({ status }).where(eq(schema.unitProgress.id, existing.id));
     }
+
+    const lessons = await db.select().from(schema.lessons).where(eq(schema.lessons.unitId, unitDef.slug));
+    const sorted = [...lessons].sort((a, b) => a.order - b.order);
+
     if (status === "available") {
-      const lessons = await db.select().from(schema.lessons).where(eq(schema.lessons.unitId, unitDef.slug));
-      const first = [...lessons].sort((a, b) => a.order - b.order)[0];
+      // Only the target unit itself: unlock just its first lesson, same as normal progression.
+      const first = sorted[0];
       if (first) {
         const [flProg] = await db.select().from(schema.lessonProgress).where(eq(schema.lessonProgress.lessonId, first.id));
         if (!flProg) await db.insert(schema.lessonProgress).values({ lessonId: first.id, status: "available" });
+      }
+    } else {
+      // A unit placement judged the learner has already tested past: grant every lesson in it as
+      // complete, not just the unit shell — otherwise the skill tree renders it as an expanded,
+      // un-locked section full of individually-locked (padlocked) lesson nodes. Caught by code
+      // review: nothing exercised a placement recommendation past the very first unit.
+      for (const lesson of sorted) {
+        const [lp] = await db.select().from(schema.lessonProgress).where(eq(schema.lessonProgress.lessonId, lesson.id));
+        if (!lp) {
+          await db
+            .insert(schema.lessonProgress)
+            .values({ lessonId: lesson.id, status: "complete", crownLevel: 5, bestAccuracy: 1, lastCompletedAt: now });
+        } else if (lp.status !== "complete") {
+          await db
+            .update(schema.lessonProgress)
+            .set({ status: "complete", crownLevel: Math.max(lp.crownLevel, 5), bestAccuracy: Math.max(lp.bestAccuracy ?? 0, 1) })
+            .where(eq(schema.lessonProgress.id, lp.id));
+        }
       }
     }
   }
