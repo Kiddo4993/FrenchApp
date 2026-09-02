@@ -43,22 +43,33 @@ export function UnitSection({ unit, defaultOpen }: { unit: UnitSectionData; defa
           <p className="text-sm text-muted-foreground">{unit.focus}</p>
         </div>
         {mastered && (
-          <span
+          <motion.span
+            initial={{ scale: 0.7, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 18, delay: 0.15 }}
             className={cn(
               "flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold",
               unit.isCracked ? "bg-gold/20 text-gold-foreground" : "bg-gold text-gold-foreground",
             )}
             title={unit.isCracked ? "La mémorisation faiblit — une révision est recommandée" : "Unité maîtrisée"}
           >
-            <Sparkles className="size-3.5" aria-hidden />
+            {!unit.isCracked && (
+              <motion.span
+                animate={{ rotate: [0, 15, -15, 0] }}
+                transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 1.5, ease: "easeInOut" }}
+              >
+                <Sparkles className="size-3.5" aria-hidden />
+              </motion.span>
+            )}
+            {unit.isCracked && <Sparkles className="size-3.5" aria-hidden />}
             {unit.isCracked ? "Fissurée" : "En or"}
-          </span>
+          </motion.span>
         )}
       </header>
 
       <div className="flex flex-col items-center gap-6">
         {unit.lessons.map((lesson, i) => (
-          <LessonNode key={lesson.id} node={lesson} offsetPx={OFFSETS[i % OFFSETS.length]} />
+          <LessonNode key={lesson.id} node={lesson} offsetPx={OFFSETS[i % OFFSETS.length]} index={i} />
         ))}
       </div>
     </motion.section>

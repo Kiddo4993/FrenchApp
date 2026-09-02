@@ -4,7 +4,7 @@ import { BarChart3, BookOpen, Flame, Home, RotateCcw, Settings, Sparkles } from 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
-import { cn } from "@/lib/utils";
+import { NavLink } from "./NavLink";
 
 const NAV_ITEMS = [
   { href: "/", label: "Accueil", icon: Home },
@@ -62,35 +62,22 @@ export function AppShell({
             </span>
           </div>
           <div className="h-2 overflow-hidden rounded-full bg-muted" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100} aria-label="Progression du niveau">
-            <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${pct}%` }} />
+            <div className="h-full rounded-full bg-primary transition-all duration-500 ease-out" style={{ width: `${pct}%` }} />
           </div>
         </div>
 
         <nav className="flex flex-1 flex-col gap-1">
-          {NAV_ITEMS.map((item) => {
-            const Icon = item.icon;
-            const active = isActive(pathname, item.href);
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={cn(
-                  "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
-                  active
-                    ? "bg-sidebar-accent text-sidebar-accent-foreground"
-                    : "text-sidebar-foreground/70 hover:bg-sidebar-accent/60 hover:text-sidebar-accent-foreground",
-                )}
-              >
-                <Icon className="size-5" aria-hidden />
-                {item.label}
-                {item.href === "/reviser" && header.dueCount > 0 && (
-                  <span className="ml-auto rounded-full bg-primary px-2 py-0.5 text-xs font-semibold text-primary-foreground">
-                    {header.dueCount}
-                  </span>
-                )}
-              </Link>
-            );
-          })}
+          {NAV_ITEMS.map((item) => (
+            <NavLink
+              key={item.href}
+              variant="sidebar"
+              href={item.href}
+              label={item.label}
+              icon={item.icon}
+              active={isActive(pathname, item.href)}
+              badge={item.href === "/reviser" ? header.dueCount : undefined}
+            />
+          ))}
         </nav>
       </aside>
 
@@ -114,27 +101,17 @@ export function AppShell({
         <main className="flex flex-1 flex-col">{children}</main>
 
         <nav className="fixed inset-x-0 bottom-0 z-10 flex items-center justify-around border-t bg-background py-2 md:hidden">
-          {NAV_ITEMS.map((item) => {
-            const Icon = item.icon;
-            const active = isActive(pathname, item.href);
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                aria-label={item.label}
-                className={cn(
-                  "relative flex min-w-11 flex-col items-center gap-0.5 rounded-lg px-3 py-1.5 text-xs",
-                  active ? "text-primary" : "text-muted-foreground",
-                )}
-              >
-                <Icon className="size-5" aria-hidden />
-                {item.href === "/reviser" && header.dueCount > 0 && (
-                  <span className="absolute right-1 top-0.5 size-2 rounded-full bg-primary" />
-                )}
-                {item.label}
-              </Link>
-            );
-          })}
+          {NAV_ITEMS.map((item) => (
+            <NavLink
+              key={item.href}
+              variant="tabbar"
+              href={item.href}
+              label={item.label}
+              icon={item.icon}
+              active={isActive(pathname, item.href)}
+              badge={item.href === "/reviser" ? header.dueCount : undefined}
+            />
+          ))}
         </nav>
       </div>
     </div>

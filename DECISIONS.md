@@ -4,6 +4,41 @@ Judgment calls made while building, newest first.
 
 ---
 
+### 2026-09-02 — Animation pass + three more real bugs, all caught by actually running things
+Did a full `/animation-design`-guided pass: spring-based exercise transitions and a restrained
+grading "flash" in `ExerciseShell`, real press/hover/reveal physics on `OptionButton` (replacing
+plain CSS transitions), an XP count-up (`CountUp`) and staggered entrances on the results screens,
+a breathing "start here" ring on the next skill-tree node plus per-node entrance stagger, and a
+`layoutId`-based sliding active-tab indicator in the nav (extracted into a shared `NavLink` while at
+it, incidentally fixing the sidebar/tab-bar duplication code review had flagged). All gated behind
+`useReducedMotion()`.
+
+Three more real bugs surfaced only by actually running the app repeatedly, not by typecheck/tests/
+build succeeding:
+
+1. **Tried a lazy `Proxy`-wrapped `db` client** (to also dodge `next build`'s parallel
+   "collecting page data" workers each importing `src/db/client.ts` and racing to open the same
+   PGlite directory — a rare, non-fatal WASM abort message seen once during a build). It made
+   `db.transaction(...)` hang indefinitely — almost certainly Drizzle's internals losing correct
+   `this` identity when a method is invoked through a Proxy. **Reverted.** A guaranteed hang on
+   every write path is a far worse trade than an occasional cosmetic warning on a local build with
+   no `DATABASE_URL` (production always sets it and uses postgres-js, which has no single-writer
+   constraint at all).
+2. **`scripts/seed.ts` and `scripts/migrate.ts` never exited** after finishing successfully —
+   PGlite/postgres-js can leave a handle open that keeps Node's event loop alive, so both scripts
+   hung forever after printing their final "complete" line until killed manually (twice this
+   produced genuinely deadlocked orphan processes across turns, later blocking a *new* seed attempt
+   on the same file lock). Added explicit `process.exit(0)` on the success path, matching the
+   pattern `seed-demo.ts` already used.
+3. **A brand-new install's very first page load** could show every unit locked (skill tree) —
+   `ensureBootstrapProgress()` did a non-atomic check-then-insert, and something (observed only on
+   a genuinely cold `data/maitrise-pg`, never on a warm reload) invoked it concurrently with itself
+   often enough to race: both branches read "nothing unlocked yet" before either insert committed.
+   Fixed with `.onConflictDoNothing()` on both inserts — cheap, and correct regardless of the exact
+   mechanism, since `unitProgress.unitId`/`lessonProgress.lessonId` are already unique.
+
+---
+
 ### 2026-08-23 — Migrated SQLite → Postgres for real deployment, without losing zero-config local dev
 The user asked for a real, always-on Vercel deployment rather than just a working build. SQLite's
 file-based storage is fundamentally incompatible with that: serverless functions have no persistent

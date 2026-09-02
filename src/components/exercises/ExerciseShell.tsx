@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { CheckCircle2, Lightbulb, XCircle } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -38,6 +38,7 @@ export function ExerciseShell({
   const [checker, setCheckerState] = useState<(() => void) | null>(null);
   const startRef = useRef<number>(Date.now());
   const optionActivatorsRef = useRef<Array<() => void> | null>(null);
+  const reduceMotion = useReducedMotion();
 
   useEffect(() => {
     // Deliberately does NOT reset checker/optionActivators here: child effects (which also key
@@ -102,18 +103,49 @@ export function ExerciseShell({
           {headerLeft}
           <Progress value={pct} className="flex-1" aria-label="Progression de la leçon" />
           {hintAvailable && phase === "answering" && (
-            <button
+            <motion.button
               type="button"
               onClick={() => setHintUsed(true)}
               aria-label="Indice"
-              className="text-muted-foreground hover:text-accent-foreground transition-colors"
+              whileTap={reduceMotion ? undefined : { scale: 0.85 }}
+              animate={hintUsed && !reduceMotion ? { scale: [1, 1.35, 1], rotate: [0, -8, 8, 0] } : {}}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              className="text-muted-foreground transition-colors hover:text-accent-foreground"
             >
               <Lightbulb className={cn("size-5", hintUsed && "fill-gold text-gold")} />
-            </button>
+            </motion.button>
           )}
         </div>
 
-        <div className="flex flex-1 flex-col justify-center px-4 py-6">{children}</div>
+        <div className="relative flex flex-1 flex-col justify-center overflow-hidden px-4 py-6">
+          {/* Restrained "flash" on grading — a single quick tint sweep, not a color-inverted
+              screen: reads as a pulse of feedback rather than a mode change. */}
+          <AnimatePresence>
+            {phase !== "answering" && !reduceMotion && (
+              <motion.div
+                key={`flash-${prompt.id}`}
+                initial={{ opacity: 0.35 }}
+                animate={{ opacity: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className={cn(
+                  "pointer-events-none absolute inset-0 z-10",
+                  phase === "correct" ? "bg-[var(--chart-3)]" : "bg-destructive",
+                )}
+              />
+            )}
+          </AnimatePresence>
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.div
+              key={prompt.id}
+              initial={reduceMotion ? { opacity: 0 } : { opacity: 0, x: 24 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={reduceMotion ? { opacity: 0 } : { opacity: 0, x: -24 }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            >
+              {children}
+            </motion.div>
+          </AnimatePresence>
+        </div>
 
         <AnimatePresence>
           {phase === "answering" ? (
@@ -147,11 +179,17 @@ export function ExerciseShell({
             >
               <div className="mx-auto flex max-w-xl items-center justify-between gap-4">
                 <div className="flex items-center gap-2">
-                  {phase === "correct" ? (
-                    <CheckCircle2 className="size-6 shrink-0 text-[var(--chart-3)]" />
-                  ) : (
-                    <XCircle className="size-6 shrink-0 text-destructive" />
-                  )}
+                  <motion.div
+                    initial={reduceMotion ? false : { scale: 0.4, rotate: phase === "correct" ? -25 : 0 }}
+                    animate={{ scale: 1, rotate: 0 }}
+                    transition={{ type: "spring", stiffness: 500, damping: 15 }}
+                  >
+                    {phase === "correct" ? (
+                      <CheckCircle2 className="size-6 shrink-0 text-[var(--chart-3)]" />
+                    ) : (
+                      <XCircle className="size-6 shrink-0 text-destructive" />
+                    )}
+                  </motion.div>
                   <div>
                     <p className="font-medium">
                       {phase === "correct" ? "Correct !" : "Pas tout à fait"}

@@ -240,7 +240,13 @@ async function main() {
   console.log("Seed complete.");
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// PGlite/postgres-js can leave a handle open (a WASM worker, a pooled socket) that keeps Node's
+// event loop alive after all work is done — explicit exit rather than relying on natural
+// event-loop-empty exit, matching seed-demo.ts. Without this the script hangs forever after
+// printing "Seed complete." until killed manually. Caught by actually running it, not typechecking.
+main()
+  .then(() => process.exit(0))
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });

@@ -23,6 +23,7 @@ async function migratePglite() {
   const client = new PGlite(DB_DIR);
   const db = drizzle(client);
   await migrate(db, { migrationsFolder: path.join(process.cwd(), "drizzle") });
+  await client.close();
   console.log(`Migrations applied to local embedded Postgres (${DB_DIR}).`);
 }
 
@@ -34,7 +35,11 @@ async function main() {
   }
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// See scripts/seed.ts for why this explicit exit matters — PGlite/postgres-js can leave a handle
+// open that keeps the event loop alive after the work is actually done.
+main()
+  .then(() => process.exit(0))
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });

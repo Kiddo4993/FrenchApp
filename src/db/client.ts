@@ -35,17 +35,22 @@ function createDb() {
 // intermittent, transiently-stale reads (a freshly-bootstrapped row invisible to the very next
 // render) right after a cold `next dev` start. Cache the instance on `globalThis` so HMR reuses
 // the same live connection instead of racing a new one against it — the standard fix for this
-// class of bug with any embedded/pooled DB client under Next dev. Harmless in production (each
-// serverless invocation gets a fresh module scope regardless), and using DATABASE_URL there avoids
-// the single-writer constraint entirely.
+// class of bug with any embedded/pooled DB client under Next dev.
+//
+// A lazy Proxy wrapper (constructing `db` only on first property access, to also dodge the rarer
+// case of next-build's parallel "collecting page data" workers each importing this module) was
+// tried and reverted — it made `db.transaction(...)` calls hang indefinitely, almost certainly
+// because Drizzle's internals lose correct `this` identity when invoked through a Proxy. A hang in
+// every seed/write path is a far worse trade than an occasional non-fatal WASM abort message
+// during a local `npm run build` with no DATABASE_URL set (build still exits 0; production always
+// sets DATABASE_URL and uses postgres-js, which has no single-writer constraint at all). See
+// DECISIONS.md.
 declare global {
   var __maitriseDb: ReturnType<typeof createDb> | undefined;
 }
 
 export const db = globalThis.__maitriseDb ?? createDb();
-if (process.env.NODE_ENV !== "production") {
-  globalThis.__maitriseDb = db;
-}
+globalThis.__maitriseDb = db;
 
 export type Db = typeof db;
 export const usingHostedPostgres = Boolean(DATABASE_URL);

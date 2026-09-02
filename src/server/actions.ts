@@ -341,18 +341,28 @@ export async function finalizeReviewSession(
   return applyXpStreakAndAchievements(now, results, isPerfect ? "perfect_lesson" : "exercise");
 }
 
+/**
+ * Called on every request to the (app) layout, so it must be safe to run concurrently with
+ * itself — a check-then-insert without conflict handling is not: two overlapping calls (observed
+ * in dev, e.g. from React/Next re-invoking a Server Component render) can both read "no progress
+ * yet" before either write commits, then race each other into `.insert()`. `unitProgress.unitId`
+ * and `lessonProgress.lessonId` are both unique, so `onConflictDoNothing()` makes the race
+ * harmless either way instead of one branch throwing (or, worse, a caller reading a transiently
+ * stale "nothing unlocked yet" state). Caught via a live browser check on a genuinely cold
+ * `data/maitrise-pg` — the very first page load a real fresh install would show.
+ */
 export async function ensureBootstrapProgress(): Promise<void> {
   const anyUnitProgress = await db.select({ id: schema.unitProgress.id }).from(schema.unitProgress).limit(1);
   if (anyUnitProgress.length > 0) return;
 
   const firstUnit = UNITS_SORTED[0];
   if (!firstUnit) return;
-  await db.insert(schema.unitProgress).values({ unitId: firstUnit.slug, status: "available" });
+  await db.insert(schema.unitProgress).values({ unitId: firstUnit.slug, status: "available" }).onConflictDoNothing();
 
   const firstUnitLessons = await db.select().from(schema.lessons).where(eq(schema.lessons.unitId, firstUnit.slug));
   const firstLesson = [...firstUnitLessons].sort((a, b) => a.order - b.order)[0];
   if (firstLesson) {
-    await db.insert(schema.lessonProgress).values({ lessonId: firstLesson.id, status: "available" });
+    await db.insert(schema.lessonProgress).values({ lessonId: firstLesson.id, status: "available" }).onConflictDoNothing();
   }
 }
 
