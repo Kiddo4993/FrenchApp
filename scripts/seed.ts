@@ -1,7 +1,8 @@
 /**
- * Loads /content/*.json into SQLite. Safe to re-run: content tables are upserted by their
- * stable, content-derived ids (never random), so re-seeding after the learner has progress
- * updates content in place instead of cascading deletes through their cards/progress rows.
+ * Loads /content/*.json into Postgres (hosted, or the local embedded PGlite — see src/db/client.ts).
+ * Safe to re-run: content tables are upserted by their stable, content-derived ids (never random),
+ * so re-seeding after the learner has progress updates content in place instead of cascading
+ * deletes through their cards/progress rows.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -33,20 +34,20 @@ function readJson(filePath: string): unknown {
 
 type Tx = Parameters<Parameters<typeof db.transaction>[0]>[0];
 
-function seedLevels(db: Tx) {
+async function seedLevels(db: Tx) {
   for (const id of ["A1", "A2", "B1", "B2", "C1"] as const) {
-    db.insert(schema.levels)
+    await db
+      .insert(schema.levels)
       .values({ id, title: LEVEL_TITLES[id], order: LEVEL_ORDER[id] })
       .onConflictDoUpdate({
         target: schema.levels.id,
         set: { title: LEVEL_TITLES[id], order: LEVEL_ORDER[id] },
-      })
-      .run();
+      });
   }
   console.log(`Seeded ${5} levels`);
 }
 
-function seedUnitsAndLessons(db: Tx) {
+async function seedUnitsAndLessons(db: Tx) {
   for (const unit of UNITS) {
     const row = {
       id: unit.slug,
@@ -57,10 +58,7 @@ function seedUnitsAndLessons(db: Tx) {
       focus: unit.focus,
       topics: unit.topics,
     };
-    db.insert(schema.units)
-      .values(row)
-      .onConflictDoUpdate({ target: schema.units.id, set: row })
-      .run();
+    await db.insert(schema.units).values(row).onConflictDoUpdate({ target: schema.units.id, set: row });
   }
   for (const lesson of LESSONS) {
     const row = {
@@ -72,15 +70,12 @@ function seedUnitsAndLessons(db: Tx) {
       skillFocus: lesson.skillFocus,
       topicSlug: lesson.topicSlug,
     };
-    db.insert(schema.lessons)
-      .values(row)
-      .onConflictDoUpdate({ target: schema.lessons.id, set: row })
-      .run();
+    await db.insert(schema.lessons).values(row).onConflictDoUpdate({ target: schema.lessons.id, set: row });
   }
   console.log(`Seeded ${UNITS.length} units, ${LESSONS.length} lessons`);
 }
 
-function seedVocab(db: Tx) {
+async function seedVocab(db: Tx) {
   let total = 0;
   for (const topic of TOPICS) {
     const file = path.join(CONTENT_ROOT, "vocab", `${topic.slug}.json`);
@@ -106,17 +101,17 @@ function seedVocab(db: Tx) {
         mnemonic: entry.mnemonic,
         audioText: entry.audioText,
       };
-      db.insert(schema.vocabEntries)
+      await db
+        .insert(schema.vocabEntries)
         .values(row)
-        .onConflictDoUpdate({ target: schema.vocabEntries.id, set: row })
-        .run();
+        .onConflictDoUpdate({ target: schema.vocabEntries.id, set: row });
       total++;
     }
   }
   console.log(`Seeded ${total} vocab entries`);
 }
 
-function seedVerbs(db: Tx) {
+async function seedVerbs(db: Tx) {
   const file = path.join(CONTENT_ROOT, "verbs", "verbs.json");
   if (!fs.existsSync(file)) return;
   const verbs = verbFileSchema.parse(readJson(file));
@@ -129,10 +124,7 @@ function seedVerbs(db: Tx) {
       pastParticiple: verb.pastParticiple,
       frequencyRank: verb.frequencyRank,
     };
-    db.insert(schema.verbs)
-      .values(verbRow)
-      .onConflictDoUpdate({ target: schema.verbs.id, set: verbRow })
-      .run();
+    await db.insert(schema.verbs).values(verbRow).onConflictDoUpdate({ target: schema.verbs.id, set: verbRow });
 
     for (const c of verb.conjugations) {
       const conjRow = {
@@ -143,16 +135,16 @@ function seedVerbs(db: Tx) {
         form: c.form,
         isIrregular: c.isIrregular,
       };
-      db.insert(schema.verbConjugations)
+      await db
+        .insert(schema.verbConjugations)
         .values(conjRow)
-        .onConflictDoUpdate({ target: schema.verbConjugations.id, set: conjRow })
-        .run();
+        .onConflictDoUpdate({ target: schema.verbConjugations.id, set: conjRow });
     }
   }
   console.log(`Seeded ${verbs.length} verbs`);
 }
 
-function seedGrammar(db: Tx) {
+async function seedGrammar(db: Tx) {
   let total = 0;
   for (const unit of UNITS) {
     const file = path.join(CONTENT_ROOT, "grammar", `${unit.slug}.json`);
@@ -170,17 +162,17 @@ function seedGrammar(db: Tx) {
         whyItTrips: point.whyItTrips,
         searchTags: point.searchTags,
       };
-      db.insert(schema.grammarPoints)
+      await db
+        .insert(schema.grammarPoints)
         .values(row)
-        .onConflictDoUpdate({ target: schema.grammarPoints.id, set: row })
-        .run();
+        .onConflictDoUpdate({ target: schema.grammarPoints.id, set: row });
       total++;
     }
   }
   console.log(`Seeded ${total} grammar points`);
 }
 
-function seedReadings(db: Tx) {
+async function seedReadings(db: Tx) {
   let total = 0;
   for (const topic of TOPICS) {
     const file = path.join(CONTENT_ROOT, "readings", `${topic.slug}.json`);
@@ -195,17 +187,17 @@ function seedReadings(db: Tx) {
         bodyFr: passage.bodyFr,
         questions: passage.questions,
       };
-      db.insert(schema.readingPassages)
+      await db
+        .insert(schema.readingPassages)
         .values(row)
-        .onConflictDoUpdate({ target: schema.readingPassages.id, set: row })
-        .run();
+        .onConflictDoUpdate({ target: schema.readingPassages.id, set: row });
       total++;
     }
   }
   console.log(`Seeded ${total} reading passages`);
 }
 
-function seedAchievements(db: Tx) {
+async function seedAchievements(db: Tx) {
   for (const a of ACHIEVEMENTS) {
     const row = {
       id: a.slug,
@@ -216,36 +208,39 @@ function seedAchievements(db: Tx) {
       criteria: a.criteria,
       tier: a.tier,
     };
-    db.insert(schema.achievements)
+    await db
+      .insert(schema.achievements)
       .values(row)
-      .onConflictDoUpdate({ target: schema.achievements.id, set: row })
-      .run();
+      .onConflictDoUpdate({ target: schema.achievements.id, set: row });
   }
   console.log(`Seeded ${ACHIEVEMENTS.length} achievements`);
 }
 
-function seedProfileBootstrap(db: Tx) {
-  db.insert(schema.profile)
+async function seedProfileBootstrap(db: Tx) {
+  await db
+    .insert(schema.profile)
     .values({ id: "singleton", name: "Apprenant", placementDone: false })
-    .onConflictDoNothing()
-    .run();
-  db.insert(schema.settings).values({ profileId: "singleton" }).onConflictDoNothing().run();
-  db.insert(schema.userStats).values({ id: "singleton" }).onConflictDoNothing().run();
+    .onConflictDoNothing();
+  await db.insert(schema.settings).values({ profileId: "singleton" }).onConflictDoNothing();
+  await db.insert(schema.userStats).values({ id: "singleton" }).onConflictDoNothing();
   console.log("Ensured profile/settings/userStats bootstrap rows exist");
 }
 
-function main() {
-  db.transaction((tx) => {
-    seedLevels(tx);
-    seedUnitsAndLessons(tx);
-    seedVocab(tx);
-    seedVerbs(tx);
-    seedGrammar(tx);
-    seedReadings(tx);
-    seedAchievements(tx);
-    seedProfileBootstrap(tx);
+async function main() {
+  await db.transaction(async (tx) => {
+    await seedLevels(tx);
+    await seedUnitsAndLessons(tx);
+    await seedVocab(tx);
+    await seedVerbs(tx);
+    await seedGrammar(tx);
+    await seedReadings(tx);
+    await seedAchievements(tx);
+    await seedProfileBootstrap(tx);
   });
   console.log("Seed complete.");
 }
 
-main();
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});

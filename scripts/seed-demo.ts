@@ -73,7 +73,7 @@ interface SimCard {
 
 async function main() {
   console.log("Clearing prior demo/user-state data...");
-  await db.transaction((tx) => {
+  await db.transaction(async (tx) => {
     for (const table of [
       schema.reviewLogs,
       schema.exerciseEvents,
@@ -85,11 +85,11 @@ async function main() {
       schema.sessionLogs,
       schema.placementResult,
     ]) {
-      tx.delete(table).run();
+      await tx.delete(table);
     }
-    tx.delete(schema.userStats).run();
-    tx.delete(schema.profile).run();
-    tx.delete(schema.settings).run();
+    await tx.delete(schema.userStats);
+    await tx.delete(schema.profile);
+    await tx.delete(schema.settings);
   });
 
   const allVocab = await db.select().from(schema.vocabEntries);
@@ -354,64 +354,64 @@ async function main() {
   console.log("\nWriting to database...");
   const finalNow = new Date();
 
-  await db.transaction((tx) => {
-    tx.insert(schema.profile).values({ id: "singleton", name: "Alex", createdAt: dateAt(0, 9), placementDone: true }).run();
-    tx.insert(schema.settings).values({ profileId: "singleton" }).run();
-    tx.insert(schema.userStats)
-      .values({
-        id: "singleton",
-        totalXp,
-        level: levelForTotalXp(totalXp),
-        currentStreak: streak.currentStreak,
-        longestStreak: streak.longestStreak,
-        freezesAvailable: streak.freezesAvailable,
-        lastActiveDate: streak.lastActiveDate,
-        weekendAmuletActive: true,
-      })
-      .run();
+  await db.transaction(async (tx) => {
+    await tx.insert(schema.profile).values({ id: "singleton", name: "Alex", createdAt: dateAt(0, 9), placementDone: true });
+    await tx.insert(schema.settings).values({ profileId: "singleton" });
+    await tx.insert(schema.userStats).values({
+      id: "singleton",
+      totalXp,
+      level: levelForTotalXp(totalXp),
+      currentStreak: streak.currentStreak,
+      longestStreak: streak.longestStreak,
+      freezesAvailable: streak.freezesAvailable,
+      lastActiveDate: streak.lastActiveDate,
+      weekendAmuletActive: true,
+    });
 
     for (const [vocabId, card] of cards) {
-      tx.insert(schema.cards)
-        .values({ id: card.id, vocabId, track: "recognition", ...card.snapshot })
-        .run();
+      await tx.insert(schema.cards).values({ id: card.id, vocabId, track: "recognition", ...card.snapshot });
     }
     console.log(`  ${cards.size} cards`);
 
     const CHUNK = 500;
     for (let i = 0; i < reviewLogRows.length; i += CHUNK) {
-      tx.insert(schema.reviewLogs).values(reviewLogRows.slice(i, i + CHUNK)).run();
+      await tx.insert(schema.reviewLogs).values(reviewLogRows.slice(i, i + CHUNK));
     }
     console.log(`  ${reviewLogRows.length} review logs`);
     for (let i = 0; i < exerciseEventRows.length; i += CHUNK) {
-      tx.insert(schema.exerciseEvents).values(exerciseEventRows.slice(i, i + CHUNK)).run();
+      await tx.insert(schema.exerciseEvents).values(exerciseEventRows.slice(i, i + CHUNK));
     }
     console.log(`  ${exerciseEventRows.length} exercise events`);
     const sessionLogRows = [...sessionLogsByDate.entries()].map(([date, v]) => ({ date, ...v }));
     for (let i = 0; i < sessionLogRows.length; i += CHUNK) {
-      tx.insert(schema.sessionLogs).values(sessionLogRows.slice(i, i + CHUNK)).run();
+      await tx.insert(schema.sessionLogs).values(sessionLogRows.slice(i, i + CHUNK));
     }
     console.log(`  ${sessionLogRows.length} session log days`);
     for (let i = 0; i < dailyXpEvents.length; i += CHUNK) {
-      tx.insert(schema.xpEvents).values(dailyXpEvents.slice(i, i + CHUNK)).run();
+      await tx.insert(schema.xpEvents).values(dailyXpEvents.slice(i, i + CHUNK));
     }
     console.log(`  ${dailyXpEvents.length} xp events`);
 
     for (const [lessonId, lp] of lessonProgressState) {
-      tx.insert(schema.lessonProgress)
-        .values({ lessonId, status: lp.status as "complete", crownLevel: lp.crownLevel, bestAccuracy: lp.bestAccuracy, lastCompletedAt: lp.lastCompletedAt })
-        .run();
+      await tx.insert(schema.lessonProgress).values({
+        lessonId,
+        status: lp.status as "complete",
+        crownLevel: lp.crownLevel,
+        bestAccuracy: lp.bestAccuracy,
+        lastCompletedAt: lp.lastCompletedAt,
+      });
     }
     console.log(`  ${lessonProgressState.size} lesson progress rows`);
     for (const [unitId, up] of unitProgressState) {
-      tx.insert(schema.unitProgress)
-        .values({ unitId, status: up.status as "gold", bossScore: up.bossScore, masteredAt: up.masteredAt })
-        .run();
+      await tx
+        .insert(schema.unitProgress)
+        .values({ unitId, status: up.status as "gold", bossScore: up.bossScore, masteredAt: up.masteredAt });
     }
     console.log(`  ${unitProgressState.size} unit progress rows`);
 
     for (const event of unlockedUnitAchievementEvents) {
       for (const slug of event.slugs) {
-        tx.insert(schema.userAchievements).values({ achievementId: slug, unlockedAt: event.ts }).run();
+        await tx.insert(schema.userAchievements).values({ achievementId: slug, unlockedAt: event.ts });
       }
     }
     console.log(`  ${unlockedAchievements.size} achievements unlocked`);

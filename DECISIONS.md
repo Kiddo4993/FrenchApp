@@ -4,6 +4,64 @@ Judgment calls made while building, newest first.
 
 ---
 
+### 2026-08-23 — Migrated SQLite → Postgres for real deployment, without losing zero-config local dev
+The user asked for a real, always-on Vercel deployment rather than just a working build. SQLite's
+file-based storage is fundamentally incompatible with that: serverless functions have no persistent
+disk, so progress wouldn't survive between requests. The schema had been kept Postgres-compatible
+from day one specifically for this (see the original "Postgres-compatible SQLite schema" entry
+below) — this pass cashed that in.
+
+Rejected the obvious-seeming shortcut of maintaining two schema files (one `sqlite-core`, one
+`pg-core`) switched by environment — that's a permanent maintenance burden (every future column
+change has to be applied twice, and the two *will* drift). Instead: **one schema, one dialect
+(`drizzle-orm/pg-core`), everywhere.** `src/db/client.ts` picks the driver at runtime:
+- `DATABASE_URL` set → `drizzle-orm/postgres-js` against a real hosted Postgres (Vercel
+  Storage/Neon, Supabase, etc.) — what a deployment needs.
+- `DATABASE_URL` unset → `drizzle-orm/pglite` against an embedded, file-backed Postgres at
+  `data/maitrise-pg/` — real Postgres compiled to WASM, not an emulation, so it's the *same*
+  dialect/schema as production, not a third thing to keep in sync. This is what keeps `npm run dev`
+  zero-config the way the original SQLite setup was, without needing a local Postgres install or
+  Docker.
+
+Column-type mapping SQLite → Postgres: `integer(mode:"boolean")` → `boolean`;
+`integer(mode:"timestamp_ms")` → `timestamp`; `text(mode:"json")` → `jsonb`; `real` → `doublePrecision`
+(matches SQLite's always-8-byte REAL more closely than Postgres's 4-byte `real`). Enums stayed
+`text(..., {enum:[...]})` rather than native Postgres `CREATE TYPE` enums — avoids `ALTER TYPE`
+migration pain when a value set grows later, at the cost of DB-level enforcement (still fully
+enforced at the Zod/TypeScript layer).
+
+`scripts/seed.ts` and `scripts/seed-demo.ts` needed a real rewrite, not just a search-and-replace:
+better-sqlite3's Drizzle adapter is synchronous (`.insert(...).run()`, a synchronous
+`db.transaction((tx) => {...})` callback); both Postgres drivers are async (`await
+.insert(...)`, `async (tx) => {...}`). Converted every call site.
+
+**Bug caught by actually running the seed, not just typechecking**: `next.config.ts`'s
+`serverExternalPackages` still listed `better-sqlite3` after it was removed as a dependency — updated
+to `@electric-sql/pglite` instead (it ships a WASM binary + on-disk data files that need the same
+"don't bundle this into the server chunk" treatment, and it's only ever imported when `DATABASE_URL`
+is unset, so this has zero effect on a production deployment).
+
+**Second bug caught only by loading the app in a real browser, not by the seed script succeeding**:
+on a cold `next dev` start, the skill tree home page transiently rendered every unit as locked
+(including the first one, which `ensureBootstrapProgress()` unconditionally unlocks) even though a
+direct DB query moments later showed the correct row already present. Root cause: `src/db/client.ts`
+created its `PGlite` instance at module scope (`export const db = createDb()`), and Next's
+hot-module-reloading can re-evaluate a module more than once per process without tearing down the
+previous instance — PGlite is single-writer/file-locking like SQLite, so a second instance opened
+against the same directory transiently contends with the first. Fixed with the standard Next-dev
+pattern for this class of bug (the same one Prisma's own docs recommend): cache the client on
+`globalThis`, keyed so HMR reuses the live instance instead of racing a new one against it. Also
+found and killed two genuinely deadlocked stale `tsx scripts/seed.ts` processes left over from
+earlier interrupted runs, both blocked on the same PGlite file lock — a reminder that this
+single-writer property means local dev must never run two DB-touching processes (dev server +
+migrate/seed script) against the same `data/maitrise-pg/` directory concurrently.
+
+Old SQLite migration history (`drizzle/0000_white_veda.sql`, `0001_furry_nextwave.sql`) was deleted
+and regenerated fresh as Postgres SQL — there's no production data anywhere yet to preserve a
+migration path from.
+
+---
+
 ### 2026-08-23 — `/code-review hard`: multi-agent orchestration stuck on a relay bug, took over manually
 The multi-agent code-review orchestrator dispatched ~9 "finder" sub-agents across several rounds. Every
 finder that finished tried to relay its findings back to the orchestrator via `SendMessage` to

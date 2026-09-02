@@ -1,13 +1,51 @@
 import path from "node:path";
-import Database from "better-sqlite3";
-import { drizzle } from "drizzle-orm/better-sqlite3";
+import fs from "node:fs";
+import { drizzle as drizzlePostgres } from "drizzle-orm/postgres-js";
+import { drizzle as drizzlePglite } from "drizzle-orm/pglite";
+import { PGlite } from "@electric-sql/pglite";
+import postgres from "postgres";
 import * as schema from "./schema";
 
-const DB_PATH = process.env.DATABASE_PATH ?? path.join(process.cwd(), "data", "maitrise.db");
+/**
+ * One schema, one dialect (Postgres) everywhere — no more maintaining a SQLite schema and a
+ * Postgres schema in parallel. Locally, with no DATABASE_URL set, this runs against an embedded,
+ * file-backed Postgres (PGlite — real Postgres compiled to WASM, not an emulation) so `npm run
+ * dev` stays zero-config exactly like the SQLite setup did. Set DATABASE_URL (Vercel Postgres,
+ * Neon, Supabase, or any standard Postgres connection string) to run against a real hosted
+ * database instead — that's what a Vercel deployment needs, since serverless functions have no
+ * persistent local disk. See DECISIONS.md.
+ */
+const DATABASE_URL = process.env.DATABASE_URL;
 
-const sqlite = new Database(DB_PATH);
-sqlite.pragma("journal_mode = WAL");
-sqlite.pragma("foreign_keys = ON");
+function createDb() {
+  if (DATABASE_URL) {
+    const client = postgres(DATABASE_URL, { max: 1 });
+    return drizzlePostgres(client, { schema });
+  }
+  const DB_DIR = process.env.DATABASE_PATH ?? path.join(process.cwd(), "data", "maitrise-pg");
+  fs.mkdirSync(path.dirname(DB_DIR), { recursive: true });
+  const client = new PGlite(DB_DIR);
+  return drizzlePglite(client, { schema });
+}
 
-export const db = drizzle(sqlite, { schema });
+// PGlite is a single-writer, file-locking embedded engine (like SQLite) — a second instance
+// opened against the same directory while the first is still live will contend with it. Next.js
+// dev's hot-module-reloading can re-evaluate this module (and re-run `createDb()`) more than once
+// per process without tearing down the previous instance first, which produced exactly that:
+// intermittent, transiently-stale reads (a freshly-bootstrapped row invisible to the very next
+// render) right after a cold `next dev` start. Cache the instance on `globalThis` so HMR reuses
+// the same live connection instead of racing a new one against it — the standard fix for this
+// class of bug with any embedded/pooled DB client under Next dev. Harmless in production (each
+// serverless invocation gets a fresh module scope regardless), and using DATABASE_URL there avoids
+// the single-writer constraint entirely.
+declare global {
+  var __maitriseDb: ReturnType<typeof createDb> | undefined;
+}
+
+export const db = globalThis.__maitriseDb ?? createDb();
+if (process.env.NODE_ENV !== "production") {
+  globalThis.__maitriseDb = db;
+}
+
 export type Db = typeof db;
+export const usingHostedPostgres = Boolean(DATABASE_URL);

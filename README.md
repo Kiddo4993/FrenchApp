@@ -1,16 +1,35 @@
 # Maîtrise
 
-A French learning app, A1 → C1. Single learner, fully local (SQLite file, no auth, no cloud).
+A French learning app, A1 → C1. Single learner, no auth. Runs entirely locally with zero setup, or
+deploys as a real always-on app (Vercel + a hosted Postgres) — same code, same schema, either way.
 See [PLAN.md](./PLAN.md) for the full data model, curriculum map, and build status, and
 [DECISIONS.md](./DECISIONS.md) for judgment calls made while building.
 
-## Setup
+## Setup (local)
 
 ```bash
 npm install
-npm run seed    # runs migrations, validates content, seeds the SQLite DB from /content
+npm run seed    # runs migrations, validates content, seeds the DB from /content
 npm run dev     # http://localhost:3000
 ```
+
+No database to install or configure. With `DATABASE_URL` unset, the app runs against an embedded,
+file-backed Postgres ([PGlite](https://pglite.dev) — real Postgres compiled to WASM) at
+`data/maitrise-pg/`.
+
+## Deploying (Vercel + hosted Postgres)
+
+1. Push this repo to GitHub and import it into Vercel.
+2. In the Vercel project → **Storage** → **Create Database** → **Postgres** (Neon-backed). Vercel
+   wires up `DATABASE_URL` (and a few aliases) as project environment variables automatically.
+3. Run the migration + seed once against that database — either via `vercel env pull .env.local`
+   and running `npm run seed` locally with that `.env.local` loaded, or from any machine with
+   `DATABASE_URL` set to the same connection string.
+4. Deploy. Every request now reads/writes the real hosted Postgres instead of the local embedded
+   one — progress persists across deploys and cold starts, unlike a serverless function's local disk.
+
+Any other Postgres host (Neon, Supabase, Railway, RDS…) works the same way — just set
+`DATABASE_URL` to its connection string. See `.env.example`.
 
 ## Scripts
 
@@ -22,7 +41,7 @@ npm run dev     # http://localhost:3000
 | `npm run test` / `test:watch` | Vitest unit tests |
 | `npm run e2e` | Playwright E2E (needs `npx playwright install` once) |
 | `npm run db:generate` | Regenerate Drizzle migration SQL from `src/db/schema.ts` |
-| `npm run db:migrate` | Apply migrations to `data/maitrise.db` |
+| `npm run db:migrate` | Apply migrations — to `DATABASE_URL` if set, else to the local embedded Postgres |
 | `npm run validate-content` | Fail loudly if `/content` is incomplete or malformed |
 | `npm run seed` | migrate → validate-content → load `/content` into the DB |
 | `npm run seed:demo` | Overlay a realistic demo profile (week 1 / 12 / 52 of use) |
@@ -30,10 +49,13 @@ npm run dev     # http://localhost:3000
 ## Architecture
 
 - **Next.js 15 App Router + TypeScript strict.** No `any`.
-- **SQLite via Drizzle ORM** (`src/db/schema.ts`), written Postgres-compatible (text-enum unions,
-  integer-ms timestamps, explicit FKs) so a future move to `drizzle-orm/pg-core` is a driver swap.
-  The DB file lives at `data/maitrise.db` (gitignored — it's derived from `/content` + your local
-  progress, not something to version).
+- **Postgres via Drizzle ORM** (`src/db/schema.ts`, `drizzle-orm/pg-core`) — one schema, one dialect,
+  everywhere. `src/db/client.ts` picks the driver at runtime: `drizzle-orm/postgres-js` against
+  `DATABASE_URL` when it's set (a real deployment), otherwise `drizzle-orm/pglite` against an
+  embedded, file-backed Postgres at `data/maitrise-pg/` (gitignored — derived from `/content` +
+  your local progress, not something to version) so local dev stays zero-config. The client is
+  cached on `globalThis` in development so Next's hot-module-reloading reuses the same PGlite
+  connection instead of racing a second one against it — PGlite is single-writer, like SQLite.
 - **Content is data, not code.** `/content/vocab/{topic}.json`, `/content/grammar/{unit}.json`,
   `/content/sentences/{topic}.json`, `/content/verbs/verbs.json` are the source of truth; `npm run
   seed` loads them into SQLite. `scripts/validate-content.ts` is the gate — it fails the build if a
