@@ -3,9 +3,20 @@ import { ArrowRight, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { LockedUnitRow } from "@/components/skill-tree/LockedUnitRow";
 import { UnitSection, type UnitSectionData } from "@/components/skill-tree/UnitSection";
+import { ensureBootstrapProgress } from "@/server/actions";
 import { getDueCardCount, getProfileBundle, getSkillTree } from "@/server/queries";
 
 export default async function HomePage() {
+  // Was relying on the (app) layout's own `await ensureBootstrapProgress()` to have already run
+  // and committed before this page's `getSkillTree()` executes. That's not actually guaranteed:
+  // Next renders a layout's `{children}` as its own independently-resolving branch, not strictly
+  // after the layout's preceding awaits finish — so on a genuinely cold DB the read here could
+  // (and did, reproducibly) race the layout's write and see "nothing unlocked yet." Awaiting it
+  // again here, within this component's own sequential async body, removes the cross-component
+  // ordering assumption entirely; it's idempotent and cheap once already bootstrapped. Caught by
+  // repeatedly hitting a fresh cold start in a real browser — reload always "fixed" it, which is
+  // exactly the signature of a race, not a logic bug.
+  await ensureBootstrapProgress();
   const [tree, dueCount, { profile, settings }] = await Promise.all([
     getSkillTree(),
     getDueCardCount(),

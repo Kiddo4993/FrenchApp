@@ -8,7 +8,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { db } from "../src/db/client";
 import * as schema from "../src/db/schema";
-import { UNITS, LESSONS } from "../src/content/curriculum";
+import { UNITS, UNITS_SORTED, LESSONS } from "../src/content/curriculum";
 import { TOPICS } from "../src/content/topics";
 import { ACHIEVEMENTS } from "../src/content/achievements";
 import {
@@ -216,6 +216,37 @@ async function seedAchievements(db: Tx) {
   console.log(`Seeded ${ACHIEVEMENTS.length} achievements`);
 }
 
+/**
+ * Unlocking the very first unit/lesson used to happen lazily, on the app's first real request
+ * (`ensureBootstrapProgress()` in src/server/actions.ts, still called there too as a defensive
+ * fallback for profiles that predate this — e.g. after a `db push`/manual reset without a reseed).
+ * That was racy: a genuinely cold `data/maitrise-pg` reproducibly showed every unit locked on the
+ * very first page load about 2 times out of 3 in testing, self-resolving on reload — the
+ * "layout awaits before children render" ordering it relied on isn't actually guaranteed by
+ * Next's App Router (a layout's `{children}` can start resolving concurrently with the layout's
+ * own preceding awaits, not strictly after). Doing it here instead — once, synchronously, as part
+ * of the deterministic seed step that already has to run before `npm run dev` — makes the race
+ * structurally impossible: the row exists before the app ever serves a single request.
+ */
+async function seedFirstUnitUnlock(db: Tx) {
+  const firstUnit = UNITS_SORTED[0];
+  if (!firstUnit) return;
+  await db
+    .insert(schema.unitProgress)
+    .values({ unitId: firstUnit.slug, status: "available" })
+    .onConflictDoNothing();
+
+  const firstUnitLessons = LESSONS.filter((l) => l.unitSlug === firstUnit.slug).sort((a, b) => a.order - b.order);
+  const firstLesson = firstUnitLessons[0];
+  if (firstLesson) {
+    await db
+      .insert(schema.lessonProgress)
+      .values({ lessonId: firstLesson.slug, status: "available" })
+      .onConflictDoNothing();
+  }
+  console.log(`Unlocked first unit (${firstUnit.slug}) and its first lesson`);
+}
+
 async function seedProfileBootstrap(db: Tx) {
   await db
     .insert(schema.profile)
@@ -223,6 +254,7 @@ async function seedProfileBootstrap(db: Tx) {
     .onConflictDoNothing();
   await db.insert(schema.settings).values({ profileId: "singleton" }).onConflictDoNothing();
   await db.insert(schema.userStats).values({ id: "singleton" }).onConflictDoNothing();
+  await seedFirstUnitUnlock(db);
   console.log("Ensured profile/settings/userStats bootstrap rows exist");
 }
 

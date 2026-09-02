@@ -30,12 +30,28 @@ build succeeding:
    produced genuinely deadlocked orphan processes across turns, later blocking a *new* seed attempt
    on the same file lock). Added explicit `process.exit(0)` on the success path, matching the
    pattern `seed-demo.ts` already used.
-3. **A brand-new install's very first page load** could show every unit locked (skill tree) —
-   `ensureBootstrapProgress()` did a non-atomic check-then-insert, and something (observed only on
-   a genuinely cold `data/maitrise-pg`, never on a warm reload) invoked it concurrently with itself
-   often enough to race: both branches read "nothing unlocked yet" before either insert committed.
-   Fixed with `.onConflictDoNothing()` on both inserts — cheap, and correct regardless of the exact
-   mechanism, since `unitProgress.unitId`/`lessonProgress.lessonId` are already unique.
+3. **A brand-new install's very first page load** could show every unit locked (skill tree) — took
+   three attempts to actually fix, worth recording honestly since the first two *looked* plausible
+   and weren't verified hard enough before being called done:
+   - Attempt 1: made `ensureBootstrapProgress()`'s inserts `.onConflictDoNothing()` (it was a
+     non-atomic check-then-insert). Necessary, but a scripted 4-cycle fresh-DB test afterward still
+     showed it failing 2 times out of 3 — not fixed.
+   - Attempt 2: `(app)/page.tsx` was relying on the `(app)/layout.tsx`'s own
+     `await ensureBootstrapProgress()` to have already committed before the page's own
+     `getSkillTree()` ran. That's not actually guaranteed — Next can resolve a layout's `{children}`
+     concurrently with the layout's own preceding awaits, not strictly after them. Added the same
+     `await ensureBootstrapProgress()` to the page itself, sequenced before its own reads. Better,
+     but the same 4-cycle test still failed most runs — the underlying request-time race was still
+     there, just harder to hit.
+   - Actual fix: stopped trying to win a race at request time and removed the race instead. Moved
+     the "unlock the first unit + its first lesson" write into `scripts/seed.ts` (a new
+     `seedFirstUnitUnlock`, called from `seedProfileBootstrap`) — a deterministic, one-time,
+     already-sequential step that runs *before* the app ever serves a request, so there's nothing
+     left to race against. `ensureBootstrapProgress()` stays in place as a defensive fallback (still
+     idempotent) for profiles that predate this. Verified with 4 fully-isolated fresh
+     seed+dev-server+first-load cycles, 0 failures (previous approaches: 1/4 and ~1/3 respectively).
+   Lesson: "it passed once" and "it's obviously correct" are not the same as verified — this one
+   needed a scripted repeat-until-confident check before trusting it, not a single manual look.
 
 ---
 
