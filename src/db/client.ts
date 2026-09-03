@@ -22,6 +22,19 @@ function createDb() {
     const client = postgres(DATABASE_URL, { max: 1 });
     return drizzlePostgres(client, { schema });
   }
+  // Vercel (and most other serverless hosts) give function instances a read-only filesystem
+  // outside of /tmp, so the PGlite fallback below — which needs to write a real data directory —
+  // can never work there. Without this check, a missing/misattached DATABASE_URL surfaces as a
+  // cryptic `ENOENT: mkdir '/var/task/data'` deep in a bundled chunk on every request, which cost
+  // real debugging time once already. Fail immediately with the actual cause instead.
+  if (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME) {
+    throw new Error(
+      "DATABASE_URL is not set. This looks like a serverless deployment (Vercel/Lambda), which " +
+        "has no writable local disk for the embedded PGlite fallback. Set DATABASE_URL in your " +
+        "hosting provider's environment variables to a real Postgres connection string (Neon, " +
+        "Supabase, Vercel Postgres, etc. — see README.md's Deploying section) and redeploy.",
+    );
+  }
   const DB_DIR = process.env.DATABASE_PATH ?? path.join(process.cwd(), "data", "maitrise-pg");
   fs.mkdirSync(path.dirname(DB_DIR), { recursive: true });
   const client = new PGlite(DB_DIR);
