@@ -5,6 +5,25 @@ deploys as a real always-on app (Vercel + a hosted Postgres) — same code, same
 See [PLAN.md](./PLAN.md) for the full data model, curriculum map, and build status, and
 [DECISIONS.md](./DECISIONS.md) for judgment calls made while building.
 
+## What it's actually like to use
+
+Open it and you either take a 20-question adaptive placement test or just start at A1 — either way
+you land on a skill tree: 44 units, A1 through C1, each a row of lesson nodes that unlock as you
+clear the one before it. Tap a node and you're in a short, mixed-format exercise session — multiple
+choice, listening, dictation, word banks, free translation, speaking with actual speech recognition,
+fourteen formats in total, rotating so it never feels like the same flashcard over and over.
+
+The part that isn't just a reskinned flashcard app: every word is tracked on four independent
+memory tracks — recognition, production, listening, spelling — each scheduled separately by FSRS
+spaced repetition, graded from your actual correctness/speed/hint-use rather than an honesty-system
+self-rating. `/reviser` surfaces whatever's genuinely due. There's also a searchable grammar
+reference, a conjugation trainer for ~120 verbs, a seven-panel progress dashboard with real
+retention curves (not vanity stats), 41 achievements, and streaks with earned freezes and a
+weekend-protection amulet.
+
+**[Read the full walkthrough →](./WALKTHROUGH.md)** for a proper room-by-room tour of every screen,
+plus a longer "how it's actually built" section for the technical side of the same story.
+
 ## Setup (local)
 
 ```bash
