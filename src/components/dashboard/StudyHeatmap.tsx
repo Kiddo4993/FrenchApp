@@ -15,7 +15,7 @@ const GAP = 3;
 const DAY_LABELS = ["L", "M", "M", "J", "V", "S", "D"];
 const MS_PER_DAY = 86_400_000;
 
-// sessionLogs.date is a UTC calendar-day string (see actions.ts's todayStr()). date-fns's
+// sessionLogs.date is a plain YYYY-MM-DD calendar-day string (see lib/dates.ts). date-fns's
 // startOfWeek/addDays/format all read a Date's *local* calendar fields, so building/labeling the
 // grid with them silently reinterprets each UTC day boundary in the browser's timezone — a
 // session just before/after local midnight can render on the wrong day, or as "future" and be

@@ -1,9 +1,10 @@
 import { SettingsForm } from "@/components/settings/SettingsForm";
 import { canRepairStreak } from "@/lib/progression/streaks";
 import { getProfileBundle } from "@/server/queries";
+import { APP_TIME_ZONE, calendarDay } from "@/lib/dates";
 
 function todayStr(): string {
-  return new Date().toISOString().slice(0, 10);
+  return calendarDay(new Date(), APP_TIME_ZONE);
 }
 
 export default async function SettingsPage() {

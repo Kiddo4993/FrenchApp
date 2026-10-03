@@ -14,9 +14,10 @@ import type { CardSnapshot } from "@/lib/srs/types";
 import type { ExerciseKind } from "@/types/exercise";
 import { computeAchievementStats } from "./achievement-stats";
 import { PROFILE_ID } from "./queries";
+import { APP_TIME_ZONE, calendarDay } from "@/lib/dates";
 
 function todayStr(now: Date): string {
-  return now.toISOString().slice(0, 10);
+  return calendarDay(now, APP_TIME_ZONE);
 }
 
 function rowToSnapshot(row: typeof schema.cards.$inferSelect): CardSnapshot {

@@ -14,7 +14,7 @@ import type { TooltipProps } from "recharts";
 import type { RetentionPoint } from "@/server/dashboard-queries";
 import { EmptyState } from "./EmptyState";
 
-// `date` is a UTC calendar-day string (see actions.ts's todayStr()). date-fns's format() reads a
+// `date` is a plain YYYY-MM-DD calendar-day string (see lib/dates.ts). date-fns's format() reads a
 // Date's *local* calendar fields, so `new Date("2026-08-15")` (UTC midnight) can render as "14
 // août" for negative-UTC-offset users. Format in UTC explicitly instead.
 const frUtcDateShort = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "short", timeZone: "UTC" });
